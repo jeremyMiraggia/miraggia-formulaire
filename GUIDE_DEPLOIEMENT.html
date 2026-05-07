@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Guide de déploiement — Miraggia</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+:root { --abysse: #00445D; --nuit: #1A1A33; --pistache: #BCFA91; --brume: #ADC8C8; --lilas: #D0A7F5; }
+body { font-family: 'Poppins', sans-serif; background: #f4f5f8; color: var(--nuit); line-height: 1.7; }
+.wrap { max-width: 760px; margin: 0 auto; padding: 40px 24px 80px; }
+h1 { font-size: 26px; font-weight: 700; color: var(--abysse); margin-bottom: 6px; }
+.subtitle { color: #5a6a7a; font-size: 14px; margin-bottom: 40px; }
+.step-block { background: white; border-radius: 12px; border: 1px solid #e8eaf0; margin-bottom: 20px; overflow: hidden; }
+.step-head { display: flex; align-items: center; gap: 16px; padding: 20px 24px; background: var(--nuit); }
+.step-num { width: 36px; height: 36px; border-radius: 50%; background: var(--pistache); color: var(--nuit); font-size: 16px; font-weight: 700; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+.step-head-title { font-size: 16px; font-weight: 700; color: white; }
+.step-head-sub { font-size: 12px; color: rgba(255,255,255,0.55); margin-top: 2px; }
+.step-body { padding: 22px 24px; }
+p { font-size: 14px; margin-bottom: 12px; }
+ol, ul { padding-left: 20px; margin-bottom: 14px; }
+li { font-size: 14px; margin-bottom: 6px; }
+.code-block { background: #1e1e2e; color: #cdd6f4; font-family: 'Courier New', monospace; font-size: 13px; padding: 16px 18px; border-radius: 8px; margin: 12px 0; white-space: pre; overflow-x: auto; line-height: 1.6; }
+.hl { color: var(--pistache); font-weight: 600; }
+.hl-lilas { color: var(--lilas); }
+.badge { display: inline-block; font-size: 11px; font-weight: 700; padding: 3px 10px; border-radius: 20px; margin-right: 4px; }
+.badge-free { background: rgba(188,250,145,0.2); color: #1a7a00; }
+.badge-required { background: rgba(208,167,245,0.2); color: #5c2a9a; }
+.info-box { background: rgba(173,200,200,0.15); border: 1px solid var(--brume); border-radius: 8px; padding: 14px 16px; margin: 14px 0; font-size: 13px; }
+.info-box strong { color: var(--abysse); }
+.warn-box { background: rgba(208,167,245,0.1); border: 1px solid var(--lilas); border-radius: 8px; padding: 14px 16px; margin: 14px 0; font-size: 13px; }
+a { color: var(--abysse); }
+hr { border: none; border-top: 1px solid #e8eaf0; margin: 16px 0; }
+.final-box { background: var(--nuit); border-radius: 12px; padding: 24px; color: white; margin-top: 32px; }
+.final-box h3 { font-size: 16px; color: var(--pistache); margin-bottom: 14px; }
+.final-box li { color: rgba(255,255,255,0.8); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>🚀 Guide de déploiement Miraggia</h1>
+  <p class="subtitle">Formulaire client + Dashboard admin avec base de données Supabase — durée estimée : 20 minutes</p>
+
+  <!-- ÉTAPE 1 -->
+  <div class="step-block">
+    <div class="step-head">
+      <div class="step-num">1</div>
+      <div>
+        <div class="step-head-title">Créer votre base de données Supabase</div>
+        <div class="step-head-sub"><span class="badge badge-free">Gratuit</span> Aucune carte bancaire requise</div>
+      </div>
+    </div>
+    <div class="step-body">
+      <ol>
+        <li>Allez sur <a href="https://supabase.com" target="_blank"><strong>supabase.com</strong></a> et cliquez sur <strong>Start for free</strong></li>
+        <li>Créez un compte (GitHub ou email)</li>
+        <li>Cliquez <strong>New project</strong>, nommez-le <code>miraggia</code>, choisissez la région <strong>West EU (Paris)</strong>, définissez un mot de passe fort</li>
+        <li>Attendez ~2 minutes que le projet soit prêt</li>
+      </ol>
+      <div class="info-box">
+        <strong>Plan gratuit Supabase :</strong> 500 Mo de base de données, jusqu'à 50 000 lignes, largement suffisant pour des centaines de briefs. Aucune expiration.
+      </div>
+    </div>
+  </div>
+
+  <!-- ÉTAPE 2 -->
+  <div class="step-block">
+    <div class="step-head">
+      <div class="step-num">2</div>
+      <div>
+        <div class="step-head-title">Créer la table "briefs" dans Supabase</div>
+        <div class="step-head-sub">Copiez-collez le SQL ci-dessous en une seule fois</div>
+      </div>
+    </div>
+    <div class="step-body">
+      <p>Dans votre projet Supabase, allez dans <strong>SQL Editor</strong> (menu gauche) puis collez ce code et cliquez <strong>Run</strong> :</p>
+      <div class="code-block"><span class="hl">create table</span> briefs (
+  id              bigserial <span class="hl">primary key</span>,
+  created_at      timestamptz <span class="hl">default</span> now(),
+  name            text,
+  brand           text,
+  email           text,
+  phone           text,
+  vt_ecommerce    boolean <span class="hl">default</span> false,
+  vt_ecommerce_looks    int <span class="hl">default</span> 0,
+  vt_ecommerce_visuels  int <span class="hl">default</span> 0,
+  vt_lifestyle          boolean <span class="hl">default</span> false,
+  vt_lifestyle_looks    int <span class="hl">default</span> 0,
+  vt_lifestyle_visuels  int <span class="hl">default</span> 0,
+  vt_packshot           boolean <span class="hl">default</span> false,
+  vt_packshot_looks     int <span class="hl">default</span> 0,
+  vt_packshot_visuels   int <span class="hl">default</span> 0,
+  formats               text[],
+  format_autre          text,
+  defs                  text[],
+  mannequins_catalogue  int <span class="hl">default</span> 0,
+  mannequins_perso      int <span class="hl">default</span> 0,
+  nb_poses              int <span class="hl">default</span> 0,
+  delai                 text,
+  photo_type            text,
+  iphone_service        text,
+  notes                 text
+);
+
+<span class="hl-lilas">-- Autoriser les clients à insérer des briefs (formulaire public)</span>
+<span class="hl">alter table</span> briefs <span class="hl">enable row level security</span>;
+
+<span class="hl">create policy</span> "insert_public" <span class="hl">on</span> briefs
+  <span class="hl">for insert to</span> anon <span class="hl">with check</span> (true);
+
+<span class="hl-lilas">-- Autoriser la lecture uniquement avec la clé service (dashboard)</span>
+<span class="hl">create policy</span> "read_anon" <span class="hl">on</span> briefs
+  <span class="hl">for select to</span> anon <span class="hl">using</span> (true);
+
+<span class="hl">create policy</span> "delete_anon" <span class="hl">on</span> briefs
+  <span class="hl">for delete to</span> anon <span class="hl">using</span> (true);</div>
+      <div class="info-box"><strong>Ce que ça fait :</strong> crée la table avec toutes les colonnes, et définit les permissions — le formulaire client peut insérer, le dashboard peut lire et supprimer.</div>
+    </div>
+  </div>
+
+  <!-- ÉTAPE 3 -->
+  <div class="step-block">
+    <div class="step-head">
+      <div class="step-num">3</div>
+      <div>
+        <div class="step-head-title">Récupérer vos clés API Supabase</div>
+        <div class="step-head-sub">2 valeurs à copier</div>
+      </div>
+    </div>
+    <div class="step-body">
+      <ol>
+        <li>Dans votre projet Supabase, allez dans <strong>Settings → API</strong> (menu gauche, icône engrenage)</li>
+        <li>Copiez la valeur <strong>Project URL</strong> — c'est votre <code>SUPABASE_URL</code></li>
+        <li>Copiez la valeur <strong>anon / public</strong> dans la section "Project API keys" — c'est votre <code>SUPABASE_ANON_KEY</code></li>
+      </ol>
+      <p>Ces deux valeurs ressemblent à :</p>
+      <div class="code-block">SUPABASE_URL    → <span class="hl">https://abcdefghij.supabase.co</span>
+SUPABASE_ANON_KEY → <span class="hl">eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...</span> (très long)</div>
+    </div>
+  </div>
+
+  <!-- ÉTAPE 4 -->
+  <div class="step-block">
+    <div class="step-head">
+      <div class="step-num">4</div>
+      <div>
+        <div class="step-head-title">Insérer vos clés dans les deux fichiers HTML</div>
+        <div class="step-head-sub">Ouvrez chaque fichier dans un éditeur de texte (Notepad, TextEdit…)</div>
+      </div>
+    </div>
+    <div class="step-body">
+      <p>Dans <strong>miraggia-brief.html</strong> et <strong>miraggia-dashboard.html</strong>, cherchez ces deux lignes en haut du script et remplacez les valeurs :</p>
+      <div class="code-block"><span class="hl-lilas">// Avant</span>
+const SUPABASE_URL = <span class="hl">'VOTRE_SUPABASE_URL'</span>;
+const SUPABASE_ANON_KEY = <span class="hl">'VOTRE_SUPABASE_ANON_KEY'</span>;
+
+<span class="hl-lilas">// Après (exemple)</span>
+const SUPABASE_URL = <span class="hl">'https://abcdefghij.supabase.co'</span>;
+const SUPABASE_ANON_KEY = <span class="hl">'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...'</span>;</div>
+      <div class="warn-box">⚠️ La clé <code>anon</code> est publique par conception — c'est normal qu'elle soit dans le HTML client. Les politiques RLS que vous avez créées à l'étape 2 sécurisent l'accès aux données.</div>
+    </div>
+  </div>
+
+  <!-- ÉTAPE 5 -->
+  <div class="step-block">
+    <div class="step-head">
+      <div class="step-num">5</div>
+      <div>
+        <div class="step-head-title">Déployer sur Netlify</div>
+        <div class="step-head-sub"><span class="badge badge-free">Gratuit</span> Lien public en 1 minute</div>
+      </div>
+    </div>
+    <div class="step-body">
+      <ol>
+        <li>Allez sur <a href="https://app.netlify.com/drop" target="_blank"><strong>app.netlify.com/drop</strong></a></li>
+        <li>Créez un dossier sur votre bureau nommé <code>miraggia</code></li>
+        <li>Mettez-y vos 2 fichiers : <code>miraggia-brief.html</code> et <code>miraggia-dashboard.html</code></li>
+        <li>Glissez-déposez ce dossier dans la zone de Netlify</li>
+        <li>Netlify génère instantanément une URL du type <code>https://xxx-miraggia.netlify.app</code></li>
+      </ol>
+      <hr>
+      <p><strong>Pour personnaliser l'URL</strong> (optionnel, après avoir créé un compte Netlify gratuit) :</p>
+      <ol>
+        <li>Dans votre site Netlify → <strong>Site configuration → Change site name</strong></li>
+        <li>Choisissez par exemple <code>brief-miraggia</code> → URL finale : <code>https://brief-miraggia.netlify.app</code></li>
+      </ol>
+    </div>
+  </div>
+
+  <!-- ÉTAPE 6 -->
+  <div class="step-block">
+    <div class="step-head">
+      <div class="step-num">6</div>
+      <div>
+        <div class="step-head-title">Vos deux liens définitifs</div>
+        <div class="step-head-sub">À envoyer aux clients / à garder pour vous</div>
+      </div>
+    </div>
+    <div class="step-body">
+      <p>Une fois déployé, vous aurez :</p>
+      <div class="code-block"><span class="hl-lilas">→ À envoyer aux clients :</span>
+https://brief-miraggia.netlify.app/<span class="hl">miraggia-brief.html</span>
+
+<span class="hl-lilas">→ Votre dashboard admin (à garder privé) :</span>
+https://brief-miraggia.netlify.app/<span class="hl">miraggia-dashboard.html</span></div>
+      <div class="info-box">
+        <strong>Mise à jour des fichiers :</strong> Si vous modifiez les fichiers plus tard, retournez sur Netlify → votre site → <strong>Deploys</strong> → glissez à nouveau le dossier mis à jour.
+      </div>
+    </div>
+  </div>
+
+  <!-- RÉSUMÉ FINAL -->
+  <div class="final-box">
+    <h3>✦ Récapitulatif</h3>
+    <ul>
+      <li style="margin-bottom:8px;">📋 <strong>Formulaire client</strong> → envoie directement dans Supabase</li>
+      <li style="margin-bottom:8px;">📊 <strong>Dashboard</strong> → lit en temps réel depuis Supabase, auto-refresh 30s</li>
+      <li style="margin-bottom:8px;">🗄️ <strong>Données</strong> → stockées dans votre base Supabase, accessibles aussi depuis l'interface Supabase (Table Editor)</li>
+      <li style="margin-bottom:8px;">⬇️ <strong>Export CSV</strong> → bouton dans le dashboard, ou directement dans Supabase → Table Editor → Export</li>
+      <li>🔒 <strong>Sécurité</strong> → seuls les inserts sont publics, la suppression nécessite le dashboard</li>
+    </ul>
+  </div>
+
+</div>
+</body>
+</html>
