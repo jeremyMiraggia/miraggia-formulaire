@@ -532,7 +532,7 @@ function buildStep() {
       { id: 'packshot', name: 'Packshot', desc: lang('Photo pro à partir de photos amateurs prises sur téléphone','Pro photo from amateur smartphone photos'), badge: lang('Produit','Product') },
     ];
     const videoTypes = [
-      { id: 'video_packshot', name: lang('Vidéo Packshot','Video Packshot'), desc: lang('Vidéo produit, fond neutre, focus sur l\'article','Product video, neutral background, focus on the item'), badge: lang('Produit','Product') },
+      { id: 'video_ecommerce', name: lang('Vidéo E-commerce','Video E-commerce'), desc: lang('Vidéo sur mannequin, fond neutre, format catalogue','Video on model, neutral background, catalogue format'), badge: lang('Catalogue','Catalogue') },
       { id: 'video_lifestyle', name: lang('Vidéo Lifestyle','Video Lifestyle'), desc: lang('Vidéo de mise en scène, ambiance de marque','Branded scene video, campaign mood'), badge: lang('Campagne','Campaign') },
     ];
     html = `
@@ -762,7 +762,7 @@ function saveStep() {
       formData['vt_'+t+'_looks'] = document.getElementById('vt_'+t+'_looks')?.value || '';
       formData['vt_'+t+'_visuels'] = document.getElementById('vt_'+t+'_visuels')?.value || '';
     });
-    ['video_packshot','video_lifestyle'].forEach(t => {
+    ['video_ecommerce','video_lifestyle'].forEach(t => {
       formData['vt_'+t] = document.getElementById('vtb_'+t)?.classList.contains('active') || false;
       formData['vt_'+t+'_nb'] = document.getElementById('vt_'+t+'_nb')?.value || '';
     });
@@ -821,8 +821,8 @@ async function submitForm() {
     vt_packshot: formData.vt_packshot || false,
     vt_packshot_looks: parseInt(formData.vt_packshot_looks) || 0,
     vt_packshot_visuels: parseInt(formData.vt_packshot_visuels) || 0,
-    vt_video_packshot: formData.vt_video_packshot || false,
-    vt_video_packshot_nb: parseInt(formData.vt_video_packshot_nb) || 0,
+    vt_video_ecommerce: formData.vt_video_ecommerce || false,
+    vt_video_ecommerce_nb: parseInt(formData.vt_video_ecommerce_nb) || 0,
     vt_video_lifestyle: formData.vt_video_lifestyle || false,
     vt_video_lifestyle_nb: parseInt(formData.vt_video_lifestyle_nb) || 0,
     formats: formData.formats || [],

@@ -274,8 +274,8 @@ body { font-family: 'Poppins', sans-serif; background: var(--bg); color: var(--n
 // CONFIG SUPABASE — à remplir avec vos identifiants
 // (les mêmes que dans miraggia-brief.html)
 // ═══════════════════════════════════════════════
-const  SUPABASE_URL = 'https://cxktdducsujgjpuabylw.supabase.co';
-const  SUPABASE_ANON_KEY = 'sb_publishable_Y9QUDccG9phPnWIv-_0IdQ_D6jdtGxc';
+const SUPABASE_URL = 'https://cxktdducsujgjpuabylw.supabase.co';
+const SUPABASE_ANON_KEY = 'sb_publishable_Y9QUDccG9phPnWIv-_0IdQ_D6jdtGxc';
 
 // ═══════════════════════════════════════════════
 // HELPERS
@@ -388,8 +388,8 @@ function normalize(raw) {
     vt_packshot: !!raw.vt_packshot,
     vt_packshot_looks: raw.vt_packshot_looks || 0,
     vt_packshot_visuels: raw.vt_packshot_visuels || 0,
-    vt_video_packshot: !!raw.vt_video_packshot,
-    vt_video_packshot_nb: raw.vt_video_packshot_nb || 0,
+    vt_video_ecommerce: !!raw.vt_video_ecommerce,
+    vt_video_ecommerce_nb: raw.vt_video_ecommerce_nb || 0,
     vt_video_lifestyle: !!raw.vt_video_lifestyle,
     vt_video_lifestyle_nb: raw.vt_video_lifestyle_nb || 0,
     formats: Array.isArray(raw.formats) ? raw.formats : [],
@@ -413,7 +413,7 @@ function totalVisuels(b) {
 }
 
 function totalVideos(b) {
-  return (b.vt_video_packshot  ? b.vt_video_packshot_nb  : 0)
+  return (b.vt_video_ecommerce  ? b.vt_video_ecommerce_nb  : 0)
        + (b.vt_video_lifestyle ? b.vt_video_lifestyle_nb : 0);
 }
 
@@ -478,7 +478,7 @@ function renderList() {
     if (b.vt_ecommerce) tags.push('<span class="tag tag-ecom">E-commerce</span>');
     if (b.vt_lifestyle) tags.push('<span class="tag tag-life">Lifestyle</span>');
     if (b.vt_packshot)  tags.push('<span class="tag tag-pack">Packshot</span>');
-    if (b.vt_video_packshot)  tags.push('<span class="tag tag-video">🎬 V. Packshot</span>');
+    if (b.vt_video_ecommerce)  tags.push('<span class="tag tag-video">🎬 V. E-commerce</span>');
     if (b.vt_video_lifestyle) tags.push('<span class="tag tag-video">🎬 V. Lifestyle</span>');
     if (b.delai === '48h') tags.push('<span class="tag tag-urgent">⚡ 48h</span>');
     const tv = totalVisuels(b);
@@ -537,7 +537,7 @@ function openDetail(id) {
 
   // Types de vidéos actifs
   const videos = [];
-  if (b.vt_video_packshot)  videos.push({name:'Vidéo Packshot',  n:b.vt_video_packshot_nb});
+  if (b.vt_video_ecommerce)  videos.push({name:'Vidéo E-commerce',  n:b.vt_video_ecommerce_nb});
   if (b.vt_video_lifestyle) videos.push({name:'Vidéo Lifestyle', n:b.vt_video_lifestyle_nb});
   const totalVid = videos.reduce((s,t) => s + (t.n||0), 0);
 
@@ -640,7 +640,7 @@ function copyLink() {
 
 function exportCSV(){
   if(!allBriefs.length){alert('Aucun brief à exporter.');return;}
-  const cols=['name','brand','email','phone','vt_ecommerce','vt_ecommerce_looks','vt_ecommerce_visuels','vt_lifestyle','vt_lifestyle_looks','vt_lifestyle_visuels','vt_packshot','vt_packshot_looks','vt_packshot_visuels','vt_video_packshot','vt_video_packshot_nb','vt_video_lifestyle','vt_video_lifestyle_nb','formats','defs','mcat','mperso','delai','ptype','iphone_service','notes','dateDisplay'];
+  const cols=['name','brand','email','phone','vt_ecommerce','vt_ecommerce_looks','vt_ecommerce_visuels','vt_lifestyle','vt_lifestyle_looks','vt_lifestyle_visuels','vt_packshot','vt_packshot_looks','vt_packshot_visuels','vt_video_ecommerce','vt_video_ecommerce_nb','vt_video_lifestyle','vt_video_lifestyle_nb','formats','defs','mcat','mperso','delai','ptype','iphone_service','notes','dateDisplay'];
   const rows=[cols.join(';'),...allBriefs.map(b=>cols.map(c=>{const v=Array.isArray(b[c])?b[c].join('|'):(b[c]||'');return`"${String(v).replace(/"/g,'""')}"`;}).join(';'))];
   const a=document.createElement('a');
   a.href='data:text/csv;charset=utf-8,'+encodeURIComponent('\uFEFF'+rows.join('\n'));
