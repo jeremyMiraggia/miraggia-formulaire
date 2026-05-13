@@ -106,8 +106,10 @@ body { font-family: 'Poppins', sans-serif; background: var(--bg); color: var(--n
 .tag-ecom { background: rgba(0,68,93,0.1); color: var(--abysse); }
 .tag-life { background: rgba(173,200,200,0.4); color: #1a5c5c; }
 .tag-pack { background: rgba(208,167,245,0.3); color: #5c2a9a; }
+.tag-video { background: rgba(208,167,245,0.5); color: #4a1880; }
 .tag-urgent { background: #fff0e0; color: #c05000; }
 .tag-visuels { background: var(--pistache); color: var(--nuit); }
+.tag-videos { background: var(--lilas); color: var(--nuit); }
 .row-date { font-size: 11px; color: var(--muted); flex-shrink: 0; min-width: 60px; text-align: right; }
 .row-arrow { color: #ccc; font-size: 18px; flex-shrink: 0; }
 
@@ -166,6 +168,9 @@ body { font-family: 'Poppins', sans-serif; background: var(--bg); color: var(--n
 .type-card-right { padding: 13px 18px; background: var(--abysse); text-align: center; min-width: 72px; flex-shrink: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; }
 .type-card-num { font-size: 24px; font-weight: 800; color: var(--pistache); line-height: 1; }
 .type-card-lbl { font-size: 9px; font-weight: 700; color: rgba(255,255,255,0.55); text-transform: uppercase; margin-top: 2px; }
+.type-card.video .type-card-name { color: #5c2a9a; }
+.type-card.video .type-card-right { background: #5c2a9a; }
+.type-card.video .type-card-num { color: var(--lilas); }
 
 .tags-row { display: flex; flex-wrap: wrap; gap: 5px; }
 .dtag { font-size: 12px; font-weight: 600; padding: 4px 12px; border-radius: 20px; background: rgba(0,68,93,0.07); color: var(--abysse); }
@@ -269,8 +274,8 @@ body { font-family: 'Poppins', sans-serif; background: var(--bg); color: var(--n
 // CONFIG SUPABASE — à remplir avec vos identifiants
 // (les mêmes que dans miraggia-brief.html)
 // ═══════════════════════════════════════════════
-const SUPABASE_URL = 'https://cxktdducsujgjpuabylw.supabase.co';
-const SUPABASE_ANON_KEY = 'sb_publishable_Y9QUDccG9phPnWIv-_0IdQ_D6jdtGxc';
+const  SUPABASE_URL = 'https://cxktdducsujgjpuabylw.supabase.co';
+const  SUPABASE_ANON_KEY = 'sb_publishable_Y9QUDccG9phPnWIv-_0IdQ_D6jdtGxc';
 
 // ═══════════════════════════════════════════════
 // HELPERS
@@ -383,6 +388,10 @@ function normalize(raw) {
     vt_packshot: !!raw.vt_packshot,
     vt_packshot_looks: raw.vt_packshot_looks || 0,
     vt_packshot_visuels: raw.vt_packshot_visuels || 0,
+    vt_video_packshot: !!raw.vt_video_packshot,
+    vt_video_packshot_nb: raw.vt_video_packshot_nb || 0,
+    vt_video_lifestyle: !!raw.vt_video_lifestyle,
+    vt_video_lifestyle_nb: raw.vt_video_lifestyle_nb || 0,
     formats: Array.isArray(raw.formats) ? raw.formats : [],
     format_autre: raw.format_autre || '',
     defs: Array.isArray(raw.defs) ? raw.defs : [],
@@ -401,6 +410,11 @@ function totalVisuels(b) {
   return (b.vt_ecommerce ? b.vt_ecommerce_looks * b.vt_ecommerce_visuels : 0)
        + (b.vt_lifestyle  ? b.vt_lifestyle_looks  * b.vt_lifestyle_visuels  : 0)
        + (b.vt_packshot   ? b.vt_packshot_looks   * b.vt_packshot_visuels   : 0);
+}
+
+function totalVideos(b) {
+  return (b.vt_video_packshot  ? b.vt_video_packshot_nb  : 0)
+       + (b.vt_video_lifestyle ? b.vt_video_lifestyle_nb : 0);
 }
 
 async function load() {
@@ -464,9 +478,13 @@ function renderList() {
     if (b.vt_ecommerce) tags.push('<span class="tag tag-ecom">E-commerce</span>');
     if (b.vt_lifestyle) tags.push('<span class="tag tag-life">Lifestyle</span>');
     if (b.vt_packshot)  tags.push('<span class="tag tag-pack">Packshot</span>');
+    if (b.vt_video_packshot)  tags.push('<span class="tag tag-video">🎬 V. Packshot</span>');
+    if (b.vt_video_lifestyle) tags.push('<span class="tag tag-video">🎬 V. Lifestyle</span>');
     if (b.delai === '48h') tags.push('<span class="tag tag-urgent">⚡ 48h</span>');
     const tv = totalVisuels(b);
-    if (tv > 0) tags.push(`<span class="tag tag-visuels">${tv} visuels</span>`);
+    const tvid = totalVideos(b);
+    if (tv > 0)  tags.push(`<span class="tag tag-visuels">${tv} visuels</span>`);
+    if (tvid > 0) tags.push(`<span class="tag tag-videos">${tvid} vidéos</span>`);
 
     return `<div class="brief-row" onclick="openDetail(${b.id})">
       <div class="avatar">${initials(b.name)}</div>
@@ -517,6 +535,26 @@ function openDetail(id) {
     </div>`;
   }).join('');
 
+  // Types de vidéos actifs
+  const videos = [];
+  if (b.vt_video_packshot)  videos.push({name:'Vidéo Packshot',  n:b.vt_video_packshot_nb});
+  if (b.vt_video_lifestyle) videos.push({name:'Vidéo Lifestyle', n:b.vt_video_lifestyle_nb});
+  const totalVid = videos.reduce((s,t) => s + (t.n||0), 0);
+
+  const videoCards = videos.map(t => {
+    const n = t.n || 0;
+    return `<div class="type-card video">
+      <div class="type-card-left">
+        <div class="type-card-name">${esc(t.name)}</div>
+        <div class="type-card-detail">${n} vidéo${n!==1?'s':''} demandée${n!==1?'s':''}</div>
+      </div>
+      <div class="type-card-right">
+        <div class="type-card-num">${n}</div>
+        <div class="type-card-lbl">vidéos</div>
+      </div>
+    </div>`;
+  }).join('');
+
   document.getElementById('detail-content').innerHTML=`
   <div class="detail-header">
     <div class="detail-avatar">${initials(b.name)}</div>
@@ -530,6 +568,11 @@ function openDetail(id) {
   ${types.length?`<div class="dsection">
     <div class="dsection-title">📸 Types de visuels — ${total} visuels au total</div>
     <div class="dsection-body"><div class="type-cards">${typeCards}</div></div>
+  </div>`:''}
+
+  ${videos.length?`<div class="dsection">
+    <div class="dsection-title">🎬 Types de vidéos — ${totalVid} vidéo${totalVid!==1?'s':''} au total</div>
+    <div class="dsection-body"><div class="type-cards">${videoCards}</div></div>
   </div>`:''}
 
   <div class="dsection">
@@ -597,7 +640,7 @@ function copyLink() {
 
 function exportCSV(){
   if(!allBriefs.length){alert('Aucun brief à exporter.');return;}
-  const cols=['name','brand','email','phone','vt_ecommerce','vt_ecommerce_looks','vt_ecommerce_visuels','vt_lifestyle','vt_lifestyle_looks','vt_lifestyle_visuels','vt_packshot','vt_packshot_looks','vt_packshot_visuels','formats','defs','mcat','mperso','delai','ptype','iphone_service','notes','dateDisplay'];
+  const cols=['name','brand','email','phone','vt_ecommerce','vt_ecommerce_looks','vt_ecommerce_visuels','vt_lifestyle','vt_lifestyle_looks','vt_lifestyle_visuels','vt_packshot','vt_packshot_looks','vt_packshot_visuels','vt_video_packshot','vt_video_packshot_nb','vt_video_lifestyle','vt_video_lifestyle_nb','formats','defs','mcat','mperso','delai','ptype','iphone_service','notes','dateDisplay'];
   const rows=[cols.join(';'),...allBriefs.map(b=>cols.map(c=>{const v=Array.isArray(b[c])?b[c].join('|'):(b[c]||'');return`"${String(v).replace(/"/g,'""')}"`;}).join(';'))];
   const a=document.createElement('a');
   a.href='data:text/csv;charset=utf-8,'+encodeURIComponent('\uFEFF'+rows.join('\n'));
