@@ -811,11 +811,16 @@ function openPrestationDetail(id){
     ? `<button class="linked-brief" onclick="openDetail(${p.brief_id})">📥 Voir le brief lié #${p.brief_id}</button>` : '';
 
   const mannequinsArr = arr(p.mannequins).length ? arr(p.mannequins) : (p.mannequin ? [p.mannequin] : []);
-  let castingTxt = '—';
-  if (p.casting_type === 'miraggia') castingTxt = 'Mannequin(s) catalogue Miraggia';
-  else if (p.casting_type === 'custom') castingTxt = 'Casting personnalisé (sur inspiration)';
+  const castingParts = [];
+  if (mannequinsArr.length) castingParts.push('Catalogue Miraggia');
+  if (arr(p.mannequin_inspi).length) castingParts.push('Casting personnalisé');
+  const castingTxt = castingParts.length ? castingParts.join(' + ') : (p.casting_type || '—');
 
-  const fondTypeLabel = { miraggia:'Catalogue Miraggia', propre:'Fond propre', inspiration:'Inspiration' }[p.fond_type] || '—';
+  const fondParts = [];
+  if (arr(p.fonds).length) fondParts.push('Catalogue Miraggia');
+  if (p.fond_link) fondParts.push('Fond propre');
+  if (arr(p.fond_inspi).length || p.fond_desc) fondParts.push('Inspiration');
+  const fondTypeLabel = fondParts.length ? fondParts.join(' + ') : (p.fond_type || '—');
 
   document.getElementById('detail-content').innerHTML = `
   <div class="detail-header">

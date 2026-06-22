@@ -161,7 +161,7 @@
     }
     .radio-opt:hover { border-color: var(--navy); }
     .radio-opt.selected { border-color: var(--navy); background: rgba(13,79,107,0.04); }
-    .radio-opt input[type="radio"] { accent-color: var(--navy); }
+    .radio-opt input[type="radio"], .radio-opt input[type="checkbox"] { accent-color: var(--navy); width: 16px; height: 16px; flex-shrink: 0; }
     .tag {
       display: inline-block;
       font-size: 11px;
@@ -511,14 +511,15 @@
     <div class="section-title"><i class="ti ti-user"></i> Mannequin</div>
     <div class="field">
       <label class="label">Type de casting</label>
+      <span class="sublabel">Vous pouvez combiner les deux.</span>
       <div class="radio-group">
-        <label class="radio-opt" onclick="selectRadio(this,'casting')">
-          <input type="radio" name="casting" value="miraggia" />
+        <label class="radio-opt">
+          <input type="checkbox" name="casting" value="miraggia" onchange="toggleCasting(this)" />
           Mannequin Miraggia
           <span class="tag">catalogue</span>
         </label>
-        <label class="radio-opt" onclick="selectRadio(this,'casting')">
-          <input type="radio" name="casting" value="custom" />
+        <label class="radio-opt">
+          <input type="checkbox" name="casting" value="custom" onchange="toggleCasting(this)" />
           Casting personnalisé
           <span class="tag">sur inspiration</span>
         </label>
@@ -551,18 +552,19 @@
   <!-- ── 4. FOND DE SCÈNE ───────────────────────────────────────────────── -->
   <div class="section">
     <div class="section-title"><i class="ti ti-layout"></i> Fond de scène</div>
+    <span class="sublabel">Vous pouvez en combiner plusieurs (catalogue + votre fond + inspiration).</span>
     <div class="fond-type-row">
-      <div class="fond-type-card" onclick="selectFondType(this,'miraggia')">
+      <div class="fond-type-card" data-type="miraggia" onclick="toggleFondType(this,'miraggia')">
         <i class="ti ti-stars"></i>
         <div class="fond-type-label">Catalogue Miraggia</div>
         <div class="fond-type-sub">Nos fonds curatés</div>
       </div>
-      <div class="fond-type-card" onclick="selectFondType(this,'propre')">
+      <div class="fond-type-card" data-type="propre" onclick="toggleFondType(this,'propre')">
         <i class="ti ti-upload"></i>
         <div class="fond-type-label">Votre propre fond</div>
         <div class="fond-type-sub">Upload ou lien</div>
       </div>
-      <div class="fond-type-card" onclick="selectFondType(this,'inspiration')">
+      <div class="fond-type-card" data-type="inspiration" onclick="toggleFondType(this,'inspiration')">
         <i class="ti ti-bulb"></i>
         <div class="fond-type-label">Inspiration</div>
         <div class="fond-type-sub">URL ou description</div>
@@ -879,26 +881,19 @@ function buildPoses() {
   });
 }
 
-// Radio casting
-function selectRadio(el, group) {
-  el.closest('.radio-group').querySelectorAll('.radio-opt').forEach(o => o.classList.remove('selected'));
-  el.classList.add('selected');
-  const val = el.querySelector('input').value;
-  if (group === 'casting') {
-    document.getElementById('miraggia-mannequins').style.display = val === 'miraggia' ? 'block' : 'none';
-    document.getElementById('custom-casting').style.display      = val === 'custom'   ? 'block' : 'none';
-  }
+// Casting — cumulable : Mannequin Miraggia ET/OU casting personnalisé
+function toggleCasting(input) {
+  input.closest('.radio-opt').classList.toggle('selected', input.checked);
+  const id = input.value === 'miraggia' ? 'miraggia-mannequins' : 'custom-casting';
+  document.getElementById(id).style.display = input.checked ? 'block' : 'none';
 }
 
-// Fond type
-let selectedFondType = '';
-function selectFondType(el, type) {
-  selectedFondType = type;
-  document.querySelectorAll('.fond-type-card').forEach(c => c.classList.remove('selected'));
-  el.classList.add('selected');
-  document.getElementById('fonds-miraggia').style.display    = type === 'miraggia'    ? 'block' : 'none';
-  document.getElementById('fonds-propre').style.display      = type === 'propre'      ? 'block' : 'none';
-  document.getElementById('fonds-inspiration').style.display = type === 'inspiration' ? 'block' : 'none';
+// Fond — cumulable : catalogue ET/OU propre ET/OU inspiration
+function toggleFondType(el, type) {
+  el.classList.toggle('selected');
+  const on = el.classList.contains('selected');
+  const id = { miraggia:'fonds-miraggia', propre:'fonds-propre', inspiration:'fonds-inspiration' }[type];
+  document.getElementById(id).style.display = on ? 'block' : 'none';
 }
 
 // Upload fond
@@ -982,20 +977,22 @@ function collectPrestation(){
   let ratio = pillValue('ratio-group');
   if (ratio === 'Personnalisé') ratio = val('ratio_custom') || 'Personnalisé';
   const nb = parseInt(val('nb_visuels'));
+  const casting = [...document.querySelectorAll('input[name="casting"]:checked')].map(c => c.value);
+  const fondTypes = [...document.querySelectorAll('.fond-type-card.selected')].map(c => c.dataset.type);
   return {
     brief_id:        briefId,
     brand_name:      val('brand_name'),
     contact_name:    val('contact_name'),
     contact_email:   val('contact_email'),
     members:         members,
-    casting_type:    (document.querySelector('input[name="casting"]:checked') || {}).value || '',
-    mannequins:      cardNames('#mannequin-grid .mannequin-card.selected'),
-    mannequin_inspi: inputValues('inspi-list'),
-    fond_type:       selectedFondType,
-    fonds:           cardNames('#fonds-grid .fond-card.selected'),
-    fond_link:       val('fond_link'),
-    fond_inspi:      inputValues('fond-inspi-list'),
-    fond_desc:       val('fond_description'),
+    casting_type:    casting.join(','),
+    mannequins:      casting.includes('miraggia') ? cardNames('#mannequin-grid .mannequin-card.selected') : [],
+    mannequin_inspi: casting.includes('custom')   ? inputValues('inspi-list') : [],
+    fond_type:       fondTypes.join(','),
+    fonds:           fondTypes.includes('miraggia')    ? cardNames('#fonds-grid .fond-card.selected') : [],
+    fond_link:       fondTypes.includes('propre')      ? val('fond_link') : '',
+    fond_inspi:      fondTypes.includes('inspiration') ? inputValues('fond-inspi-list') : [],
+    fond_desc:       fondTypes.includes('inspiration') ? val('fond_description') : '',
     poses:           cardNames('#pose-grid .pose-card.selected'),
     format:          pillValue('format-group'),
     resolution:      pillValue('resolution-group'),
