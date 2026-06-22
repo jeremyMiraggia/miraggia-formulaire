@@ -181,7 +181,27 @@ body { font-family: 'Poppins', sans-serif; background: var(--bg); color: var(--n
   font-size: 13px; line-height: 1.7; font-style: italic; color: var(--nuit);
 }
 
-.detail-actions { display: flex; justify-content: space-between; align-items: center; padding: 18px 0 0; }
+.detail-actions { display: flex; justify-content: space-between; align-items: center; padding: 18px 0 0; gap: 10px; flex-wrap: wrap; }
+.detail-actions-right { display: flex; gap: 8px; flex-wrap: wrap; }
+
+/* TABS */
+.tabs { display: flex; gap: 4px; margin-bottom: 22px; border-bottom: 1px solid var(--border); }
+.tab {
+  padding: 11px 20px; font-size: 13px; font-weight: 600; color: var(--muted);
+  cursor: pointer; border: none; background: none; font-family: 'Poppins', sans-serif;
+  border-bottom: 2px solid transparent; margin-bottom: -1px; transition: color 0.15s;
+  display: inline-flex; align-items: center; gap: 7px;
+}
+.tab:hover { color: var(--nuit); }
+.tab.active { color: var(--abysse); border-bottom-color: var(--abysse); }
+.tab-count { font-size: 11px; font-weight: 700; background: var(--bg); color: var(--muted); padding: 1px 8px; border-radius: 20px; }
+.tab.active .tab-count { background: rgba(0,68,93,0.1); color: var(--abysse); }
+.linked-brief {
+  display: inline-flex; align-items: center; gap: 6px; font-size: 12px; font-weight: 600;
+  color: var(--abysse); cursor: pointer; background: rgba(0,68,93,0.06);
+  border: none; border-radius: var(--rs); padding: 7px 14px; font-family: 'Poppins', sans-serif;
+}
+.linked-brief:hover { background: rgba(0,68,93,0.12); }
 
 /* CONFIG WARNING */
 .config-warning {
@@ -214,7 +234,13 @@ body { font-family: 'Poppins', sans-serif; background: var(--bg); color: var(--n
 
 <div class="main">
 
-  <!-- ══════════════ LIST VIEW ══════════════ -->
+  <!-- ══════════════ ONGLETS ══════════════ -->
+  <div class="tabs" id="tabs">
+    <button class="tab active" data-tab="briefs" onclick="switchTab('briefs')">📥 Briefs <span class="tab-count" id="tab-count-briefs">0</span></button>
+    <button class="tab" data-tab="prestations" onclick="switchTab('prestations')">🎬 Prestations <span class="tab-count" id="tab-count-prestas">0</span></button>
+  </div>
+
+  <!-- ══════════════ LIST VIEW (BRIEFS) ══════════════ -->
   <div id="list-view" class="list-view">
 
     <div id="config-warning-zone"></div>
@@ -259,6 +285,19 @@ body { font-family: 'Poppins', sans-serif; background: var(--bg); color: var(--n
     <!-- Liste des briefs -->
     <div id="brief-list"></div>
 
+  </div>
+
+  <!-- ══════════════ LIST VIEW (PRESTATIONS) ══════════════ -->
+  <div id="prestation-view" class="list-view" style="display:none;">
+    <div class="config-warning" style="background:#eef6f8;border-color:var(--brume);color:#1a5c5c;">
+      💡 Les fiches de prestation sont remplies par les marques après signature.
+      Pour en envoyer une, ouvrez un brief et cliquez sur <strong>« Copier le lien prestation »</strong>.
+    </div>
+    <div class="search-row">
+      <input type="text" id="presta-search" class="search-input" placeholder="Rechercher par marque, contact, email…" oninput="renderPrestaList()">
+      <span class="result-count" id="presta-count"></span>
+    </div>
+    <div id="presta-list"></div>
   </div>
 
   <!-- ══════════════ DETAIL VIEW ══════════════ -->
@@ -315,6 +354,8 @@ const delaiLabels = {
 // STATE
 // ═══════════════════════════════════════════════
 let allBriefs = [];
+let allPrestas = [];
+let currentTab = 'briefs';
 let configOk = false;
 
 // ═══════════════════════════════════════════════
@@ -371,6 +412,40 @@ async function deleteBriefFromDB(id) {
   }
 }
 
+async function fetchPrestations() {
+  if (!configOk) return [];
+  try {
+    const res = await fetch(`${SUPABASE_URL}/rest/v1/prestations?select=*&order=created_at.desc`, {
+      headers: {
+        'apikey': SUPABASE_ANON_KEY,
+        'Authorization': `Bearer ${SUPABASE_ANON_KEY}`
+      }
+    });
+    if (!res.ok) throw new Error('HTTP ' + res.status);
+    return await res.json();
+  } catch (e) {
+    console.error('Fetch prestations failed:', e);
+    return [];
+  }
+}
+
+async function deletePrestaFromDB(id) {
+  if (!configOk) return false;
+  try {
+    const res = await fetch(`${SUPABASE_URL}/rest/v1/prestations?id=eq.${encodeURIComponent(id)}`, {
+      method: 'DELETE',
+      headers: {
+        'apikey': SUPABASE_ANON_KEY,
+        'Authorization': `Bearer ${SUPABASE_ANON_KEY}`
+      }
+    });
+    return res.ok;
+  } catch (e) {
+    console.error('Delete presta failed:', e);
+    return false;
+  }
+}
+
 // Normalise un brief Supabase vers la forme attendue par l'UI
 function normalize(raw) {
   return {
@@ -418,8 +493,10 @@ function totalVideos(b) {
 }
 
 async function load() {
-  const raw = await fetchBriefs();
-  allBriefs = raw.map(normalize);
+  checkConfig();
+  const [rawB, rawP] = await Promise.all([fetchBriefs(), fetchPrestations()]);
+  allBriefs = rawB.map(normalize);
+  allPrestas = rawP;
 }
 
 // ═══════════════════════════════════════════════
@@ -436,6 +513,9 @@ function updateKPIs() {
   document.getElementById('kpi-week').textContent = week;
   document.getElementById('kpi-visuels').textContent = visuels;
   document.getElementById('kpi-urgent').textContent = urgent;
+
+  document.getElementById('tab-count-briefs').textContent = allBriefs.length;
+  document.getElementById('tab-count-prestas').textContent = allPrestas.length;
 }
 
 // ═══════════════════════════════════════════════
@@ -506,7 +586,8 @@ function openDetail(id) {
   const b = allBriefs.find(x => x.id === id);
   if (!b) return;
 
-  document.getElementById('list-view').classList.add('hidden');
+  document.getElementById('list-view').style.display = 'none';
+  document.getElementById('prestation-view').style.display = 'none';
   document.getElementById('detail-view').classList.add('active');
   window.scrollTo({ top: 0, behavior: 'smooth' });
 
@@ -607,13 +688,16 @@ function openDetail(id) {
 
   <div class="detail-actions">
     <button class="btn btn-danger" onclick="deleteBrief(${b.id})">✕ Supprimer</button>
-    <a href="mailto:${esc(b.email)}?subject=Votre%20devis%20Miraggia%20%E2%80%94%20${encodeURIComponent(b.brand||'')}&body=Bonjour%20${encodeURIComponent(b.name||'')}%2C%0A%0AMerci%20pour%20votre%20brief.%0A%0ACordialement%2C%0AL%27%C3%A9quipe%20Miraggia" class="btn btn-abysse" style="text-decoration:none;">✉ Répondre par email</a>
+    <div class="detail-actions-right">
+      <button class="btn btn-ghost" style="background:var(--pistache);color:var(--nuit);border:none;" onclick="copyPrestaLink(${b.id}, this)">🔗 Copier le lien prestation</button>
+      <a href="mailto:${esc(b.email)}?subject=Votre%20devis%20Miraggia%20%E2%80%94%20${encodeURIComponent(b.brand||'')}&body=Bonjour%20${encodeURIComponent(b.name||'')}%2C%0A%0AMerci%20pour%20votre%20brief.%0A%0ACordialement%2C%0AL%27%C3%A9quipe%20Miraggia" class="btn btn-abysse" style="text-decoration:none;">✉ Répondre par email</a>
+    </div>
   </div>`;
 }
 
 function closeDetail(){
   document.getElementById('detail-view').classList.remove('active');
-  document.getElementById('list-view').classList.remove('hidden');
+  switchTab(currentTab);
 }
 
 async function deleteBrief(id) {
@@ -638,6 +722,185 @@ function copyLink() {
   }).catch(() => { document.getElementById('form-url-input').select(); });
 }
 
+function copyPrestaLink(id, btn){
+  const url = window.location.href.split('?')[0].replace(/[^/]*$/, 'miraggia-prestation.html') + '?brief=' + id;
+  navigator.clipboard.writeText(url).then(() => {
+    const o = btn.innerHTML; btn.innerHTML = '✓ Lien copié !';
+    setTimeout(() => { btn.innerHTML = o; }, 2000);
+  }).catch(() => { prompt('Copiez ce lien et envoyez-le à la marque :', url); });
+}
+
+// ═══════════════════════════════════════════════
+// ONGLETS
+// ═══════════════════════════════════════════════
+function switchTab(tab){
+  currentTab = tab;
+  document.getElementById('detail-view').classList.remove('active');
+  document.querySelectorAll('.tab').forEach(t => t.classList.toggle('active', t.dataset.tab === tab));
+  document.getElementById('list-view').style.display = tab === 'briefs' ? '' : 'none';
+  document.getElementById('prestation-view').style.display = tab === 'prestations' ? '' : 'none';
+  if (tab === 'prestations') renderPrestaList();
+  window.scrollTo({ top: 0 });
+}
+
+// ═══════════════════════════════════════════════
+// PRESTATIONS — liste & détail
+// ═══════════════════════════════════════════════
+function renderPrestaList(){
+  const q = (document.getElementById('presta-search').value || '').toLowerCase().trim();
+  const filtered = !q ? allPrestas : allPrestas.filter(p =>
+    (p.brand_name||'').toLowerCase().includes(q) ||
+    (p.contact_name||'').toLowerCase().includes(q) ||
+    (p.contact_email||'').toLowerCase().includes(q)
+  );
+
+  document.getElementById('presta-count').textContent = allPrestas.length
+    ? `${filtered.length} / ${allPrestas.length} fiche${allPrestas.length>1?'s':''}` : '';
+
+  const list = document.getElementById('presta-list');
+  if (!allPrestas.length){
+    list.innerHTML = `<div class="empty">
+      <div class="empty-icon">🎬</div>
+      <div class="empty-title">Aucune fiche de prestation</div>
+      <div class="empty-text">Ouvrez un brief signé et cliquez sur « Copier le lien prestation »<br>pour que la marque remplisse sa fiche de production.</div>
+    </div>`;
+    return;
+  }
+  if (!filtered.length){
+    list.innerHTML = `<div class="empty">
+      <div class="empty-icon">🔍</div>
+      <div class="empty-title">Aucun résultat</div>
+      <div class="empty-text">Aucune fiche ne correspond à « ${esc(q)} ».</div>
+    </div>`;
+    return;
+  }
+
+  list.innerHTML = filtered.map(p => {
+    const tags = [];
+    if (p.mannequin) tags.push(`<span class="tag tag-life">🧍 ${esc(p.mannequin)}</span>`);
+    else if (p.casting_type === 'custom') tags.push('<span class="tag tag-pack">Casting perso</span>');
+    if (p.format) tags.push(`<span class="tag tag-ecom">${esc(p.format)}</span>`);
+    if (p.nb_visuels) tags.push(`<span class="tag tag-visuels">${p.nb_visuels} visuels</span>`);
+    return `<div class="brief-row" onclick="openPrestationDetail(${p.id})">
+      <div class="avatar">${initials(p.brand_name||p.contact_name)}</div>
+      <div class="row-info">
+        <div class="row-name">${esc(p.brand_name||'—')}</div>
+        <div class="row-meta">${esc(p.contact_name||'')}${p.contact_email?' · '+esc(p.contact_email):''}</div>
+      </div>
+      <div class="row-tags">${tags.join('')}</div>
+      <div class="row-date">${esc(formatDate(p.created_at))}</div>
+      <div class="row-arrow">›</div>
+    </div>`;
+  }).join('');
+}
+
+function openPrestationDetail(id){
+  const p = allPrestas.find(x => x.id === id);
+  if (!p) return;
+
+  document.getElementById('list-view').style.display = 'none';
+  document.getElementById('prestation-view').style.display = 'none';
+  document.getElementById('detail-view').classList.add('active');
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+
+  const arr = a => Array.isArray(a) ? a : [];
+  const tagList = items => items.length ? `<div class="tags-row">${items.map(x=>`<span class="dtag">${esc(x)}</span>`).join('')}</div>` : '—';
+  const members = arr(p.members);
+  const linkedBrief = (p.brief_id && allBriefs.some(b => b.id === p.brief_id))
+    ? `<button class="linked-brief" onclick="openDetail(${p.brief_id})">📥 Voir le brief lié #${p.brief_id}</button>` : '';
+
+  let castingTxt = '—';
+  if (p.casting_type === 'miraggia') castingTxt = p.mannequin ? `Mannequin catalogue : <strong>${esc(p.mannequin)}</strong>` : 'Mannequin catalogue Miraggia';
+  else if (p.casting_type === 'custom') castingTxt = 'Casting personnalisé (sur inspiration)';
+
+  const fondTypeLabel = { miraggia:'Catalogue Miraggia', propre:'Fond propre', inspiration:'Inspiration' }[p.fond_type] || '—';
+
+  document.getElementById('detail-content').innerHTML = `
+  <div class="detail-header">
+    <div class="detail-avatar">${initials(p.brand_name||p.contact_name)}</div>
+    <div>
+      <div class="detail-name">${esc(p.brand_name||'—')}</div>
+      <div class="detail-sub">${esc(p.contact_name||'')}${p.contact_email?' · '+esc(p.contact_email):''}</div>
+    </div>
+    <div class="detail-date">${esc(formatDateLong(p.created_at))}</div>
+  </div>
+
+  ${members.length?`<div class="dsection">
+    <div class="dsection-title">👥 Équipe projet</div>
+    <div class="dsection-body"><div class="tags-row">
+      ${members.map(m=>`<span class="dtag">${esc(m.name||'')}${m.role?' — '+esc(m.role):''}${m.email?' · '+esc(m.email):''}</span>`).join('')}
+    </div></div>
+  </div>`:''}
+
+  <div class="dsection">
+    <div class="dsection-title">🧍 Mannequin</div>
+    <div class="dsection-body">
+      <div class="dfield-value">${castingTxt}</div>
+      ${arr(p.mannequin_inspi).length?`<div style="margin-top:12px;"><div class="dfield-label">Inspirations</div>${tagList(arr(p.mannequin_inspi))}</div>`:''}
+    </div>
+  </div>
+
+  <div class="dsection">
+    <div class="dsection-title">🎨 Fond de scène</div>
+    <div class="dsection-body">
+      <div class="dfield-grid">
+        <div><div class="dfield-label">Type</div><div class="dfield-value">${esc(fondTypeLabel)}</div></div>
+        ${arr(p.fonds).length?`<div><div class="dfield-label">Fonds choisis</div><div class="dfield-value">${tagList(arr(p.fonds))}</div></div>`:''}
+        ${p.fond_link?`<div><div class="dfield-label">Lien fichier</div><div class="dfield-value"><a href="${esc(p.fond_link)}" target="_blank" rel="noopener">${esc(p.fond_link)}</a></div></div>`:''}
+        ${arr(p.fond_inspi).length?`<div><div class="dfield-label">Inspirations</div><div class="dfield-value">${tagList(arr(p.fond_inspi))}</div></div>`:''}
+      </div>
+      ${p.fond_desc?`<div style="margin-top:12px;"><div class="dfield-label">Ambiance souhaitée</div><div class="notes-block">${esc(p.fond_desc)}</div></div>`:''}
+    </div>
+  </div>
+
+  ${arr(p.poses).length?`<div class="dsection">
+    <div class="dsection-title">🤸 Poses</div>
+    <div class="dsection-body">${tagList(arr(p.poses))}</div>
+  </div>`:''}
+
+  <div class="dsection">
+    <div class="dsection-title">🖼️ Format & qualité</div>
+    <div class="dsection-body">
+      <div class="dfield-grid">
+        <div><div class="dfield-label">Format</div><div class="dfield-value">${esc(p.format||'—')}</div></div>
+        <div><div class="dfield-label">Résolution</div><div class="dfield-value">${esc(p.resolution||'—')}</div></div>
+        <div><div class="dfield-label">Ratio</div><div class="dfield-value">${esc(p.ratio||'—')}</div></div>
+        <div><div class="dfield-label">Nb visuels</div><div class="dfield-value accent">${p.nb_visuels||'—'}</div></div>
+      </div>
+      ${p.precisions?`<div style="margin-top:12px;"><div class="dfield-label">Précisions techniques</div><div class="notes-block">${esc(p.precisions)}</div></div>`:''}
+    </div>
+  </div>
+
+  ${(p.deadline||p.launch_date||p.planning_notes)?`<div class="dsection">
+    <div class="dsection-title">📅 Planning</div>
+    <div class="dsection-body">
+      <div class="dfield-grid">
+        <div><div class="dfield-label">Date limite</div><div class="dfield-value">${esc(p.deadline||'—')}</div></div>
+        <div><div class="dfield-label">Mise en ligne</div><div class="dfield-value">${esc(p.launch_date||'—')}</div></div>
+      </div>
+      ${p.planning_notes?`<div style="margin-top:12px;"><div class="notes-block">${esc(p.planning_notes)}</div></div>`:''}
+    </div>
+  </div>`:''}
+
+  <div class="detail-actions">
+    <button class="btn btn-danger" onclick="deletePresta(${p.id})">✕ Supprimer</button>
+    <div class="detail-actions-right">
+      ${linkedBrief}
+      <a href="mailto:${esc(p.contact_email)}?subject=Votre%20production%20Miraggia%20%E2%80%94%20${encodeURIComponent(p.brand_name||'')}" class="btn btn-abysse" style="text-decoration:none;">✉ Contacter</a>
+    </div>
+  </div>`;
+}
+
+async function deletePresta(id){
+  if (!confirm('Supprimer cette fiche de prestation définitivement ?')) return;
+  const ok = await deletePrestaFromDB(id);
+  if (!ok){ alert('La suppression a échoué.'); return; }
+  await load();
+  updateKPIs();
+  document.getElementById('detail-view').classList.remove('active');
+  switchTab('prestations');
+}
+
 function exportCSV(){
   if(!allBriefs.length){alert('Aucun brief à exporter.');return;}
   const cols=['name','brand','email','phone','vt_ecommerce','vt_ecommerce_looks','vt_ecommerce_visuels','vt_lifestyle','vt_lifestyle_looks','vt_lifestyle_visuels','vt_packshot','vt_packshot_looks','vt_packshot_visuels','vt_video_ecommerce','vt_video_ecommerce_nb','vt_video_lifestyle','vt_video_lifestyle_nb','formats','defs','mcat','mperso','delai','ptype','iphone_service','notes','dateDisplay'];
@@ -652,6 +915,7 @@ async function refreshNow() {
   await load();
   updateKPIs();
   renderList();
+  renderPrestaList();
 }
 
 // ═══════════════════════════════════════════════
@@ -660,10 +924,10 @@ async function refreshNow() {
 document.getElementById('form-url-input').value = window.location.href.replace(/[^/]*$/, 'miraggia-brief.html');
 
 // Auto-refresh toutes les 30s
-setInterval(async () => { await load(); updateKPIs(); renderList(); }, 30000);
+setInterval(async () => { await load(); updateKPIs(); renderList(); renderPrestaList(); }, 30000);
 
 // Boot
-(async () => { await load(); updateKPIs(); renderList(); })();
+(async () => { await load(); updateKPIs(); renderList(); renderPrestaList(); })();
 </script>
 </body>
 </html>

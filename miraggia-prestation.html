@@ -1,0 +1,1090 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Miraggia — Brief de production</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@2.44.0/tabler-icons.min.css" />
+  <style>
+    /* ─── TOKENS ──────────────────────────────────────────────────────────── */
+    :root {
+      --navy:       #0D4F6B;
+      --navy-dark:  #0a3d54;
+      --green:      #B8F23A;
+      --bg:         #F7F7F5;
+      --surface:    #FFFFFF;
+      --border:     rgba(0,0,0,0.10);
+      --border-md:  rgba(0,0,0,0.18);
+      --text:       #1A1A1A;
+      --muted:      #6B6B6B;
+      --hint:       #A0A0A0;
+      --radius-sm:  8px;
+      --radius-md:  12px;
+      --radius-lg:  16px;
+    }
+
+    /* ─── RESET ───────────────────────────────────────────────────────────── */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { font-size: 16px; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      min-height: 100vh;
+      padding: 2rem 1rem 4rem;
+    }
+
+    /* ─── LAYOUT ──────────────────────────────────────────────────────────── */
+    .form-wrap {
+      max-width: 680px;
+      margin: 0 auto;
+    }
+    .form-header {
+      margin-bottom: 2rem;
+    }
+    .form-header .brand {
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--navy);
+      margin-bottom: 0.75rem;
+    }
+    .form-header h1 {
+      font-size: 28px;
+      font-weight: 600;
+      color: var(--text);
+      margin-bottom: 0.4rem;
+    }
+    .form-header p {
+      font-size: 15px;
+      color: var(--muted);
+    }
+
+    /* ─── SECTION CARD ────────────────────────────────────────────────────── */
+    .section {
+      background: var(--surface);
+      border: 0.5px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 1.5rem;
+      margin-bottom: 1rem;
+    }
+    .section-title {
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.09em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 1.25rem;
+      display: flex;
+      align-items: center;
+      gap: 7px;
+    }
+    .section-title i { font-size: 15px; }
+
+    /* ─── FIELDS ──────────────────────────────────────────────────────────── */
+    .field { margin-bottom: 1rem; }
+    .field:last-child { margin-bottom: 0; }
+    .label {
+      font-size: 14px;
+      font-weight: 500;
+      color: var(--text);
+      margin-bottom: 6px;
+      display: block;
+    }
+    .sublabel {
+      font-size: 12px;
+      color: var(--muted);
+      margin-bottom: 10px;
+      display: block;
+    }
+    input[type="text"],
+    input[type="email"],
+    input[type="date"],
+    input[type="number"],
+    select,
+    textarea {
+      width: 100%;
+      padding: 9px 12px;
+      border: 0.5px solid var(--border-md);
+      border-radius: var(--radius-sm);
+      font-size: 14px;
+      font-family: inherit;
+      color: var(--text);
+      background: var(--surface);
+      outline: none;
+      transition: border-color 0.15s;
+    }
+    input:focus, select:focus, textarea:focus {
+      border-color: var(--navy);
+      box-shadow: 0 0 0 3px rgba(13,79,107,0.08);
+    }
+    textarea { resize: vertical; min-height: 80px; }
+    select { cursor: pointer; }
+    .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+    .divider { height: 0.5px; background: var(--border); margin: 1.25rem 0; }
+
+    /* ─── PILLS ───────────────────────────────────────────────────────────── */
+    .pill-group { display: flex; flex-wrap: wrap; gap: 8px; }
+    .pill {
+      padding: 7px 16px;
+      border: 0.5px solid var(--border-md);
+      border-radius: 100px;
+      font-size: 13px;
+      font-weight: 500;
+      cursor: pointer;
+      color: var(--text);
+      background: var(--surface);
+      transition: border-color 0.15s, color 0.15s;
+      user-select: none;
+    }
+    .pill:hover { border-color: var(--navy); }
+    .pill.selected { border: 2px solid var(--navy); color: var(--navy); }
+    .pill-custom { display: none; margin-top: 10px; }
+    .pill-custom.visible { display: block; }
+
+    /* ─── RADIO OPTIONS ───────────────────────────────────────────────────── */
+    .radio-group { display: flex; flex-direction: column; gap: 8px; }
+    .radio-opt {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 10px 14px;
+      border: 0.5px solid var(--border-md);
+      border-radius: var(--radius-sm);
+      cursor: pointer;
+      font-size: 14px;
+      color: var(--text);
+      transition: border-color 0.15s;
+      user-select: none;
+    }
+    .radio-opt:hover { border-color: var(--navy); }
+    .radio-opt.selected { border-color: var(--navy); background: rgba(13,79,107,0.04); }
+    .radio-opt input[type="radio"] { accent-color: var(--navy); }
+    .tag {
+      display: inline-block;
+      font-size: 11px;
+      padding: 2px 9px;
+      border-radius: 100px;
+      background: var(--bg);
+      color: var(--muted);
+      border: 0.5px solid var(--border);
+      margin-left: auto;
+    }
+
+    /* ─── REMOVE / ADD BUTTONS ────────────────────────────────────────────── */
+    .remove-btn {
+      background: none;
+      border: 0.5px solid var(--border-md);
+      border-radius: var(--radius-sm);
+      width: 34px;
+      height: 34px;
+      cursor: pointer;
+      color: var(--muted);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 16px;
+      flex-shrink: 0;
+      transition: border-color 0.15s, color 0.15s;
+    }
+    .remove-btn:hover { border-color: #c00; color: #c00; }
+    .add-btn {
+      background: none;
+      border: 0.5px dashed var(--border-md);
+      border-radius: var(--radius-sm);
+      padding: 9px 14px;
+      font-size: 13px;
+      cursor: pointer;
+      color: var(--muted);
+      width: 100%;
+      margin-top: 6px;
+      font-family: inherit;
+      transition: border-color 0.15s, color 0.15s;
+    }
+    .add-btn:hover { border-style: solid; border-color: var(--navy); color: var(--navy); }
+
+    /* ─── TEAM SECTION ────────────────────────────────────────────────────── */
+    .team-header {
+      display: grid;
+      grid-template-columns: 1fr 1fr 150px 34px;
+      gap: 8px;
+      margin-bottom: 6px;
+    }
+    .team-header span { font-size: 11px; color: var(--muted); font-weight: 500; }
+    .team-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr 150px 34px;
+      gap: 8px;
+      align-items: center;
+      margin-bottom: 8px;
+    }
+    .member-pill {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 9px 12px;
+      background: var(--bg);
+      border-radius: var(--radius-sm);
+      margin-bottom: 6px;
+    }
+    .avatar {
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      background: rgba(13,79,107,0.12);
+      color: var(--navy);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 11px;
+      font-weight: 600;
+      flex-shrink: 0;
+    }
+    .member-info { flex: 1; min-width: 0; }
+    .member-name { font-size: 13px; font-weight: 500; color: var(--text); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+    .member-email { font-size: 11px; color: var(--muted); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+    .role-badge {
+      font-size: 11px;
+      padding: 3px 9px;
+      border-radius: 100px;
+      background: var(--surface);
+      border: 0.5px solid var(--border-md);
+      color: var(--muted);
+      white-space: nowrap;
+    }
+    .portail-note {
+      font-size: 12px;
+      color: var(--muted);
+      margin-top: 10px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    /* ─── INSPI ROWS ──────────────────────────────────────────────────────── */
+    .inspi-row {
+      display: flex;
+      gap: 8px;
+      align-items: center;
+      margin-bottom: 8px;
+    }
+    .inspi-row input { flex: 1; }
+
+    /* ══════════════════════════════════════════════════════════════════════
+       MANNEQUINS
+       ─────────────────────────────────────────────────────────────────────
+       Pour ajouter vos mannequins, modifiez le tableau `MANNEQUINS` dans
+       la section <script> en bas de page.
+       Chaque mannequin suit ce format :
+       {
+         name: "Prénom",
+         meta: "1m76 · EU 36",
+         photos: [
+           "https://url-vers/photo-visage.jpg",
+           "https://url-vers/photo-corps.jpg",
+           "https://url-vers/photo-habille.jpg"
+         ]
+       }
+    ══════════════════════════════════════════════════════════════════════ */
+    .mannequin-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; }
+    .mannequin-card {
+      border: 0.5px solid var(--border-md);
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      cursor: pointer;
+      transition: border-color 0.15s;
+    }
+    .mannequin-card:hover { border-color: var(--navy); }
+    .mannequin-card.selected { border: 2px solid var(--navy); }
+    .mannequin-photos { display: flex; overflow-x: auto; scroll-snap-type: x mandatory; scrollbar-width: none; }
+    .mannequin-photos::-webkit-scrollbar { display: none; }
+    .mannequin-photo {
+      min-width: 100%;
+      aspect-ratio: 2/3;
+      background: var(--bg);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      scroll-snap-align: start;
+      overflow: hidden;
+    }
+    .mannequin-photo img { width: 100%; height: 100%; object-fit: cover; pointer-events: none; }
+    .mannequin-photo .placeholder { font-size: 40px; color: var(--hint); }
+    .photo-dots { display: flex; gap: 4px; justify-content: center; padding: 5px 0; }
+    .dot { width: 5px; height: 5px; border-radius: 50%; background: var(--border-md); transition: background 0.15s; }
+    .dot.active { background: var(--navy); }
+    .mannequin-name { font-size: 12px; font-weight: 500; padding: 5px 8px 2px; color: var(--text); }
+    .mannequin-meta { font-size: 11px; padding: 0 8px 8px; color: var(--muted); }
+
+    /* ══════════════════════════════════════════════════════════════════════
+       FONDS
+       ─────────────────────────────────────────────────────────────────────
+       Pour ajouter vos fonds catalogue, modifiez le tableau `FONDS` dans
+       la section <script> en bas de page.
+       Chaque fond suit ce format :
+       {
+         name: "Nom du fond",
+         image: "https://url-vers/fond.jpg"   ← URL de la vignette
+       }
+       Si vous n'avez pas encore d'URL, vous pouvez mettre une couleur CSS
+       dans le champ `color` à la place de `image` :
+       { name: "Blanc studio", color: "#F5F5F5" }
+    ══════════════════════════════════════════════════════════════════════ */
+    .fond-type-row { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; margin-bottom: 1rem; }
+    .fond-type-card {
+      border: 0.5px solid var(--border-md);
+      border-radius: var(--radius-sm);
+      padding: 14px 8px;
+      cursor: pointer;
+      text-align: center;
+      transition: border-color 0.15s;
+    }
+    .fond-type-card:hover { border-color: var(--navy); }
+    .fond-type-card.selected { border: 2px solid var(--navy); }
+    .fond-type-card i { font-size: 22px; color: var(--muted); margin-bottom: 6px; display: block; }
+    .fond-type-card.selected i { color: var(--navy); }
+    .fond-type-label { font-size: 12px; font-weight: 500; color: var(--text); }
+    .fond-type-sub { font-size: 11px; color: var(--muted); margin-top: 2px; }
+    .fonds-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; }
+    .fond-card {
+      border: 0.5px solid var(--border-md);
+      border-radius: var(--radius-sm);
+      overflow: hidden;
+      cursor: pointer;
+      transition: border-color 0.15s;
+    }
+    .fond-card:hover { border-color: var(--navy); }
+    .fond-card.selected { border: 2px solid var(--navy); }
+    .fond-preview { width: 100%; aspect-ratio: 1/1; object-fit: cover; display: block; }
+    .fond-preview.color-block { background: #eee; }
+    .fond-name { font-size: 11px; color: var(--muted); padding: 5px 7px; }
+    .drop-zone {
+      border: 0.5px dashed var(--border-md);
+      border-radius: var(--radius-sm);
+      padding: 2rem 1rem;
+      text-align: center;
+      cursor: pointer;
+      transition: border-color 0.15s;
+    }
+    .drop-zone:hover { border-color: var(--navy); }
+    .drop-zone i { font-size: 26px; color: var(--hint); margin-bottom: 8px; display: block; }
+    .drop-zone-label { font-size: 13px; color: var(--muted); }
+    .drop-zone-sub { font-size: 11px; color: var(--hint); margin-top: 4px; }
+
+    /* ══════════════════════════════════════════════════════════════════════
+       POSES
+       ─────────────────────────────────────────────────────────────────────
+       Pour ajouter vos poses, modifiez le tableau `POSES` dans la section
+       <script> en bas de page.
+       Chaque pose suit ce format :
+       {
+         name: "Nom de la pose",
+         image: "https://url-vers/pose.jpg"   ← URL de la vignette
+       }
+       Sans image, une icône générique sera affichée.
+    ══════════════════════════════════════════════════════════════════════ */
+    .pose-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; }
+    .pose-card {
+      border: 0.5px solid var(--border-md);
+      border-radius: var(--radius-sm);
+      padding: 8px;
+      cursor: pointer;
+      text-align: center;
+      transition: border-color 0.15s;
+      user-select: none;
+    }
+    .pose-card:hover { border-color: var(--navy); }
+    .pose-card.selected { border: 2px solid var(--navy); }
+    .pose-thumb {
+      width: 100%;
+      aspect-ratio: 3/4;
+      background: var(--bg);
+      border-radius: 4px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 6px;
+      overflow: hidden;
+    }
+    .pose-thumb img { width: 100%; height: 100%; object-fit: cover; }
+    .pose-thumb i { font-size: 30px; color: var(--hint); }
+    .pose-label { font-size: 11px; color: var(--muted); }
+
+    /* ─── SUBMIT ──────────────────────────────────────────────────────────── */
+    .submit-section {
+      background: var(--navy);
+      border-radius: var(--radius-lg);
+      padding: 2rem 1.5rem;
+      text-align: center;
+      margin-top: 1.5rem;
+    }
+    .submit-title { color: #fff; font-size: 18px; font-weight: 600; margin-bottom: 6px; }
+    .submit-sub { color: rgba(255,255,255,0.65); font-size: 14px; margin-bottom: 1.25rem; }
+    .submit-btn {
+      background: var(--green);
+      color: var(--navy);
+      border: none;
+      border-radius: var(--radius-sm);
+      padding: 14px 32px;
+      font-size: 15px;
+      font-weight: 600;
+      cursor: pointer;
+      width: 100%;
+      font-family: inherit;
+      transition: opacity 0.15s;
+    }
+    .submit-btn:hover { opacity: 0.88; }
+    .acompte-note { font-size: 12px; color: rgba(255,255,255,0.5); margin-top: 12px; }
+
+    /* ─── RESPONSIVE ──────────────────────────────────────────────────────── */
+    @media (max-width: 540px) {
+      .two-col, .team-row, .team-header { grid-template-columns: 1fr; }
+      .team-row { grid-template-columns: 1fr 1fr 34px; }
+      .team-row select { grid-column: 1 / -2; }
+      .pose-grid { grid-template-columns: repeat(3, 1fr); }
+      .mannequin-grid { grid-template-columns: repeat(2, 1fr); }
+      .fonds-grid { grid-template-columns: repeat(3, 1fr); }
+    }
+  </style>
+</head>
+<body>
+<div class="form-wrap">
+
+  <div class="form-header">
+    <div class="brand">Miraggia</div>
+    <h1>Brief de production</h1>
+    <p>Bienvenue — ce formulaire nous permet de cadrer votre première production ensemble.</p>
+  </div>
+
+  <!-- ── 1. MARQUE ──────────────────────────────────────────────────────── -->
+  <div class="section">
+    <div class="section-title"><i class="ti ti-building-store"></i> Votre marque</div>
+    <div class="two-col">
+      <div class="field">
+        <label class="label">Nom de la marque</label>
+        <input type="text" name="brand_name" placeholder="ex. Maison Léon" />
+      </div>
+      <div class="field">
+        <label class="label">Interlocuteur principal</label>
+        <input type="text" name="contact_name" placeholder="Prénom Nom" />
+      </div>
+    </div>
+    <div class="field">
+      <label class="label">Email</label>
+      <input type="email" name="contact_email" placeholder="vous@marque.com" />
+    </div>
+  </div>
+
+  <!-- ── 2. ÉQUIPE ──────────────────────────────────────────────────────── -->
+  <div class="section">
+    <div class="section-title"><i class="ti ti-users"></i> Équipe projet</div>
+    <span class="sublabel">Ajoutez les personnes à intégrer sur le portail Miraggia.</span>
+    <div id="members-list"></div>
+    <div class="team-header">
+      <span>Prénom Nom</span><span>Email</span><span>Rôle</span><span></span>
+    </div>
+    <div class="team-row">
+      <input type="text" id="new-name" placeholder="Sophie Martin" />
+      <input type="email" id="new-email" placeholder="sophie@marque.com" />
+      <select id="new-role">
+        <option value="">Rôle...</option>
+        <option>Chef de projet</option>
+        <option>Directeur artistique</option>
+        <option>Resp. e-commerce</option>
+        <option>Social media</option>
+        <option>Autre</option>
+      </select>
+      <button class="remove-btn" onclick="addMember()" style="background:var(--navy);border-color:var(--navy);color:#fff;" title="Ajouter">
+        <i class="ti ti-plus"></i>
+      </button>
+    </div>
+    <div class="portail-note">
+      <i class="ti ti-info-circle" style="font-size:14px;"></i>
+      Chaque membre recevra un email d'invitation pour accéder au portail de suivi.
+    </div>
+  </div>
+
+  <!-- ── 3. MANNEQUIN ───────────────────────────────────────────────────── -->
+  <div class="section">
+    <div class="section-title"><i class="ti ti-user"></i> Mannequin</div>
+    <div class="field">
+      <label class="label">Type de casting</label>
+      <div class="radio-group">
+        <label class="radio-opt" onclick="selectRadio(this,'casting')">
+          <input type="radio" name="casting" value="miraggia" />
+          Mannequin Miraggia
+          <span class="tag">catalogue</span>
+        </label>
+        <label class="radio-opt" onclick="selectRadio(this,'casting')">
+          <input type="radio" name="casting" value="custom" />
+          Casting personnalisé
+          <span class="tag">sur inspiration</span>
+        </label>
+      </div>
+    </div>
+
+    <div id="miraggia-mannequins" style="display:none;">
+      <div class="divider"></div>
+      <span class="label" style="display:block;margin-bottom:8px;">Choisissez votre mannequin</span>
+      <span class="sublabel">Swipez les photos pour voir visage, corps et tenue</span>
+      <div class="mannequin-grid" id="mannequin-grid"></div>
+    </div>
+
+    <div id="custom-casting" style="display:none;">
+      <div class="divider"></div>
+      <span class="label" style="display:block;margin-bottom:6px;">Inspirations mannequin</span>
+      <span class="sublabel">Ajoutez un nom ou @profil par inspiration</span>
+      <div id="inspi-list">
+        <div class="inspi-row">
+          <input type="text" placeholder="ex. @name_influencer ou Imaan Hammam" />
+          <button class="remove-btn" onclick="removeInspi(this)"><i class="ti ti-x"></i></button>
+        </div>
+      </div>
+      <button class="add-btn" onclick="addInspi()">
+        <i class="ti ti-plus" style="font-size:13px;margin-right:4px;"></i> Ajouter une inspiration
+      </button>
+    </div>
+  </div>
+
+  <!-- ── 4. FOND DE SCÈNE ───────────────────────────────────────────────── -->
+  <div class="section">
+    <div class="section-title"><i class="ti ti-layout"></i> Fond de scène</div>
+    <div class="fond-type-row">
+      <div class="fond-type-card" onclick="selectFondType(this,'miraggia')">
+        <i class="ti ti-stars"></i>
+        <div class="fond-type-label">Catalogue Miraggia</div>
+        <div class="fond-type-sub">Nos fonds curatés</div>
+      </div>
+      <div class="fond-type-card" onclick="selectFondType(this,'propre')">
+        <i class="ti ti-upload"></i>
+        <div class="fond-type-label">Votre propre fond</div>
+        <div class="fond-type-sub">Upload ou lien</div>
+      </div>
+      <div class="fond-type-card" onclick="selectFondType(this,'inspiration')">
+        <i class="ti ti-bulb"></i>
+        <div class="fond-type-label">Inspiration</div>
+        <div class="fond-type-sub">URL ou description</div>
+      </div>
+    </div>
+
+    <div id="fonds-miraggia" style="display:none;">
+      <span class="sublabel">Sélectionnez un ou plusieurs fonds</span>
+      <div class="fonds-grid" id="fonds-grid"></div>
+    </div>
+
+    <div id="fonds-propre" style="display:none;">
+      <div class="drop-zone" onclick="document.getElementById('fond-upload').click()">
+        <i class="ti ti-cloud-upload"></i>
+        <div class="drop-zone-label">Cliquez pour uploader votre fond</div>
+        <div class="drop-zone-sub">JPG, PNG, TIFF · jusqu'à 50 Mo</div>
+        <input type="file" id="fond-upload" accept="image/*" style="display:none;" onchange="handleFondUpload(this)" />
+      </div>
+      <div id="fond-upload-preview" style="margin-top:10px;"></div>
+      <div class="field" style="margin-top:10px;">
+        <label class="label">Ou lien vers le fichier</label>
+        <input type="text" name="fond_link" placeholder="drive.google.com/... ou wetransfer.com/..." />
+      </div>
+    </div>
+
+    <div id="fonds-inspiration" style="display:none;">
+      <div class="field">
+        <label class="label">Liens ou références visuelles</label>
+        <div id="fond-inspi-list">
+          <div class="inspi-row">
+            <input type="text" placeholder="ex. pinterest.com/... ou @marque Instagram" />
+            <button class="remove-btn" onclick="removeFondInspi(this)"><i class="ti ti-x"></i></button>
+          </div>
+        </div>
+        <button class="add-btn" onclick="addFondInspi()">
+          <i class="ti ti-plus" style="font-size:13px;margin-right:4px;"></i> Ajouter un lien
+        </button>
+      </div>
+      <div class="field" style="margin-top:8px;">
+        <label class="label">Description de l'ambiance souhaitée</label>
+        <textarea name="fond_description"></textarea>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── 5. POSES ───────────────────────────────────────────────────────── -->
+  <div class="section">
+    <div class="section-title"><i class="ti ti-run"></i> Poses</div>
+    <span class="sublabel">Sélectionnez les poses souhaitées pour cette production</span>
+    <div class="pose-grid" id="pose-grid"></div>
+  </div>
+
+  <!-- ── 6. FORMAT & QUALITÉ ────────────────────────────────────────────── -->
+  <div class="section">
+    <div class="section-title"><i class="ti ti-photo"></i> Format & qualité</div>
+
+    <div class="field">
+      <label class="label">Format de livraison</label>
+      <div class="pill-group" id="format-group">
+        <div class="pill" onclick="togglePill(this,'format')">JPG</div>
+        <div class="pill" onclick="togglePill(this,'format')">PNG</div>
+      </div>
+    </div>
+
+    <div class="field">
+      <label class="label">Résolution</label>
+      <div class="pill-group" id="resolution-group">
+        <div class="pill" onclick="togglePill(this,'resolution')">1K</div>
+        <div class="pill" onclick="togglePill(this,'resolution')">2K</div>
+        <div class="pill" onclick="togglePill(this,'resolution')">4K</div>
+      </div>
+    </div>
+
+    <div class="field">
+      <label class="label">Ratio</label>
+      <div class="pill-group" id="ratio-group">
+        <div class="pill" onclick="togglePillRatio(this)">1:1</div>
+        <div class="pill" onclick="togglePillRatio(this)">2:3</div>
+        <div class="pill" onclick="togglePillRatio(this)">3:4</div>
+        <div class="pill" onclick="togglePillRatio(this)">9:16</div>
+        <div class="pill" onclick="togglePillRatio(this)" data-custom="true">Personnalisé</div>
+      </div>
+      <div class="pill-custom" id="ratio-custom">
+        <input type="text" name="ratio_custom" placeholder="ex. 4:5" />
+      </div>
+    </div>
+
+    <div class="field" style="max-width: 200px;">
+      <label class="label">Nombre de visuels</label>
+      <input type="number" name="nb_visuels" placeholder="ex. 20" min="1" />
+    </div>
+
+    <div class="field">
+      <label class="label">Précisions techniques</label>
+      <textarea name="precisions"></textarea>
+    </div>
+  </div>
+
+  <!-- ── 7. PLANNING ────────────────────────────────────────────────────── -->
+  <div class="section">
+    <div class="section-title"><i class="ti ti-calendar"></i> Planning</div>
+    <div class="two-col">
+      <div class="field">
+        <label class="label">Date limite souhaitée</label>
+        <input type="date" name="deadline" />
+      </div>
+      <div class="field">
+        <label class="label">Date de mise en ligne prévue</label>
+        <input type="date" name="launch_date" />
+      </div>
+    </div>
+    <div class="field">
+      <label class="label">Contraintes ou notes de planning</label>
+      <textarea name="planning_notes"></textarea>
+    </div>
+  </div>
+
+  <!-- ── SUBMIT ─────────────────────────────────────────────────────────── -->
+  <div class="submit-section">
+    <p class="submit-title">Finaliser votre fiche de production</p>
+    <p class="submit-sub">En validant, vous confirmez les informations transmises à l'équipe Miraggia pour lancer votre production.</p>
+    <button class="submit-btn" id="submit-btn" onclick="submitPrestation(this)">
+      Valider la fiche de production →
+    </button>
+  </div>
+
+</div><!-- /form-wrap -->
+
+<script>
+/* ════════════════════════════════════════════════════════════════════════════
+   CONFIG SUPABASE — mêmes identifiants que miraggia-brief.html / dashboard
+   ════════════════════════════════════════════════════════════════════════════ */
+const SUPABASE_URL = 'https://cxktdducsujgjpuabylw.supabase.co';
+const SUPABASE_ANON_KEY = 'sb_publishable_Y9QUDccG9phPnWIv-_0IdQ_D6jdtGxc';
+let briefId = null;  // rempli automatiquement depuis ?brief=ID dans l'URL
+
+/* ════════════════════════════════════════════════════════════════════════════
+   DONNÉES À PERSONNALISER
+   ────────────────────────────────────────────────────────────────────────────
+   Modifiez les trois tableaux ci-dessous pour renseigner vos contenus réels.
+   Aucune autre modification n'est nécessaire pour mettre à jour le formulaire.
+   ════════════════════════════════════════════════════════════════════════════ */
+
+/* ── MANNEQUINS ──────────────────────────────────────────────────────────────
+   photos : tableau de 1 à 4 URLs (visage, corps, habillé, détail)
+   Si une URL est vide "", une icône placeholder sera affichée.
+   ─────────────────────────────────────────────────────────────────────────── */
+const MANNEQUINS = [
+  {
+    name: "Sofia",
+    meta: "1m75 · EU 36",
+    photos: ["", "", ""]  // ← remplacez par vos URLs
+  },
+  {
+    name: "Jade",
+    meta: "1m77 · EU 38",
+    photos: ["", "", ""]
+  },
+  {
+    name: "Amara",
+    meta: "1m74 · EU 36",
+    photos: ["", "", ""]
+  },
+  {
+    name: "Lena",
+    meta: "1m78 · EU 38",
+    photos: ["", "", ""]
+  },
+  {
+    name: "Maya",
+    meta: "1m76 · EU 36",
+    photos: ["", "", ""]
+  },
+  {
+    name: "Ines",
+    meta: "1m73 · EU 38",
+    photos: ["", "", ""]
+  },
+];
+
+/* ── FONDS ───────────────────────────────────────────────────────────────────
+   image : URL de la vignette du fond (JPG ou PNG recommandé)
+   color : couleur CSS de secours si pas d'image (optionnel)
+   ─────────────────────────────────────────────────────────────────────────── */
+const FONDS = [
+  { name: "Blanc studio",  image: "", color: "#F5F5F5" },
+  { name: "Grège naturel", image: "", color: "#E8E0D5" },
+  { name: "Sable doux",    image: "", color: "#DDD0BB" },
+  { name: "Béton clair",   image: "", color: "#C8C8C4" },
+  { name: "Noir profond",  image: "", color: "#1A1A1A" },
+  { name: "Terracotta",    image: "", color: "#C4735A" },
+  { name: "Sauge",         image: "", color: "#8FA882" },
+  { name: "Encre marine",  image: "", color: "#1A3D6E" },
+];
+
+/* ── POSES ───────────────────────────────────────────────────────────────────
+   image : URL de la photo de référence de la pose
+   Si vide, une icône générique sera affichée.
+   ─────────────────────────────────────────────────────────────────────────── */
+const POSES = [
+  { name: "Face droite",      image: "" },
+  { name: "Face centrée",     image: "" },
+  { name: "Dos",              image: "" },
+  { name: "3/4 gauche",       image: "" },
+  { name: "3/4 droit",        image: "" },
+  { name: "Détail buste",     image: "" },
+  { name: "Full body",        image: "" },
+  { name: "Mouvement",        image: "" },
+  { name: "Assise",           image: "" },
+  { name: "Marchée",          image: "" },
+  { name: "Mains visibles",   image: "" },
+  { name: "Gros plan bas",    image: "" },
+];
+
+/* ════════════════════════════════════════════════════════════════════════════
+   LOGIQUE — ne pas modifier sauf si vous savez ce que vous faites
+   ════════════════════════════════════════════════════════════════════════════ */
+
+// Équipe
+const members = [];
+function initials(n) { return n.trim().split(/\s+/).map(w=>w[0]).join('').toUpperCase().slice(0,2); }
+function renderMembers() {
+  const list = document.getElementById('members-list');
+  list.innerHTML = '';
+  members.forEach((m, i) => {
+    const el = document.createElement('div');
+    el.className = 'member-pill';
+    el.innerHTML = `
+      <div class="avatar">${initials(m.name)}</div>
+      <div class="member-info">
+        <div class="member-name">${m.name}</div>
+        <div class="member-email">${m.email}</div>
+      </div>
+      <span class="role-badge">${m.role || '—'}</span>
+      <button class="remove-btn" onclick="removeMember(${i})"><i class="ti ti-x"></i></button>
+    `;
+    list.appendChild(el);
+  });
+}
+function addMember() {
+  const name  = document.getElementById('new-name').value.trim();
+  const email = document.getElementById('new-email').value.trim();
+  const role  = document.getElementById('new-role').value;
+  if (!name || !email) return;
+  members.push({ name, email, role });
+  document.getElementById('new-name').value = '';
+  document.getElementById('new-email').value = '';
+  document.getElementById('new-role').value = '';
+  renderMembers();
+}
+function removeMember(i) { members.splice(i, 1); renderMembers(); }
+
+// Mannequins
+function buildMannequins() {
+  const grid = document.getElementById('mannequin-grid');
+  MANNEQUINS.forEach(m => {
+    const card = document.createElement('div');
+    card.className = 'mannequin-card';
+    card.dataset.name = m.name;
+    const photosHtml = m.photos.map((url, pi) => `
+      <div class="mannequin-photo">
+        ${url
+          ? `<img src="${url}" alt="${m.name} photo ${pi+1}" loading="lazy" />`
+          : `<i class="ti ti-user placeholder"></i>`}
+      </div>
+    `).join('');
+    const dotsHtml = m.photos.map((_, pi) => `<div class="dot ${pi===0?'active':''}"></div>`).join('');
+    card.innerHTML = `
+      <div class="mannequin-photos">${photosHtml}</div>
+      <div class="photo-dots">${dotsHtml}</div>
+      <div class="mannequin-name">${m.name}</div>
+      <div class="mannequin-meta">${m.meta}</div>
+    `;
+    card.addEventListener('click', () => {
+      document.querySelectorAll('.mannequin-card').forEach(c => c.classList.remove('selected'));
+      card.classList.add('selected');
+    });
+    const strip = card.querySelector('.mannequin-photos');
+    const dots  = card.querySelectorAll('.dot');
+    strip.addEventListener('scroll', () => {
+      const idx = Math.round(strip.scrollLeft / strip.offsetWidth);
+      dots.forEach((d, i) => d.classList.toggle('active', i === idx));
+    });
+    grid.appendChild(card);
+  });
+}
+
+// Fonds
+function buildFonds() {
+  const grid = document.getElementById('fonds-grid');
+  FONDS.forEach(f => {
+    const card = document.createElement('div');
+    card.className = 'fond-card';
+    card.dataset.name = f.name;
+    const previewHtml = f.image
+      ? `<img class="fond-preview" src="${f.image}" alt="${f.name}" loading="lazy" />`
+      : `<div class="fond-preview color-block" style="background:${f.color||'#eee'};"></div>`;
+    card.innerHTML = `${previewHtml}<div class="fond-name">${f.name}</div>`;
+    card.addEventListener('click', () => card.classList.toggle('selected'));
+    grid.appendChild(card);
+  });
+}
+
+// Poses
+function buildPoses() {
+  const grid = document.getElementById('pose-grid');
+  POSES.forEach(p => {
+    const card = document.createElement('div');
+    card.className = 'pose-card';
+    card.dataset.name = p.name;
+    const thumbHtml = p.image
+      ? `<img src="${p.image}" alt="${p.name}" loading="lazy" />`
+      : `<i class="ti ti-run"></i>`;
+    card.innerHTML = `<div class="pose-thumb">${thumbHtml}</div><div class="pose-label">${p.name}</div>`;
+    card.addEventListener('click', () => card.classList.toggle('selected'));
+    grid.appendChild(card);
+  });
+}
+
+// Radio casting
+function selectRadio(el, group) {
+  el.closest('.radio-group').querySelectorAll('.radio-opt').forEach(o => o.classList.remove('selected'));
+  el.classList.add('selected');
+  const val = el.querySelector('input').value;
+  if (group === 'casting') {
+    document.getElementById('miraggia-mannequins').style.display = val === 'miraggia' ? 'block' : 'none';
+    document.getElementById('custom-casting').style.display      = val === 'custom'   ? 'block' : 'none';
+  }
+}
+
+// Fond type
+let selectedFondType = '';
+function selectFondType(el, type) {
+  selectedFondType = type;
+  document.querySelectorAll('.fond-type-card').forEach(c => c.classList.remove('selected'));
+  el.classList.add('selected');
+  document.getElementById('fonds-miraggia').style.display    = type === 'miraggia'    ? 'block' : 'none';
+  document.getElementById('fonds-propre').style.display      = type === 'propre'      ? 'block' : 'none';
+  document.getElementById('fonds-inspiration').style.display = type === 'inspiration' ? 'block' : 'none';
+}
+
+// Upload fond
+function handleFondUpload(input) {
+  const preview = document.getElementById('fond-upload-preview');
+  if (!input.files.length) return;
+  const file = input.files[0];
+  const url  = URL.createObjectURL(file);
+  preview.innerHTML = `
+    <div style="display:flex;align-items:center;gap:10px;padding:9px 12px;background:var(--bg);border-radius:var(--radius-sm);">
+      <img src="${url}" style="width:40px;height:40px;object-fit:cover;border-radius:4px;" />
+      <div>
+        <div style="font-size:13px;font-weight:500;">${file.name}</div>
+        <div style="font-size:11px;color:var(--muted);">${(file.size/1024/1024).toFixed(1)} Mo</div>
+      </div>
+      <button class="remove-btn" onclick="clearFondUpload()" style="margin-left:auto;"><i class="ti ti-x"></i></button>
+    </div>`;
+}
+function clearFondUpload() {
+  document.getElementById('fond-upload').value = '';
+  document.getElementById('fond-upload-preview').innerHTML = '';
+}
+
+// Pills
+function togglePill(el, group) {
+  document.querySelectorAll(`#${group}-group .pill`).forEach(p => p.classList.remove('selected'));
+  el.classList.add('selected');
+}
+function togglePillRatio(el) {
+  document.querySelectorAll('#ratio-group .pill').forEach(p => p.classList.remove('selected'));
+  el.classList.add('selected');
+  document.getElementById('ratio-custom').classList.toggle('visible', !!el.dataset.custom);
+}
+
+// Inspi mannequin
+function addInspi() {
+  const list = document.getElementById('inspi-list');
+  const row  = document.createElement('div');
+  row.className = 'inspi-row';
+  row.innerHTML = `<input type="text" placeholder="ex. @name_influencer ou Imaan Hammam" /><button class="remove-btn" onclick="removeInspi(this)"><i class="ti ti-x"></i></button>`;
+  list.appendChild(row);
+}
+function removeInspi(btn) {
+  const rows = document.querySelectorAll('#inspi-list .inspi-row');
+  if (rows.length > 1) btn.closest('.inspi-row').remove();
+}
+
+// Inspi fond
+function addFondInspi() {
+  const list = document.getElementById('fond-inspi-list');
+  const row  = document.createElement('div');
+  row.className = 'inspi-row';
+  row.innerHTML = `<input type="text" placeholder="ex. pinterest.com/... ou @marque Instagram" /><button class="remove-btn" onclick="removeFondInspi(this)"><i class="ti ti-x"></i></button>`;
+  list.appendChild(row);
+}
+function removeFondInspi(btn) {
+  const rows = document.querySelectorAll('#fond-inspi-list .inspi-row');
+  if (rows.length > 1) btn.closest('.inspi-row').remove();
+}
+
+// ════════════════════════════════════════════════════════════════════════════
+// ENVOI VERS SUPABASE (table "prestations")
+// ════════════════════════════════════════════════════════════════════════════
+function esc(s){ return String(s==null?'':s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
+function pillValue(groupId){
+  const el = document.querySelector(`#${groupId} .pill.selected`);
+  return el ? el.textContent.trim() : '';
+}
+function cardNames(selector){
+  return [...document.querySelectorAll(selector)].map(c => c.dataset.name).filter(Boolean);
+}
+function inputValues(listId){
+  return [...document.querySelectorAll(`#${listId} input`)].map(i => i.value.trim()).filter(Boolean);
+}
+function val(name){
+  const el = document.querySelector(`[name="${name}"]`);
+  return el ? el.value.trim() : '';
+}
+
+function collectPrestation(){
+  let ratio = pillValue('ratio-group');
+  if (ratio === 'Personnalisé') ratio = val('ratio_custom') || 'Personnalisé';
+  const nb = parseInt(val('nb_visuels'));
+  return {
+    brief_id:        briefId,
+    brand_name:      val('brand_name'),
+    contact_name:    val('contact_name'),
+    contact_email:   val('contact_email'),
+    members:         members,
+    casting_type:    (document.querySelector('input[name="casting"]:checked') || {}).value || '',
+    mannequin:       (document.querySelector('#mannequin-grid .mannequin-card.selected') || {}).dataset?.name || '',
+    mannequin_inspi: inputValues('inspi-list'),
+    fond_type:       selectedFondType,
+    fonds:           cardNames('#fonds-grid .fond-card.selected'),
+    fond_link:       val('fond_link'),
+    fond_inspi:      inputValues('fond-inspi-list'),
+    fond_desc:       val('fond_description'),
+    poses:           cardNames('#pose-grid .pose-card.selected'),
+    format:          pillValue('format-group'),
+    resolution:      pillValue('resolution-group'),
+    ratio:           ratio,
+    nb_visuels:      isNaN(nb) ? null : nb,
+    precisions:      val('precisions'),
+    deadline:        val('deadline') || null,
+    launch_date:     val('launch_date') || null,
+    planning_notes:  val('planning_notes')
+  };
+}
+
+async function submitPrestation(btn){
+  const entry = collectPrestation();
+  if (!entry.brand_name || !entry.contact_email){
+    alert('Merci de renseigner au moins le nom de la marque et un email de contact.');
+    return;
+  }
+  const original = btn.textContent;
+  btn.disabled = true;
+  btn.textContent = 'Envoi en cours…';
+  try {
+    const res = await fetch(`${SUPABASE_URL}/rest/v1/prestations`, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'apikey': SUPABASE_ANON_KEY,
+        'Authorization': `Bearer ${SUPABASE_ANON_KEY}`,
+        'Prefer': 'return=representation'
+      },
+      body: JSON.stringify(entry)
+    });
+    if (!res.ok){
+      const err = await res.json().catch(() => ({}));
+      throw new Error(err.message || ('Erreur serveur (' + res.status + ')'));
+    }
+    const [saved] = await res.json();
+    showSuccess(entry, saved);
+  } catch(e){
+    btn.disabled = false;
+    btn.textContent = original;
+    alert('Une erreur est survenue lors de l\'envoi. Veuillez réessayer.\n\n' + e.message);
+  }
+}
+
+function showSuccess(entry, saved){
+  document.querySelector('.form-wrap').innerHTML = `
+    <div class="section" style="text-align:center;padding:3rem 1.5rem;">
+      <div style="width:64px;height:64px;border-radius:50%;background:var(--green);color:var(--navy);display:flex;align-items:center;justify-content:center;font-size:32px;margin:0 auto 1.25rem;">✓</div>
+      <h1 style="font-size:24px;font-weight:600;margin-bottom:.5rem;">Fiche de production envoyée !</h1>
+      <p style="font-size:15px;color:var(--muted);max-width:420px;margin:0 auto;">
+        Merci <strong>${esc(entry.brand_name)}</strong>, votre fiche a bien été transmise à l'équipe Miraggia.
+        Nous revenons vers vous très vite.
+      </p>
+      <p style="font-size:12px;color:var(--hint);margin-top:1.25rem;">Réf. #${saved && saved.id ? saved.id : '—'}</p>
+    </div>`;
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+// ════════════════════════════════════════════════════════════════════════════
+// PRÉ-REMPLISSAGE depuis le brief signé (?brief=ID)
+// ════════════════════════════════════════════════════════════════════════════
+async function prefillFromBrief(){
+  const params = new URLSearchParams(window.location.search);
+  const id = params.get('brief');
+  if (!id) return;
+  briefId = parseInt(id) || null;
+  try {
+    const res = await fetch(`${SUPABASE_URL}/rest/v1/briefs?id=eq.${encodeURIComponent(id)}&select=*`, {
+      headers: { 'apikey': SUPABASE_ANON_KEY, 'Authorization': `Bearer ${SUPABASE_ANON_KEY}` }
+    });
+    if (!res.ok) return;
+    const [b] = await res.json();
+    if (!b) return;
+    const set = (name, v) => { const el = document.querySelector(`[name="${name}"]`); if (el && v) el.value = v; };
+    set('brand_name', b.brand);
+    set('contact_name', b.name);
+    set('contact_email', b.email);
+  } catch(e){ /* silencieux : le client peut saisir les infos manuellement */ }
+}
+
+// Init
+buildMannequins();
+buildFonds();
+buildPoses();
+prefillFromBrief();
+</script>
+</body>
+</html>
