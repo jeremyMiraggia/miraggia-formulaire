@@ -777,7 +777,8 @@ function renderPrestaList(){
 
   list.innerHTML = filtered.map(p => {
     const tags = [];
-    if (p.mannequin) tags.push(`<span class="tag tag-life">🧍 ${esc(p.mannequin)}</span>`);
+    const mq = Array.isArray(p.mannequins) ? p.mannequins : (p.mannequin ? [p.mannequin] : []);
+    if (mq.length) tags.push(`<span class="tag tag-life">🧍 ${mq.length} mannequin${mq.length>1?'s':''}</span>`);
     else if (p.casting_type === 'custom') tags.push('<span class="tag tag-pack">Casting perso</span>');
     if (p.format) tags.push(`<span class="tag tag-ecom">${esc(p.format)}</span>`);
     if (p.nb_visuels) tags.push(`<span class="tag tag-visuels">${p.nb_visuels} visuels</span>`);
@@ -809,8 +810,9 @@ function openPrestationDetail(id){
   const linkedBrief = (p.brief_id && allBriefs.some(b => b.id === p.brief_id))
     ? `<button class="linked-brief" onclick="openDetail(${p.brief_id})">📥 Voir le brief lié #${p.brief_id}</button>` : '';
 
+  const mannequinsArr = arr(p.mannequins).length ? arr(p.mannequins) : (p.mannequin ? [p.mannequin] : []);
   let castingTxt = '—';
-  if (p.casting_type === 'miraggia') castingTxt = p.mannequin ? `Mannequin catalogue : <strong>${esc(p.mannequin)}</strong>` : 'Mannequin catalogue Miraggia';
+  if (p.casting_type === 'miraggia') castingTxt = 'Mannequin(s) catalogue Miraggia';
   else if (p.casting_type === 'custom') castingTxt = 'Casting personnalisé (sur inspiration)';
 
   const fondTypeLabel = { miraggia:'Catalogue Miraggia', propre:'Fond propre', inspiration:'Inspiration' }[p.fond_type] || '—';
@@ -836,6 +838,7 @@ function openPrestationDetail(id){
     <div class="dsection-title">🧍 Mannequin</div>
     <div class="dsection-body">
       <div class="dfield-value">${castingTxt}</div>
+      ${mannequinsArr.length?`<div style="margin-top:12px;"><div class="dfield-label">Mannequins choisis</div>${tagList(mannequinsArr)}</div>`:''}
       ${arr(p.mannequin_inspi).length?`<div style="margin-top:12px;"><div class="dfield-label">Inspirations</div>${tagList(arr(p.mannequin_inspi))}</div>`:''}
     </div>
   </div>

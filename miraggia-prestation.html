@@ -836,10 +836,7 @@ function buildMannequins() {
       <div class="mannequin-name">${m.name}</div>
       <div class="mannequin-meta">${m.meta}</div>
     `;
-    card.addEventListener('click', () => {
-      document.querySelectorAll('.mannequin-card').forEach(c => c.classList.remove('selected'));
-      card.classList.add('selected');
-    });
+    card.addEventListener('click', () => card.classList.toggle('selected'));
     const strip = card.querySelector('.mannequin-photos');
     const dots  = card.querySelectorAll('.dot');
     strip.addEventListener('scroll', () => {
@@ -992,7 +989,7 @@ function collectPrestation(){
     contact_email:   val('contact_email'),
     members:         members,
     casting_type:    (document.querySelector('input[name="casting"]:checked') || {}).value || '',
-    mannequin:       (document.querySelector('#mannequin-grid .mannequin-card.selected') || {}).dataset?.name || '',
+    mannequins:      cardNames('#mannequin-grid .mannequin-card.selected'),
     mannequin_inspi: inputValues('inspi-list'),
     fond_type:       selectedFondType,
     fonds:           cardNames('#fonds-grid .fond-card.selected'),
