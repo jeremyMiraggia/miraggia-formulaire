@@ -266,7 +266,6 @@
     gap: 14px;
   }
   .vt-details.open { display: grid; }
-  .vt-details.single { grid-template-columns: 1fr; }
   .vt-mini-label { font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em; color: var(--text-muted); display: block; margin-bottom: 5px; line-height: 1.4; min-height: 30px; }
   .vt-details input {
     width: 100%;
@@ -281,26 +280,6 @@
     transition: border-color 0.2s;
   }
   .vt-details input:focus { border-color: var(--abysse); background: white; }
-
-  /* Intertitre dans un step (Photo / Vidéo) */
-  .section-divider {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    margin: 22px 0 12px;
-    font-size: 12px;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-    color: var(--abysse);
-  }
-  .section-divider::before, .section-divider::after {
-    content: '';
-    flex: 1;
-    height: 1px;
-    background: #e0e0e8;
-  }
-  .section-divider:first-child { margin-top: 4px; }
 
   /* RADIO CARDS */
   .radio-cards { display: flex; flex-direction: column; gap: 8px; margin-top: 8px; }
@@ -478,7 +457,7 @@ function lang(fr, en) { return currentLang === 'fr' ? fr : en; }
 
 let steps = [
   { id: 'identity', title: lang('Vos informations','Your information'), icon: '👤', sub: lang('Pour que nous puissions vous recontacter avec votre devis','So we can contact you with your quote') },
-  { id: 'visuals', title: lang('Photos & Vidéos','Photos & Videos'), icon: '📸', sub: lang('Sélectionnez les types souhaités et précisez vos besoins','Select the types you need and specify your requirements') },
+  { id: 'visuals', title: lang('Types de visuels','Visual types'), icon: '📸', sub: lang('Sélectionnez un ou plusieurs types et précisez vos besoins','Select one or more types and specify your needs') },
   { id: 'specs', title: lang('Format & Définition','Format & Definition'), icon: '🎨', sub: lang('Spécifications techniques de vos visuels','Technical specs for your visuals') },
   { id: 'casting', title: lang('Mannequins & Poses','Models & Poses'), icon: '🧍', sub: lang('Composition de votre shooting','Composition of your shoot') },
   { id: 'delivery', title: lang('Livraison & Références','Delivery & References'), icon: '📦', sub: lang('Délais et type de photos que vous nous fournirez','Deadlines and type of photos you will provide') },
@@ -490,7 +469,7 @@ let formData = {};
 function buildProgress() {
   steps = [
     { id: 'identity', title: lang('Vos informations','Your information'), icon: '👤', sub: lang('Pour que nous puissions vous recontacter avec votre devis','So we can contact you with your quote') },
-    { id: 'visuals', title: lang('Photos & Vidéos','Photos & Videos'), icon: '📸', sub: lang('Sélectionnez les types souhaités et précisez vos besoins','Select the types you need and specify your requirements') },
+    { id: 'visuals', title: lang('Types de visuels','Visual types'), icon: '📸', sub: lang('Sélectionnez un ou plusieurs types et précisez vos besoins','Select one or more types and specify your needs') },
     { id: 'specs', title: lang('Format & Définition','Format & Definition'), icon: '🎨', sub: lang('Spécifications techniques de vos visuels','Technical specs for your visuals') },
     { id: 'casting', title: lang('Mannequins & Poses','Models & Poses'), icon: '🧍', sub: lang('Composition de votre shooting','Composition of your shoot') },
     { id: 'delivery', title: lang('Livraison & Références','Delivery & References'), icon: '📦', sub: lang('Délais et type de photos que vous nous fournirez','Deadlines and type of photos you will provide') },
@@ -526,22 +505,17 @@ function buildStep() {
   }
 
   else if (step.id === 'visuals') {
-    const photoTypes = [
+    const types = [
       { id: 'ecommerce', name: 'E-commerce', desc: lang('Photos sur fond neutre ou blanc, format catalogue','Photos on neutral/white background, catalogue format'), badge: lang('Catalogue','Catalogue') },
       { id: 'lifestyle', name: 'Lifestyle', desc: lang('Mises en scène contextualisées, campagne de marque','Contextualised scenes, brand campaign'), badge: lang('Campagne','Campaign') },
       { id: 'packshot', name: 'Packshot', desc: lang('Photo pro à partir de photos amateurs prises sur téléphone','Pro photo from amateur smartphone photos'), badge: lang('Produit','Product') },
-    ];
-    const videoTypes = [
-      { id: 'video_ecommerce', name: lang('Vidéo E-commerce','Video E-commerce'), desc: lang('Vidéo sur mannequin, fond neutre, format catalogue','Video on model, neutral background, catalogue format'), badge: lang('Catalogue','Catalogue') },
-      { id: 'video_lifestyle', name: lang('Vidéo Lifestyle','Video Lifestyle'), desc: lang('Vidéo de mise en scène, ambiance de marque','Branded scene video, campaign mood'), badge: lang('Campagne','Campaign') },
+      { id: 'morte', name: lang('Nature Morte','Still Life'), desc: lang('Visuels sans mannequin (ou peu visible), souvent utilisés pour les réseaux sociaux','Visuals without (or barely visible) model, often used for social media'), badge: lang('Social','Social') },
     ];
     html = `
     <div class="card">
       <div class="card-title"><div class="card-title-icon">${step.icon}</div>${step.title}</div>
       <div class="card-sub">${step.sub}</div>
-
-      <div class="section-divider">📷 ${lang('Types de visuels Photo','Photo types')}</div>
-      ${photoTypes.map(t => `
+      ${types.map(t => `
       <div class="vt-block ${formData['vt_'+t.id]?'active':''}" id="vtb_${t.id}" onclick="toggleVT('${t.id}')">
         <div class="vt-header">
           <div class="vt-checkbox"><span class="vt-checkbox-check">✓</span></div>
@@ -551,33 +525,14 @@ function buildStep() {
           </div>
           <span class="vt-badge">${t.badge}</span>
         </div>
-        <div class="vt-details ${formData['vt_'+t.id]?'open':''}" id="vtd_${t.id}">
-          <div>
+        <div class="vt-details ${formData['vt_'+t.id]?'open':''}" id="vtd_${t.id}" style="${t.id==='morte'?'grid-template-columns:1fr;':''}">
+          ${t.id !== 'morte' ? `<div>
             <span class="vt-mini-label">${t.id === 'packshot' ? lang('Nombre de produits','Number of products') : lang('Nombre de looks (tenues complètes)','Number of looks (full outfits)')} <em style="font-weight:400;color:var(--text-muted);">${lang('— indicatif','— indicative')}</em></span>
             <input type="number" min="1" id="vt_${t.id}_looks" placeholder="ex: 5" value="${esc(formData['vt_'+t.id+'_looks']||'')}" onclick="event.stopPropagation()">
-          </div>
+          </div>` : ''}
           <div>
-            <span class="vt-mini-label">${t.id === 'packshot' ? lang('Visuels par produit','Visuals per product') : lang('Visuels par look','Visuals per look')} <em style="font-weight:400;color:var(--text-muted);">${lang('— indicatif','— indicative')}</em></span>
+            <span class="vt-mini-label">${t.id === 'packshot' ? lang('Visuels par produit','Visuals per product') : t.id === 'morte' ? lang('Nombre de visuels','Number of visuals') : lang('Visuels par look','Visuals per look')} <em style="font-weight:400;color:var(--text-muted);">${lang('— indicatif','— indicative')}</em></span>
             <input type="number" min="1" id="vt_${t.id}_visuels" placeholder="ex: 3" value="${esc(formData['vt_'+t.id+'_visuels']||'')}" onclick="event.stopPropagation()">
-          </div>
-        </div>
-      </div>`).join('')}
-
-      <div class="section-divider">🎬 ${lang('Types de Vidéos','Video types')}</div>
-      ${videoTypes.map(t => `
-      <div class="vt-block ${formData['vt_'+t.id]?'active':''}" id="vtb_${t.id}" onclick="toggleVT('${t.id}')">
-        <div class="vt-header">
-          <div class="vt-checkbox"><span class="vt-checkbox-check">✓</span></div>
-          <div class="vt-info">
-            <div class="vt-name">${t.name}</div>
-            <div class="vt-desc">${t.desc}</div>
-          </div>
-          <span class="vt-badge">${t.badge}</span>
-        </div>
-        <div class="vt-details single ${formData['vt_'+t.id]?'open':''}" id="vtd_${t.id}">
-          <div>
-            <span class="vt-mini-label">${lang('Nombre de vidéos souhaitées','Number of videos wanted')} <em style="font-weight:400;color:var(--text-muted);">${lang('— indicatif','— indicative')}</em></span>
-            <input type="number" min="1" id="vt_${t.id}_nb" placeholder="ex: 3" value="${esc(formData['vt_'+t.id+'_nb']||'')}" onclick="event.stopPropagation()">
           </div>
         </div>
       </div>`).join('')}
@@ -762,10 +717,6 @@ function saveStep() {
       formData['vt_'+t+'_looks'] = document.getElementById('vt_'+t+'_looks')?.value || '';
       formData['vt_'+t+'_visuels'] = document.getElementById('vt_'+t+'_visuels')?.value || '';
     });
-    ['video_ecommerce','video_lifestyle'].forEach(t => {
-      formData['vt_'+t] = document.getElementById('vtb_'+t)?.classList.contains('active') || false;
-      formData['vt_'+t+'_nb'] = document.getElementById('vt_'+t+'_nb')?.value || '';
-    });
   }
   if (step.id === 'specs') {
     formData.format_autre = document.getElementById('format-autre-input')?.value.trim() || '';
@@ -821,10 +772,8 @@ async function submitForm() {
     vt_packshot: formData.vt_packshot || false,
     vt_packshot_looks: parseInt(formData.vt_packshot_looks) || 0,
     vt_packshot_visuels: parseInt(formData.vt_packshot_visuels) || 0,
-    vt_video_ecommerce: formData.vt_video_ecommerce || false,
-    vt_video_ecommerce_nb: parseInt(formData.vt_video_ecommerce_nb) || 0,
-    vt_video_lifestyle: formData.vt_video_lifestyle || false,
-    vt_video_lifestyle_nb: parseInt(formData.vt_video_lifestyle_nb) || 0,
+      vt_morte: formData.vt_morte || false,
+      vt_morte_visuels: parseInt(formData.vt_morte_visuels) || 0,
     formats: formData.formats || [],
     format_autre: formData.format_autre || '',
     defs: formData.defs || [],
