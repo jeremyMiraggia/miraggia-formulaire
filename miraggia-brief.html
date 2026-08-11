@@ -510,6 +510,8 @@ function buildStep() {
       { id: 'lifestyle', name: 'Lifestyle', desc: lang('Mises en scène contextualisées, campagne de marque','Contextualised scenes, brand campaign'), badge: lang('Campagne','Campaign') },
       { id: 'packshot', name: 'Packshot', desc: lang('Photo pro à partir de photos amateurs prises sur téléphone','Pro photo from amateur smartphone photos'), badge: lang('Produit','Product') },
       { id: 'morte', name: lang('Nature Morte','Still Life'), desc: lang('Visuels sans mannequin (ou peu visible), souvent utilisés pour les réseaux sociaux','Visuals without (or barely visible) model, often used for social media'), badge: lang('Social','Social') },
+      { id: 'reseaux', name: lang('Réseaux Sociaux','Social Media'), desc: lang('Visuels optimisés pour Instagram, TikTok, Pinterest…','Visuals optimised for Instagram, TikTok, Pinterest…'), badge: lang('Social','Social') },
+      { id: 'video', name: lang('Vidéos','Videos'), desc: lang('Contenus vidéo : produit ou mannequin en mouvement, ambiance…','Video content: product or model in motion, atmosphere…'), badge: lang('Vidéo','Video') },
     ];
     html = `
     <div class="card">
@@ -525,13 +527,13 @@ function buildStep() {
           </div>
           <span class="vt-badge">${t.badge}</span>
         </div>
-        <div class="vt-details ${formData['vt_'+t.id]?'open':''}" id="vtd_${t.id}" style="${t.id==='morte'?'grid-template-columns:1fr;':''}">
-          ${t.id !== 'morte' ? `<div>
+        <div class="vt-details ${formData['vt_'+t.id]?'open':''}" id="vtd_${t.id}" style="${['morte','reseaux','video'].includes(t.id)?'grid-template-columns:1fr;':''}">
+          ${!['morte','reseaux','video'].includes(t.id) ? `<div>
             <span class="vt-mini-label">${t.id === 'packshot' ? lang('Nombre de produits','Number of products') : lang('Nombre de looks (tenues complètes)','Number of looks (full outfits)')} <em style="font-weight:400;color:var(--text-muted);">${lang('— indicatif','— indicative')}</em></span>
             <input type="number" min="1" id="vt_${t.id}_looks" placeholder="ex: 5" value="${esc(formData['vt_'+t.id+'_looks']||'')}" onclick="event.stopPropagation()">
           </div>` : ''}
           <div>
-            <span class="vt-mini-label">${t.id === 'packshot' ? lang('Visuels par produit','Visuals per product') : t.id === 'morte' ? lang('Nombre de visuels','Number of visuals') : lang('Visuels par look','Visuals per look')} <em style="font-weight:400;color:var(--text-muted);">${lang('— indicatif','— indicative')}</em></span>
+            <span class="vt-mini-label">${t.id === 'packshot' ? lang('Visuels par produit','Visuals per product') : ['morte','reseaux','video'].includes(t.id) ? lang(t.id === 'video' ? 'Nombre de vidéos' : 'Nombre de visuels', t.id === 'video' ? 'Number of videos' : 'Number of visuals') : lang('Visuels par look','Visuals per look')} <em style="font-weight:400;color:var(--text-muted);">${lang('— indicatif','— indicative')}</em></span>
             <input type="number" min="1" id="vt_${t.id}_visuels" placeholder="ex: 3" value="${esc(formData['vt_'+t.id+'_visuels']||'')}" onclick="event.stopPropagation()">
           </div>
         </div>
@@ -774,6 +776,10 @@ async function submitForm() {
     vt_packshot_visuels: parseInt(formData.vt_packshot_visuels) || 0,
       vt_morte: formData.vt_morte || false,
       vt_morte_visuels: parseInt(formData.vt_morte_visuels) || 0,
+      vt_reseaux: formData.vt_reseaux || false,
+      vt_reseaux_visuels: parseInt(formData.vt_reseaux_visuels) || 0,
+      vt_video: formData.vt_video || false,
+      vt_video_visuels: parseInt(formData.vt_video_visuels) || 0,
     formats: formData.formats || [],
     format_autre: formData.format_autre || '',
     defs: formData.defs || [],

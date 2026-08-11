@@ -177,7 +177,9 @@ function updateKPIs() {
       + (b.vt_ecommerce ? (b.vt_ecommerce_looks||0)*(b.vt_ecommerce_visuels||0) : 0)
       + (b.vt_lifestyle ? (b.vt_lifestyle_looks||0)*(b.vt_lifestyle_visuels||0) : 0)
       + (b.vt_packshot  ? (b.vt_packshot_looks||0)*(b.vt_packshot_visuels||0) : 0)
-      + (b.vt_morte     ? (b.vt_morte_visuels||0) : 0);
+      + (b.vt_morte     ? (b.vt_morte_visuels||0)   : 0)
+      + (b.vt_reseaux   ? (b.vt_reseaux_visuels||0) : 0)
+      + (b.vt_video     ? (b.vt_video_visuels||0)   : 0);
   }, 0);
   document.getElementById('kpi-visuels').textContent = totalV || '—';
   document.getElementById('kpi-urgent').textContent = allBriefs.filter(b=>b.delai==='48h').length || '0';
@@ -218,6 +220,8 @@ function renderList() {
         ${b.vt_lifestyle?'<span class="tag tag-life">Lifestyle</span>':''}
         ${b.vt_packshot?'<span class="tag tag-pack">Packshot</span>':''}
         ${b.vt_morte?'<span class="tag tag-morte">Nature morte</span>':''}
+        ${b.vt_reseaux?'<span class="tag tag-morte">Réseaux</span>':''}
+        ${b.vt_video?'<span class="tag tag-pack">Vidéos</span>':''}
         ${b.delai==='48h'?'<span class="tag tag-urgent">EXPRESS</span>':''}
         ${totalV?`<span class="tag tag-visuels">${totalV} visuels</span>`:''}
       </div>
@@ -235,7 +239,9 @@ function openDetail(id) {
     b.vt_ecommerce && { name:'E-commerce', l: b.vt_ecommerce_looks||0, v: b.vt_ecommerce_visuels||0, detail: (l,v) => `${l} look${l!==1?'s':''} · ${v} visuel${v!==1?'s':''} par look` },
     b.vt_lifestyle && { name:'Lifestyle', l: b.vt_lifestyle_looks||0, v: b.vt_lifestyle_visuels||0, detail: (l,v) => `${l} look${l!==1?'s':''} · ${v} visuel${v!==1?'s':''} par look` },
     b.vt_packshot  && { name:'Packshot',  l: b.vt_packshot_looks||0,  v: b.vt_packshot_visuels||0,  detail: (l,v) => `${l} produit${l!==1?'s':''} · ${v} visuel${v!==1?'s':''} par produit` },
-    b.vt_morte     && { name:'Nature Morte', l: null, v: b.vt_morte_visuels||0, detail: (l,v) => `${v} visuel${v!==1?'s':''}` },
+    b.vt_morte     && { name:'Nature Morte',     l: null, v: b.vt_morte_visuels||0   },
+    b.vt_reseaux   && { name:'Réseaux Sociaux',   l: null, v: b.vt_reseaux_visuels||0 },
+    b.vt_video     && { name:'Vidéos',             l: null, v: b.vt_video_visuels||0   },
   ].filter(Boolean);
 
   const total =
@@ -345,7 +351,7 @@ function copyLink() {
 
 function exportCSV(){
   if(!allBriefs.length){alert('Aucun brief à exporter.');return;}
-  const cols=['name','brand','email','phone','vt_ecommerce','vt_ecommerce_looks','vt_ecommerce_visuels','vt_lifestyle','vt_lifestyle_looks','vt_lifestyle_visuels','vt_packshot','vt_packshot_looks','vt_packshot_visuels','vt_morte','vt_morte_visuels','formats','defs','mcat','mperso','delai','ptype','iphone_service','notes','dateDisplay'];
+  const cols=['name','brand','email','phone','vt_ecommerce','vt_ecommerce_looks','vt_ecommerce_visuels','vt_lifestyle','vt_lifestyle_looks','vt_lifestyle_visuels','vt_packshot','vt_packshot_looks','vt_packshot_visuels','vt_morte','vt_morte_visuels','vt_reseaux','vt_reseaux_visuels','vt_video','vt_video_visuels','formats','defs','mcat','mperso','delai','ptype','iphone_service','notes','dateDisplay'];
   const rows=[cols.join(';'),...allBriefs.map(b=>cols.map(c=>{const v=Array.isArray(b[c])?b[c].join('|'):(b[c]||'');return`"${String(v).replace(/"/g,'""')}"`;}).join(';'))];
   const a=document.createElement('a');
   a.href='data:text/csv;charset=utf-8,'+encodeURIComponent('\uFEFF'+rows.join('\n'));
