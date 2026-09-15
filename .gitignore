@@ -1,0 +1,7 @@
+# Outils locaux
+.claude/
+__pycache__/
+*.pyc
+
+# Copie manuelle perimee (le deploiement passe par GitHub -> Vercel)
+deploy/
