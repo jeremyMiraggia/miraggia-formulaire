@@ -297,18 +297,21 @@ def process_model(job: dict) -> dict:
             pixels = im.width * im.height
         classified.append({"src": f, "kind": kind, "pixels": pixels, "details": details})
 
-    # Deux "visage" et aucun "profil" : la vue de trois-quarts (visage de face le moins franc) devient le profil.
-    visages = [c for c in classified if c["kind"] == "visage" and not c["details"].get("override")]
-    if len(visages) >= 2 and not any(c["kind"] == "profil" for c in classified):
-        weakest = min(visages, key=lambda c: c["details"].get("weight", 0.0))
-        weakest["kind"] = "profil"
-
     def leading_number(c: dict) -> int | None:
         m = re.match(r"^\s*(\d+)", c["src"].name)
         return int(m.group(1)) if m else None
 
+    numbered = any(leading_number(c) is not None for c in classified)
+
+    # Deux "visage" et aucun "profil" => la vue de trois-quarts (visage de face le moins franc) devient
+    # le profil. Desactive quand le mannequin a des corrections manuelles (etiquettes deja arbitrees).
+    visages = [c for c in classified if c["kind"] == "visage" and not c["details"].get("override")]
+    if not overrides and len(visages) >= 2 and not any(c["kind"] == "profil" for c in classified):
+        weakest = min(visages, key=lambda c: c["details"].get("weight", 0.0))
+        weakest["kind"] = "profil"
+
     ordered: list[dict] = []
-    if any(leading_number(c) is not None for c in classified):
+    if numbered:
         # Fichiers numerotes (01.png, 02.png...) : l'ordre des numeros fait foi, les non numerotes en dernier.
         ordered = sorted(classified, key=lambda c: (leading_number(c) is None, leading_number(c) or 0, c["src"].name.lower()))
     else:

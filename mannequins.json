@@ -333,9 +333,9 @@
       "ageMax": 30,
       "thumb": "mannequins/femmes/20-30-ans/ludmila/thumb.jpg",
       "photos": [
-        "mannequins/femmes/20-30-ans/ludmila/01-profil.jpg",
-        "mannequins/femmes/20-30-ans/ludmila/02-visage.jpg",
-        "mannequins/femmes/20-30-ans/ludmila/03-visage-2.jpg",
+        "mannequins/femmes/20-30-ans/ludmila/01-visage.jpg",
+        "mannequins/femmes/20-30-ans/ludmila/02-visage-2.jpg",
+        "mannequins/femmes/20-30-ans/ludmila/03-visage-3.jpg",
         "mannequins/femmes/20-30-ans/ludmila/04-plein-pied.jpg"
       ],
       "thumbs": [
@@ -345,7 +345,7 @@
         "mannequins/femmes/20-30-ans/ludmila/thumb-04.jpg"
       ],
       "types": [
-        "profil",
+        "visage",
         "visage",
         "visage",
         "plein-pied"

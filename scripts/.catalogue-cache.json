@@ -237,19 +237,19 @@
     "signature": "01.png=1995553:1789466419|02.png=1859306:1789466419|03.jpg=9551410:1789466420|04.jpg=7000681:1789466424|ov={\"03.jpg\": \"visage\"}|fmt=2",
     "photos": [
       {
-        "file": "01-profil.jpg",
+        "file": "01-visage.jpg",
         "thumb": "thumb.jpg",
-        "type": "profil",
+        "type": "visage",
         "source": "01.png"
       },
       {
-        "file": "02-visage.jpg",
+        "file": "02-visage-2.jpg",
         "thumb": "thumb-02.jpg",
         "type": "visage",
         "source": "02.png"
       },
       {
-        "file": "03-visage-2.jpg",
+        "file": "03-visage-3.jpg",
         "thumb": "thumb-03.jpg",
         "type": "visage",
         "source": "03.jpg"
