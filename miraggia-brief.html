@@ -409,9 +409,10 @@
   .lang-btn:hover:not(.active) { color:white; }
   /* STEP INDICATOR */
   .step-counter { font-size: 12px; color: rgba(255,255,255,0.5); font-weight: 500; }
-  .header-link { display:inline-flex; align-items:center; gap:6px; font-size:12px; font-weight:600; color:rgba(255,255,255,0.8); text-decoration:none; padding:5px 12px; border-radius:20px; border:1.5px solid rgba(255,255,255,0.3); transition:all 0.2s; white-space:nowrap; }
-  .header-link:hover { background:var(--pistache); border-color:var(--pistache); color:var(--nuit); }
-  @media (max-width:560px) { .header-link { font-size:11px; padding:4px 9px; } .header-link span { display:none; } }
+  .header-link { display:inline-flex; align-items:center; gap:7px; font-size:13px; font-weight:700; color:var(--nuit); background:var(--pistache); text-decoration:none; padding:9px 16px; border-radius:20px; border:1.5px solid var(--pistache); box-shadow:0 2px 10px rgba(188,250,145,0.35); transition:all 0.2s; white-space:nowrap; }
+  .header-link::before { content:'📷'; font-size:14px; }
+  .header-link:hover { background:#a8f070; border-color:#a8f070; transform:translateY(-1px); box-shadow:0 4px 14px rgba(188,250,145,0.45); }
+  @media (max-width:560px) { .header-link { font-size:12px; padding:7px 12px; } .header-link span { display:none; } }
 </style>
 </head>
 <body>

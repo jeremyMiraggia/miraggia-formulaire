@@ -64,7 +64,6 @@ CACHE_FILE = REPO / "scripts" / ".catalogue-cache.json"
 IMAGE_EXT = {".png", ".jpg", ".jpeg", ".webp"}
 MAX_WIDTH = 1200
 THUMB_WIDTH = 400
-THUMB_RATIO = 3 / 4          # largeur / hauteur de la miniature (ratio 3/4 dans la grille)
 PHOTO_MAX_KB = 200
 THUMB_MAX_KB = 60
 JPEG_QUALITY = 80
@@ -76,7 +75,7 @@ FULL_BODY_FACE_RATIO = 0.16  # visage / hauteur image en dessous => plein pied
 FULL_BODY_MAX_WIDTH = 0.55   # largeur du sujet / largeur image : corps entier < 0.45, buste > 0.55
 
 TYPE_ORDER = ["plein-pied", "visage", "profil"]
-OUTPUT_FORMAT_VERSION = 2    # a incrementer quand la forme des fichiers de sortie change (invalide le cache)
+OUTPUT_FORMAT_VERSION = 3    # a incrementer quand la forme des fichiers de sortie change (invalide le cache)
 
 GENRE_PATTERNS = [
     (re.compile(r"femme|women|woman|female|fille", re.I), "Femme", "femmes"),
@@ -255,17 +254,15 @@ def encode_photo(src: Path, dst: Path) -> int:
 
 
 def encode_thumb(src: Path, dst: Path) -> int:
-    """Miniature 3/4 : la photo plein pied entiere, centree sur un fond de la couleur du decor."""
+    """Miniature de THUMB_WIDTH px de large, au ratio d'origine de la photo (pas de bandes ajoutees).
+
+    La grille de la page affiche les vignettes en 2:3 (ratio des portraits sources) en recadrant
+    legerement les rares photos d'un autre ratio, cale sur le haut de l'image.
+    """
     im = load_rgb(src)
-    tw, th = THUMB_WIDTH, round(THUMB_WIDTH / THUMB_RATIO)
-    a = np.asarray(im.resize((60, 100)))
-    border = np.concatenate([a[:3].reshape(-1, 3), a[-3:].reshape(-1, 3), a[:, :3].reshape(-1, 3), a[:, -3:].reshape(-1, 3)])
-    bg = tuple(int(v) for v in np.median(border, axis=0))
-    scale = min(tw / im.width, th / im.height)
-    inner = im.resize((max(1, round(im.width * scale)), max(1, round(im.height * scale))), Image.LANCZOS)
-    canvas = Image.new("RGB", (tw, th), bg)
-    canvas.paste(inner, ((tw - inner.width) // 2, (th - inner.height) // 2))
-    return save_jpeg(canvas, dst, THUMB_MAX_KB)
+    if im.width > THUMB_WIDTH:
+        im = im.resize((THUMB_WIDTH, max(1, round(im.height * THUMB_WIDTH / im.width))), Image.LANCZOS)
+    return save_jpeg(im, dst, THUMB_MAX_KB)
 
 
 # ---------------------------------------------------------------------------
@@ -469,6 +466,7 @@ def main() -> int:
             "age": m["age"],
             "ageMin": m["age_min"],
             "ageMax": m["age_max"],
+            "ordre": m["order"],
             "thumb": f"{m['rel_dir']}/{r['photos'][0]['thumb']}",
             "photos": [f"{m['rel_dir']}/{p['file']}" for p in r["photos"]],
             "thumbs": [f"{m['rel_dir']}/{p['thumb']}" for p in r["photos"]],
@@ -479,7 +477,10 @@ def main() -> int:
                               "warnings": r["warnings"]}
 
     genre_order = {"Femme": 0, "Homme": 1, "Enfant": 2}
-    entries.sort(key=lambda e: (genre_order.get(e["genre"], 9), e["ageMin"] if e["ageMin"] is not None else 999, e["age"], e["prenom"].lower()))
+    # Ordre du catalogue : genre, puis categorie (ages croissants, puis les categories sans age),
+    # puis l'ordre des dossiers source (prefixe numerique "01.", "02."...), jamais l'alphabet.
+    entries.sort(key=lambda e: (genre_order.get(e["genre"], 9), e["ageMin"] if e["ageMin"] is not None else 999,
+                                e["age"], e["ordre"], e["prenom"].lower()))
     ages = sorted({e["age"] for e in entries}, key=lambda a: (int(re.findall(r"\d+", a)[0]) if re.findall(r"\d+", a) else 999, a))
     genres = [g for g in ("Femme", "Homme", "Enfant") if any(e["genre"] == g for e in entries)]
     catalogue = {

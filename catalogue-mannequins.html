@@ -139,8 +139,8 @@
   .card:hover, .card:focus-visible { transform: translateY(-4px); box-shadow: var(--shadow-hover); border-color: rgba(0,68,93,0.25); }
   .card:focus-visible { box-shadow: var(--shadow-hover), 0 0 0 3px rgba(0,68,93,0.25); }
   @keyframes card-in { from { opacity: 0; transform: scale(0.97); } to { opacity: 1; transform: scale(1); } }
-  .card-media { aspect-ratio: 3 / 4; background: #f1f1f1; position: relative; overflow: hidden; }
-  .card-media img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s ease; }
+  .card-media { aspect-ratio: 2 / 3; background: #f1f1f1; position: relative; overflow: hidden; }
+  .card-media img { width: 100%; height: 100%; object-fit: cover; object-position: center top; transition: transform 0.3s ease; }
   .card:hover .card-media img { transform: scale(1.03); }
   .card-media .count {
     position: absolute; right: 8px; bottom: 8px; font-size: 10px; font-weight: 600;
@@ -178,7 +178,7 @@
   /* ── ETATS ──────────────────────────────────────────────── */
   .skeleton .card { pointer-events: none; animation: none; }
   .sk-media, .sk-line { background: linear-gradient(90deg, #ececf0 25%, #f6f6f8 50%, #ececf0 75%); background-size: 200% 100%; animation: shimmer 1.2s infinite; }
-  .sk-media { aspect-ratio: 3 / 4; }
+  .sk-media { aspect-ratio: 2 / 3; }
   .sk-line { height: 12px; border-radius: 6px; margin: 14px 14px 10px; width: 55%; }
   .sk-line.short { width: 35%; height: 10px; margin-top: 0; margin-bottom: 16px; }
   @keyframes shimmer { 0% { background-position: 200% 0; } 100% { background-position: -200% 0; } }
@@ -230,10 +230,10 @@
   .modal-meta { display: flex; gap: 6px; flex-wrap: wrap; margin-top: 10px; }
   .thumbs { display: grid; grid-template-columns: repeat(auto-fill, minmax(64px, 1fr)); gap: 8px; }
   .thumb {
-    aspect-ratio: 3 / 4; border-radius: 8px; overflow: hidden; border: 2px solid transparent; padding: 0;
+    aspect-ratio: 2 / 3; border-radius: 8px; overflow: hidden; border: 2px solid transparent; padding: 0;
     background: #f1f1f1; cursor: pointer; transition: border-color 0.15s, transform 0.15s;
   }
-  .thumb img { width: 100%; height: 100%; object-fit: cover; }
+  .thumb img { width: 100%; height: 100%; object-fit: cover; object-position: center top; }
   .thumb:hover { transform: translateY(-2px); }
   .thumb[aria-current="true"] { border-color: var(--abysse); }
   .thumb-caption { font-size: 11px; color: var(--text-muted); margin-top: 8px; }
@@ -630,7 +630,7 @@
           : '';
         card.innerHTML =
           '<div class="card-media">' +
-            '<img src="' + esc(thumbOf(m, 0)) + '" alt="' + esc(m.prenom) + ' — ' + esc(photoType(m, 0)) + '" loading="lazy" decoding="async" width="400" height="533">' +
+            '<img src="' + esc(thumbOf(m, 0)) + '" alt="' + esc(m.prenom) + ' — ' + esc(photoType(m, 0)) + '" loading="lazy" decoding="async" width="400" height="600">' +
             nav +
             '<span class="count">' + esc(photoType(m, 0)) + ' · 1/' + n + '</span>' +
           '</div>' +
