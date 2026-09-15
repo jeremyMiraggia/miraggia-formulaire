@@ -1,6 +1,6 @@
 {
   "generated": "2026-09-15",
-  "count": 72,
+  "count": 84,
   "filters": {
     "genre": [
       "Femme",
@@ -10,7 +10,8 @@
     "age": [
       "4-12 ans",
       "20-30 ans",
-      "40-50 ans"
+      "40-50 ans",
+      "Plus size"
     ]
   },
   "mannequins": [
@@ -24,17 +25,14 @@
       "ageMax": 30,
       "thumb": "mannequins/femmes/20-30-ans/alba/thumb.jpg",
       "photos": [
-        "mannequins/femmes/20-30-ans/alba/01-plein-pied.jpg",
-        "mannequins/femmes/20-30-ans/alba/02-visage.jpg",
-        "mannequins/femmes/20-30-ans/alba/03-profil.jpg"
+        "mannequins/femmes/20-30-ans/alba/01-visage.jpg",
+        "mannequins/femmes/20-30-ans/alba/02-profil.jpg"
       ],
       "thumbs": [
         "mannequins/femmes/20-30-ans/alba/thumb.jpg",
-        "mannequins/femmes/20-30-ans/alba/thumb-02.jpg",
-        "mannequins/femmes/20-30-ans/alba/thumb-03.jpg"
+        "mannequins/femmes/20-30-ans/alba/thumb-02.jpg"
       ],
       "types": [
-        "plein-pied",
         "visage",
         "profil"
       ]
@@ -49,17 +47,14 @@
       "ageMax": 30,
       "thumb": "mannequins/femmes/20-30-ans/ambre/thumb.jpg",
       "photos": [
-        "mannequins/femmes/20-30-ans/ambre/01-plein-pied.jpg",
-        "mannequins/femmes/20-30-ans/ambre/02-visage.jpg",
-        "mannequins/femmes/20-30-ans/ambre/03-profil.jpg"
+        "mannequins/femmes/20-30-ans/ambre/01-visage.jpg",
+        "mannequins/femmes/20-30-ans/ambre/02-profil.jpg"
       ],
       "thumbs": [
         "mannequins/femmes/20-30-ans/ambre/thumb.jpg",
-        "mannequins/femmes/20-30-ans/ambre/thumb-02.jpg",
-        "mannequins/femmes/20-30-ans/ambre/thumb-03.jpg"
+        "mannequins/femmes/20-30-ans/ambre/thumb-02.jpg"
       ],
       "types": [
-        "plein-pied",
         "visage",
         "profil"
       ]
@@ -74,17 +69,14 @@
       "ageMax": 30,
       "thumb": "mannequins/femmes/20-30-ans/eliana/thumb.jpg",
       "photos": [
-        "mannequins/femmes/20-30-ans/eliana/01-plein-pied.jpg",
-        "mannequins/femmes/20-30-ans/eliana/02-visage.jpg",
-        "mannequins/femmes/20-30-ans/eliana/03-profil.jpg"
+        "mannequins/femmes/20-30-ans/eliana/01-visage.jpg",
+        "mannequins/femmes/20-30-ans/eliana/02-profil.jpg"
       ],
       "thumbs": [
         "mannequins/femmes/20-30-ans/eliana/thumb.jpg",
-        "mannequins/femmes/20-30-ans/eliana/thumb-02.jpg",
-        "mannequins/femmes/20-30-ans/eliana/thumb-03.jpg"
+        "mannequins/femmes/20-30-ans/eliana/thumb-02.jpg"
       ],
       "types": [
-        "plein-pied",
         "visage",
         "profil"
       ]
@@ -99,17 +91,14 @@
       "ageMax": 30,
       "thumb": "mannequins/femmes/20-30-ans/elyse/thumb.jpg",
       "photos": [
-        "mannequins/femmes/20-30-ans/elyse/01-plein-pied.jpg",
-        "mannequins/femmes/20-30-ans/elyse/02-visage.jpg",
-        "mannequins/femmes/20-30-ans/elyse/03-profil.jpg"
+        "mannequins/femmes/20-30-ans/elyse/01-visage.jpg",
+        "mannequins/femmes/20-30-ans/elyse/02-profil.jpg"
       ],
       "thumbs": [
         "mannequins/femmes/20-30-ans/elyse/thumb.jpg",
-        "mannequins/femmes/20-30-ans/elyse/thumb-02.jpg",
-        "mannequins/femmes/20-30-ans/elyse/thumb-03.jpg"
+        "mannequins/femmes/20-30-ans/elyse/thumb-02.jpg"
       ],
       "types": [
-        "plein-pied",
         "visage",
         "profil"
       ]
@@ -124,17 +113,14 @@
       "ageMax": 30,
       "thumb": "mannequins/femmes/20-30-ans/emma/thumb.jpg",
       "photos": [
-        "mannequins/femmes/20-30-ans/emma/01-plein-pied.jpg",
-        "mannequins/femmes/20-30-ans/emma/02-visage.jpg",
-        "mannequins/femmes/20-30-ans/emma/03-profil.jpg"
+        "mannequins/femmes/20-30-ans/emma/01-visage.jpg",
+        "mannequins/femmes/20-30-ans/emma/02-profil.jpg"
       ],
       "thumbs": [
         "mannequins/femmes/20-30-ans/emma/thumb.jpg",
-        "mannequins/femmes/20-30-ans/emma/thumb-02.jpg",
-        "mannequins/femmes/20-30-ans/emma/thumb-03.jpg"
+        "mannequins/femmes/20-30-ans/emma/thumb-02.jpg"
       ],
       "types": [
-        "plein-pied",
         "visage",
         "profil"
       ]
@@ -149,17 +135,14 @@
       "ageMax": 30,
       "thumb": "mannequins/femmes/20-30-ans/emy/thumb.jpg",
       "photos": [
-        "mannequins/femmes/20-30-ans/emy/01-plein-pied.jpg",
-        "mannequins/femmes/20-30-ans/emy/02-visage.jpg",
-        "mannequins/femmes/20-30-ans/emy/03-profil.jpg"
+        "mannequins/femmes/20-30-ans/emy/01-visage.jpg",
+        "mannequins/femmes/20-30-ans/emy/02-profil.jpg"
       ],
       "thumbs": [
         "mannequins/femmes/20-30-ans/emy/thumb.jpg",
-        "mannequins/femmes/20-30-ans/emy/thumb-02.jpg",
-        "mannequins/femmes/20-30-ans/emy/thumb-03.jpg"
+        "mannequins/femmes/20-30-ans/emy/thumb-02.jpg"
       ],
       "types": [
-        "plein-pied",
         "visage",
         "profil"
       ]
@@ -174,17 +157,14 @@
       "ageMax": 30,
       "thumb": "mannequins/femmes/20-30-ans/eva/thumb.jpg",
       "photos": [
-        "mannequins/femmes/20-30-ans/eva/01-plein-pied.jpg",
-        "mannequins/femmes/20-30-ans/eva/02-visage.jpg",
-        "mannequins/femmes/20-30-ans/eva/03-profil.jpg"
+        "mannequins/femmes/20-30-ans/eva/01-visage.jpg",
+        "mannequins/femmes/20-30-ans/eva/02-profil.jpg"
       ],
       "thumbs": [
         "mannequins/femmes/20-30-ans/eva/thumb.jpg",
-        "mannequins/femmes/20-30-ans/eva/thumb-02.jpg",
-        "mannequins/femmes/20-30-ans/eva/thumb-03.jpg"
+        "mannequins/femmes/20-30-ans/eva/thumb-02.jpg"
       ],
       "types": [
-        "plein-pied",
         "visage",
         "profil"
       ]
@@ -199,25 +179,16 @@
       "ageMax": 30,
       "thumb": "mannequins/femmes/20-30-ans/eve/thumb.jpg",
       "photos": [
-        "mannequins/femmes/20-30-ans/eve/01-plein-pied.jpg",
-        "mannequins/femmes/20-30-ans/eve/02-visage.jpg",
-        "mannequins/femmes/20-30-ans/eve/03-profil.jpg",
-        "mannequins/femmes/20-30-ans/eve/04-plein-pied-2.jpg",
-        "mannequins/femmes/20-30-ans/eve/05-plein-pied-3.jpg"
+        "mannequins/femmes/20-30-ans/eve/01-visage.jpg",
+        "mannequins/femmes/20-30-ans/eve/02-profil.jpg"
       ],
       "thumbs": [
         "mannequins/femmes/20-30-ans/eve/thumb.jpg",
-        "mannequins/femmes/20-30-ans/eve/thumb-02.jpg",
-        "mannequins/femmes/20-30-ans/eve/thumb-03.jpg",
-        "mannequins/femmes/20-30-ans/eve/thumb-04.jpg",
-        "mannequins/femmes/20-30-ans/eve/thumb-05.jpg"
+        "mannequins/femmes/20-30-ans/eve/thumb-02.jpg"
       ],
       "types": [
-        "plein-pied",
         "visage",
-        "profil",
-        "plein-pied",
-        "plein-pied"
+        "profil"
       ]
     },
     {
@@ -230,17 +201,14 @@
       "ageMax": 30,
       "thumb": "mannequins/femmes/20-30-ans/jade/thumb.jpg",
       "photos": [
-        "mannequins/femmes/20-30-ans/jade/01-plein-pied.jpg",
-        "mannequins/femmes/20-30-ans/jade/02-visage.jpg",
-        "mannequins/femmes/20-30-ans/jade/03-profil.jpg"
+        "mannequins/femmes/20-30-ans/jade/01-visage.jpg",
+        "mannequins/femmes/20-30-ans/jade/02-profil.jpg"
       ],
       "thumbs": [
         "mannequins/femmes/20-30-ans/jade/thumb.jpg",
-        "mannequins/femmes/20-30-ans/jade/thumb-02.jpg",
-        "mannequins/femmes/20-30-ans/jade/thumb-03.jpg"
+        "mannequins/femmes/20-30-ans/jade/thumb-02.jpg"
       ],
       "types": [
-        "plein-pied",
         "visage",
         "profil"
       ]
@@ -255,17 +223,14 @@
       "ageMax": 30,
       "thumb": "mannequins/femmes/20-30-ans/laura/thumb.jpg",
       "photos": [
-        "mannequins/femmes/20-30-ans/laura/01-plein-pied.jpg",
-        "mannequins/femmes/20-30-ans/laura/02-visage.jpg",
-        "mannequins/femmes/20-30-ans/laura/03-profil.jpg"
+        "mannequins/femmes/20-30-ans/laura/01-visage.jpg",
+        "mannequins/femmes/20-30-ans/laura/02-profil.jpg"
       ],
       "thumbs": [
         "mannequins/femmes/20-30-ans/laura/thumb.jpg",
-        "mannequins/femmes/20-30-ans/laura/thumb-02.jpg",
-        "mannequins/femmes/20-30-ans/laura/thumb-03.jpg"
+        "mannequins/femmes/20-30-ans/laura/thumb-02.jpg"
       ],
       "types": [
-        "plein-pied",
         "visage",
         "profil"
       ]
@@ -280,17 +245,14 @@
       "ageMax": 30,
       "thumb": "mannequins/femmes/20-30-ans/lina/thumb.jpg",
       "photos": [
-        "mannequins/femmes/20-30-ans/lina/01-plein-pied.jpg",
-        "mannequins/femmes/20-30-ans/lina/02-visage.jpg",
-        "mannequins/femmes/20-30-ans/lina/03-profil.jpg"
+        "mannequins/femmes/20-30-ans/lina/01-visage.jpg",
+        "mannequins/femmes/20-30-ans/lina/02-profil.jpg"
       ],
       "thumbs": [
         "mannequins/femmes/20-30-ans/lina/thumb.jpg",
-        "mannequins/femmes/20-30-ans/lina/thumb-02.jpg",
-        "mannequins/femmes/20-30-ans/lina/thumb-03.jpg"
+        "mannequins/femmes/20-30-ans/lina/thumb-02.jpg"
       ],
       "types": [
-        "plein-pied",
         "visage",
         "profil"
       ]
@@ -305,17 +267,14 @@
       "ageMax": 30,
       "thumb": "mannequins/femmes/20-30-ans/lisa/thumb.jpg",
       "photos": [
-        "mannequins/femmes/20-30-ans/lisa/01-plein-pied.jpg",
-        "mannequins/femmes/20-30-ans/lisa/02-visage.jpg",
-        "mannequins/femmes/20-30-ans/lisa/03-profil.jpg"
+        "mannequins/femmes/20-30-ans/lisa/01-visage.jpg",
+        "mannequins/femmes/20-30-ans/lisa/02-profil.jpg"
       ],
       "thumbs": [
         "mannequins/femmes/20-30-ans/lisa/thumb.jpg",
-        "mannequins/femmes/20-30-ans/lisa/thumb-02.jpg",
-        "mannequins/femmes/20-30-ans/lisa/thumb-03.jpg"
+        "mannequins/femmes/20-30-ans/lisa/thumb-02.jpg"
       ],
       "types": [
-        "plein-pied",
         "visage",
         "profil"
       ]
@@ -330,17 +289,14 @@
       "ageMax": 30,
       "thumb": "mannequins/femmes/20-30-ans/lou/thumb.jpg",
       "photos": [
-        "mannequins/femmes/20-30-ans/lou/01-plein-pied.jpg",
-        "mannequins/femmes/20-30-ans/lou/02-visage.jpg",
-        "mannequins/femmes/20-30-ans/lou/03-profil.jpg"
+        "mannequins/femmes/20-30-ans/lou/01-visage.jpg",
+        "mannequins/femmes/20-30-ans/lou/02-profil.jpg"
       ],
       "thumbs": [
         "mannequins/femmes/20-30-ans/lou/thumb.jpg",
-        "mannequins/femmes/20-30-ans/lou/thumb-02.jpg",
-        "mannequins/femmes/20-30-ans/lou/thumb-03.jpg"
+        "mannequins/femmes/20-30-ans/lou/thumb-02.jpg"
       ],
       "types": [
-        "plein-pied",
         "visage",
         "profil"
       ]
@@ -355,17 +311,14 @@
       "ageMax": 30,
       "thumb": "mannequins/femmes/20-30-ans/louise/thumb.jpg",
       "photos": [
-        "mannequins/femmes/20-30-ans/louise/01-plein-pied.jpg",
-        "mannequins/femmes/20-30-ans/louise/02-visage.jpg",
-        "mannequins/femmes/20-30-ans/louise/03-profil.jpg"
+        "mannequins/femmes/20-30-ans/louise/01-visage.jpg",
+        "mannequins/femmes/20-30-ans/louise/02-profil.jpg"
       ],
       "thumbs": [
         "mannequins/femmes/20-30-ans/louise/thumb.jpg",
-        "mannequins/femmes/20-30-ans/louise/thumb-02.jpg",
-        "mannequins/femmes/20-30-ans/louise/thumb-03.jpg"
+        "mannequins/femmes/20-30-ans/louise/thumb-02.jpg"
       ],
       "types": [
-        "plein-pied",
         "visage",
         "profil"
       ]
@@ -380,31 +333,22 @@
       "ageMax": 30,
       "thumb": "mannequins/femmes/20-30-ans/ludmila/thumb.jpg",
       "photos": [
-        "mannequins/femmes/20-30-ans/ludmila/01-plein-pied.jpg",
+        "mannequins/femmes/20-30-ans/ludmila/01-profil.jpg",
         "mannequins/femmes/20-30-ans/ludmila/02-visage.jpg",
-        "mannequins/femmes/20-30-ans/ludmila/03-profil.jpg",
-        "mannequins/femmes/20-30-ans/ludmila/04-plein-pied-2.jpg",
-        "mannequins/femmes/20-30-ans/ludmila/05-plein-pied-3.jpg",
-        "mannequins/femmes/20-30-ans/ludmila/06-visage-2.jpg",
-        "mannequins/femmes/20-30-ans/ludmila/07-profil-2.jpg"
+        "mannequins/femmes/20-30-ans/ludmila/03-visage-2.jpg",
+        "mannequins/femmes/20-30-ans/ludmila/04-plein-pied.jpg"
       ],
       "thumbs": [
         "mannequins/femmes/20-30-ans/ludmila/thumb.jpg",
         "mannequins/femmes/20-30-ans/ludmila/thumb-02.jpg",
         "mannequins/femmes/20-30-ans/ludmila/thumb-03.jpg",
-        "mannequins/femmes/20-30-ans/ludmila/thumb-04.jpg",
-        "mannequins/femmes/20-30-ans/ludmila/thumb-05.jpg",
-        "mannequins/femmes/20-30-ans/ludmila/thumb-06.jpg",
-        "mannequins/femmes/20-30-ans/ludmila/thumb-07.jpg"
+        "mannequins/femmes/20-30-ans/ludmila/thumb-04.jpg"
       ],
       "types": [
-        "plein-pied",
-        "visage",
         "profil",
-        "plein-pied",
-        "plein-pied",
         "visage",
-        "profil"
+        "visage",
+        "plein-pied"
       ]
     },
     {
@@ -417,17 +361,14 @@
       "ageMax": 30,
       "thumb": "mannequins/femmes/20-30-ans/margaux/thumb.jpg",
       "photos": [
-        "mannequins/femmes/20-30-ans/margaux/01-plein-pied.jpg",
-        "mannequins/femmes/20-30-ans/margaux/02-visage.jpg",
-        "mannequins/femmes/20-30-ans/margaux/03-profil.jpg"
+        "mannequins/femmes/20-30-ans/margaux/01-visage.jpg",
+        "mannequins/femmes/20-30-ans/margaux/02-profil.jpg"
       ],
       "thumbs": [
         "mannequins/femmes/20-30-ans/margaux/thumb.jpg",
-        "mannequins/femmes/20-30-ans/margaux/thumb-02.jpg",
-        "mannequins/femmes/20-30-ans/margaux/thumb-03.jpg"
+        "mannequins/femmes/20-30-ans/margaux/thumb-02.jpg"
       ],
       "types": [
-        "plein-pied",
         "visage",
         "profil"
       ]
@@ -442,17 +383,14 @@
       "ageMax": 30,
       "thumb": "mannequins/femmes/20-30-ans/maya/thumb.jpg",
       "photos": [
-        "mannequins/femmes/20-30-ans/maya/01-plein-pied.jpg",
-        "mannequins/femmes/20-30-ans/maya/02-visage.jpg",
-        "mannequins/femmes/20-30-ans/maya/03-profil.jpg"
+        "mannequins/femmes/20-30-ans/maya/01-visage.jpg",
+        "mannequins/femmes/20-30-ans/maya/02-profil.jpg"
       ],
       "thumbs": [
         "mannequins/femmes/20-30-ans/maya/thumb.jpg",
-        "mannequins/femmes/20-30-ans/maya/thumb-02.jpg",
-        "mannequins/femmes/20-30-ans/maya/thumb-03.jpg"
+        "mannequins/femmes/20-30-ans/maya/thumb-02.jpg"
       ],
       "types": [
-        "plein-pied",
         "visage",
         "profil"
       ]
@@ -467,17 +405,14 @@
       "ageMax": 30,
       "thumb": "mannequins/femmes/20-30-ans/mila/thumb.jpg",
       "photos": [
-        "mannequins/femmes/20-30-ans/mila/01-plein-pied.jpg",
-        "mannequins/femmes/20-30-ans/mila/02-visage.jpg",
-        "mannequins/femmes/20-30-ans/mila/03-profil.jpg"
+        "mannequins/femmes/20-30-ans/mila/01-visage.jpg",
+        "mannequins/femmes/20-30-ans/mila/02-profil.jpg"
       ],
       "thumbs": [
         "mannequins/femmes/20-30-ans/mila/thumb.jpg",
-        "mannequins/femmes/20-30-ans/mila/thumb-02.jpg",
-        "mannequins/femmes/20-30-ans/mila/thumb-03.jpg"
+        "mannequins/femmes/20-30-ans/mila/thumb-02.jpg"
       ],
       "types": [
-        "plein-pied",
         "visage",
         "profil"
       ]
@@ -492,17 +427,14 @@
       "ageMax": 30,
       "thumb": "mannequins/femmes/20-30-ans/nina/thumb.jpg",
       "photos": [
-        "mannequins/femmes/20-30-ans/nina/01-plein-pied.jpg",
-        "mannequins/femmes/20-30-ans/nina/02-visage.jpg",
-        "mannequins/femmes/20-30-ans/nina/03-profil.jpg"
+        "mannequins/femmes/20-30-ans/nina/01-visage.jpg",
+        "mannequins/femmes/20-30-ans/nina/02-profil.jpg"
       ],
       "thumbs": [
         "mannequins/femmes/20-30-ans/nina/thumb.jpg",
-        "mannequins/femmes/20-30-ans/nina/thumb-02.jpg",
-        "mannequins/femmes/20-30-ans/nina/thumb-03.jpg"
+        "mannequins/femmes/20-30-ans/nina/thumb-02.jpg"
       ],
       "types": [
-        "plein-pied",
         "visage",
         "profil"
       ]
@@ -517,17 +449,14 @@
       "ageMax": 30,
       "thumb": "mannequins/femmes/20-30-ans/nora/thumb.jpg",
       "photos": [
-        "mannequins/femmes/20-30-ans/nora/01-plein-pied.jpg",
-        "mannequins/femmes/20-30-ans/nora/02-visage.jpg",
-        "mannequins/femmes/20-30-ans/nora/03-profil.jpg"
+        "mannequins/femmes/20-30-ans/nora/01-visage.jpg",
+        "mannequins/femmes/20-30-ans/nora/02-profil.jpg"
       ],
       "thumbs": [
         "mannequins/femmes/20-30-ans/nora/thumb.jpg",
-        "mannequins/femmes/20-30-ans/nora/thumb-02.jpg",
-        "mannequins/femmes/20-30-ans/nora/thumb-03.jpg"
+        "mannequins/femmes/20-30-ans/nora/thumb-02.jpg"
       ],
       "types": [
-        "plein-pied",
         "visage",
         "profil"
       ]
@@ -542,17 +471,14 @@
       "ageMax": 30,
       "thumb": "mannequins/femmes/20-30-ans/rafaella/thumb.jpg",
       "photos": [
-        "mannequins/femmes/20-30-ans/rafaella/01-plein-pied.jpg",
-        "mannequins/femmes/20-30-ans/rafaella/02-visage.jpg",
-        "mannequins/femmes/20-30-ans/rafaella/03-profil.jpg"
+        "mannequins/femmes/20-30-ans/rafaella/01-visage.jpg",
+        "mannequins/femmes/20-30-ans/rafaella/02-profil.jpg"
       ],
       "thumbs": [
         "mannequins/femmes/20-30-ans/rafaella/thumb.jpg",
-        "mannequins/femmes/20-30-ans/rafaella/thumb-02.jpg",
-        "mannequins/femmes/20-30-ans/rafaella/thumb-03.jpg"
+        "mannequins/femmes/20-30-ans/rafaella/thumb-02.jpg"
       ],
       "types": [
-        "plein-pied",
         "visage",
         "profil"
       ]
@@ -567,17 +493,14 @@
       "ageMax": 30,
       "thumb": "mannequins/femmes/20-30-ans/romy/thumb.jpg",
       "photos": [
-        "mannequins/femmes/20-30-ans/romy/01-plein-pied.jpg",
-        "mannequins/femmes/20-30-ans/romy/02-visage.jpg",
-        "mannequins/femmes/20-30-ans/romy/03-profil.jpg"
+        "mannequins/femmes/20-30-ans/romy/01-visage.jpg",
+        "mannequins/femmes/20-30-ans/romy/02-profil.jpg"
       ],
       "thumbs": [
         "mannequins/femmes/20-30-ans/romy/thumb.jpg",
-        "mannequins/femmes/20-30-ans/romy/thumb-02.jpg",
-        "mannequins/femmes/20-30-ans/romy/thumb-03.jpg"
+        "mannequins/femmes/20-30-ans/romy/thumb-02.jpg"
       ],
       "types": [
-        "plein-pied",
         "visage",
         "profil"
       ]
@@ -592,17 +515,14 @@
       "ageMax": 30,
       "thumb": "mannequins/femmes/20-30-ans/sarah/thumb.jpg",
       "photos": [
-        "mannequins/femmes/20-30-ans/sarah/01-plein-pied.jpg",
-        "mannequins/femmes/20-30-ans/sarah/02-visage.jpg",
-        "mannequins/femmes/20-30-ans/sarah/03-profil.jpg"
+        "mannequins/femmes/20-30-ans/sarah/01-visage.jpg",
+        "mannequins/femmes/20-30-ans/sarah/02-profil.jpg"
       ],
       "thumbs": [
         "mannequins/femmes/20-30-ans/sarah/thumb.jpg",
-        "mannequins/femmes/20-30-ans/sarah/thumb-02.jpg",
-        "mannequins/femmes/20-30-ans/sarah/thumb-03.jpg"
+        "mannequins/femmes/20-30-ans/sarah/thumb-02.jpg"
       ],
       "types": [
-        "plein-pied",
         "visage",
         "profil"
       ]
@@ -617,17 +537,14 @@
       "ageMax": 30,
       "thumb": "mannequins/femmes/20-30-ans/suzanne/thumb.jpg",
       "photos": [
-        "mannequins/femmes/20-30-ans/suzanne/01-plein-pied.jpg",
-        "mannequins/femmes/20-30-ans/suzanne/02-visage.jpg",
-        "mannequins/femmes/20-30-ans/suzanne/03-profil.jpg"
+        "mannequins/femmes/20-30-ans/suzanne/01-visage.jpg",
+        "mannequins/femmes/20-30-ans/suzanne/02-profil.jpg"
       ],
       "thumbs": [
         "mannequins/femmes/20-30-ans/suzanne/thumb.jpg",
-        "mannequins/femmes/20-30-ans/suzanne/thumb-02.jpg",
-        "mannequins/femmes/20-30-ans/suzanne/thumb-03.jpg"
+        "mannequins/femmes/20-30-ans/suzanne/thumb-02.jpg"
       ],
       "types": [
-        "plein-pied",
         "visage",
         "profil"
       ]
@@ -642,15 +559,12 @@
       "ageMax": 50,
       "thumb": "mannequins/femmes/40-50-ans/isabelle/thumb.jpg",
       "photos": [
-        "mannequins/femmes/40-50-ans/isabelle/01-plein-pied.jpg",
-        "mannequins/femmes/40-50-ans/isabelle/02-visage.jpg"
+        "mannequins/femmes/40-50-ans/isabelle/01-visage.jpg"
       ],
       "thumbs": [
-        "mannequins/femmes/40-50-ans/isabelle/thumb.jpg",
-        "mannequins/femmes/40-50-ans/isabelle/thumb-02.jpg"
+        "mannequins/femmes/40-50-ans/isabelle/thumb.jpg"
       ],
       "types": [
-        "plein-pied",
         "visage"
       ]
     },
@@ -664,17 +578,14 @@
       "ageMax": 50,
       "thumb": "mannequins/femmes/40-50-ans/nathalie/thumb.jpg",
       "photos": [
-        "mannequins/femmes/40-50-ans/nathalie/01-plein-pied.jpg",
-        "mannequins/femmes/40-50-ans/nathalie/02-visage.jpg",
-        "mannequins/femmes/40-50-ans/nathalie/03-profil.jpg"
+        "mannequins/femmes/40-50-ans/nathalie/01-visage.jpg",
+        "mannequins/femmes/40-50-ans/nathalie/02-profil.jpg"
       ],
       "thumbs": [
         "mannequins/femmes/40-50-ans/nathalie/thumb.jpg",
-        "mannequins/femmes/40-50-ans/nathalie/thumb-02.jpg",
-        "mannequins/femmes/40-50-ans/nathalie/thumb-03.jpg"
+        "mannequins/femmes/40-50-ans/nathalie/thumb-02.jpg"
       ],
       "types": [
-        "plein-pied",
         "visage",
         "profil"
       ]
@@ -689,17 +600,14 @@
       "ageMax": 50,
       "thumb": "mannequins/femmes/40-50-ans/sandrine/thumb.jpg",
       "photos": [
-        "mannequins/femmes/40-50-ans/sandrine/01-plein-pied.jpg",
-        "mannequins/femmes/40-50-ans/sandrine/02-visage.jpg",
-        "mannequins/femmes/40-50-ans/sandrine/03-profil.jpg"
+        "mannequins/femmes/40-50-ans/sandrine/01-visage.jpg",
+        "mannequins/femmes/40-50-ans/sandrine/02-profil.jpg"
       ],
       "thumbs": [
         "mannequins/femmes/40-50-ans/sandrine/thumb.jpg",
-        "mannequins/femmes/40-50-ans/sandrine/thumb-02.jpg",
-        "mannequins/femmes/40-50-ans/sandrine/thumb-03.jpg"
+        "mannequins/femmes/40-50-ans/sandrine/thumb-02.jpg"
       ],
       "types": [
-        "plein-pied",
         "visage",
         "profil"
       ]
@@ -714,17 +622,14 @@
       "ageMax": 50,
       "thumb": "mannequins/femmes/40-50-ans/simone/thumb.jpg",
       "photos": [
-        "mannequins/femmes/40-50-ans/simone/01-plein-pied.jpg",
-        "mannequins/femmes/40-50-ans/simone/02-visage.jpg",
-        "mannequins/femmes/40-50-ans/simone/03-profil.jpg"
+        "mannequins/femmes/40-50-ans/simone/01-visage.jpg",
+        "mannequins/femmes/40-50-ans/simone/02-profil.jpg"
       ],
       "thumbs": [
         "mannequins/femmes/40-50-ans/simone/thumb.jpg",
-        "mannequins/femmes/40-50-ans/simone/thumb-02.jpg",
-        "mannequins/femmes/40-50-ans/simone/thumb-03.jpg"
+        "mannequins/femmes/40-50-ans/simone/thumb-02.jpg"
       ],
       "types": [
-        "plein-pied",
         "visage",
         "profil"
       ]
@@ -739,31 +644,16 @@
       "ageMax": 50,
       "thumb": "mannequins/femmes/40-50-ans/sophie/thumb.jpg",
       "photos": [
-        "mannequins/femmes/40-50-ans/sophie/01-plein-pied.jpg",
-        "mannequins/femmes/40-50-ans/sophie/02-visage.jpg",
-        "mannequins/femmes/40-50-ans/sophie/03-profil.jpg",
-        "mannequins/femmes/40-50-ans/sophie/04-plein-pied-2.jpg",
-        "mannequins/femmes/40-50-ans/sophie/05-plein-pied-3.jpg",
-        "mannequins/femmes/40-50-ans/sophie/06-plein-pied-4.jpg",
-        "mannequins/femmes/40-50-ans/sophie/07-visage-2.jpg"
+        "mannequins/femmes/40-50-ans/sophie/01-visage.jpg",
+        "mannequins/femmes/40-50-ans/sophie/02-profil.jpg"
       ],
       "thumbs": [
         "mannequins/femmes/40-50-ans/sophie/thumb.jpg",
-        "mannequins/femmes/40-50-ans/sophie/thumb-02.jpg",
-        "mannequins/femmes/40-50-ans/sophie/thumb-03.jpg",
-        "mannequins/femmes/40-50-ans/sophie/thumb-04.jpg",
-        "mannequins/femmes/40-50-ans/sophie/thumb-05.jpg",
-        "mannequins/femmes/40-50-ans/sophie/thumb-06.jpg",
-        "mannequins/femmes/40-50-ans/sophie/thumb-07.jpg"
+        "mannequins/femmes/40-50-ans/sophie/thumb-02.jpg"
       ],
       "types": [
-        "plein-pied",
         "visage",
-        "profil",
-        "plein-pied",
-        "plein-pied",
-        "plein-pied",
-        "visage"
+        "profil"
       ]
     },
     {
@@ -776,17 +666,146 @@
       "ageMax": 50,
       "thumb": "mannequins/femmes/40-50-ans/valerie/thumb.jpg",
       "photos": [
-        "mannequins/femmes/40-50-ans/valerie/01-plein-pied.jpg",
-        "mannequins/femmes/40-50-ans/valerie/02-visage.jpg",
-        "mannequins/femmes/40-50-ans/valerie/03-profil.jpg"
+        "mannequins/femmes/40-50-ans/valerie/01-visage.jpg",
+        "mannequins/femmes/40-50-ans/valerie/02-profil.jpg"
       ],
       "thumbs": [
         "mannequins/femmes/40-50-ans/valerie/thumb.jpg",
-        "mannequins/femmes/40-50-ans/valerie/thumb-02.jpg",
-        "mannequins/femmes/40-50-ans/valerie/thumb-03.jpg"
+        "mannequins/femmes/40-50-ans/valerie/thumb-02.jpg"
       ],
       "types": [
-        "plein-pied",
+        "visage",
+        "profil"
+      ]
+    },
+    {
+      "id": "femmes-plus-size-adele",
+      "prenom": "Adèle",
+      "genre": "Femme",
+      "sexe": "Femme",
+      "age": "Plus size",
+      "ageMin": null,
+      "ageMax": null,
+      "thumb": "mannequins/femmes/plus-size/adele/thumb.jpg",
+      "photos": [
+        "mannequins/femmes/plus-size/adele/01-visage.jpg",
+        "mannequins/femmes/plus-size/adele/02-profil.jpg"
+      ],
+      "thumbs": [
+        "mannequins/femmes/plus-size/adele/thumb.jpg",
+        "mannequins/femmes/plus-size/adele/thumb-02.jpg"
+      ],
+      "types": [
+        "visage",
+        "profil"
+      ]
+    },
+    {
+      "id": "femmes-plus-size-beatrice",
+      "prenom": "Béatrice",
+      "genre": "Femme",
+      "sexe": "Femme",
+      "age": "Plus size",
+      "ageMin": null,
+      "ageMax": null,
+      "thumb": "mannequins/femmes/plus-size/beatrice/thumb.jpg",
+      "photos": [
+        "mannequins/femmes/plus-size/beatrice/01-visage.jpg",
+        "mannequins/femmes/plus-size/beatrice/02-profil.jpg"
+      ],
+      "thumbs": [
+        "mannequins/femmes/plus-size/beatrice/thumb.jpg",
+        "mannequins/femmes/plus-size/beatrice/thumb-02.jpg"
+      ],
+      "types": [
+        "visage",
+        "profil"
+      ]
+    },
+    {
+      "id": "femmes-plus-size-cecile",
+      "prenom": "Cécile",
+      "genre": "Femme",
+      "sexe": "Femme",
+      "age": "Plus size",
+      "ageMin": null,
+      "ageMax": null,
+      "thumb": "mannequins/femmes/plus-size/cecile/thumb.jpg",
+      "photos": [
+        "mannequins/femmes/plus-size/cecile/01-visage.jpg",
+        "mannequins/femmes/plus-size/cecile/02-profil.jpg"
+      ],
+      "thumbs": [
+        "mannequins/femmes/plus-size/cecile/thumb.jpg",
+        "mannequins/femmes/plus-size/cecile/thumb-02.jpg"
+      ],
+      "types": [
+        "visage",
+        "profil"
+      ]
+    },
+    {
+      "id": "femmes-plus-size-helena",
+      "prenom": "Héléna",
+      "genre": "Femme",
+      "sexe": "Femme",
+      "age": "Plus size",
+      "ageMin": null,
+      "ageMax": null,
+      "thumb": "mannequins/femmes/plus-size/helena/thumb.jpg",
+      "photos": [
+        "mannequins/femmes/plus-size/helena/01-visage.jpg",
+        "mannequins/femmes/plus-size/helena/02-profil.jpg"
+      ],
+      "thumbs": [
+        "mannequins/femmes/plus-size/helena/thumb.jpg",
+        "mannequins/femmes/plus-size/helena/thumb-02.jpg"
+      ],
+      "types": [
+        "visage",
+        "profil"
+      ]
+    },
+    {
+      "id": "femmes-plus-size-iris",
+      "prenom": "Iris",
+      "genre": "Femme",
+      "sexe": "Femme",
+      "age": "Plus size",
+      "ageMin": null,
+      "ageMax": null,
+      "thumb": "mannequins/femmes/plus-size/iris/thumb.jpg",
+      "photos": [
+        "mannequins/femmes/plus-size/iris/01-visage.jpg",
+        "mannequins/femmes/plus-size/iris/02-profil.jpg"
+      ],
+      "thumbs": [
+        "mannequins/femmes/plus-size/iris/thumb.jpg",
+        "mannequins/femmes/plus-size/iris/thumb-02.jpg"
+      ],
+      "types": [
+        "visage",
+        "profil"
+      ]
+    },
+    {
+      "id": "femmes-plus-size-lola",
+      "prenom": "Lola",
+      "genre": "Femme",
+      "sexe": "Femme",
+      "age": "Plus size",
+      "ageMin": null,
+      "ageMax": null,
+      "thumb": "mannequins/femmes/plus-size/lola/thumb.jpg",
+      "photos": [
+        "mannequins/femmes/plus-size/lola/01-visage.jpg",
+        "mannequins/femmes/plus-size/lola/02-profil.jpg"
+      ],
+      "thumbs": [
+        "mannequins/femmes/plus-size/lola/thumb.jpg",
+        "mannequins/femmes/plus-size/lola/thumb-02.jpg"
+      ],
+      "types": [
         "visage",
         "profil"
       ]
@@ -801,17 +820,14 @@
       "ageMax": 30,
       "thumb": "mannequins/hommes/20-30-ans/adrien/thumb.jpg",
       "photos": [
-        "mannequins/hommes/20-30-ans/adrien/01-plein-pied.jpg",
-        "mannequins/hommes/20-30-ans/adrien/02-visage.jpg",
-        "mannequins/hommes/20-30-ans/adrien/03-profil.jpg"
+        "mannequins/hommes/20-30-ans/adrien/01-visage.jpg",
+        "mannequins/hommes/20-30-ans/adrien/02-profil.jpg"
       ],
       "thumbs": [
         "mannequins/hommes/20-30-ans/adrien/thumb.jpg",
-        "mannequins/hommes/20-30-ans/adrien/thumb-02.jpg",
-        "mannequins/hommes/20-30-ans/adrien/thumb-03.jpg"
+        "mannequins/hommes/20-30-ans/adrien/thumb-02.jpg"
       ],
       "types": [
-        "plein-pied",
         "visage",
         "profil"
       ]
@@ -826,17 +842,14 @@
       "ageMax": 30,
       "thumb": "mannequins/hommes/20-30-ans/alexandre/thumb.jpg",
       "photos": [
-        "mannequins/hommes/20-30-ans/alexandre/01-plein-pied.jpg",
-        "mannequins/hommes/20-30-ans/alexandre/02-visage.jpg",
-        "mannequins/hommes/20-30-ans/alexandre/03-profil.jpg"
+        "mannequins/hommes/20-30-ans/alexandre/01-visage.jpg",
+        "mannequins/hommes/20-30-ans/alexandre/02-profil.jpg"
       ],
       "thumbs": [
         "mannequins/hommes/20-30-ans/alexandre/thumb.jpg",
-        "mannequins/hommes/20-30-ans/alexandre/thumb-02.jpg",
-        "mannequins/hommes/20-30-ans/alexandre/thumb-03.jpg"
+        "mannequins/hommes/20-30-ans/alexandre/thumb-02.jpg"
       ],
       "types": [
-        "plein-pied",
         "visage",
         "profil"
       ]
@@ -851,17 +864,14 @@
       "ageMax": 30,
       "thumb": "mannequins/hommes/20-30-ans/amir/thumb.jpg",
       "photos": [
-        "mannequins/hommes/20-30-ans/amir/01-plein-pied.jpg",
-        "mannequins/hommes/20-30-ans/amir/02-visage.jpg",
-        "mannequins/hommes/20-30-ans/amir/03-profil.jpg"
+        "mannequins/hommes/20-30-ans/amir/01-visage.jpg",
+        "mannequins/hommes/20-30-ans/amir/02-profil.jpg"
       ],
       "thumbs": [
         "mannequins/hommes/20-30-ans/amir/thumb.jpg",
-        "mannequins/hommes/20-30-ans/amir/thumb-02.jpg",
-        "mannequins/hommes/20-30-ans/amir/thumb-03.jpg"
+        "mannequins/hommes/20-30-ans/amir/thumb-02.jpg"
       ],
       "types": [
-        "plein-pied",
         "visage",
         "profil"
       ]
@@ -876,17 +886,14 @@
       "ageMax": 30,
       "thumb": "mannequins/hommes/20-30-ans/cesar/thumb.jpg",
       "photos": [
-        "mannequins/hommes/20-30-ans/cesar/01-plein-pied.jpg",
-        "mannequins/hommes/20-30-ans/cesar/02-visage.jpg",
-        "mannequins/hommes/20-30-ans/cesar/03-profil.jpg"
+        "mannequins/hommes/20-30-ans/cesar/01-visage.jpg",
+        "mannequins/hommes/20-30-ans/cesar/02-profil.jpg"
       ],
       "thumbs": [
         "mannequins/hommes/20-30-ans/cesar/thumb.jpg",
-        "mannequins/hommes/20-30-ans/cesar/thumb-02.jpg",
-        "mannequins/hommes/20-30-ans/cesar/thumb-03.jpg"
+        "mannequins/hommes/20-30-ans/cesar/thumb-02.jpg"
       ],
       "types": [
-        "plein-pied",
         "visage",
         "profil"
       ]
@@ -901,17 +908,14 @@
       "ageMax": 30,
       "thumb": "mannequins/hommes/20-30-ans/charlie/thumb.jpg",
       "photos": [
-        "mannequins/hommes/20-30-ans/charlie/01-plein-pied.jpg",
-        "mannequins/hommes/20-30-ans/charlie/02-visage.jpg",
-        "mannequins/hommes/20-30-ans/charlie/03-profil.jpg"
+        "mannequins/hommes/20-30-ans/charlie/01-visage.jpg",
+        "mannequins/hommes/20-30-ans/charlie/02-profil.jpg"
       ],
       "thumbs": [
         "mannequins/hommes/20-30-ans/charlie/thumb.jpg",
-        "mannequins/hommes/20-30-ans/charlie/thumb-02.jpg",
-        "mannequins/hommes/20-30-ans/charlie/thumb-03.jpg"
+        "mannequins/hommes/20-30-ans/charlie/thumb-02.jpg"
       ],
       "types": [
-        "plein-pied",
         "visage",
         "profil"
       ]
@@ -926,17 +930,14 @@
       "ageMax": 30,
       "thumb": "mannequins/hommes/20-30-ans/elie/thumb.jpg",
       "photos": [
-        "mannequins/hommes/20-30-ans/elie/01-plein-pied.jpg",
-        "mannequins/hommes/20-30-ans/elie/02-visage.jpg",
-        "mannequins/hommes/20-30-ans/elie/03-profil.jpg"
+        "mannequins/hommes/20-30-ans/elie/01-visage.jpg",
+        "mannequins/hommes/20-30-ans/elie/02-profil.jpg"
       ],
       "thumbs": [
         "mannequins/hommes/20-30-ans/elie/thumb.jpg",
-        "mannequins/hommes/20-30-ans/elie/thumb-02.jpg",
-        "mannequins/hommes/20-30-ans/elie/thumb-03.jpg"
+        "mannequins/hommes/20-30-ans/elie/thumb-02.jpg"
       ],
       "types": [
-        "plein-pied",
         "visage",
         "profil"
       ]
@@ -951,17 +952,14 @@
       "ageMax": 30,
       "thumb": "mannequins/hommes/20-30-ans/gabriel/thumb.jpg",
       "photos": [
-        "mannequins/hommes/20-30-ans/gabriel/01-plein-pied.jpg",
-        "mannequins/hommes/20-30-ans/gabriel/02-visage.jpg",
-        "mannequins/hommes/20-30-ans/gabriel/03-profil.jpg"
+        "mannequins/hommes/20-30-ans/gabriel/01-visage.jpg",
+        "mannequins/hommes/20-30-ans/gabriel/02-profil.jpg"
       ],
       "thumbs": [
         "mannequins/hommes/20-30-ans/gabriel/thumb.jpg",
-        "mannequins/hommes/20-30-ans/gabriel/thumb-02.jpg",
-        "mannequins/hommes/20-30-ans/gabriel/thumb-03.jpg"
+        "mannequins/hommes/20-30-ans/gabriel/thumb-02.jpg"
       ],
       "types": [
-        "plein-pied",
         "visage",
         "profil"
       ]
@@ -976,17 +974,14 @@
       "ageMax": 30,
       "thumb": "mannequins/hommes/20-30-ans/hugo/thumb.jpg",
       "photos": [
-        "mannequins/hommes/20-30-ans/hugo/01-plein-pied.jpg",
-        "mannequins/hommes/20-30-ans/hugo/02-visage.jpg",
-        "mannequins/hommes/20-30-ans/hugo/03-profil.jpg"
+        "mannequins/hommes/20-30-ans/hugo/01-visage.jpg",
+        "mannequins/hommes/20-30-ans/hugo/02-profil.jpg"
       ],
       "thumbs": [
         "mannequins/hommes/20-30-ans/hugo/thumb.jpg",
-        "mannequins/hommes/20-30-ans/hugo/thumb-02.jpg",
-        "mannequins/hommes/20-30-ans/hugo/thumb-03.jpg"
+        "mannequins/hommes/20-30-ans/hugo/thumb-02.jpg"
       ],
       "types": [
-        "plein-pied",
         "visage",
         "profil"
       ]
@@ -1001,17 +996,14 @@
       "ageMax": 30,
       "thumb": "mannequins/hommes/20-30-ans/joseph/thumb.jpg",
       "photos": [
-        "mannequins/hommes/20-30-ans/joseph/01-plein-pied.jpg",
-        "mannequins/hommes/20-30-ans/joseph/02-visage.jpg",
-        "mannequins/hommes/20-30-ans/joseph/03-profil.jpg"
+        "mannequins/hommes/20-30-ans/joseph/01-visage.jpg",
+        "mannequins/hommes/20-30-ans/joseph/02-profil.jpg"
       ],
       "thumbs": [
         "mannequins/hommes/20-30-ans/joseph/thumb.jpg",
-        "mannequins/hommes/20-30-ans/joseph/thumb-02.jpg",
-        "mannequins/hommes/20-30-ans/joseph/thumb-03.jpg"
+        "mannequins/hommes/20-30-ans/joseph/thumb-02.jpg"
       ],
       "types": [
-        "plein-pied",
         "visage",
         "profil"
       ]
@@ -1026,17 +1018,14 @@
       "ageMax": 30,
       "thumb": "mannequins/hommes/20-30-ans/lenny/thumb.jpg",
       "photos": [
-        "mannequins/hommes/20-30-ans/lenny/01-plein-pied.jpg",
-        "mannequins/hommes/20-30-ans/lenny/02-visage.jpg",
-        "mannequins/hommes/20-30-ans/lenny/03-profil.jpg"
+        "mannequins/hommes/20-30-ans/lenny/01-visage.jpg",
+        "mannequins/hommes/20-30-ans/lenny/02-profil.jpg"
       ],
       "thumbs": [
         "mannequins/hommes/20-30-ans/lenny/thumb.jpg",
-        "mannequins/hommes/20-30-ans/lenny/thumb-02.jpg",
-        "mannequins/hommes/20-30-ans/lenny/thumb-03.jpg"
+        "mannequins/hommes/20-30-ans/lenny/thumb-02.jpg"
       ],
       "types": [
-        "plein-pied",
         "visage",
         "profil"
       ]
@@ -1051,17 +1040,14 @@
       "ageMax": 30,
       "thumb": "mannequins/hommes/20-30-ans/leo/thumb.jpg",
       "photos": [
-        "mannequins/hommes/20-30-ans/leo/01-plein-pied.jpg",
-        "mannequins/hommes/20-30-ans/leo/02-visage.jpg",
-        "mannequins/hommes/20-30-ans/leo/03-profil.jpg"
+        "mannequins/hommes/20-30-ans/leo/01-visage.jpg",
+        "mannequins/hommes/20-30-ans/leo/02-profil.jpg"
       ],
       "thumbs": [
         "mannequins/hommes/20-30-ans/leo/thumb.jpg",
-        "mannequins/hommes/20-30-ans/leo/thumb-02.jpg",
-        "mannequins/hommes/20-30-ans/leo/thumb-03.jpg"
+        "mannequins/hommes/20-30-ans/leo/thumb-02.jpg"
       ],
       "types": [
-        "plein-pied",
         "visage",
         "profil"
       ]
@@ -1076,19 +1062,16 @@
       "ageMax": 30,
       "thumb": "mannequins/hommes/20-30-ans/leon/thumb.jpg",
       "photos": [
-        "mannequins/hommes/20-30-ans/leon/01-plein-pied.jpg",
-        "mannequins/hommes/20-30-ans/leon/02-visage.jpg",
-        "mannequins/hommes/20-30-ans/leon/03-profil.jpg"
+        "mannequins/hommes/20-30-ans/leon/01-profil.jpg",
+        "mannequins/hommes/20-30-ans/leon/02-visage.jpg"
       ],
       "thumbs": [
         "mannequins/hommes/20-30-ans/leon/thumb.jpg",
-        "mannequins/hommes/20-30-ans/leon/thumb-02.jpg",
-        "mannequins/hommes/20-30-ans/leon/thumb-03.jpg"
+        "mannequins/hommes/20-30-ans/leon/thumb-02.jpg"
       ],
       "types": [
-        "plein-pied",
-        "visage",
-        "profil"
+        "profil",
+        "visage"
       ]
     },
     {
@@ -1101,17 +1084,14 @@
       "ageMax": 30,
       "thumb": "mannequins/hommes/20-30-ans/lucas/thumb.jpg",
       "photos": [
-        "mannequins/hommes/20-30-ans/lucas/01-plein-pied.jpg",
-        "mannequins/hommes/20-30-ans/lucas/02-visage.jpg",
-        "mannequins/hommes/20-30-ans/lucas/03-profil.jpg"
+        "mannequins/hommes/20-30-ans/lucas/01-visage.jpg",
+        "mannequins/hommes/20-30-ans/lucas/02-profil.jpg"
       ],
       "thumbs": [
         "mannequins/hommes/20-30-ans/lucas/thumb.jpg",
-        "mannequins/hommes/20-30-ans/lucas/thumb-02.jpg",
-        "mannequins/hommes/20-30-ans/lucas/thumb-03.jpg"
+        "mannequins/hommes/20-30-ans/lucas/thumb-02.jpg"
       ],
       "types": [
-        "plein-pied",
         "visage",
         "profil"
       ]
@@ -1126,17 +1106,14 @@
       "ageMax": 30,
       "thumb": "mannequins/hommes/20-30-ans/mael/thumb.jpg",
       "photos": [
-        "mannequins/hommes/20-30-ans/mael/01-plein-pied.jpg",
-        "mannequins/hommes/20-30-ans/mael/02-visage.jpg",
-        "mannequins/hommes/20-30-ans/mael/03-profil.jpg"
+        "mannequins/hommes/20-30-ans/mael/01-visage.jpg",
+        "mannequins/hommes/20-30-ans/mael/02-profil.jpg"
       ],
       "thumbs": [
         "mannequins/hommes/20-30-ans/mael/thumb.jpg",
-        "mannequins/hommes/20-30-ans/mael/thumb-02.jpg",
-        "mannequins/hommes/20-30-ans/mael/thumb-03.jpg"
+        "mannequins/hommes/20-30-ans/mael/thumb-02.jpg"
       ],
       "types": [
-        "plein-pied",
         "visage",
         "profil"
       ]
@@ -1151,17 +1128,14 @@
       "ageMax": 30,
       "thumb": "mannequins/hommes/20-30-ans/maxence/thumb.jpg",
       "photos": [
-        "mannequins/hommes/20-30-ans/maxence/01-plein-pied.jpg",
-        "mannequins/hommes/20-30-ans/maxence/02-visage.jpg",
-        "mannequins/hommes/20-30-ans/maxence/03-profil.jpg"
+        "mannequins/hommes/20-30-ans/maxence/01-visage.jpg",
+        "mannequins/hommes/20-30-ans/maxence/02-profil.jpg"
       ],
       "thumbs": [
         "mannequins/hommes/20-30-ans/maxence/thumb.jpg",
-        "mannequins/hommes/20-30-ans/maxence/thumb-02.jpg",
-        "mannequins/hommes/20-30-ans/maxence/thumb-03.jpg"
+        "mannequins/hommes/20-30-ans/maxence/thumb-02.jpg"
       ],
       "types": [
-        "plein-pied",
         "visage",
         "profil"
       ]
@@ -1176,17 +1150,14 @@
       "ageMax": 30,
       "thumb": "mannequins/hommes/20-30-ans/nathan/thumb.jpg",
       "photos": [
-        "mannequins/hommes/20-30-ans/nathan/01-plein-pied.jpg",
-        "mannequins/hommes/20-30-ans/nathan/02-visage.jpg",
-        "mannequins/hommes/20-30-ans/nathan/03-profil.jpg"
+        "mannequins/hommes/20-30-ans/nathan/01-visage.jpg",
+        "mannequins/hommes/20-30-ans/nathan/02-profil.jpg"
       ],
       "thumbs": [
         "mannequins/hommes/20-30-ans/nathan/thumb.jpg",
-        "mannequins/hommes/20-30-ans/nathan/thumb-02.jpg",
-        "mannequins/hommes/20-30-ans/nathan/thumb-03.jpg"
+        "mannequins/hommes/20-30-ans/nathan/thumb-02.jpg"
       ],
       "types": [
-        "plein-pied",
         "visage",
         "profil"
       ]
@@ -1201,17 +1172,14 @@
       "ageMax": 30,
       "thumb": "mannequins/hommes/20-30-ans/noe/thumb.jpg",
       "photos": [
-        "mannequins/hommes/20-30-ans/noe/01-plein-pied.jpg",
-        "mannequins/hommes/20-30-ans/noe/02-visage.jpg",
-        "mannequins/hommes/20-30-ans/noe/03-profil.jpg"
+        "mannequins/hommes/20-30-ans/noe/01-visage.jpg",
+        "mannequins/hommes/20-30-ans/noe/02-profil.jpg"
       ],
       "thumbs": [
         "mannequins/hommes/20-30-ans/noe/thumb.jpg",
-        "mannequins/hommes/20-30-ans/noe/thumb-02.jpg",
-        "mannequins/hommes/20-30-ans/noe/thumb-03.jpg"
+        "mannequins/hommes/20-30-ans/noe/thumb-02.jpg"
       ],
       "types": [
-        "plein-pied",
         "visage",
         "profil"
       ]
@@ -1226,17 +1194,14 @@
       "ageMax": 30,
       "thumb": "mannequins/hommes/20-30-ans/pablo/thumb.jpg",
       "photos": [
-        "mannequins/hommes/20-30-ans/pablo/01-plein-pied.jpg",
-        "mannequins/hommes/20-30-ans/pablo/02-visage.jpg",
-        "mannequins/hommes/20-30-ans/pablo/03-profil.jpg"
+        "mannequins/hommes/20-30-ans/pablo/01-visage.jpg",
+        "mannequins/hommes/20-30-ans/pablo/02-profil.jpg"
       ],
       "thumbs": [
         "mannequins/hommes/20-30-ans/pablo/thumb.jpg",
-        "mannequins/hommes/20-30-ans/pablo/thumb-02.jpg",
-        "mannequins/hommes/20-30-ans/pablo/thumb-03.jpg"
+        "mannequins/hommes/20-30-ans/pablo/thumb-02.jpg"
       ],
       "types": [
-        "plein-pied",
         "visage",
         "profil"
       ]
@@ -1251,17 +1216,14 @@
       "ageMax": 30,
       "thumb": "mannequins/hommes/20-30-ans/paul/thumb.jpg",
       "photos": [
-        "mannequins/hommes/20-30-ans/paul/01-plein-pied.jpg",
-        "mannequins/hommes/20-30-ans/paul/02-visage.jpg",
-        "mannequins/hommes/20-30-ans/paul/03-profil.jpg"
+        "mannequins/hommes/20-30-ans/paul/01-visage.jpg",
+        "mannequins/hommes/20-30-ans/paul/02-profil.jpg"
       ],
       "thumbs": [
         "mannequins/hommes/20-30-ans/paul/thumb.jpg",
-        "mannequins/hommes/20-30-ans/paul/thumb-02.jpg",
-        "mannequins/hommes/20-30-ans/paul/thumb-03.jpg"
+        "mannequins/hommes/20-30-ans/paul/thumb-02.jpg"
       ],
       "types": [
-        "plein-pied",
         "visage",
         "profil"
       ]
@@ -1276,17 +1238,14 @@
       "ageMax": 30,
       "thumb": "mannequins/hommes/20-30-ans/raphael/thumb.jpg",
       "photos": [
-        "mannequins/hommes/20-30-ans/raphael/01-plein-pied.jpg",
-        "mannequins/hommes/20-30-ans/raphael/02-visage.jpg",
-        "mannequins/hommes/20-30-ans/raphael/03-profil.jpg"
+        "mannequins/hommes/20-30-ans/raphael/01-visage.jpg",
+        "mannequins/hommes/20-30-ans/raphael/02-profil.jpg"
       ],
       "thumbs": [
         "mannequins/hommes/20-30-ans/raphael/thumb.jpg",
-        "mannequins/hommes/20-30-ans/raphael/thumb-02.jpg",
-        "mannequins/hommes/20-30-ans/raphael/thumb-03.jpg"
+        "mannequins/hommes/20-30-ans/raphael/thumb-02.jpg"
       ],
       "types": [
-        "plein-pied",
         "visage",
         "profil"
       ]
@@ -1301,17 +1260,14 @@
       "ageMax": 30,
       "thumb": "mannequins/hommes/20-30-ans/sacha/thumb.jpg",
       "photos": [
-        "mannequins/hommes/20-30-ans/sacha/01-plein-pied.jpg",
-        "mannequins/hommes/20-30-ans/sacha/02-visage.jpg",
-        "mannequins/hommes/20-30-ans/sacha/03-profil.jpg"
+        "mannequins/hommes/20-30-ans/sacha/01-visage.jpg",
+        "mannequins/hommes/20-30-ans/sacha/02-profil.jpg"
       ],
       "thumbs": [
         "mannequins/hommes/20-30-ans/sacha/thumb.jpg",
-        "mannequins/hommes/20-30-ans/sacha/thumb-02.jpg",
-        "mannequins/hommes/20-30-ans/sacha/thumb-03.jpg"
+        "mannequins/hommes/20-30-ans/sacha/thumb-02.jpg"
       ],
       "types": [
-        "plein-pied",
         "visage",
         "profil"
       ]
@@ -1326,17 +1282,14 @@
       "ageMax": 30,
       "thumb": "mannequins/hommes/20-30-ans/simon/thumb.jpg",
       "photos": [
-        "mannequins/hommes/20-30-ans/simon/01-plein-pied.jpg",
-        "mannequins/hommes/20-30-ans/simon/02-visage.jpg",
-        "mannequins/hommes/20-30-ans/simon/03-profil.jpg"
+        "mannequins/hommes/20-30-ans/simon/01-visage.jpg",
+        "mannequins/hommes/20-30-ans/simon/02-profil.jpg"
       ],
       "thumbs": [
         "mannequins/hommes/20-30-ans/simon/thumb.jpg",
-        "mannequins/hommes/20-30-ans/simon/thumb-02.jpg",
-        "mannequins/hommes/20-30-ans/simon/thumb-03.jpg"
+        "mannequins/hommes/20-30-ans/simon/thumb-02.jpg"
       ],
       "types": [
-        "plein-pied",
         "visage",
         "profil"
       ]
@@ -1351,17 +1304,14 @@
       "ageMax": 30,
       "thumb": "mannequins/hommes/20-30-ans/theo/thumb.jpg",
       "photos": [
-        "mannequins/hommes/20-30-ans/theo/01-plein-pied.jpg",
-        "mannequins/hommes/20-30-ans/theo/02-visage.jpg",
-        "mannequins/hommes/20-30-ans/theo/03-profil.jpg"
+        "mannequins/hommes/20-30-ans/theo/01-visage.jpg",
+        "mannequins/hommes/20-30-ans/theo/02-profil.jpg"
       ],
       "thumbs": [
         "mannequins/hommes/20-30-ans/theo/thumb.jpg",
-        "mannequins/hommes/20-30-ans/theo/thumb-02.jpg",
-        "mannequins/hommes/20-30-ans/theo/thumb-03.jpg"
+        "mannequins/hommes/20-30-ans/theo/thumb-02.jpg"
       ],
       "types": [
-        "plein-pied",
         "visage",
         "profil"
       ]
@@ -1376,17 +1326,14 @@
       "ageMax": 30,
       "thumb": "mannequins/hommes/20-30-ans/tom/thumb.jpg",
       "photos": [
-        "mannequins/hommes/20-30-ans/tom/01-plein-pied.jpg",
-        "mannequins/hommes/20-30-ans/tom/02-visage.jpg",
-        "mannequins/hommes/20-30-ans/tom/03-profil.jpg"
+        "mannequins/hommes/20-30-ans/tom/01-visage.jpg",
+        "mannequins/hommes/20-30-ans/tom/02-profil.jpg"
       ],
       "thumbs": [
         "mannequins/hommes/20-30-ans/tom/thumb.jpg",
-        "mannequins/hommes/20-30-ans/tom/thumb-02.jpg",
-        "mannequins/hommes/20-30-ans/tom/thumb-03.jpg"
+        "mannequins/hommes/20-30-ans/tom/thumb-02.jpg"
       ],
       "types": [
-        "plein-pied",
         "visage",
         "profil"
       ]
@@ -1401,17 +1348,14 @@
       "ageMax": 50,
       "thumb": "mannequins/hommes/40-50-ans/armand/thumb.jpg",
       "photos": [
-        "mannequins/hommes/40-50-ans/armand/01-plein-pied.jpg",
-        "mannequins/hommes/40-50-ans/armand/02-visage.jpg",
-        "mannequins/hommes/40-50-ans/armand/03-profil.jpg"
+        "mannequins/hommes/40-50-ans/armand/01-visage.jpg",
+        "mannequins/hommes/40-50-ans/armand/02-profil.jpg"
       ],
       "thumbs": [
         "mannequins/hommes/40-50-ans/armand/thumb.jpg",
-        "mannequins/hommes/40-50-ans/armand/thumb-02.jpg",
-        "mannequins/hommes/40-50-ans/armand/thumb-03.jpg"
+        "mannequins/hommes/40-50-ans/armand/thumb-02.jpg"
       ],
       "types": [
-        "plein-pied",
         "visage",
         "profil"
       ]
@@ -1426,17 +1370,14 @@
       "ageMax": 50,
       "thumb": "mannequins/hommes/40-50-ans/bruno/thumb.jpg",
       "photos": [
-        "mannequins/hommes/40-50-ans/bruno/01-plein-pied.jpg",
-        "mannequins/hommes/40-50-ans/bruno/02-visage.jpg",
-        "mannequins/hommes/40-50-ans/bruno/03-profil.jpg"
+        "mannequins/hommes/40-50-ans/bruno/01-visage.jpg",
+        "mannequins/hommes/40-50-ans/bruno/02-profil.jpg"
       ],
       "thumbs": [
         "mannequins/hommes/40-50-ans/bruno/thumb.jpg",
-        "mannequins/hommes/40-50-ans/bruno/thumb-02.jpg",
-        "mannequins/hommes/40-50-ans/bruno/thumb-03.jpg"
+        "mannequins/hommes/40-50-ans/bruno/thumb-02.jpg"
       ],
       "types": [
-        "plein-pied",
         "visage",
         "profil"
       ]
@@ -1451,17 +1392,14 @@
       "ageMax": 50,
       "thumb": "mannequins/hommes/40-50-ans/fabrice/thumb.jpg",
       "photos": [
-        "mannequins/hommes/40-50-ans/fabrice/01-plein-pied.jpg",
-        "mannequins/hommes/40-50-ans/fabrice/02-visage.jpg",
-        "mannequins/hommes/40-50-ans/fabrice/03-profil.jpg"
+        "mannequins/hommes/40-50-ans/fabrice/01-visage.jpg",
+        "mannequins/hommes/40-50-ans/fabrice/02-profil.jpg"
       ],
       "thumbs": [
         "mannequins/hommes/40-50-ans/fabrice/thumb.jpg",
-        "mannequins/hommes/40-50-ans/fabrice/thumb-02.jpg",
-        "mannequins/hommes/40-50-ans/fabrice/thumb-03.jpg"
+        "mannequins/hommes/40-50-ans/fabrice/thumb-02.jpg"
       ],
       "types": [
-        "plein-pied",
         "visage",
         "profil"
       ]
@@ -1476,17 +1414,14 @@
       "ageMax": 50,
       "thumb": "mannequins/hommes/40-50-ans/jerome/thumb.jpg",
       "photos": [
-        "mannequins/hommes/40-50-ans/jerome/01-plein-pied.jpg",
-        "mannequins/hommes/40-50-ans/jerome/02-visage.jpg",
-        "mannequins/hommes/40-50-ans/jerome/03-profil.jpg"
+        "mannequins/hommes/40-50-ans/jerome/01-visage.jpg",
+        "mannequins/hommes/40-50-ans/jerome/02-profil.jpg"
       ],
       "thumbs": [
         "mannequins/hommes/40-50-ans/jerome/thumb.jpg",
-        "mannequins/hommes/40-50-ans/jerome/thumb-02.jpg",
-        "mannequins/hommes/40-50-ans/jerome/thumb-03.jpg"
+        "mannequins/hommes/40-50-ans/jerome/thumb-02.jpg"
       ],
       "types": [
-        "plein-pied",
         "visage",
         "profil"
       ]
@@ -1501,17 +1436,14 @@
       "ageMax": 50,
       "thumb": "mannequins/hommes/40-50-ans/jose/thumb.jpg",
       "photos": [
-        "mannequins/hommes/40-50-ans/jose/01-plein-pied.jpg",
-        "mannequins/hommes/40-50-ans/jose/02-visage.jpg",
-        "mannequins/hommes/40-50-ans/jose/03-profil.jpg"
+        "mannequins/hommes/40-50-ans/jose/01-visage.jpg",
+        "mannequins/hommes/40-50-ans/jose/02-profil.jpg"
       ],
       "thumbs": [
         "mannequins/hommes/40-50-ans/jose/thumb.jpg",
-        "mannequins/hommes/40-50-ans/jose/thumb-02.jpg",
-        "mannequins/hommes/40-50-ans/jose/thumb-03.jpg"
+        "mannequins/hommes/40-50-ans/jose/thumb-02.jpg"
       ],
       "types": [
-        "plein-pied",
         "visage",
         "profil"
       ]
@@ -1526,17 +1458,146 @@
       "ageMax": 50,
       "thumb": "mannequins/hommes/40-50-ans/laurent/thumb.jpg",
       "photos": [
-        "mannequins/hommes/40-50-ans/laurent/01-plein-pied.jpg",
-        "mannequins/hommes/40-50-ans/laurent/02-visage.jpg",
-        "mannequins/hommes/40-50-ans/laurent/03-profil.jpg"
+        "mannequins/hommes/40-50-ans/laurent/01-visage.jpg",
+        "mannequins/hommes/40-50-ans/laurent/02-profil.jpg"
       ],
       "thumbs": [
         "mannequins/hommes/40-50-ans/laurent/thumb.jpg",
-        "mannequins/hommes/40-50-ans/laurent/thumb-02.jpg",
-        "mannequins/hommes/40-50-ans/laurent/thumb-03.jpg"
+        "mannequins/hommes/40-50-ans/laurent/thumb-02.jpg"
       ],
       "types": [
-        "plein-pied",
+        "visage",
+        "profil"
+      ]
+    },
+    {
+      "id": "hommes-plus-size-alain",
+      "prenom": "Alain",
+      "genre": "Homme",
+      "sexe": "Homme",
+      "age": "Plus size",
+      "ageMin": null,
+      "ageMax": null,
+      "thumb": "mannequins/hommes/plus-size/alain/thumb.jpg",
+      "photos": [
+        "mannequins/hommes/plus-size/alain/01-visage.jpg",
+        "mannequins/hommes/plus-size/alain/02-profil.jpg"
+      ],
+      "thumbs": [
+        "mannequins/hommes/plus-size/alain/thumb.jpg",
+        "mannequins/hommes/plus-size/alain/thumb-02.jpg"
+      ],
+      "types": [
+        "visage",
+        "profil"
+      ]
+    },
+    {
+      "id": "hommes-plus-size-ari",
+      "prenom": "Ari",
+      "genre": "Homme",
+      "sexe": "Homme",
+      "age": "Plus size",
+      "ageMin": null,
+      "ageMax": null,
+      "thumb": "mannequins/hommes/plus-size/ari/thumb.jpg",
+      "photos": [
+        "mannequins/hommes/plus-size/ari/01-visage.jpg",
+        "mannequins/hommes/plus-size/ari/02-profil.jpg"
+      ],
+      "thumbs": [
+        "mannequins/hommes/plus-size/ari/thumb.jpg",
+        "mannequins/hommes/plus-size/ari/thumb-02.jpg"
+      ],
+      "types": [
+        "visage",
+        "profil"
+      ]
+    },
+    {
+      "id": "hommes-plus-size-christophe",
+      "prenom": "Christophe",
+      "genre": "Homme",
+      "sexe": "Homme",
+      "age": "Plus size",
+      "ageMin": null,
+      "ageMax": null,
+      "thumb": "mannequins/hommes/plus-size/christophe/thumb.jpg",
+      "photos": [
+        "mannequins/hommes/plus-size/christophe/01-visage.jpg",
+        "mannequins/hommes/plus-size/christophe/02-profil.jpg"
+      ],
+      "thumbs": [
+        "mannequins/hommes/plus-size/christophe/thumb.jpg",
+        "mannequins/hommes/plus-size/christophe/thumb-02.jpg"
+      ],
+      "types": [
+        "visage",
+        "profil"
+      ]
+    },
+    {
+      "id": "hommes-plus-size-florian",
+      "prenom": "Florian",
+      "genre": "Homme",
+      "sexe": "Homme",
+      "age": "Plus size",
+      "ageMin": null,
+      "ageMax": null,
+      "thumb": "mannequins/hommes/plus-size/florian/thumb.jpg",
+      "photos": [
+        "mannequins/hommes/plus-size/florian/01-visage.jpg",
+        "mannequins/hommes/plus-size/florian/02-profil.jpg"
+      ],
+      "thumbs": [
+        "mannequins/hommes/plus-size/florian/thumb.jpg",
+        "mannequins/hommes/plus-size/florian/thumb-02.jpg"
+      ],
+      "types": [
+        "visage",
+        "profil"
+      ]
+    },
+    {
+      "id": "hommes-plus-size-joshua",
+      "prenom": "Joshua",
+      "genre": "Homme",
+      "sexe": "Homme",
+      "age": "Plus size",
+      "ageMin": null,
+      "ageMax": null,
+      "thumb": "mannequins/hommes/plus-size/joshua/thumb.jpg",
+      "photos": [
+        "mannequins/hommes/plus-size/joshua/01-visage.jpg",
+        "mannequins/hommes/plus-size/joshua/02-profil.jpg"
+      ],
+      "thumbs": [
+        "mannequins/hommes/plus-size/joshua/thumb.jpg",
+        "mannequins/hommes/plus-size/joshua/thumb-02.jpg"
+      ],
+      "types": [
+        "visage",
+        "profil"
+      ]
+    },
+    {
+      "id": "hommes-plus-size-ethan",
+      "prenom": "Éthan",
+      "genre": "Homme",
+      "sexe": "Homme",
+      "age": "Plus size",
+      "ageMin": null,
+      "ageMax": null,
+      "thumb": "mannequins/hommes/plus-size/ethan/thumb.jpg",
+      "photos": [
+        "mannequins/hommes/plus-size/ethan/01-visage.jpg",
+        "mannequins/hommes/plus-size/ethan/02-profil.jpg"
+      ],
+      "thumbs": [
+        "mannequins/hommes/plus-size/ethan/thumb.jpg",
+        "mannequins/hommes/plus-size/ethan/thumb-02.jpg"
+      ],
+      "types": [
         "visage",
         "profil"
       ]
@@ -1551,17 +1612,14 @@
       "ageMax": 12,
       "thumb": "mannequins/hommes/4-12-ans/benjamin/thumb.jpg",
       "photos": [
-        "mannequins/hommes/4-12-ans/benjamin/01-plein-pied.jpg",
-        "mannequins/hommes/4-12-ans/benjamin/02-visage.jpg",
-        "mannequins/hommes/4-12-ans/benjamin/03-profil.jpg"
+        "mannequins/hommes/4-12-ans/benjamin/01-visage.jpg",
+        "mannequins/hommes/4-12-ans/benjamin/02-profil.jpg"
       ],
       "thumbs": [
         "mannequins/hommes/4-12-ans/benjamin/thumb.jpg",
-        "mannequins/hommes/4-12-ans/benjamin/thumb-02.jpg",
-        "mannequins/hommes/4-12-ans/benjamin/thumb-03.jpg"
+        "mannequins/hommes/4-12-ans/benjamin/thumb-02.jpg"
       ],
       "types": [
-        "plein-pied",
         "visage",
         "profil"
       ]
@@ -1576,17 +1634,14 @@
       "ageMax": 12,
       "thumb": "mannequins/hommes/4-12-ans/diego/thumb.jpg",
       "photos": [
-        "mannequins/hommes/4-12-ans/diego/01-plein-pied.jpg",
-        "mannequins/hommes/4-12-ans/diego/02-visage.jpg",
-        "mannequins/hommes/4-12-ans/diego/03-profil.jpg"
+        "mannequins/hommes/4-12-ans/diego/01-visage.jpg",
+        "mannequins/hommes/4-12-ans/diego/02-profil.jpg"
       ],
       "thumbs": [
         "mannequins/hommes/4-12-ans/diego/thumb.jpg",
-        "mannequins/hommes/4-12-ans/diego/thumb-02.jpg",
-        "mannequins/hommes/4-12-ans/diego/thumb-03.jpg"
+        "mannequins/hommes/4-12-ans/diego/thumb-02.jpg"
       ],
       "types": [
-        "plein-pied",
         "visage",
         "profil"
       ]
@@ -1601,17 +1656,14 @@
       "ageMax": 12,
       "thumb": "mannequins/hommes/4-12-ans/jaden/thumb.jpg",
       "photos": [
-        "mannequins/hommes/4-12-ans/jaden/01-plein-pied.jpg",
-        "mannequins/hommes/4-12-ans/jaden/02-visage.jpg",
-        "mannequins/hommes/4-12-ans/jaden/03-profil.jpg"
+        "mannequins/hommes/4-12-ans/jaden/01-visage.jpg",
+        "mannequins/hommes/4-12-ans/jaden/02-profil.jpg"
       ],
       "thumbs": [
         "mannequins/hommes/4-12-ans/jaden/thumb.jpg",
-        "mannequins/hommes/4-12-ans/jaden/thumb-02.jpg",
-        "mannequins/hommes/4-12-ans/jaden/thumb-03.jpg"
+        "mannequins/hommes/4-12-ans/jaden/thumb-02.jpg"
       ],
       "types": [
-        "plein-pied",
         "visage",
         "profil"
       ]
@@ -1626,17 +1678,14 @@
       "ageMax": 12,
       "thumb": "mannequins/femmes/4-12-ans/jeanne/thumb.jpg",
       "photos": [
-        "mannequins/femmes/4-12-ans/jeanne/01-plein-pied.jpg",
-        "mannequins/femmes/4-12-ans/jeanne/02-visage.jpg",
-        "mannequins/femmes/4-12-ans/jeanne/03-profil.jpg"
+        "mannequins/femmes/4-12-ans/jeanne/01-visage.jpg",
+        "mannequins/femmes/4-12-ans/jeanne/02-profil.jpg"
       ],
       "thumbs": [
         "mannequins/femmes/4-12-ans/jeanne/thumb.jpg",
-        "mannequins/femmes/4-12-ans/jeanne/thumb-02.jpg",
-        "mannequins/femmes/4-12-ans/jeanne/thumb-03.jpg"
+        "mannequins/femmes/4-12-ans/jeanne/thumb-02.jpg"
       ],
       "types": [
-        "plein-pied",
         "visage",
         "profil"
       ]
@@ -1651,17 +1700,14 @@
       "ageMax": 12,
       "thumb": "mannequins/hommes/4-12-ans/liam/thumb.jpg",
       "photos": [
-        "mannequins/hommes/4-12-ans/liam/01-plein-pied.jpg",
-        "mannequins/hommes/4-12-ans/liam/02-visage.jpg",
-        "mannequins/hommes/4-12-ans/liam/03-profil.jpg"
+        "mannequins/hommes/4-12-ans/liam/01-visage.jpg",
+        "mannequins/hommes/4-12-ans/liam/02-profil.jpg"
       ],
       "thumbs": [
         "mannequins/hommes/4-12-ans/liam/thumb.jpg",
-        "mannequins/hommes/4-12-ans/liam/thumb-02.jpg",
-        "mannequins/hommes/4-12-ans/liam/thumb-03.jpg"
+        "mannequins/hommes/4-12-ans/liam/thumb-02.jpg"
       ],
       "types": [
-        "plein-pied",
         "visage",
         "profil"
       ]
@@ -1676,17 +1722,14 @@
       "ageMax": 12,
       "thumb": "mannequins/femmes/4-12-ans/lila/thumb.jpg",
       "photos": [
-        "mannequins/femmes/4-12-ans/lila/01-plein-pied.jpg",
-        "mannequins/femmes/4-12-ans/lila/02-visage.jpg",
-        "mannequins/femmes/4-12-ans/lila/03-profil.jpg"
+        "mannequins/femmes/4-12-ans/lila/01-visage.jpg",
+        "mannequins/femmes/4-12-ans/lila/02-profil.jpg"
       ],
       "thumbs": [
         "mannequins/femmes/4-12-ans/lila/thumb.jpg",
-        "mannequins/femmes/4-12-ans/lila/thumb-02.jpg",
-        "mannequins/femmes/4-12-ans/lila/thumb-03.jpg"
+        "mannequins/femmes/4-12-ans/lila/thumb-02.jpg"
       ],
       "types": [
-        "plein-pied",
         "visage",
         "profil"
       ]
@@ -1701,17 +1744,14 @@
       "ageMax": 12,
       "thumb": "mannequins/femmes/4-12-ans/lucie/thumb.jpg",
       "photos": [
-        "mannequins/femmes/4-12-ans/lucie/01-plein-pied.jpg",
-        "mannequins/femmes/4-12-ans/lucie/02-visage.jpg",
-        "mannequins/femmes/4-12-ans/lucie/03-profil.jpg"
+        "mannequins/femmes/4-12-ans/lucie/01-visage.jpg",
+        "mannequins/femmes/4-12-ans/lucie/02-profil.jpg"
       ],
       "thumbs": [
         "mannequins/femmes/4-12-ans/lucie/thumb.jpg",
-        "mannequins/femmes/4-12-ans/lucie/thumb-02.jpg",
-        "mannequins/femmes/4-12-ans/lucie/thumb-03.jpg"
+        "mannequins/femmes/4-12-ans/lucie/thumb-02.jpg"
       ],
       "types": [
-        "plein-pied",
         "visage",
         "profil"
       ]
@@ -1726,17 +1766,14 @@
       "ageMax": 12,
       "thumb": "mannequins/femmes/4-12-ans/pauline/thumb.jpg",
       "photos": [
-        "mannequins/femmes/4-12-ans/pauline/01-plein-pied.jpg",
-        "mannequins/femmes/4-12-ans/pauline/02-visage.jpg",
-        "mannequins/femmes/4-12-ans/pauline/03-profil.jpg"
+        "mannequins/femmes/4-12-ans/pauline/01-visage.jpg",
+        "mannequins/femmes/4-12-ans/pauline/02-profil.jpg"
       ],
       "thumbs": [
         "mannequins/femmes/4-12-ans/pauline/thumb.jpg",
-        "mannequins/femmes/4-12-ans/pauline/thumb-02.jpg",
-        "mannequins/femmes/4-12-ans/pauline/thumb-03.jpg"
+        "mannequins/femmes/4-12-ans/pauline/thumb-02.jpg"
       ],
       "types": [
-        "plein-pied",
         "visage",
         "profil"
       ]
@@ -1751,17 +1788,14 @@
       "ageMax": 12,
       "thumb": "mannequins/hommes/4-12-ans/shai/thumb.jpg",
       "photos": [
-        "mannequins/hommes/4-12-ans/shai/01-plein-pied.jpg",
-        "mannequins/hommes/4-12-ans/shai/02-visage.jpg",
-        "mannequins/hommes/4-12-ans/shai/03-profil.jpg"
+        "mannequins/hommes/4-12-ans/shai/01-visage.jpg",
+        "mannequins/hommes/4-12-ans/shai/02-profil.jpg"
       ],
       "thumbs": [
         "mannequins/hommes/4-12-ans/shai/thumb.jpg",
-        "mannequins/hommes/4-12-ans/shai/thumb-02.jpg",
-        "mannequins/hommes/4-12-ans/shai/thumb-03.jpg"
+        "mannequins/hommes/4-12-ans/shai/thumb-02.jpg"
       ],
       "types": [
-        "plein-pied",
         "visage",
         "profil"
       ]
@@ -1776,17 +1810,14 @@
       "ageMax": 12,
       "thumb": "mannequins/hommes/4-12-ans/solal/thumb.jpg",
       "photos": [
-        "mannequins/hommes/4-12-ans/solal/01-plein-pied.jpg",
-        "mannequins/hommes/4-12-ans/solal/02-visage.jpg",
-        "mannequins/hommes/4-12-ans/solal/03-profil.jpg"
+        "mannequins/hommes/4-12-ans/solal/01-visage.jpg",
+        "mannequins/hommes/4-12-ans/solal/02-profil.jpg"
       ],
       "thumbs": [
         "mannequins/hommes/4-12-ans/solal/thumb.jpg",
-        "mannequins/hommes/4-12-ans/solal/thumb-02.jpg",
-        "mannequins/hommes/4-12-ans/solal/thumb-03.jpg"
+        "mannequins/hommes/4-12-ans/solal/thumb-02.jpg"
       ],
       "types": [
-        "plein-pied",
         "visage",
         "profil"
       ]
@@ -1801,17 +1832,14 @@
       "ageMax": 12,
       "thumb": "mannequins/femmes/4-12-ans/sonia/thumb.jpg",
       "photos": [
-        "mannequins/femmes/4-12-ans/sonia/01-plein-pied.jpg",
-        "mannequins/femmes/4-12-ans/sonia/02-visage.jpg",
-        "mannequins/femmes/4-12-ans/sonia/03-profil.jpg"
+        "mannequins/femmes/4-12-ans/sonia/01-visage.jpg",
+        "mannequins/femmes/4-12-ans/sonia/02-profil.jpg"
       ],
       "thumbs": [
         "mannequins/femmes/4-12-ans/sonia/thumb.jpg",
-        "mannequins/femmes/4-12-ans/sonia/thumb-02.jpg",
-        "mannequins/femmes/4-12-ans/sonia/thumb-03.jpg"
+        "mannequins/femmes/4-12-ans/sonia/thumb-02.jpg"
       ],
       "types": [
-        "plein-pied",
         "visage",
         "profil"
       ]
@@ -1826,17 +1854,14 @@
       "ageMax": 12,
       "thumb": "mannequins/femmes/4-12-ans/zoe/thumb.jpg",
       "photos": [
-        "mannequins/femmes/4-12-ans/zoe/01-plein-pied.jpg",
-        "mannequins/femmes/4-12-ans/zoe/02-visage.jpg",
-        "mannequins/femmes/4-12-ans/zoe/03-profil.jpg"
+        "mannequins/femmes/4-12-ans/zoe/01-visage.jpg",
+        "mannequins/femmes/4-12-ans/zoe/02-profil.jpg"
       ],
       "thumbs": [
         "mannequins/femmes/4-12-ans/zoe/thumb.jpg",
-        "mannequins/femmes/4-12-ans/zoe/thumb-02.jpg",
-        "mannequins/femmes/4-12-ans/zoe/thumb-03.jpg"
+        "mannequins/femmes/4-12-ans/zoe/thumb-02.jpg"
       ],
       "types": [
-        "plein-pied",
         "visage",
         "profil"
       ]

@@ -22,15 +22,18 @@ python scripts/build-catalogue.py
 - `--dry-run` affiche la classification et le JSON sans rien écrire.
 - Les dossiers de sortie des mannequins retirés de la source sont supprimés automatiquement.
 
-Arborescence source attendue : `<genre>/<tranche d'âge>/<NN.PRENOM>/<images>`.
-Le genre est déduit du nom du dossier (FEMME / HOMME), la tranche d'âge de ses chiffres
-(borne haute ≤ 15 ans ⇒ genre `Enfant`), le prénom du nom du dossier sans son préfixe numérique.
+Arborescence source attendue : `<genre>/<catégorie>/<NN.PRENOM>/<images>`.
+Le genre est déduit du nom du dossier (FEMMES / HOMMES), la catégorie de ses chiffres
+(`20-30 ANS` → « 20-30 ans », borne haute ≤ 15 ans ⇒ genre `Enfant`) ou de son nom
+s'il n'en a pas (`+SIZE` → « Plus size »), le prénom du nom du dossier sans son préfixe numérique.
 
-### Classification automatique
+### Ordre et étiquettes des photos
 
-Chaque image est classée `plein-pied`, `visage` ou `profil` (détection de visage OpenCV +
-silhouette sur fond de studio). Le script signale en fin d'exécution les cas à vérifier
-(photo ignorée, type manquant).
+Si les images sont numérotées (`01.png`, `02.png`…), cet ordre est conservé tel quel.
+Chaque image reçoit ensuite une étiquette `visage`, `profil` ou `plein-pied` (détection de
+visage OpenCV + silhouette sur fond de studio), utilisée pour nommer les fichiers de sortie
+(`01-visage.jpg`, `02-profil.jpg`) et pour l'affichage. Le script signale en fin d'exécution
+les cas à vérifier (photo ignorée, mannequin avec une seule photo).
 
 ### Corriger un cas à la main
 

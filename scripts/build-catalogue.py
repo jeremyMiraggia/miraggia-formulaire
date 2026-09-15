@@ -14,10 +14,12 @@ Arborescence source attendue (les noms exacts sont decouverts, pas codes en dur)
     <SRC>/<dossier genre>/<dossier tranche d'age>/<NN.PRENOM>/<images>
 
     - genre  : dossier dont le nom contient FEMME / WOMEN / HOMME / MEN
-    - age    : "20-30 ANS", "4-12 ANS"... (la borne haute <= AGE_ENFANT_MAX => genre "Enfant")
+    - age    : "20-30 ANS", "4-12 ANS"... (la borne haute <= AGE_ENFANT_MAX => genre "Enfant") ;
+               un dossier sans chiffres est une categorie a part ("+SIZE" -> "Plus size")
     - prenom : prefixe numerique optionnel ("01.MILA" -> "Mila")
+    - images : si elles sont numerotees (01.png, 02.png...), cet ordre est conserve tel quel
 
-Classification automatique de chaque image (OpenCV, cascades de Haar) :
+Classification automatique de chaque image, pour son etiquette (OpenCV, cascades de Haar) :
     - visage petit par rapport a l'image (ou personne entiere detectee) -> plein-pied
     - visage de face detecte                                              -> visage
     - sinon                                                                -> profil
@@ -109,6 +111,10 @@ def parse_age(folder: str) -> tuple[str, int | None, int | None]:
     lo = nums[0] if nums else None
     hi = nums[1] if len(nums) > 1 else lo
     label = re.sub(r"\s+", " ", folder).strip()
+    if not nums:
+        # Categorie sans age, ex. "+SIZE" -> "Plus size"
+        label = re.sub(r"^\+\s*", "Plus ", label)
+        return label[:1].upper() + label[1:].lower(), None, None
     label = re.sub(r"\bANS\b", "ans", label, flags=re.I)
     if not re.search(r"ans", label, re.I) and nums:
         label = f"{label} ans"
@@ -297,21 +303,28 @@ def process_model(job: dict) -> dict:
         weakest = min(visages, key=lambda c: c["details"].get("weight", 0.0))
         weakest["kind"] = "profil"
 
-    # Ordre : 1 plein-pied, 1 visage, 1 profil (le visage le plus franc, sinon la plus grande resolution),
-    # puis les extras.
+    def leading_number(c: dict) -> int | None:
+        m = re.match(r"^\s*(\d+)", c["src"].name)
+        return int(m.group(1)) if m else None
+
     ordered: list[dict] = []
-    remaining = sorted(classified, key=lambda c: (-c["details"].get("weight", 0.0), -c["pixels"]))
-    for kind in TYPE_ORDER:
-        for c in remaining:
-            if c["kind"] == kind:
-                ordered.append(c)
-                remaining.remove(c)
-                break
-    for kind in TYPE_ORDER:
-        ordered += [c for c in remaining if c["kind"] == kind]
-    for kind in TYPE_ORDER:
-        if not any(c["kind"] == kind for c in ordered):
-            warnings.append(f"pas de photo '{kind}'")
+    if any(leading_number(c) is not None for c in classified):
+        # Fichiers numerotes (01.png, 02.png...) : l'ordre des numeros fait foi, les non numerotes en dernier.
+        ordered = sorted(classified, key=lambda c: (leading_number(c) is None, leading_number(c) or 0, c["src"].name.lower()))
+    else:
+        # Sinon : 1 plein-pied, 1 visage, 1 profil (le visage le plus franc, sinon la plus grande resolution),
+        # puis les extras.
+        remaining = sorted(classified, key=lambda c: (-c["details"].get("weight", 0.0), -c["pixels"]))
+        for kind in TYPE_ORDER:
+            for c in remaining:
+                if c["kind"] == kind:
+                    ordered.append(c)
+                    remaining.remove(c)
+                    break
+        for kind in TYPE_ORDER:
+            ordered += [c for c in remaining if c["kind"] == kind]
+    if len(ordered) < 2:
+        warnings.append(f"seulement {len(ordered)} photo(s)")
 
     photos: list[dict] = []
     counters: dict[str, int] = {}
@@ -463,7 +476,7 @@ def main() -> int:
                               "warnings": r["warnings"]}
 
     genre_order = {"Femme": 0, "Homme": 1, "Enfant": 2}
-    entries.sort(key=lambda e: (genre_order.get(e["genre"], 9), e["ageMin"] or 0, e["age"], e["prenom"].lower()))
+    entries.sort(key=lambda e: (genre_order.get(e["genre"], 9), e["ageMin"] if e["ageMin"] is not None else 999, e["age"], e["prenom"].lower()))
     ages = sorted({e["age"] for e in entries}, key=lambda a: (int(re.findall(r"\d+", a)[0]) if re.findall(r"\d+", a) else 999, a))
     genres = [g for g in ("Femme", "Homme", "Enfant") if any(e["genre"] == g for e in entries)]
     catalogue = {
