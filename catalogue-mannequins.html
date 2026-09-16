@@ -242,6 +242,11 @@
   .modal-hint { font-size: 11px; color: var(--text-muted); text-align: center; }
   .modal-hint kbd { font-family: inherit; font-size: 10px; background: var(--neige); border-radius: 4px; padding: 1px 5px; border: 1px solid var(--border); }
 
+  /* ── MODE INTEGRE (iframe dans le formulaire) ───────────── */
+  body.embed .header, body.embed .footer { display: none; }
+  body.embed .hero { padding: 28px 24px 24px; }
+  body.embed .hero h1 { font-size: 24px; }
+
   /* ── FOOTER ─────────────────────────────────────────────── */
   .footer { text-align: center; font-size: 12px; color: var(--text-muted); padding: 0 24px 40px; }
   .footer a { color: var(--abysse); }
@@ -403,6 +408,25 @@
   var ICON_PREV = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M15 6l-6 6 6 6"/></svg>';
   var ICON_NEXT = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg>';
 
+  // Mode integre : la page est affichee dans le formulaire (iframe). Les retours vers le formulaire
+  // deviennent des fermetures de la surcouche, signalees a la page parente.
+  var EMBED = new URLSearchParams(location.search).get('embed') === '1' || window.self !== window.top;
+  if (EMBED) document.body.classList.add('embed');
+  function closeEmbed() {
+    try { window.parent.postMessage({ type: 'miraggia-close-catalogue' }, '*'); } catch (err) {}
+  }
+  if (EMBED) {
+    Array.prototype.forEach.call(document.querySelectorAll('a[href="miraggia-brief.html"]'), function (a) {
+      a.addEventListener('click', function (e) { e.preventDefault(); closeModal(); closeEmbed(); });
+      if (a.classList.contains('btn')) {
+        var l = a.querySelector('.long'), sh = a.querySelector('.short');
+        if (l) l.textContent = 'Retour au devis';
+        if (sh) sh.textContent = 'Devis';
+        if (!l && !sh) a.lastChild.textContent = ' Retour au devis';
+      }
+    });
+  }
+
   var state = { all: [], genre: '', age: '', query: '', filtered: [], ages: [] };
   var modalState = { model: null, index: 0, opener: null };
 
@@ -561,6 +585,7 @@
   function syncUrl() {
     if (!window.history || !history.replaceState) return;
     var p = new URLSearchParams();
+    if (EMBED) p.set('embed', '1');
     if (state.genre) p.set('genre', state.genre);
     if (state.age) p.set('age', state.age);
     if (state.query) p.set('q', state.query);
@@ -765,7 +790,7 @@
     if (t) showPhoto(parseInt(t.getAttribute('data-index'), 10));
   });
   document.addEventListener('keydown', function (e) {
-    if (els.modal.hidden) return;
+    if (els.modal.hidden) { if (EMBED && e.key === 'Escape') closeEmbed(); return; }
     if (e.key === 'Escape') { e.preventDefault(); closeModal(); }
     else if (e.key === 'ArrowLeft') { e.preventDefault(); showPhoto(modalState.index - 1); }
     else if (e.key === 'ArrowRight') { e.preventDefault(); showPhoto(modalState.index + 1); }
