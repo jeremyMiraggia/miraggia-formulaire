@@ -26,7 +26,9 @@ Classification automatique de chaque image, pour son etiquette (OpenCV, cascades
     - aucune personne detectee (ex : photo de fond vide)                   -> ignoree
 
 Corrections manuelles : scripts/catalogue-overrides.json
-    { "<id mannequin>": { "<nom de fichier source>": "plein-pied" | "visage" | "profil" | "skip" } }
+    { "<id mannequin>": { "<nom de fichier source>": "plein-pied" | "visage" | "mi-corps" | "profil" | "skip" },
+      "_par_numero": { "<prefixe d'id ou *>": { "1": "visage", "2": "mi-corps", "3": "plein-pied" } } }
+    La regle "_par_numero" impose le type selon le numero de la photo (pas de detection), par categorie.
 
 Sortie :
     <OUT>/mannequins/<genre>/<age>/<prenom>/01-plein-pied.jpg, 02-visage.jpg, 03-profil.jpg ...
@@ -74,7 +76,7 @@ DETECT_HEIGHT = 1000         # hauteur de travail pour la detection
 FULL_BODY_FACE_RATIO = 0.16  # visage / hauteur image en dessous => plein pied
 FULL_BODY_MAX_WIDTH = 0.55   # largeur du sujet / largeur image : corps entier < 0.45, buste > 0.55
 
-TYPE_ORDER = ["plein-pied", "visage", "profil"]
+TYPE_ORDER = ["plein-pied", "visage", "mi-corps", "profil"]
 OUTPUT_FORMAT_VERSION = 3    # a incrementer quand la forme des fichiers de sortie change (invalide le cache)
 
 GENRE_PATTERNS = [
@@ -93,15 +95,41 @@ def slugify(text: str) -> str:
 
 
 def pretty_name(folder: str) -> str:
-    """'01.MILA' -> 'Mila', '06.JOSÉ' -> 'José', 'jean-luc' -> 'Jean-Luc'."""
-    name = re.sub(r"^\s*\d+\s*[.\-_ )]*\s*", "", folder).strip()
+    """'01.MILA' -> 'Mila', '06.JOSÉ' -> 'José', '33.1 ALYA' -> 'Alya', 'jean-luc' -> 'Jean-Luc'."""
+    name = re.sub(r"^\s*\d+(?:[.,]\d+)*\s*[.\-_ )]*\s*", "", folder).strip()
     name = name or folder
     return "-".join(part[:1].upper() + part[1:].lower() for part in name.split("-"))
 
 
-def folder_order(folder: str) -> int:
-    m = re.match(r"^\s*(\d+)", folder)
-    return int(m.group(1)) if m else 10**6
+def file_number(stem: str) -> int | None:
+    """Numero d'ordre d'une photo : en tete ("01.png", "002 copie.png") ou en fin de nom ("AMBRE-1.jpg", "ELYSE2.jpg")."""
+    m = re.match(r"^\s*(\d+)", stem) or re.search(r"(\d+)\s*$", stem)
+    return int(m.group(1)) if m else None
+
+
+def number_types_for(model_id: str, overrides: dict) -> dict[str, str]:
+    """Regle "_par_numero" des overrides : type impose selon le numero de la photo, par prefixe d'id.
+
+    Exemple : {"_par_numero": {"femmes-20-30-ans": {"1": "visage", "2": "mi-corps", "3": "plein-pied"}}}
+    La cle "*" s'applique a tous les mannequins ; le prefixe le plus long l'emporte.
+    """
+    rules = overrides.get("_par_numero") or {}
+    best: dict[str, str] = {}
+    best_len = -1
+    for prefix, mapping in rules.items():
+        if prefix == "*" or model_id.startswith(prefix):
+            length = 0 if prefix == "*" else len(prefix)
+            if length > best_len:
+                best, best_len = {str(k): v for k, v in mapping.items()}, length
+    return best
+
+
+def folder_order(folder: str) -> float:
+    """Prefixe numerique du dossier ('01.', '33.1 ' -> 33.1) ; les dossiers sans prefixe passent en dernier."""
+    m = re.match(r"^\s*(\d+(?:[.,]\d+)?)(?![.,]?\d)", folder)
+    if not m:
+        return 10**6
+    return float(m.group(1).replace(",", "."))
 
 
 def parse_age(folder: str) -> tuple[str, int | None, int | None]:
@@ -274,11 +302,17 @@ def process_model(job: dict) -> dict:
     overrides: dict[str, str] = job["overrides"]
     dry_run: bool = job["dry_run"]
 
+    number_types: dict[str, str] = job.get("number_types") or {}
+
     files = dedupe_sources([p for p in src_dir.iterdir() if p.is_file() and p.suffix.lower() in IMAGE_EXT])
     classified: list[dict] = []
     warnings: list[str] = []
     for f in files:
         forced = overrides.get(f.name)
+        if not forced and number_types:
+            num = file_number(f.stem)
+            if num is not None:
+                forced = number_types.get(str(num))
         if forced:
             kind, details = forced, {"override": True}
         else:
@@ -295,8 +329,7 @@ def process_model(job: dict) -> dict:
         classified.append({"src": f, "kind": kind, "pixels": pixels, "details": details})
 
     def leading_number(c: dict) -> int | None:
-        m = re.match(r"^\s*(\d+)", c["src"].name)
-        return int(m.group(1)) if m else None
+        return file_number(c["src"].stem)
 
     numbered = any(leading_number(c) is not None for c in classified)
 
@@ -425,8 +458,9 @@ def main() -> int:
 
     jobs, reused = [], 0
     for m in models:
+        number_types = number_types_for(m["id"], overrides)
         sig = (model_signature(Path(m["src_dir"])) + "|ov=" + json.dumps(overrides.get(m["id"], {}), sort_keys=True)
-               + f"|fmt={OUTPUT_FORMAT_VERSION}")
+               + "|num=" + json.dumps(number_types, sort_keys=True) + f"|fmt={OUTPUT_FORMAT_VERSION}")
         m["signature"] = sig
         cached = cache.get(m["id"])
         out_dir = out_root / m["rel_dir"]
@@ -436,7 +470,7 @@ def main() -> int:
             reused += 1
         else:
             jobs.append({"id": m["id"], "src_dir": m["src_dir"], "out_dir": str(out_dir),
-                         "overrides": overrides.get(m["id"], {}), "dry_run": args.dry_run})
+                         "overrides": overrides.get(m["id"], {}), "number_types": number_types, "dry_run": args.dry_run})
     print(f"{reused} inchanges, {len(jobs)} a traiter")
 
     results: dict[str, dict] = {}
@@ -466,7 +500,7 @@ def main() -> int:
             "age": m["age"],
             "ageMin": m["age_min"],
             "ageMax": m["age_max"],
-            "ordre": m["order"],
+            "ordre": int(m["order"]) if float(m["order"]).is_integer() else m["order"],
             "thumb": f"{m['rel_dir']}/{r['photos'][0]['thumb']}",
             "photos": [f"{m['rel_dir']}/{p['file']}" for p in r["photos"]],
             "thumbs": [f"{m['rel_dir']}/{p['thumb']}" for p in r["photos"]],

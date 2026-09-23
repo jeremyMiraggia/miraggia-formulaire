@@ -1,6 +1,6 @@
 {
-  "generated": "2026-09-15",
-  "count": 84,
+  "generated": "2026-09-23",
+  "count": 102,
   "filters": {
     "genre": [
       "Femme",
@@ -16,29 +16,6 @@
   },
   "mannequins": [
     {
-      "id": "femmes-20-30-ans-mila",
-      "prenom": "Mila",
-      "genre": "Femme",
-      "sexe": "Femme",
-      "age": "20-30 ans",
-      "ageMin": 20,
-      "ageMax": 30,
-      "ordre": 1,
-      "thumb": "mannequins/femmes/20-30-ans/mila/thumb.jpg",
-      "photos": [
-        "mannequins/femmes/20-30-ans/mila/01-visage.jpg",
-        "mannequins/femmes/20-30-ans/mila/02-profil.jpg"
-      ],
-      "thumbs": [
-        "mannequins/femmes/20-30-ans/mila/thumb.jpg",
-        "mannequins/femmes/20-30-ans/mila/thumb-02.jpg"
-      ],
-      "types": [
-        "visage",
-        "profil"
-      ]
-    },
-    {
       "id": "femmes-20-30-ans-ambre",
       "prenom": "Ambre",
       "genre": "Femme",
@@ -46,19 +23,74 @@
       "age": "20-30 ans",
       "ageMin": 20,
       "ageMax": 30,
-      "ordre": 2,
+      "ordre": 1,
       "thumb": "mannequins/femmes/20-30-ans/ambre/thumb.jpg",
       "photos": [
         "mannequins/femmes/20-30-ans/ambre/01-visage.jpg",
-        "mannequins/femmes/20-30-ans/ambre/02-profil.jpg"
+        "mannequins/femmes/20-30-ans/ambre/02-mi-corps.jpg",
+        "mannequins/femmes/20-30-ans/ambre/03-plein-pied.jpg"
       ],
       "thumbs": [
         "mannequins/femmes/20-30-ans/ambre/thumb.jpg",
-        "mannequins/femmes/20-30-ans/ambre/thumb-02.jpg"
+        "mannequins/femmes/20-30-ans/ambre/thumb-02.jpg",
+        "mannequins/femmes/20-30-ans/ambre/thumb-03.jpg"
       ],
       "types": [
         "visage",
-        "profil"
+        "mi-corps",
+        "plein-pied"
+      ]
+    },
+    {
+      "id": "femmes-20-30-ans-gabrielle",
+      "prenom": "Gabrielle",
+      "genre": "Femme",
+      "sexe": "Femme",
+      "age": "20-30 ans",
+      "ageMin": 20,
+      "ageMax": 30,
+      "ordre": 2,
+      "thumb": "mannequins/femmes/20-30-ans/gabrielle/thumb.jpg",
+      "photos": [
+        "mannequins/femmes/20-30-ans/gabrielle/01-visage.jpg",
+        "mannequins/femmes/20-30-ans/gabrielle/02-mi-corps.jpg",
+        "mannequins/femmes/20-30-ans/gabrielle/03-plein-pied.jpg"
+      ],
+      "thumbs": [
+        "mannequins/femmes/20-30-ans/gabrielle/thumb.jpg",
+        "mannequins/femmes/20-30-ans/gabrielle/thumb-02.jpg",
+        "mannequins/femmes/20-30-ans/gabrielle/thumb-03.jpg"
+      ],
+      "types": [
+        "visage",
+        "mi-corps",
+        "plein-pied"
+      ]
+    },
+    {
+      "id": "femmes-20-30-ans-mila",
+      "prenom": "Mila",
+      "genre": "Femme",
+      "sexe": "Femme",
+      "age": "20-30 ans",
+      "ageMin": 20,
+      "ageMax": 30,
+      "ordre": 3,
+      "thumb": "mannequins/femmes/20-30-ans/mila/thumb.jpg",
+      "photos": [
+        "mannequins/femmes/20-30-ans/mila/01-visage.jpg",
+        "mannequins/femmes/20-30-ans/mila/02-mi-corps.jpg",
+        "mannequins/femmes/20-30-ans/mila/03-plein-pied.jpg"
+      ],
+      "thumbs": [
+        "mannequins/femmes/20-30-ans/mila/thumb.jpg",
+        "mannequins/femmes/20-30-ans/mila/thumb-02.jpg",
+        "mannequins/femmes/20-30-ans/mila/thumb-03.jpg"
+      ],
+      "types": [
+        "visage",
+        "mi-corps",
+        "plein-pied"
       ]
     },
     {
@@ -69,42 +101,48 @@
       "age": "20-30 ans",
       "ageMin": 20,
       "ageMax": 30,
-      "ordre": 3,
+      "ordre": 4,
       "thumb": "mannequins/femmes/20-30-ans/emma/thumb.jpg",
       "photos": [
         "mannequins/femmes/20-30-ans/emma/01-visage.jpg",
-        "mannequins/femmes/20-30-ans/emma/02-profil.jpg"
+        "mannequins/femmes/20-30-ans/emma/02-mi-corps.jpg",
+        "mannequins/femmes/20-30-ans/emma/03-plein-pied.jpg"
       ],
       "thumbs": [
         "mannequins/femmes/20-30-ans/emma/thumb.jpg",
-        "mannequins/femmes/20-30-ans/emma/thumb-02.jpg"
+        "mannequins/femmes/20-30-ans/emma/thumb-02.jpg",
+        "mannequins/femmes/20-30-ans/emma/thumb-03.jpg"
       ],
       "types": [
         "visage",
-        "profil"
+        "mi-corps",
+        "plein-pied"
       ]
     },
     {
-      "id": "femmes-20-30-ans-lisa",
-      "prenom": "Lisa",
+      "id": "femmes-20-30-ans-chloe",
+      "prenom": "Chloé",
       "genre": "Femme",
       "sexe": "Femme",
       "age": "20-30 ans",
       "ageMin": 20,
       "ageMax": 30,
-      "ordre": 4,
-      "thumb": "mannequins/femmes/20-30-ans/lisa/thumb.jpg",
+      "ordre": 5,
+      "thumb": "mannequins/femmes/20-30-ans/chloe/thumb.jpg",
       "photos": [
-        "mannequins/femmes/20-30-ans/lisa/01-visage.jpg",
-        "mannequins/femmes/20-30-ans/lisa/02-profil.jpg"
+        "mannequins/femmes/20-30-ans/chloe/01-visage.jpg",
+        "mannequins/femmes/20-30-ans/chloe/02-mi-corps.jpg",
+        "mannequins/femmes/20-30-ans/chloe/03-plein-pied.jpg"
       ],
       "thumbs": [
-        "mannequins/femmes/20-30-ans/lisa/thumb.jpg",
-        "mannequins/femmes/20-30-ans/lisa/thumb-02.jpg"
+        "mannequins/femmes/20-30-ans/chloe/thumb.jpg",
+        "mannequins/femmes/20-30-ans/chloe/thumb-02.jpg",
+        "mannequins/femmes/20-30-ans/chloe/thumb-03.jpg"
       ],
       "types": [
         "visage",
-        "profil"
+        "mi-corps",
+        "plein-pied"
       ]
     },
     {
@@ -115,42 +153,100 @@
       "age": "20-30 ans",
       "ageMin": 20,
       "ageMax": 30,
-      "ordre": 5,
+      "ordre": 6,
       "thumb": "mannequins/femmes/20-30-ans/eve/thumb.jpg",
       "photos": [
         "mannequins/femmes/20-30-ans/eve/01-visage.jpg",
-        "mannequins/femmes/20-30-ans/eve/02-profil.jpg"
+        "mannequins/femmes/20-30-ans/eve/02-mi-corps.jpg",
+        "mannequins/femmes/20-30-ans/eve/03-plein-pied.jpg"
       ],
       "thumbs": [
         "mannequins/femmes/20-30-ans/eve/thumb.jpg",
-        "mannequins/femmes/20-30-ans/eve/thumb-02.jpg"
+        "mannequins/femmes/20-30-ans/eve/thumb-02.jpg",
+        "mannequins/femmes/20-30-ans/eve/thumb-03.jpg"
       ],
       "types": [
         "visage",
-        "profil"
+        "mi-corps",
+        "plein-pied"
       ]
     },
     {
-      "id": "femmes-20-30-ans-jade",
-      "prenom": "Jade",
+      "id": "femmes-20-30-ans-lisa",
+      "prenom": "Lisa",
       "genre": "Femme",
       "sexe": "Femme",
       "age": "20-30 ans",
       "ageMin": 20,
       "ageMax": 30,
-      "ordre": 6,
-      "thumb": "mannequins/femmes/20-30-ans/jade/thumb.jpg",
+      "ordre": 7,
+      "thumb": "mannequins/femmes/20-30-ans/lisa/thumb.jpg",
       "photos": [
-        "mannequins/femmes/20-30-ans/jade/01-visage.jpg",
-        "mannequins/femmes/20-30-ans/jade/02-profil.jpg"
+        "mannequins/femmes/20-30-ans/lisa/01-visage.jpg",
+        "mannequins/femmes/20-30-ans/lisa/02-mi-corps.jpg",
+        "mannequins/femmes/20-30-ans/lisa/03-plein-pied.jpg"
       ],
       "thumbs": [
-        "mannequins/femmes/20-30-ans/jade/thumb.jpg",
-        "mannequins/femmes/20-30-ans/jade/thumb-02.jpg"
+        "mannequins/femmes/20-30-ans/lisa/thumb.jpg",
+        "mannequins/femmes/20-30-ans/lisa/thumb-02.jpg",
+        "mannequins/femmes/20-30-ans/lisa/thumb-03.jpg"
       ],
       "types": [
         "visage",
-        "profil"
+        "mi-corps",
+        "plein-pied"
+      ]
+    },
+    {
+      "id": "femmes-20-30-ans-diane",
+      "prenom": "Diane",
+      "genre": "Femme",
+      "sexe": "Femme",
+      "age": "20-30 ans",
+      "ageMin": 20,
+      "ageMax": 30,
+      "ordre": 8,
+      "thumb": "mannequins/femmes/20-30-ans/diane/thumb.jpg",
+      "photos": [
+        "mannequins/femmes/20-30-ans/diane/01-visage.jpg",
+        "mannequins/femmes/20-30-ans/diane/02-mi-corps.jpg",
+        "mannequins/femmes/20-30-ans/diane/03-plein-pied.jpg"
+      ],
+      "thumbs": [
+        "mannequins/femmes/20-30-ans/diane/thumb.jpg",
+        "mannequins/femmes/20-30-ans/diane/thumb-02.jpg",
+        "mannequins/femmes/20-30-ans/diane/thumb-03.jpg"
+      ],
+      "types": [
+        "visage",
+        "mi-corps",
+        "plein-pied"
+      ]
+    },
+    {
+      "id": "femmes-20-30-ans-lana",
+      "prenom": "Lana",
+      "genre": "Femme",
+      "sexe": "Femme",
+      "age": "20-30 ans",
+      "ageMin": 20,
+      "ageMax": 30,
+      "ordre": 9,
+      "thumb": "mannequins/femmes/20-30-ans/lana/thumb.jpg",
+      "photos": [
+        "mannequins/femmes/20-30-ans/lana/01-visage.jpg",
+        "mannequins/femmes/20-30-ans/lana/02-mi-corps.jpg",
+        "mannequins/femmes/20-30-ans/lana/03-plein-pied.jpg"
+      ],
+      "thumbs": [
+        "mannequins/femmes/20-30-ans/lana/thumb.jpg",
+        "mannequins/femmes/20-30-ans/lana/thumb-02.jpg",
+        "mannequins/femmes/20-30-ans/lana/thumb-03.jpg"
+      ],
+      "types": [
+        "visage",
+        "mi-corps",
+        "plein-pied"
       ]
     },
     {
@@ -161,47 +257,229 @@
       "age": "20-30 ans",
       "ageMin": 20,
       "ageMax": 30,
-      "ordre": 7,
+      "ordre": 10,
       "thumb": "mannequins/femmes/20-30-ans/rafaella/thumb.jpg",
       "photos": [
         "mannequins/femmes/20-30-ans/rafaella/01-visage.jpg",
-        "mannequins/femmes/20-30-ans/rafaella/02-profil.jpg"
+        "mannequins/femmes/20-30-ans/rafaella/02-mi-corps.jpg",
+        "mannequins/femmes/20-30-ans/rafaella/03-plein-pied.jpg"
       ],
       "thumbs": [
         "mannequins/femmes/20-30-ans/rafaella/thumb.jpg",
-        "mannequins/femmes/20-30-ans/rafaella/thumb-02.jpg"
+        "mannequins/femmes/20-30-ans/rafaella/thumb-02.jpg",
+        "mannequins/femmes/20-30-ans/rafaella/thumb-03.jpg"
       ],
       "types": [
         "visage",
-        "profil"
+        "mi-corps",
+        "plein-pied"
       ]
     },
     {
-      "id": "femmes-20-30-ans-ludmila",
-      "prenom": "Ludmila",
+      "id": "femmes-20-30-ans-eliana",
+      "prenom": "Eliana",
       "genre": "Femme",
       "sexe": "Femme",
       "age": "20-30 ans",
       "ageMin": 20,
       "ageMax": 30,
-      "ordre": 8,
-      "thumb": "mannequins/femmes/20-30-ans/ludmila/thumb.jpg",
+      "ordre": 11,
+      "thumb": "mannequins/femmes/20-30-ans/eliana/thumb.jpg",
       "photos": [
-        "mannequins/femmes/20-30-ans/ludmila/01-visage.jpg",
-        "mannequins/femmes/20-30-ans/ludmila/02-visage-2.jpg",
-        "mannequins/femmes/20-30-ans/ludmila/03-visage-3.jpg",
-        "mannequins/femmes/20-30-ans/ludmila/04-plein-pied.jpg"
+        "mannequins/femmes/20-30-ans/eliana/01-visage.jpg",
+        "mannequins/femmes/20-30-ans/eliana/02-mi-corps.jpg",
+        "mannequins/femmes/20-30-ans/eliana/03-plein-pied.jpg"
       ],
       "thumbs": [
-        "mannequins/femmes/20-30-ans/ludmila/thumb.jpg",
-        "mannequins/femmes/20-30-ans/ludmila/thumb-02.jpg",
-        "mannequins/femmes/20-30-ans/ludmila/thumb-03.jpg",
-        "mannequins/femmes/20-30-ans/ludmila/thumb-04.jpg"
+        "mannequins/femmes/20-30-ans/eliana/thumb.jpg",
+        "mannequins/femmes/20-30-ans/eliana/thumb-02.jpg",
+        "mannequins/femmes/20-30-ans/eliana/thumb-03.jpg"
       ],
       "types": [
         "visage",
+        "mi-corps",
+        "plein-pied"
+      ]
+    },
+    {
+      "id": "femmes-20-30-ans-jade",
+      "prenom": "Jade",
+      "genre": "Femme",
+      "sexe": "Femme",
+      "age": "20-30 ans",
+      "ageMin": 20,
+      "ageMax": 30,
+      "ordre": 12,
+      "thumb": "mannequins/femmes/20-30-ans/jade/thumb.jpg",
+      "photos": [
+        "mannequins/femmes/20-30-ans/jade/01-visage.jpg",
+        "mannequins/femmes/20-30-ans/jade/02-mi-corps.jpg",
+        "mannequins/femmes/20-30-ans/jade/03-plein-pied.jpg"
+      ],
+      "thumbs": [
+        "mannequins/femmes/20-30-ans/jade/thumb.jpg",
+        "mannequins/femmes/20-30-ans/jade/thumb-02.jpg",
+        "mannequins/femmes/20-30-ans/jade/thumb-03.jpg"
+      ],
+      "types": [
         "visage",
+        "mi-corps",
+        "plein-pied"
+      ]
+    },
+    {
+      "id": "femmes-20-30-ans-anouk",
+      "prenom": "Anouk",
+      "genre": "Femme",
+      "sexe": "Femme",
+      "age": "20-30 ans",
+      "ageMin": 20,
+      "ageMax": 30,
+      "ordre": 13,
+      "thumb": "mannequins/femmes/20-30-ans/anouk/thumb.jpg",
+      "photos": [
+        "mannequins/femmes/20-30-ans/anouk/01-visage.jpg",
+        "mannequins/femmes/20-30-ans/anouk/02-mi-corps.jpg",
+        "mannequins/femmes/20-30-ans/anouk/03-plein-pied.jpg"
+      ],
+      "thumbs": [
+        "mannequins/femmes/20-30-ans/anouk/thumb.jpg",
+        "mannequins/femmes/20-30-ans/anouk/thumb-02.jpg",
+        "mannequins/femmes/20-30-ans/anouk/thumb-03.jpg"
+      ],
+      "types": [
         "visage",
+        "mi-corps",
+        "plein-pied"
+      ]
+    },
+    {
+      "id": "femmes-20-30-ans-alba",
+      "prenom": "Alba",
+      "genre": "Femme",
+      "sexe": "Femme",
+      "age": "20-30 ans",
+      "ageMin": 20,
+      "ageMax": 30,
+      "ordre": 15,
+      "thumb": "mannequins/femmes/20-30-ans/alba/thumb.jpg",
+      "photos": [
+        "mannequins/femmes/20-30-ans/alba/01-visage.jpg",
+        "mannequins/femmes/20-30-ans/alba/02-mi-corps.jpg",
+        "mannequins/femmes/20-30-ans/alba/03-plein-pied.jpg"
+      ],
+      "thumbs": [
+        "mannequins/femmes/20-30-ans/alba/thumb.jpg",
+        "mannequins/femmes/20-30-ans/alba/thumb-02.jpg",
+        "mannequins/femmes/20-30-ans/alba/thumb-03.jpg"
+      ],
+      "types": [
+        "visage",
+        "mi-corps",
+        "plein-pied"
+      ]
+    },
+    {
+      "id": "femmes-20-30-ans-louise",
+      "prenom": "Louise",
+      "genre": "Femme",
+      "sexe": "Femme",
+      "age": "20-30 ans",
+      "ageMin": 20,
+      "ageMax": 30,
+      "ordre": 16,
+      "thumb": "mannequins/femmes/20-30-ans/louise/thumb.jpg",
+      "photos": [
+        "mannequins/femmes/20-30-ans/louise/01-visage.jpg",
+        "mannequins/femmes/20-30-ans/louise/02-mi-corps.jpg",
+        "mannequins/femmes/20-30-ans/louise/03-plein-pied.jpg"
+      ],
+      "thumbs": [
+        "mannequins/femmes/20-30-ans/louise/thumb.jpg",
+        "mannequins/femmes/20-30-ans/louise/thumb-02.jpg",
+        "mannequins/femmes/20-30-ans/louise/thumb-03.jpg"
+      ],
+      "types": [
+        "visage",
+        "mi-corps",
+        "plein-pied"
+      ]
+    },
+    {
+      "id": "femmes-20-30-ans-jenna",
+      "prenom": "Jenna",
+      "genre": "Femme",
+      "sexe": "Femme",
+      "age": "20-30 ans",
+      "ageMin": 20,
+      "ageMax": 30,
+      "ordre": 17,
+      "thumb": "mannequins/femmes/20-30-ans/jenna/thumb.jpg",
+      "photos": [
+        "mannequins/femmes/20-30-ans/jenna/01-visage.jpg",
+        "mannequins/femmes/20-30-ans/jenna/02-mi-corps.jpg",
+        "mannequins/femmes/20-30-ans/jenna/03-plein-pied.jpg"
+      ],
+      "thumbs": [
+        "mannequins/femmes/20-30-ans/jenna/thumb.jpg",
+        "mannequins/femmes/20-30-ans/jenna/thumb-02.jpg",
+        "mannequins/femmes/20-30-ans/jenna/thumb-03.jpg"
+      ],
+      "types": [
+        "visage",
+        "mi-corps",
+        "plein-pied"
+      ]
+    },
+    {
+      "id": "femmes-20-30-ans-juliette",
+      "prenom": "Juliette",
+      "genre": "Femme",
+      "sexe": "Femme",
+      "age": "20-30 ans",
+      "ageMin": 20,
+      "ageMax": 30,
+      "ordre": 18,
+      "thumb": "mannequins/femmes/20-30-ans/juliette/thumb.jpg",
+      "photos": [
+        "mannequins/femmes/20-30-ans/juliette/01-visage.jpg",
+        "mannequins/femmes/20-30-ans/juliette/02-mi-corps.jpg",
+        "mannequins/femmes/20-30-ans/juliette/03-plein-pied.jpg"
+      ],
+      "thumbs": [
+        "mannequins/femmes/20-30-ans/juliette/thumb.jpg",
+        "mannequins/femmes/20-30-ans/juliette/thumb-02.jpg",
+        "mannequins/femmes/20-30-ans/juliette/thumb-03.jpg"
+      ],
+      "types": [
+        "visage",
+        "mi-corps",
+        "plein-pied"
+      ]
+    },
+    {
+      "id": "femmes-20-30-ans-marion",
+      "prenom": "Marion",
+      "genre": "Femme",
+      "sexe": "Femme",
+      "age": "20-30 ans",
+      "ageMin": 20,
+      "ageMax": 30,
+      "ordre": 19,
+      "thumb": "mannequins/femmes/20-30-ans/marion/thumb.jpg",
+      "photos": [
+        "mannequins/femmes/20-30-ans/marion/01-visage.jpg",
+        "mannequins/femmes/20-30-ans/marion/02-mi-corps.jpg",
+        "mannequins/femmes/20-30-ans/marion/03-plein-pied.jpg"
+      ],
+      "thumbs": [
+        "mannequins/femmes/20-30-ans/marion/thumb.jpg",
+        "mannequins/femmes/20-30-ans/marion/thumb-02.jpg",
+        "mannequins/femmes/20-30-ans/marion/thumb-03.jpg"
+      ],
+      "types": [
+        "visage",
+        "mi-corps",
         "plein-pied"
       ]
     },
@@ -213,180 +491,48 @@
       "age": "20-30 ans",
       "ageMin": 20,
       "ageMax": 30,
-      "ordre": 9,
+      "ordre": 20,
       "thumb": "mannequins/femmes/20-30-ans/elyse/thumb.jpg",
       "photos": [
         "mannequins/femmes/20-30-ans/elyse/01-visage.jpg",
-        "mannequins/femmes/20-30-ans/elyse/02-profil.jpg"
+        "mannequins/femmes/20-30-ans/elyse/02-mi-corps.jpg",
+        "mannequins/femmes/20-30-ans/elyse/03-plein-pied.jpg"
       ],
       "thumbs": [
         "mannequins/femmes/20-30-ans/elyse/thumb.jpg",
-        "mannequins/femmes/20-30-ans/elyse/thumb-02.jpg"
+        "mannequins/femmes/20-30-ans/elyse/thumb-02.jpg",
+        "mannequins/femmes/20-30-ans/elyse/thumb-03.jpg"
       ],
       "types": [
         "visage",
-        "profil"
+        "mi-corps",
+        "plein-pied"
       ]
     },
     {
-      "id": "femmes-20-30-ans-louise",
-      "prenom": "Louise",
+      "id": "femmes-20-30-ans-garance",
+      "prenom": "Garance",
       "genre": "Femme",
       "sexe": "Femme",
       "age": "20-30 ans",
       "ageMin": 20,
       "ageMax": 30,
-      "ordre": 10,
-      "thumb": "mannequins/femmes/20-30-ans/louise/thumb.jpg",
+      "ordre": 21,
+      "thumb": "mannequins/femmes/20-30-ans/garance/thumb.jpg",
       "photos": [
-        "mannequins/femmes/20-30-ans/louise/01-visage.jpg",
-        "mannequins/femmes/20-30-ans/louise/02-profil.jpg"
+        "mannequins/femmes/20-30-ans/garance/01-visage.jpg",
+        "mannequins/femmes/20-30-ans/garance/02-mi-corps.jpg",
+        "mannequins/femmes/20-30-ans/garance/03-plein-pied.jpg"
       ],
       "thumbs": [
-        "mannequins/femmes/20-30-ans/louise/thumb.jpg",
-        "mannequins/femmes/20-30-ans/louise/thumb-02.jpg"
+        "mannequins/femmes/20-30-ans/garance/thumb.jpg",
+        "mannequins/femmes/20-30-ans/garance/thumb-02.jpg",
+        "mannequins/femmes/20-30-ans/garance/thumb-03.jpg"
       ],
       "types": [
         "visage",
-        "profil"
-      ]
-    },
-    {
-      "id": "femmes-20-30-ans-alba",
-      "prenom": "Alba",
-      "genre": "Femme",
-      "sexe": "Femme",
-      "age": "20-30 ans",
-      "ageMin": 20,
-      "ageMax": 30,
-      "ordre": 11,
-      "thumb": "mannequins/femmes/20-30-ans/alba/thumb.jpg",
-      "photos": [
-        "mannequins/femmes/20-30-ans/alba/01-visage.jpg",
-        "mannequins/femmes/20-30-ans/alba/02-profil.jpg"
-      ],
-      "thumbs": [
-        "mannequins/femmes/20-30-ans/alba/thumb.jpg",
-        "mannequins/femmes/20-30-ans/alba/thumb-02.jpg"
-      ],
-      "types": [
-        "visage",
-        "profil"
-      ]
-    },
-    {
-      "id": "femmes-20-30-ans-eliana",
-      "prenom": "Eliana",
-      "genre": "Femme",
-      "sexe": "Femme",
-      "age": "20-30 ans",
-      "ageMin": 20,
-      "ageMax": 30,
-      "ordre": 12,
-      "thumb": "mannequins/femmes/20-30-ans/eliana/thumb.jpg",
-      "photos": [
-        "mannequins/femmes/20-30-ans/eliana/01-visage.jpg",
-        "mannequins/femmes/20-30-ans/eliana/02-profil.jpg"
-      ],
-      "thumbs": [
-        "mannequins/femmes/20-30-ans/eliana/thumb.jpg",
-        "mannequins/femmes/20-30-ans/eliana/thumb-02.jpg"
-      ],
-      "types": [
-        "visage",
-        "profil"
-      ]
-    },
-    {
-      "id": "femmes-20-30-ans-margaux",
-      "prenom": "Margaux",
-      "genre": "Femme",
-      "sexe": "Femme",
-      "age": "20-30 ans",
-      "ageMin": 20,
-      "ageMax": 30,
-      "ordre": 13,
-      "thumb": "mannequins/femmes/20-30-ans/margaux/thumb.jpg",
-      "photos": [
-        "mannequins/femmes/20-30-ans/margaux/01-visage.jpg",
-        "mannequins/femmes/20-30-ans/margaux/02-profil.jpg"
-      ],
-      "thumbs": [
-        "mannequins/femmes/20-30-ans/margaux/thumb.jpg",
-        "mannequins/femmes/20-30-ans/margaux/thumb-02.jpg"
-      ],
-      "types": [
-        "visage",
-        "profil"
-      ]
-    },
-    {
-      "id": "femmes-20-30-ans-eva",
-      "prenom": "Eva",
-      "genre": "Femme",
-      "sexe": "Femme",
-      "age": "20-30 ans",
-      "ageMin": 20,
-      "ageMax": 30,
-      "ordre": 14,
-      "thumb": "mannequins/femmes/20-30-ans/eva/thumb.jpg",
-      "photos": [
-        "mannequins/femmes/20-30-ans/eva/01-visage.jpg",
-        "mannequins/femmes/20-30-ans/eva/02-profil.jpg"
-      ],
-      "thumbs": [
-        "mannequins/femmes/20-30-ans/eva/thumb.jpg",
-        "mannequins/femmes/20-30-ans/eva/thumb-02.jpg"
-      ],
-      "types": [
-        "visage",
-        "profil"
-      ]
-    },
-    {
-      "id": "femmes-20-30-ans-lina",
-      "prenom": "Lina",
-      "genre": "Femme",
-      "sexe": "Femme",
-      "age": "20-30 ans",
-      "ageMin": 20,
-      "ageMax": 30,
-      "ordre": 15,
-      "thumb": "mannequins/femmes/20-30-ans/lina/thumb.jpg",
-      "photos": [
-        "mannequins/femmes/20-30-ans/lina/01-visage.jpg",
-        "mannequins/femmes/20-30-ans/lina/02-profil.jpg"
-      ],
-      "thumbs": [
-        "mannequins/femmes/20-30-ans/lina/thumb.jpg",
-        "mannequins/femmes/20-30-ans/lina/thumb-02.jpg"
-      ],
-      "types": [
-        "visage",
-        "profil"
-      ]
-    },
-    {
-      "id": "femmes-20-30-ans-lou",
-      "prenom": "Lou",
-      "genre": "Femme",
-      "sexe": "Femme",
-      "age": "20-30 ans",
-      "ageMin": 20,
-      "ageMax": 30,
-      "ordre": 16,
-      "thumb": "mannequins/femmes/20-30-ans/lou/thumb.jpg",
-      "photos": [
-        "mannequins/femmes/20-30-ans/lou/01-visage.jpg",
-        "mannequins/femmes/20-30-ans/lou/02-profil.jpg"
-      ],
-      "thumbs": [
-        "mannequins/femmes/20-30-ans/lou/thumb.jpg",
-        "mannequins/femmes/20-30-ans/lou/thumb-02.jpg"
-      ],
-      "types": [
-        "visage",
-        "profil"
+        "mi-corps",
+        "plein-pied"
       ]
     },
     {
@@ -397,19 +543,282 @@
       "age": "20-30 ans",
       "ageMin": 20,
       "ageMax": 30,
-      "ordre": 17,
+      "ordre": 22,
       "thumb": "mannequins/femmes/20-30-ans/laura/thumb.jpg",
       "photos": [
         "mannequins/femmes/20-30-ans/laura/01-visage.jpg",
-        "mannequins/femmes/20-30-ans/laura/02-profil.jpg"
+        "mannequins/femmes/20-30-ans/laura/02-mi-corps.jpg",
+        "mannequins/femmes/20-30-ans/laura/03-plein-pied.jpg"
       ],
       "thumbs": [
         "mannequins/femmes/20-30-ans/laura/thumb.jpg",
-        "mannequins/femmes/20-30-ans/laura/thumb-02.jpg"
+        "mannequins/femmes/20-30-ans/laura/thumb-02.jpg",
+        "mannequins/femmes/20-30-ans/laura/thumb-03.jpg"
       ],
       "types": [
         "visage",
-        "profil"
+        "mi-corps",
+        "plein-pied"
+      ]
+    },
+    {
+      "id": "femmes-20-30-ans-ludmila",
+      "prenom": "Ludmila",
+      "genre": "Femme",
+      "sexe": "Femme",
+      "age": "20-30 ans",
+      "ageMin": 20,
+      "ageMax": 30,
+      "ordre": 23,
+      "thumb": "mannequins/femmes/20-30-ans/ludmila/thumb.jpg",
+      "photos": [
+        "mannequins/femmes/20-30-ans/ludmila/01-visage.jpg",
+        "mannequins/femmes/20-30-ans/ludmila/02-mi-corps.jpg",
+        "mannequins/femmes/20-30-ans/ludmila/03-plein-pied.jpg"
+      ],
+      "thumbs": [
+        "mannequins/femmes/20-30-ans/ludmila/thumb.jpg",
+        "mannequins/femmes/20-30-ans/ludmila/thumb-02.jpg",
+        "mannequins/femmes/20-30-ans/ludmila/thumb-03.jpg"
+      ],
+      "types": [
+        "visage",
+        "mi-corps",
+        "plein-pied"
+      ]
+    },
+    {
+      "id": "femmes-20-30-ans-ava",
+      "prenom": "Ava",
+      "genre": "Femme",
+      "sexe": "Femme",
+      "age": "20-30 ans",
+      "ageMin": 20,
+      "ageMax": 30,
+      "ordre": 24,
+      "thumb": "mannequins/femmes/20-30-ans/ava/thumb.jpg",
+      "photos": [
+        "mannequins/femmes/20-30-ans/ava/01-visage.jpg",
+        "mannequins/femmes/20-30-ans/ava/02-mi-corps.jpg",
+        "mannequins/femmes/20-30-ans/ava/03-plein-pied.jpg"
+      ],
+      "thumbs": [
+        "mannequins/femmes/20-30-ans/ava/thumb.jpg",
+        "mannequins/femmes/20-30-ans/ava/thumb-02.jpg",
+        "mannequins/femmes/20-30-ans/ava/thumb-03.jpg"
+      ],
+      "types": [
+        "visage",
+        "mi-corps",
+        "plein-pied"
+      ]
+    },
+    {
+      "id": "femmes-20-30-ans-eva",
+      "prenom": "Eva",
+      "genre": "Femme",
+      "sexe": "Femme",
+      "age": "20-30 ans",
+      "ageMin": 20,
+      "ageMax": 30,
+      "ordre": 25,
+      "thumb": "mannequins/femmes/20-30-ans/eva/thumb.jpg",
+      "photos": [
+        "mannequins/femmes/20-30-ans/eva/01-visage.jpg",
+        "mannequins/femmes/20-30-ans/eva/02-mi-corps.jpg",
+        "mannequins/femmes/20-30-ans/eva/03-plein-pied.jpg"
+      ],
+      "thumbs": [
+        "mannequins/femmes/20-30-ans/eva/thumb.jpg",
+        "mannequins/femmes/20-30-ans/eva/thumb-02.jpg",
+        "mannequins/femmes/20-30-ans/eva/thumb-03.jpg"
+      ],
+      "types": [
+        "visage",
+        "mi-corps",
+        "plein-pied"
+      ]
+    },
+    {
+      "id": "femmes-20-30-ans-ilona",
+      "prenom": "Ilona",
+      "genre": "Femme",
+      "sexe": "Femme",
+      "age": "20-30 ans",
+      "ageMin": 20,
+      "ageMax": 30,
+      "ordre": 26,
+      "thumb": "mannequins/femmes/20-30-ans/ilona/thumb.jpg",
+      "photos": [
+        "mannequins/femmes/20-30-ans/ilona/01-visage.jpg",
+        "mannequins/femmes/20-30-ans/ilona/02-mi-corps.jpg",
+        "mannequins/femmes/20-30-ans/ilona/03-plein-pied.jpg"
+      ],
+      "thumbs": [
+        "mannequins/femmes/20-30-ans/ilona/thumb.jpg",
+        "mannequins/femmes/20-30-ans/ilona/thumb-02.jpg",
+        "mannequins/femmes/20-30-ans/ilona/thumb-03.jpg"
+      ],
+      "types": [
+        "visage",
+        "mi-corps",
+        "plein-pied"
+      ]
+    },
+    {
+      "id": "femmes-20-30-ans-lina",
+      "prenom": "Lina",
+      "genre": "Femme",
+      "sexe": "Femme",
+      "age": "20-30 ans",
+      "ageMin": 20,
+      "ageMax": 30,
+      "ordre": 27,
+      "thumb": "mannequins/femmes/20-30-ans/lina/thumb.jpg",
+      "photos": [
+        "mannequins/femmes/20-30-ans/lina/01-visage.jpg",
+        "mannequins/femmes/20-30-ans/lina/02-mi-corps.jpg",
+        "mannequins/femmes/20-30-ans/lina/03-plein-pied.jpg"
+      ],
+      "thumbs": [
+        "mannequins/femmes/20-30-ans/lina/thumb.jpg",
+        "mannequins/femmes/20-30-ans/lina/thumb-02.jpg",
+        "mannequins/femmes/20-30-ans/lina/thumb-03.jpg"
+      ],
+      "types": [
+        "visage",
+        "mi-corps",
+        "plein-pied"
+      ]
+    },
+    {
+      "id": "femmes-20-30-ans-margaux",
+      "prenom": "Margaux",
+      "genre": "Femme",
+      "sexe": "Femme",
+      "age": "20-30 ans",
+      "ageMin": 20,
+      "ageMax": 30,
+      "ordre": 28,
+      "thumb": "mannequins/femmes/20-30-ans/margaux/thumb.jpg",
+      "photos": [
+        "mannequins/femmes/20-30-ans/margaux/01-visage.jpg",
+        "mannequins/femmes/20-30-ans/margaux/02-mi-corps.jpg",
+        "mannequins/femmes/20-30-ans/margaux/03-plein-pied.jpg"
+      ],
+      "thumbs": [
+        "mannequins/femmes/20-30-ans/margaux/thumb.jpg",
+        "mannequins/femmes/20-30-ans/margaux/thumb-02.jpg",
+        "mannequins/femmes/20-30-ans/margaux/thumb-03.jpg"
+      ],
+      "types": [
+        "visage",
+        "mi-corps",
+        "plein-pied"
+      ]
+    },
+    {
+      "id": "femmes-20-30-ans-lou",
+      "prenom": "Lou",
+      "genre": "Femme",
+      "sexe": "Femme",
+      "age": "20-30 ans",
+      "ageMin": 20,
+      "ageMax": 30,
+      "ordre": 29,
+      "thumb": "mannequins/femmes/20-30-ans/lou/thumb.jpg",
+      "photos": [
+        "mannequins/femmes/20-30-ans/lou/01-visage.jpg",
+        "mannequins/femmes/20-30-ans/lou/02-mi-corps.jpg",
+        "mannequins/femmes/20-30-ans/lou/03-plein-pied.jpg"
+      ],
+      "thumbs": [
+        "mannequins/femmes/20-30-ans/lou/thumb.jpg",
+        "mannequins/femmes/20-30-ans/lou/thumb-02.jpg",
+        "mannequins/femmes/20-30-ans/lou/thumb-03.jpg"
+      ],
+      "types": [
+        "visage",
+        "mi-corps",
+        "plein-pied"
+      ]
+    },
+    {
+      "id": "femmes-20-30-ans-leila",
+      "prenom": "Leila",
+      "genre": "Femme",
+      "sexe": "Femme",
+      "age": "20-30 ans",
+      "ageMin": 20,
+      "ageMax": 30,
+      "ordre": 30,
+      "thumb": "mannequins/femmes/20-30-ans/leila/thumb.jpg",
+      "photos": [
+        "mannequins/femmes/20-30-ans/leila/01-visage.jpg",
+        "mannequins/femmes/20-30-ans/leila/02-mi-corps.jpg",
+        "mannequins/femmes/20-30-ans/leila/03-plein-pied.jpg"
+      ],
+      "thumbs": [
+        "mannequins/femmes/20-30-ans/leila/thumb.jpg",
+        "mannequins/femmes/20-30-ans/leila/thumb-02.jpg",
+        "mannequins/femmes/20-30-ans/leila/thumb-03.jpg"
+      ],
+      "types": [
+        "visage",
+        "mi-corps",
+        "plein-pied"
+      ]
+    },
+    {
+      "id": "femmes-20-30-ans-dalia",
+      "prenom": "Dalia",
+      "genre": "Femme",
+      "sexe": "Femme",
+      "age": "20-30 ans",
+      "ageMin": 20,
+      "ageMax": 30,
+      "ordre": 31,
+      "thumb": "mannequins/femmes/20-30-ans/dalia/thumb.jpg",
+      "photos": [
+        "mannequins/femmes/20-30-ans/dalia/01-visage.jpg",
+        "mannequins/femmes/20-30-ans/dalia/02-mi-corps.jpg",
+        "mannequins/femmes/20-30-ans/dalia/03-plein-pied.jpg"
+      ],
+      "thumbs": [
+        "mannequins/femmes/20-30-ans/dalia/thumb.jpg",
+        "mannequins/femmes/20-30-ans/dalia/thumb-02.jpg",
+        "mannequins/femmes/20-30-ans/dalia/thumb-03.jpg"
+      ],
+      "types": [
+        "visage",
+        "mi-corps",
+        "plein-pied"
+      ]
+    },
+    {
+      "id": "femmes-20-30-ans-flora",
+      "prenom": "Flora",
+      "genre": "Femme",
+      "sexe": "Femme",
+      "age": "20-30 ans",
+      "ageMin": 20,
+      "ageMax": 30,
+      "ordre": 32,
+      "thumb": "mannequins/femmes/20-30-ans/flora/thumb.jpg",
+      "photos": [
+        "mannequins/femmes/20-30-ans/flora/01-visage.jpg",
+        "mannequins/femmes/20-30-ans/flora/02-mi-corps.jpg",
+        "mannequins/femmes/20-30-ans/flora/03-plein-pied.jpg"
+      ],
+      "thumbs": [
+        "mannequins/femmes/20-30-ans/flora/thumb.jpg",
+        "mannequins/femmes/20-30-ans/flora/thumb-02.jpg",
+        "mannequins/femmes/20-30-ans/flora/thumb-03.jpg"
+      ],
+      "types": [
+        "visage",
+        "mi-corps",
+        "plein-pied"
       ]
     },
     {
@@ -420,65 +829,48 @@
       "age": "20-30 ans",
       "ageMin": 20,
       "ageMax": 30,
-      "ordre": 18,
+      "ordre": 33,
       "thumb": "mannequins/femmes/20-30-ans/romy/thumb.jpg",
       "photos": [
         "mannequins/femmes/20-30-ans/romy/01-visage.jpg",
-        "mannequins/femmes/20-30-ans/romy/02-profil.jpg"
+        "mannequins/femmes/20-30-ans/romy/02-mi-corps.jpg",
+        "mannequins/femmes/20-30-ans/romy/03-plein-pied.jpg"
       ],
       "thumbs": [
         "mannequins/femmes/20-30-ans/romy/thumb.jpg",
-        "mannequins/femmes/20-30-ans/romy/thumb-02.jpg"
+        "mannequins/femmes/20-30-ans/romy/thumb-02.jpg",
+        "mannequins/femmes/20-30-ans/romy/thumb-03.jpg"
       ],
       "types": [
         "visage",
-        "profil"
+        "mi-corps",
+        "plein-pied"
       ]
     },
     {
-      "id": "femmes-20-30-ans-sarah",
-      "prenom": "Sarah",
+      "id": "femmes-20-30-ans-alya",
+      "prenom": "Alya",
       "genre": "Femme",
       "sexe": "Femme",
       "age": "20-30 ans",
       "ageMin": 20,
       "ageMax": 30,
-      "ordre": 19,
-      "thumb": "mannequins/femmes/20-30-ans/sarah/thumb.jpg",
+      "ordre": 33.1,
+      "thumb": "mannequins/femmes/20-30-ans/alya/thumb.jpg",
       "photos": [
-        "mannequins/femmes/20-30-ans/sarah/01-visage.jpg",
-        "mannequins/femmes/20-30-ans/sarah/02-profil.jpg"
+        "mannequins/femmes/20-30-ans/alya/01-visage.jpg",
+        "mannequins/femmes/20-30-ans/alya/02-mi-corps.jpg",
+        "mannequins/femmes/20-30-ans/alya/03-plein-pied.jpg"
       ],
       "thumbs": [
-        "mannequins/femmes/20-30-ans/sarah/thumb.jpg",
-        "mannequins/femmes/20-30-ans/sarah/thumb-02.jpg"
+        "mannequins/femmes/20-30-ans/alya/thumb.jpg",
+        "mannequins/femmes/20-30-ans/alya/thumb-02.jpg",
+        "mannequins/femmes/20-30-ans/alya/thumb-03.jpg"
       ],
       "types": [
         "visage",
-        "profil"
-      ]
-    },
-    {
-      "id": "femmes-20-30-ans-nina",
-      "prenom": "Nina",
-      "genre": "Femme",
-      "sexe": "Femme",
-      "age": "20-30 ans",
-      "ageMin": 20,
-      "ageMax": 30,
-      "ordre": 20,
-      "thumb": "mannequins/femmes/20-30-ans/nina/thumb.jpg",
-      "photos": [
-        "mannequins/femmes/20-30-ans/nina/01-visage.jpg",
-        "mannequins/femmes/20-30-ans/nina/02-profil.jpg"
-      ],
-      "thumbs": [
-        "mannequins/femmes/20-30-ans/nina/thumb.jpg",
-        "mannequins/femmes/20-30-ans/nina/thumb-02.jpg"
-      ],
-      "types": [
-        "visage",
-        "profil"
+        "mi-corps",
+        "plein-pied"
       ]
     },
     {
@@ -489,19 +881,152 @@
       "age": "20-30 ans",
       "ageMin": 20,
       "ageMax": 30,
-      "ordre": 21,
+      "ordre": 34,
       "thumb": "mannequins/femmes/20-30-ans/maya/thumb.jpg",
       "photos": [
         "mannequins/femmes/20-30-ans/maya/01-visage.jpg",
-        "mannequins/femmes/20-30-ans/maya/02-profil.jpg"
+        "mannequins/femmes/20-30-ans/maya/02-mi-corps.jpg",
+        "mannequins/femmes/20-30-ans/maya/03-plein-pied.jpg"
       ],
       "thumbs": [
         "mannequins/femmes/20-30-ans/maya/thumb.jpg",
-        "mannequins/femmes/20-30-ans/maya/thumb-02.jpg"
+        "mannequins/femmes/20-30-ans/maya/thumb-02.jpg",
+        "mannequins/femmes/20-30-ans/maya/thumb-03.jpg"
       ],
       "types": [
         "visage",
-        "profil"
+        "mi-corps",
+        "plein-pied"
+      ]
+    },
+    {
+      "id": "femmes-20-30-ans-sarah",
+      "prenom": "Sarah",
+      "genre": "Femme",
+      "sexe": "Femme",
+      "age": "20-30 ans",
+      "ageMin": 20,
+      "ageMax": 30,
+      "ordre": 35,
+      "thumb": "mannequins/femmes/20-30-ans/sarah/thumb.jpg",
+      "photos": [
+        "mannequins/femmes/20-30-ans/sarah/01-visage.jpg",
+        "mannequins/femmes/20-30-ans/sarah/02-mi-corps.jpg",
+        "mannequins/femmes/20-30-ans/sarah/03-plein-pied.jpg"
+      ],
+      "thumbs": [
+        "mannequins/femmes/20-30-ans/sarah/thumb.jpg",
+        "mannequins/femmes/20-30-ans/sarah/thumb-02.jpg",
+        "mannequins/femmes/20-30-ans/sarah/thumb-03.jpg"
+      ],
+      "types": [
+        "visage",
+        "mi-corps",
+        "plein-pied"
+      ]
+    },
+    {
+      "id": "femmes-20-30-ans-naomi",
+      "prenom": "Naomi",
+      "genre": "Femme",
+      "sexe": "Femme",
+      "age": "20-30 ans",
+      "ageMin": 20,
+      "ageMax": 30,
+      "ordre": 36,
+      "thumb": "mannequins/femmes/20-30-ans/naomi/thumb.jpg",
+      "photos": [
+        "mannequins/femmes/20-30-ans/naomi/01-visage.jpg",
+        "mannequins/femmes/20-30-ans/naomi/02-mi-corps.jpg",
+        "mannequins/femmes/20-30-ans/naomi/03-plein-pied.jpg"
+      ],
+      "thumbs": [
+        "mannequins/femmes/20-30-ans/naomi/thumb.jpg",
+        "mannequins/femmes/20-30-ans/naomi/thumb-02.jpg",
+        "mannequins/femmes/20-30-ans/naomi/thumb-03.jpg"
+      ],
+      "types": [
+        "visage",
+        "mi-corps",
+        "plein-pied"
+      ]
+    },
+    {
+      "id": "femmes-20-30-ans-nina",
+      "prenom": "Nina",
+      "genre": "Femme",
+      "sexe": "Femme",
+      "age": "20-30 ans",
+      "ageMin": 20,
+      "ageMax": 30,
+      "ordre": 37,
+      "thumb": "mannequins/femmes/20-30-ans/nina/thumb.jpg",
+      "photos": [
+        "mannequins/femmes/20-30-ans/nina/01-visage.jpg",
+        "mannequins/femmes/20-30-ans/nina/02-mi-corps.jpg",
+        "mannequins/femmes/20-30-ans/nina/03-plein-pied.jpg"
+      ],
+      "thumbs": [
+        "mannequins/femmes/20-30-ans/nina/thumb.jpg",
+        "mannequins/femmes/20-30-ans/nina/thumb-02.jpg",
+        "mannequins/femmes/20-30-ans/nina/thumb-03.jpg"
+      ],
+      "types": [
+        "visage",
+        "mi-corps",
+        "plein-pied"
+      ]
+    },
+    {
+      "id": "femmes-20-30-ans-yse",
+      "prenom": "Ysé",
+      "genre": "Femme",
+      "sexe": "Femme",
+      "age": "20-30 ans",
+      "ageMin": 20,
+      "ageMax": 30,
+      "ordre": 38,
+      "thumb": "mannequins/femmes/20-30-ans/yse/thumb.jpg",
+      "photos": [
+        "mannequins/femmes/20-30-ans/yse/01-visage.jpg",
+        "mannequins/femmes/20-30-ans/yse/02-mi-corps.jpg",
+        "mannequins/femmes/20-30-ans/yse/03-plein-pied.jpg"
+      ],
+      "thumbs": [
+        "mannequins/femmes/20-30-ans/yse/thumb.jpg",
+        "mannequins/femmes/20-30-ans/yse/thumb-02.jpg",
+        "mannequins/femmes/20-30-ans/yse/thumb-03.jpg"
+      ],
+      "types": [
+        "visage",
+        "mi-corps",
+        "plein-pied"
+      ]
+    },
+    {
+      "id": "femmes-20-30-ans-yara",
+      "prenom": "Yara",
+      "genre": "Femme",
+      "sexe": "Femme",
+      "age": "20-30 ans",
+      "ageMin": 20,
+      "ageMax": 30,
+      "ordre": 39,
+      "thumb": "mannequins/femmes/20-30-ans/yara/thumb.jpg",
+      "photos": [
+        "mannequins/femmes/20-30-ans/yara/01-visage.jpg",
+        "mannequins/femmes/20-30-ans/yara/02-mi-corps.jpg",
+        "mannequins/femmes/20-30-ans/yara/03-plein-pied.jpg"
+      ],
+      "thumbs": [
+        "mannequins/femmes/20-30-ans/yara/thumb.jpg",
+        "mannequins/femmes/20-30-ans/yara/thumb-02.jpg",
+        "mannequins/femmes/20-30-ans/yara/thumb-03.jpg"
+      ],
+      "types": [
+        "visage",
+        "mi-corps",
+        "plein-pied"
       ]
     },
     {
@@ -512,42 +1037,22 @@
       "age": "20-30 ans",
       "ageMin": 20,
       "ageMax": 30,
-      "ordre": 22,
+      "ordre": 40,
       "thumb": "mannequins/femmes/20-30-ans/suzanne/thumb.jpg",
       "photos": [
         "mannequins/femmes/20-30-ans/suzanne/01-visage.jpg",
-        "mannequins/femmes/20-30-ans/suzanne/02-profil.jpg"
+        "mannequins/femmes/20-30-ans/suzanne/02-mi-corps.jpg",
+        "mannequins/femmes/20-30-ans/suzanne/03-plein-pied.jpg"
       ],
       "thumbs": [
         "mannequins/femmes/20-30-ans/suzanne/thumb.jpg",
-        "mannequins/femmes/20-30-ans/suzanne/thumb-02.jpg"
+        "mannequins/femmes/20-30-ans/suzanne/thumb-02.jpg",
+        "mannequins/femmes/20-30-ans/suzanne/thumb-03.jpg"
       ],
       "types": [
         "visage",
-        "profil"
-      ]
-    },
-    {
-      "id": "femmes-20-30-ans-nora",
-      "prenom": "Nora",
-      "genre": "Femme",
-      "sexe": "Femme",
-      "age": "20-30 ans",
-      "ageMin": 20,
-      "ageMax": 30,
-      "ordre": 23,
-      "thumb": "mannequins/femmes/20-30-ans/nora/thumb.jpg",
-      "photos": [
-        "mannequins/femmes/20-30-ans/nora/01-visage.jpg",
-        "mannequins/femmes/20-30-ans/nora/02-profil.jpg"
-      ],
-      "thumbs": [
-        "mannequins/femmes/20-30-ans/nora/thumb.jpg",
-        "mannequins/femmes/20-30-ans/nora/thumb-02.jpg"
-      ],
-      "types": [
-        "visage",
-        "profil"
+        "mi-corps",
+        "plein-pied"
       ]
     },
     {
@@ -558,19 +1063,48 @@
       "age": "20-30 ans",
       "ageMin": 20,
       "ageMax": 30,
-      "ordre": 24,
+      "ordre": 41,
       "thumb": "mannequins/femmes/20-30-ans/emy/thumb.jpg",
       "photos": [
         "mannequins/femmes/20-30-ans/emy/01-visage.jpg",
-        "mannequins/femmes/20-30-ans/emy/02-profil.jpg"
+        "mannequins/femmes/20-30-ans/emy/02-mi-corps.jpg",
+        "mannequins/femmes/20-30-ans/emy/03-plein-pied.jpg"
       ],
       "thumbs": [
         "mannequins/femmes/20-30-ans/emy/thumb.jpg",
-        "mannequins/femmes/20-30-ans/emy/thumb-02.jpg"
+        "mannequins/femmes/20-30-ans/emy/thumb-02.jpg",
+        "mannequins/femmes/20-30-ans/emy/thumb-03.jpg"
       ],
       "types": [
         "visage",
-        "profil"
+        "mi-corps",
+        "plein-pied"
+      ]
+    },
+    {
+      "id": "femmes-20-30-ans-nora",
+      "prenom": "Nora",
+      "genre": "Femme",
+      "sexe": "Femme",
+      "age": "20-30 ans",
+      "ageMin": 20,
+      "ageMax": 30,
+      "ordre": 42,
+      "thumb": "mannequins/femmes/20-30-ans/nora/thumb.jpg",
+      "photos": [
+        "mannequins/femmes/20-30-ans/nora/01-visage.jpg",
+        "mannequins/femmes/20-30-ans/nora/02-mi-corps.jpg",
+        "mannequins/femmes/20-30-ans/nora/03-plein-pied.jpg"
+      ],
+      "thumbs": [
+        "mannequins/femmes/20-30-ans/nora/thumb.jpg",
+        "mannequins/femmes/20-30-ans/nora/thumb-02.jpg",
+        "mannequins/femmes/20-30-ans/nora/thumb-03.jpg"
+      ],
+      "types": [
+        "visage",
+        "mi-corps",
+        "plein-pied"
       ]
     },
     {
