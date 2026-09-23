@@ -48,8 +48,24 @@ Créer `scripts/catalogue-overrides.json` :
 }
 ```
 
-Clé = `id` du mannequin dans `mannequins.json`, valeurs = `plein-pied`, `visage`, `profil` ou `skip`.
+Clé = `id` du mannequin dans `mannequins.json`, valeurs = `plein-pied`, `visage`, `mi-corps`, `profil` ou `skip`.
 Relancer le script : les mannequins concernés sont ré-encodés.
+
+### Imposer le type selon le numéro de photo (par catégorie)
+
+Quand une catégorie suit une convention fixe (ex. femmes 20-30 ans : `PRENOM-1.jpg` = visage,
+`-2` = mi-corps, `-3` = plein pied), on l'indique une fois pour toutes dans le même fichier,
+sous la clé `_par_numero`, par préfixe d'`id` (ou `*` pour tous) :
+
+```json
+{
+  "_par_numero": {
+    "femmes-20-30-ans": { "1": "visage", "2": "mi-corps", "3": "plein-pied" }
+  }
+}
+```
+
+La détection automatique n'est alors plus utilisée pour ces photos.
 
 ## Logo
 
