@@ -1,114 +1,740 @@
 {
   "femmes-plus-size-lola": {
-    "signature": "01.png=1566683:1789466783|02.png=1572549:1789466783|ov={}|num={}|fmt=3",
+    "signature": "LOLA-1.jpg=8019329:1790865294|LOLA-2.jpg=9606602:1790865294|LOLA-5.jpg=8580266:1790865228|ov={}|num={}|fmt=3",
     "photos": [
       {
         "file": "01-visage.jpg",
         "thumb": "thumb.jpg",
         "type": "visage",
-        "source": "01.png"
+        "source": "LOLA-1.jpg"
       },
       {
         "file": "02-profil.jpg",
         "thumb": "thumb-02.jpg",
         "type": "profil",
-        "source": "02.png"
+        "source": "LOLA-2.jpg"
+      },
+      {
+        "file": "03-plein-pied.jpg",
+        "thumb": "thumb-03.jpg",
+        "type": "plein-pied",
+        "source": "LOLA-5.jpg"
       }
     ],
     "warnings": []
   },
   "femmes-plus-size-helena": {
-    "signature": "01.png=8155401:1789466788|02.png=8003656:1789466788|ov={}|num={}|fmt=3",
+    "signature": "HÉLÉNA-1.jpg=7878330:1790865209|HÉLÉNA-2.jpg=9551388:1790865209|HÉLÉNA-5.jpg=8563526:1790865202|ov={}|num={}|fmt=3",
     "photos": [
       {
         "file": "01-visage.jpg",
         "thumb": "thumb.jpg",
         "type": "visage",
-        "source": "01.png"
+        "source": "HÉLÉNA-1.jpg"
       },
       {
         "file": "02-profil.jpg",
         "thumb": "thumb-02.jpg",
         "type": "profil",
-        "source": "02.png"
+        "source": "HÉLÉNA-2.jpg"
+      },
+      {
+        "file": "03-plein-pied.jpg",
+        "thumb": "thumb-03.jpg",
+        "type": "plein-pied",
+        "source": "HÉLÉNA-5.jpg"
       }
     ],
     "warnings": []
   },
   "femmes-plus-size-iris": {
-    "signature": "01.png=1482203:1789466795|02.png=528244:1789466795|ov={}|num={}|fmt=3",
+    "signature": "IRIS-1.jpg=7724614:1790865342|IRIS-2.jpg=8399208:1790865342|IRIS-5.jpg=7681071:1790865312|ov={}|num={}|fmt=3",
     "photos": [
       {
         "file": "01-visage.jpg",
         "thumb": "thumb.jpg",
         "type": "visage",
-        "source": "01.png"
+        "source": "IRIS-1.jpg"
       },
       {
-        "file": "02-profil.jpg",
+        "file": "02-visage-2.jpg",
         "thumb": "thumb-02.jpg",
+        "type": "visage",
+        "source": "IRIS-2.jpg"
+      },
+      {
+        "file": "03-profil.jpg",
+        "thumb": "thumb-03.jpg",
         "type": "profil",
-        "source": "02.png"
+        "source": "IRIS-5.jpg"
       }
     ],
     "warnings": []
   },
   "femmes-plus-size-adele": {
-    "signature": "01.png=1278086:1789466808|02.png=449504:1789466808|ov={}|num={}|fmt=3",
+    "signature": "ADÈLE-1.jpg=7929207:1790865380|ADÈLE-2.jpg=8846224:1790865380|ADÈLE-3.jpg=7838680:1790865380|ov={}|num={}|fmt=3",
     "photos": [
       {
         "file": "01-visage.jpg",
         "thumb": "thumb.jpg",
         "type": "visage",
-        "source": "01.png"
+        "source": "ADÈLE-1.jpg"
       },
       {
-        "file": "02-profil.jpg",
+        "file": "02-visage-2.jpg",
         "thumb": "thumb-02.jpg",
+        "type": "visage",
+        "source": "ADÈLE-2.jpg"
+      },
+      {
+        "file": "03-profil.jpg",
+        "thumb": "thumb-03.jpg",
         "type": "profil",
-        "source": "02.png"
+        "source": "ADÈLE-3.jpg"
       }
     ],
     "warnings": []
   },
-  "femmes-plus-size-cecile": {
-    "signature": "01.png=1469303:1789466819|02.png=7621640:1789466816|ov={}|num={}|fmt=3",
+  "hommes-plus-size-ethan": {
+    "signature": "ÉTHAN-1.jpg=7443192:1790867990|ÉTHAN-2.jpg=8876909:1790867981|ÉTHAN-3.jpg=8035743:1790867981|ov={}|num={}|fmt=3",
     "photos": [
       {
-        "file": "01-visage.jpg",
+        "file": "01-profil.jpg",
         "thumb": "thumb.jpg",
-        "type": "visage",
-        "source": "01.png"
+        "type": "profil",
+        "source": "ÉTHAN-1.jpg"
       },
       {
-        "file": "02-profil.jpg",
+        "file": "02-visage.jpg",
         "thumb": "thumb-02.jpg",
-        "type": "profil",
-        "source": "02.png"
+        "type": "visage",
+        "source": "ÉTHAN-2.jpg"
+      },
+      {
+        "file": "03-plein-pied.jpg",
+        "thumb": "thumb-03.jpg",
+        "type": "plein-pied",
+        "source": "ÉTHAN-3.jpg"
       }
     ],
     "warnings": []
   },
-  "femmes-plus-size-beatrice": {
-    "signature": "01.png=1581843:1789466826|02.png=1595216:1789466826|ov={}|num={}|fmt=3",
+  "hommes-plus-size-ari": {
+    "signature": "ARI-1.jpg=8075578:1790868001|ARI-2.jpg=9674104:1790868001|ARI-3.jpg=7632407:1790946651|ov={}|num={}|fmt=3",
+    "photos": [
+      {
+        "file": "01-profil.jpg",
+        "thumb": "thumb.jpg",
+        "type": "profil",
+        "source": "ARI-1.jpg"
+      },
+      {
+        "file": "02-visage.jpg",
+        "thumb": "thumb-02.jpg",
+        "type": "visage",
+        "source": "ARI-2.jpg"
+      },
+      {
+        "file": "03-plein-pied.jpg",
+        "thumb": "thumb-03.jpg",
+        "type": "plein-pied",
+        "source": "ARI-3.jpg"
+      }
+    ],
+    "warnings": []
+  },
+  "hommes-plus-size-joshua": {
+    "signature": "JOSHUA-1.jpg=7713408:1790865080|JOSHUA-2.jpg=9673916:1790865080|JOSHUA-3.jpg=7364646:1790865080|ov={}|num={}|fmt=3",
     "photos": [
       {
         "file": "01-visage.jpg",
         "thumb": "thumb.jpg",
         "type": "visage",
-        "source": "01.png"
+        "source": "JOSHUA-1.jpg"
       },
       {
         "file": "02-profil.jpg",
         "thumb": "thumb-02.jpg",
         "type": "profil",
-        "source": "02.png"
+        "source": "JOSHUA-2.jpg"
+      },
+      {
+        "file": "03-plein-pied.jpg",
+        "thumb": "thumb-03.jpg",
+        "type": "plein-pied",
+        "source": "JOSHUA-3.jpg"
+      }
+    ],
+    "warnings": []
+  },
+  "hommes-plus-size-florian": {
+    "signature": "FLORIAN-1.jpg=7230145:1790865105|FLORIAN-2.jpg=9315918:1790865105|FLORIAN-3.jpg=7376456:1790865105|ov={}|num={}|fmt=3",
+    "photos": [
+      {
+        "file": "01-profil.jpg",
+        "thumb": "thumb.jpg",
+        "type": "profil",
+        "source": "FLORIAN-1.jpg"
+      },
+      {
+        "file": "02-visage.jpg",
+        "thumb": "thumb-02.jpg",
+        "type": "visage",
+        "source": "FLORIAN-2.jpg"
+      },
+      {
+        "file": "03-plein-pied.jpg",
+        "thumb": "thumb-03.jpg",
+        "type": "plein-pied",
+        "source": "FLORIAN-3.jpg"
+      }
+    ],
+    "warnings": []
+  },
+  "enfants-bebe-milan": {
+    "signature": "MILAN.jpeg=549806:1790686188|ov={}|num={}|fmt=3",
+    "photos": [
+      {
+        "file": "01-visage.jpg",
+        "thumb": "thumb.jpg",
+        "type": "visage",
+        "source": "MILAN.jpeg"
+      }
+    ],
+    "warnings": [
+      "seulement 1 photo(s)"
+    ]
+  },
+  "enfants-bebe-luna": {
+    "signature": "LUNA.jpeg=593944:1790686688|ov={}|num={}|fmt=3",
+    "photos": [
+      {
+        "file": "01-visage.jpg",
+        "thumb": "thumb.jpg",
+        "type": "visage",
+        "source": "LUNA.jpeg"
+      }
+    ],
+    "warnings": [
+      "seulement 1 photo(s)"
+    ]
+  },
+  "enfants-bebe-joy": {
+    "signature": "JOY.jpeg=554843:1790686842|ov={}|num={}|fmt=3",
+    "photos": [
+      {
+        "file": "01-visage.jpg",
+        "thumb": "thumb.jpg",
+        "type": "visage",
+        "source": "JOY.jpeg"
+      }
+    ],
+    "warnings": [
+      "seulement 1 photo(s)"
+    ]
+  },
+  "enfants-bebe-augustin": {
+    "signature": "miraggia-6267e8df.jpg=7260318:1790782209|miraggia-d492ec33.jpg=7153533:1790782238|ov={}|num={}|fmt=3",
+    "photos": [
+      {
+        "file": "01-visage.jpg",
+        "thumb": "thumb.jpg",
+        "type": "visage",
+        "source": "miraggia-d492ec33.jpg"
+      },
+      {
+        "file": "02-profil.jpg",
+        "thumb": "thumb-02.jpg",
+        "type": "profil",
+        "source": "miraggia-6267e8df.jpg"
+      }
+    ],
+    "warnings": []
+  },
+  "enfants-bebe-alia": {
+    "signature": "miraggia-6cbf93df.jpg=7046679:1790782500|miraggia-becdec2e.jpg=7333816:1790782513|ov={}|num={}|fmt=3",
+    "photos": [
+      {
+        "file": "01-plein-pied.jpg",
+        "thumb": "thumb.jpg",
+        "type": "plein-pied",
+        "source": "miraggia-becdec2e.jpg"
+      },
+      {
+        "file": "02-plein-pied-2.jpg",
+        "thumb": "thumb-02.jpg",
+        "type": "plein-pied",
+        "source": "miraggia-6cbf93df.jpg"
+      }
+    ],
+    "warnings": []
+  },
+  "enfants-fille-jeanne": {
+    "signature": "JEANNE-1.jpg=7561450:1790783494|JEANNE-2.jpg=7890976:1790783494|ov={}|num={}|fmt=3",
+    "photos": [
+      {
+        "file": "01-visage.jpg",
+        "thumb": "thumb.jpg",
+        "type": "visage",
+        "source": "JEANNE-1.jpg"
+      },
+      {
+        "file": "02-plein-pied.jpg",
+        "thumb": "thumb-02.jpg",
+        "type": "plein-pied",
+        "source": "JEANNE-2.jpg"
+      }
+    ],
+    "warnings": []
+  },
+  "enfants-fille-zoe": {
+    "signature": "ZOE-1.jpg=7882359:1790783517|ZOE-2.jpg=8164434:1790783517|ov={}|num={}|fmt=3",
+    "photos": [
+      {
+        "file": "01-visage.jpg",
+        "thumb": "thumb.jpg",
+        "type": "visage",
+        "source": "ZOE-1.jpg"
+      },
+      {
+        "file": "02-plein-pied.jpg",
+        "thumb": "thumb-02.jpg",
+        "type": "plein-pied",
+        "source": "ZOE-2.jpg"
+      }
+    ],
+    "warnings": []
+  },
+  "enfants-fille-alice": {
+    "signature": "ALICE-1.jpg=8390528:1790783740|ALICE-2.jpg=8512288:1790783740|ov={}|num={}|fmt=3",
+    "photos": [
+      {
+        "file": "01-visage.jpg",
+        "thumb": "thumb.jpg",
+        "type": "visage",
+        "source": "ALICE-1.jpg"
+      },
+      {
+        "file": "02-plein-pied.jpg",
+        "thumb": "thumb-02.jpg",
+        "type": "plein-pied",
+        "source": "ALICE-2.jpg"
+      }
+    ],
+    "warnings": []
+  },
+  "enfants-fille-rose": {
+    "signature": "ROSE-1.jpg=7677816:1790783752|ROSE-2.jpg=7767433:1790783752|ov={}|num={}|fmt=3",
+    "photos": [
+      {
+        "file": "01-visage.jpg",
+        "thumb": "thumb.jpg",
+        "type": "visage",
+        "source": "ROSE-1.jpg"
+      },
+      {
+        "file": "02-plein-pied.jpg",
+        "thumb": "thumb-02.jpg",
+        "type": "plein-pied",
+        "source": "ROSE-2.jpg"
+      }
+    ],
+    "warnings": []
+  },
+  "enfants-fille-salome": {
+    "signature": "SALOMÉ-1.jpg=8173273:1790783766|SALOMÉ-2.jpg=7997150:1790783766|ov={}|num={}|fmt=3",
+    "photos": [
+      {
+        "file": "01-visage.jpg",
+        "thumb": "thumb.jpg",
+        "type": "visage",
+        "source": "SALOMÉ-1.jpg"
+      },
+      {
+        "file": "02-plein-pied.jpg",
+        "thumb": "thumb-02.jpg",
+        "type": "plein-pied",
+        "source": "SALOMÉ-2.jpg"
+      }
+    ],
+    "warnings": []
+  },
+  "enfants-fille-sofia": {
+    "signature": "SOFIA-1.jpg=7882528:1790783797|SOFIA-2.jpg=7541249:1790783797|ov={}|num={}|fmt=3",
+    "photos": [
+      {
+        "file": "01-visage.jpg",
+        "thumb": "thumb.jpg",
+        "type": "visage",
+        "source": "SOFIA-1.jpg"
+      },
+      {
+        "file": "02-plein-pied.jpg",
+        "thumb": "thumb-02.jpg",
+        "type": "plein-pied",
+        "source": "SOFIA-2.jpg"
+      }
+    ],
+    "warnings": []
+  },
+  "enfants-fille-lila": {
+    "signature": "LILA-1.jpg=7600399:1790784224|LILA-2.jpg=7639692:1790784224|ov={}|num={}|fmt=3",
+    "photos": [
+      {
+        "file": "01-visage.jpg",
+        "thumb": "thumb.jpg",
+        "type": "visage",
+        "source": "LILA-1.jpg"
+      },
+      {
+        "file": "02-profil.jpg",
+        "thumb": "thumb-02.jpg",
+        "type": "profil",
+        "source": "LILA-2.jpg"
+      }
+    ],
+    "warnings": []
+  },
+  "enfants-fille-thea": {
+    "signature": "THÉA-1.jpg=7986605:1790784231|THÉA-2.jpg=8013988:1790784231|ov={}|num={}|fmt=3",
+    "photos": [
+      {
+        "file": "01-visage.jpg",
+        "thumb": "thumb.jpg",
+        "type": "visage",
+        "source": "THÉA-1.jpg"
+      },
+      {
+        "file": "02-plein-pied.jpg",
+        "thumb": "thumb-02.jpg",
+        "type": "plein-pied",
+        "source": "THÉA-2.jpg"
+      }
+    ],
+    "warnings": []
+  },
+  "enfants-fille-romane": {
+    "signature": "ROMANE-1.jpg=8792864:1790784243|ov={}|num={}|fmt=3",
+    "photos": [
+      {
+        "file": "01-visage.jpg",
+        "thumb": "thumb.jpg",
+        "type": "visage",
+        "source": "ROMANE-1.jpg"
+      }
+    ],
+    "warnings": [
+      "seulement 1 photo(s)"
+    ]
+  },
+  "enfants-fille-celia": {
+    "signature": "CÉLIA-1.jpg=8061365:1790784400|CÉLIA-2.jpg=8327486:1790784400|ov={}|num={}|fmt=3",
+    "photos": [
+      {
+        "file": "01-plein-pied.jpg",
+        "thumb": "thumb.jpg",
+        "type": "plein-pied",
+        "source": "CÉLIA-1.jpg"
+      },
+      {
+        "file": "02-visage.jpg",
+        "thumb": "thumb-02.jpg",
+        "type": "visage",
+        "source": "CÉLIA-2.jpg"
+      }
+    ],
+    "warnings": []
+  },
+  "enfants-fille-pauline": {
+    "signature": "PAULINE-1.jpg=8208244:1790784254|PAULINE-2.jpg=7583015:1790784254|ov={}|num={}|fmt=3",
+    "photos": [
+      {
+        "file": "01-visage.jpg",
+        "thumb": "thumb.jpg",
+        "type": "visage",
+        "source": "PAULINE-1.jpg"
+      },
+      {
+        "file": "02-plein-pied.jpg",
+        "thumb": "thumb-02.jpg",
+        "type": "plein-pied",
+        "source": "PAULINE-2.jpg"
+      }
+    ],
+    "warnings": []
+  },
+  "enfants-fille-stella": {
+    "signature": "STELLA-1.jpg=8112266:1790784270|STELLA-2.jpg=7690849:1790784270|ov={}|num={}|fmt=3",
+    "photos": [
+      {
+        "file": "01-visage.jpg",
+        "thumb": "thumb.jpg",
+        "type": "visage",
+        "source": "STELLA-1.jpg"
+      },
+      {
+        "file": "02-plein-pied.jpg",
+        "thumb": "thumb-02.jpg",
+        "type": "plein-pied",
+        "source": "STELLA-2.jpg"
+      }
+    ],
+    "warnings": []
+  },
+  "enfants-fille-sonia": {
+    "signature": "SONIA-1.jpg=8364784:1790784281|SONIA-2.jpg=7825432:1790784281|ov={}|num={}|fmt=3",
+    "photos": [
+      {
+        "file": "01-visage.jpg",
+        "thumb": "thumb.jpg",
+        "type": "visage",
+        "source": "SONIA-1.jpg"
+      },
+      {
+        "file": "02-plein-pied.jpg",
+        "thumb": "thumb-02.jpg",
+        "type": "plein-pied",
+        "source": "SONIA-2.jpg"
+      }
+    ],
+    "warnings": []
+  },
+  "enfants-garcon-nils": {
+    "signature": "NILS-1.jpg=9030848:1790843123|NILS-2.jpg=8794086:1790843123|ov={}|num={}|fmt=3",
+    "photos": [
+      {
+        "file": "01-visage.jpg",
+        "thumb": "thumb.jpg",
+        "type": "visage",
+        "source": "NILS-1.jpg"
+      },
+      {
+        "file": "02-plein-pied.jpg",
+        "thumb": "thumb-02.jpg",
+        "type": "plein-pied",
+        "source": "NILS-2.jpg"
+      }
+    ],
+    "warnings": []
+  },
+  "enfants-garcon-enzo": {
+    "signature": "ENZO-1.jpg=8729586:1790843195|ENZO-2.jpg=8511997:1790866518|ov={}|num={}|fmt=3",
+    "photos": [
+      {
+        "file": "01-visage.jpg",
+        "thumb": "thumb.jpg",
+        "type": "visage",
+        "source": "ENZO-1.jpg"
+      },
+      {
+        "file": "02-plein-pied.jpg",
+        "thumb": "thumb-02.jpg",
+        "type": "plein-pied",
+        "source": "ENZO-2.jpg"
+      }
+    ],
+    "warnings": []
+  },
+  "enfants-garcon-liam": {
+    "signature": "LIAM-1.jpg=8985447:1790843153|LIAM-2.jpg=8631260:1790843153|ov={}|num={}|fmt=3",
+    "photos": [
+      {
+        "file": "01-visage.jpg",
+        "thumb": "thumb.jpg",
+        "type": "visage",
+        "source": "LIAM-1.jpg"
+      },
+      {
+        "file": "02-plein-pied.jpg",
+        "thumb": "thumb-02.jpg",
+        "type": "plein-pied",
+        "source": "LIAM-2.jpg"
+      }
+    ],
+    "warnings": []
+  },
+  "enfants-garcon-jules": {
+    "signature": "JULES-1.jpg=9650096:1790843219|JULES-2.jpg=8534641:1790843233|ov={}|num={}|fmt=3",
+    "photos": [
+      {
+        "file": "01-visage.jpg",
+        "thumb": "thumb.jpg",
+        "type": "visage",
+        "source": "JULES-1.jpg"
+      },
+      {
+        "file": "02-plein-pied.jpg",
+        "thumb": "thumb-02.jpg",
+        "type": "plein-pied",
+        "source": "JULES-2.jpg"
+      }
+    ],
+    "warnings": []
+  },
+  "enfants-garcon-benjamin": {
+    "signature": "JULES-1.jpg=8998037:1790843249|JULES-2.jpg=8602862:1790843249|ov={}|num={}|fmt=3",
+    "photos": [
+      {
+        "file": "01-visage.jpg",
+        "thumb": "thumb.jpg",
+        "type": "visage",
+        "source": "JULES-1.jpg"
+      },
+      {
+        "file": "02-plein-pied.jpg",
+        "thumb": "thumb-02.jpg",
+        "type": "plein-pied",
+        "source": "JULES-2.jpg"
+      }
+    ],
+    "warnings": []
+  },
+  "enfants-garcon-solal": {
+    "signature": "SOLAL-1.jpg=8814829:1790843269|SOLAL-2.jpg=9219393:1790843269|ov={}|num={}|fmt=3",
+    "photos": [
+      {
+        "file": "01-visage.jpg",
+        "thumb": "thumb.jpg",
+        "type": "visage",
+        "source": "SOLAL-1.jpg"
+      },
+      {
+        "file": "02-plein-pied.jpg",
+        "thumb": "thumb-02.jpg",
+        "type": "plein-pied",
+        "source": "SOLAL-2.jpg"
+      }
+    ],
+    "warnings": []
+  },
+  "enfants-garcon-victor": {
+    "signature": "VICTOR-1.jpg=9143090:1790845264|VICTOR-2.jpg=8791097:1790845277|ov={}|num={}|fmt=3",
+    "photos": [
+      {
+        "file": "01-visage.jpg",
+        "thumb": "thumb.jpg",
+        "type": "visage",
+        "source": "VICTOR-1.jpg"
+      },
+      {
+        "file": "02-plein-pied.jpg",
+        "thumb": "thumb-02.jpg",
+        "type": "plein-pied",
+        "source": "VICTOR-2.jpg"
+      }
+    ],
+    "warnings": []
+  },
+  "enfants-garcon-aylan": {
+    "signature": "AYLAN-1.jpg=9547437:1790845027|AYLAN-2.jpg=9263577:1790868919|ov={}|num={}|fmt=3",
+    "photos": [
+      {
+        "file": "01-profil.jpg",
+        "thumb": "thumb.jpg",
+        "type": "profil",
+        "source": "AYLAN-1.jpg"
+      },
+      {
+        "file": "02-plein-pied.jpg",
+        "thumb": "thumb-02.jpg",
+        "type": "plein-pied",
+        "source": "AYLAN-2.jpg"
+      }
+    ],
+    "warnings": []
+  },
+  "enfants-garcon-shai": {
+    "signature": "SHAI-1.jpg=9689990:1790845004|SHAI-2.jpg=8730672:1790845004|ov={}|num={}|fmt=3",
+    "photos": [
+      {
+        "file": "01-visage.jpg",
+        "thumb": "thumb.jpg",
+        "type": "visage",
+        "source": "SHAI-1.jpg"
+      },
+      {
+        "file": "02-plein-pied.jpg",
+        "thumb": "thumb-02.jpg",
+        "type": "plein-pied",
+        "source": "SHAI-2.jpg"
+      }
+    ],
+    "warnings": []
+  },
+  "enfants-garcon-diego": {
+    "signature": "DIEGO-1.jpg=9359350:1790845415|DIEGO-2.jpg=8836800:1790868950|ov={}|num={}|fmt=3",
+    "photos": [
+      {
+        "file": "01-visage.jpg",
+        "thumb": "thumb.jpg",
+        "type": "visage",
+        "source": "DIEGO-1.jpg"
+      },
+      {
+        "file": "02-plein-pied.jpg",
+        "thumb": "thumb-02.jpg",
+        "type": "plein-pied",
+        "source": "DIEGO-2.jpg"
+      }
+    ],
+    "warnings": []
+  },
+  "enfants-garcon-idris": {
+    "signature": "IDRIS-1.jpg=9444504:1790845056|IDRIS-2.jpg=8922351:1790845056|ov={}|num={}|fmt=3",
+    "photos": [
+      {
+        "file": "01-visage.jpg",
+        "thumb": "thumb.jpg",
+        "type": "visage",
+        "source": "IDRIS-1.jpg"
+      },
+      {
+        "file": "02-plein-pied.jpg",
+        "thumb": "thumb-02.jpg",
+        "type": "plein-pied",
+        "source": "IDRIS-2.jpg"
+      }
+    ],
+    "warnings": []
+  },
+  "enfants-garcon-eliott": {
+    "signature": "ELIOTT-1.jpg=9394140:1790845087|ELIOTT-2.jpg=9127144:1790845087|ov={}|num={}|fmt=3",
+    "photos": [
+      {
+        "file": "01-visage.jpg",
+        "thumb": "thumb.jpg",
+        "type": "visage",
+        "source": "ELIOTT-1.jpg"
+      },
+      {
+        "file": "02-plein-pied.jpg",
+        "thumb": "thumb-02.jpg",
+        "type": "plein-pied",
+        "source": "ELIOTT-2.jpg"
+      }
+    ],
+    "warnings": []
+  },
+  "enfants-garcon-jaden": {
+    "signature": "JADEN-1.jpg=8613718:1790871218|JADEN-2.jpg=8823067:1790871218|ov={}|num={}|fmt=3",
+    "photos": [
+      {
+        "file": "01-visage.jpg",
+        "thumb": "thumb.jpg",
+        "type": "visage",
+        "source": "JADEN-1.jpg"
+      },
+      {
+        "file": "02-plein-pied.jpg",
+        "thumb": "thumb-02.jpg",
+        "type": "plein-pied",
+        "source": "JADEN-2.jpg"
       }
     ],
     "warnings": []
   },
   "femmes-20-30-ans-ambre": {
-    "signature": "AMBRE-1.jpg=7728957:1790180595|AMBRE-2.jpg=8483368:1790180595|AMBRE-3.jpg=7788332:1790180595|ov={}|num={\"1\": \"visage\", \"2\": \"mi-corps\", \"3\": \"plein-pied\"}|fmt=3",
+    "signature": "AMBRE-1.jpg=7728957:1790173367|AMBRE-2.jpg=8483368:1790093426|AMBRE-3.jpg=7788332:1790152031|ov={}|num={\"1\": \"visage\", \"2\": \"mi-corps\", \"3\": \"plein-pied\"}|fmt=3",
     "photos": [
       {
         "file": "01-visage.jpg",
@@ -132,7 +758,7 @@
     "warnings": []
   },
   "femmes-20-30-ans-gabrielle": {
-    "signature": "GABRIELLE-1.jpg=7977473:1790180595|GABRIELLE-2.jpg=8765623:1790180595|GABRIELLE-3.jpg=7908408:1790180595|ov={}|num={\"1\": \"visage\", \"2\": \"mi-corps\", \"3\": \"plein-pied\"}|fmt=3",
+    "signature": "GABRIELLE-1.jpg=7977473:1790173369|GABRIELLE-2.jpg=8765623:1790151707|GABRIELLE-3.jpg=7908408:1790152563|ov={}|num={\"1\": \"visage\", \"2\": \"mi-corps\", \"3\": \"plein-pied\"}|fmt=3",
     "photos": [
       {
         "file": "01-visage.jpg",
@@ -156,7 +782,7 @@
     "warnings": []
   },
   "femmes-20-30-ans-mila": {
-    "signature": "MILA-1.jpg=7739335:1790180595|MILA-2.jpg=9723280:1790180595|MILA-3.jpg=8116046:1790180595|ov={}|num={\"1\": \"visage\", \"2\": \"mi-corps\", \"3\": \"plein-pied\"}|fmt=3",
+    "signature": "MILA-1.jpg=7739335:1790173381|MILA-2.jpg=9723280:1790092093|MILA-3.jpg=8116046:1790152669|ov={}|num={\"1\": \"visage\", \"2\": \"mi-corps\", \"3\": \"plein-pied\"}|fmt=3",
     "photos": [
       {
         "file": "01-visage.jpg",
@@ -180,7 +806,7 @@
     "warnings": []
   },
   "femmes-20-30-ans-emma": {
-    "signature": "EMMA-1.jpg=7276518:1790180595|EMMA-2.jpg=8857674:1790180595|EMMA-3.jpg=7298647:1790180595|ov={}|num={\"1\": \"visage\", \"2\": \"mi-corps\", \"3\": \"plein-pied\"}|fmt=3",
+    "signature": "EMMA-1.jpg=7276518:1790173376|EMMA-2.jpg=8857674:1790168236|EMMA-3.jpg=7298647:1790157741|ov={}|num={\"1\": \"visage\", \"2\": \"mi-corps\", \"3\": \"plein-pied\"}|fmt=3",
     "photos": [
       {
         "file": "01-visage.jpg",
@@ -204,7 +830,7 @@
     "warnings": []
   },
   "femmes-20-30-ans-chloe": {
-    "signature": "CHLOÉ-1.jpg=7961047:1790180595|CHLOÉ-2.jpg=8787928:1790180595|CHLOÉ-3.jpg=7699627:1790180595|ov={}|num={\"1\": \"visage\", \"2\": \"mi-corps\", \"3\": \"plein-pied\"}|fmt=3",
+    "signature": "CHLOÉ-1.jpg=7961047:1790178230|CHLOÉ-2.jpg=8787928:1790093464|CHLOÉ-3.jpg=7699627:1790092235|ov={}|num={\"1\": \"visage\", \"2\": \"mi-corps\", \"3\": \"plein-pied\"}|fmt=3",
     "photos": [
       {
         "file": "01-visage.jpg",
@@ -228,7 +854,7 @@
     "warnings": []
   },
   "femmes-20-30-ans-eve": {
-    "signature": "EVE-1.jpg=8120274:1790180595|EVE-2.jpg=8440997:1790180595|EVE-3.jpg=3984661:1790180595|ov={}|num={\"1\": \"visage\", \"2\": \"mi-corps\", \"3\": \"plein-pied\"}|fmt=3",
+    "signature": "EVE-1.jpg=8120274:1790177890|EVE-2.jpg=8440997:1790151637|EVE-3.jpg=3984661:1790087775|ov={}|num={\"1\": \"visage\", \"2\": \"mi-corps\", \"3\": \"plein-pied\"}|fmt=3",
     "photos": [
       {
         "file": "01-visage.jpg",
@@ -252,7 +878,7 @@
     "warnings": []
   },
   "femmes-20-30-ans-lisa": {
-    "signature": "LISA-1.jpg=8080395:1790180595|LISA-2.jpg=9236885:1790180595|LISA-3.jpg=4056493:1790180595|ov={}|num={\"1\": \"visage\", \"2\": \"mi-corps\", \"3\": \"plein-pied\"}|fmt=3",
+    "signature": "LISA-1.jpg=8080395:1790178019|LISA-2.jpg=9236885:1790092197|LISA-3.jpg=4056493:1790091594|ov={}|num={\"1\": \"visage\", \"2\": \"mi-corps\", \"3\": \"plein-pied\"}|fmt=3",
     "photos": [
       {
         "file": "01-visage.jpg",
@@ -276,7 +902,7 @@
     "warnings": []
   },
   "femmes-20-30-ans-diane": {
-    "signature": "DIANE-1.jpg=7449165:1790180595|DIANE-2.jpg=8395917:1790180595|DIANE-3.jpg=3865549:1790180595|ov={}|num={\"1\": \"visage\", \"2\": \"mi-corps\", \"3\": \"plein-pied\"}|fmt=3",
+    "signature": "DIANE-1.jpg=7449165:1790173452|DIANE-2.jpg=8395917:1790093861|DIANE-3.jpg=3865549:1790088656|ov={}|num={\"1\": \"visage\", \"2\": \"mi-corps\", \"3\": \"plein-pied\"}|fmt=3",
     "photos": [
       {
         "file": "01-visage.jpg",
@@ -300,7 +926,7 @@
     "warnings": []
   },
   "femmes-20-30-ans-lana": {
-    "signature": "LANA-1.jpg=7598151:1790180595|LANA-2.jpg=8407225:1790180595|LANA-3.jpg=6888787:1790180595|ov={}|num={\"1\": \"visage\", \"2\": \"mi-corps\", \"3\": \"plein-pied\"}|fmt=3",
+    "signature": "LANA-1.jpg=7598151:1790166462|LANA-2.jpg=8407225:1790168279|LANA-3.jpg=6888787:1790157861|ov={}|num={\"1\": \"visage\", \"2\": \"mi-corps\", \"3\": \"plein-pied\"}|fmt=3",
     "photos": [
       {
         "file": "01-visage.jpg",
@@ -324,7 +950,7 @@
     "warnings": []
   },
   "femmes-20-30-ans-rafaella": {
-    "signature": "RAFAELLA-1.jpg=7537346:1790180595|RAFAELLA-2.jpg=8935067:1790180595|RAFAELLA-3.jpg=7657600:1790180595|ov={}|num={\"1\": \"visage\", \"2\": \"mi-corps\", \"3\": \"plein-pied\"}|fmt=3",
+    "signature": "RAFAELLA-1.jpg=7537346:1790178012|RAFAELLA-2.jpg=8935067:1790171710|RAFAELLA-3.jpg=7657600:1790171652|ov={}|num={\"1\": \"visage\", \"2\": \"mi-corps\", \"3\": \"plein-pied\"}|fmt=3",
     "photos": [
       {
         "file": "01-visage.jpg",
@@ -348,7 +974,7 @@
     "warnings": []
   },
   "femmes-20-30-ans-eliana": {
-    "signature": "ELIANA-1.jpg=6998867:1790180594|ELIANA-2.jpg=8356707:1790180594|ELIANA-3.jpg=7991796:1790180594|ov={}|num={\"1\": \"visage\", \"2\": \"mi-corps\", \"3\": \"plein-pied\"}|fmt=3",
+    "signature": "ELIANA-1.jpg=6998867:1790166474|ELIANA-2.jpg=8356707:1790179944|ELIANA-3.jpg=7991796:1790179806|ov={}|num={\"1\": \"visage\", \"2\": \"mi-corps\", \"3\": \"plein-pied\"}|fmt=3",
     "photos": [
       {
         "file": "01-visage.jpg",
@@ -372,7 +998,7 @@
     "warnings": []
   },
   "femmes-20-30-ans-jade": {
-    "signature": "JADE-1.jpg=8051094:1790180595|JADE-2.jpg=9090482:1790180595|JADE-3.jpg=7277909:1790180595|ov={}|num={\"1\": \"visage\", \"2\": \"mi-corps\", \"3\": \"plein-pied\"}|fmt=3",
+    "signature": "JADE-1.jpg=8051094:1790178167|JADE-2.jpg=9090482:1790155486|JADE-3.jpg=7277909:1790154824|ov={}|num={\"1\": \"visage\", \"2\": \"mi-corps\", \"3\": \"plein-pied\"}|fmt=3",
     "photos": [
       {
         "file": "01-visage.jpg",
@@ -396,7 +1022,7 @@
     "warnings": []
   },
   "femmes-20-30-ans-anouk": {
-    "signature": "ANOUK-1.jpg=7157952:1790180595|ANOUK-2.jpg=7867166:1790180595|ANOUK-3.jpg=7181309:1790180595|ov={}|num={\"1\": \"visage\", \"2\": \"mi-corps\", \"3\": \"plein-pied\"}|fmt=3",
+    "signature": "ANOUK-1.jpg=7157952:1790178217|ANOUK-2.jpg=7867166:1790167879|ANOUK-3.jpg=7181309:1790157678|ov={}|num={\"1\": \"visage\", \"2\": \"mi-corps\", \"3\": \"plein-pied\"}|fmt=3",
     "photos": [
       {
         "file": "01-visage.jpg",
@@ -420,7 +1046,7 @@
     "warnings": []
   },
   "femmes-20-30-ans-alba": {
-    "signature": "ALBA-1.jpg=7332571:1790180595|ALBA-2.jpg=8407912:1790180595|ALBA-3.jpg=7530044:1790180595|ov={}|num={\"1\": \"visage\", \"2\": \"mi-corps\", \"3\": \"plein-pied\"}|fmt=3",
+    "signature": "ALBA-1.jpg=7332571:1790178326|ALBA-2.jpg=8407912:1790151811|ALBA-3.jpg=7530044:1790093382|ov={}|num={\"1\": \"visage\", \"2\": \"mi-corps\", \"3\": \"plein-pied\"}|fmt=3",
     "photos": [
       {
         "file": "01-visage.jpg",
@@ -444,7 +1070,7 @@
     "warnings": []
   },
   "femmes-20-30-ans-louise": {
-    "signature": "LOUISE-1.jpg=7284850:1790180595|LOUISE-2.jpg=8234522:1790180595|LOUISE-3.jpg=7525668:1790180595|ov={}|num={\"1\": \"visage\", \"2\": \"mi-corps\", \"3\": \"plein-pied\"}|fmt=3",
+    "signature": "LOUISE-1.jpg=7284850:1790166830|LOUISE-2.jpg=8234522:1790093814|LOUISE-3.jpg=7525668:1790091234|ov={}|num={\"1\": \"visage\", \"2\": \"mi-corps\", \"3\": \"plein-pied\"}|fmt=3",
     "photos": [
       {
         "file": "01-visage.jpg",
@@ -468,7 +1094,7 @@
     "warnings": []
   },
   "femmes-20-30-ans-jenna": {
-    "signature": "JENNA-1.jpg=7364346:1790180595|JENNA-2.jpg=9083321:1790180595|JENNA-3.jpg=7055153:1790180595|ov={}|num={\"1\": \"visage\", \"2\": \"mi-corps\", \"3\": \"plein-pied\"}|fmt=3",
+    "signature": "JENNA-1.jpg=7364346:1790176794|JENNA-2.jpg=9083321:1790159190|JENNA-3.jpg=7055153:1790154927|ov={}|num={\"1\": \"visage\", \"2\": \"mi-corps\", \"3\": \"plein-pied\"}|fmt=3",
     "photos": [
       {
         "file": "01-visage.jpg",
@@ -492,7 +1118,7 @@
     "warnings": []
   },
   "femmes-20-30-ans-juliette": {
-    "signature": "JULIETTE-1.jpg=7663987:1790180595|JULIETTE-2.jpg=8603717:1790180595|JULIETTE-3.jpg=3870471:1790180595|ov={}|num={\"1\": \"visage\", \"2\": \"mi-corps\", \"3\": \"plein-pied\"}|fmt=3",
+    "signature": "JULIETTE-1.jpg=7663987:1790166832|JULIETTE-2.jpg=8603717:1790093773|JULIETTE-3.jpg=3870471:1790088665|ov={}|num={\"1\": \"visage\", \"2\": \"mi-corps\", \"3\": \"plein-pied\"}|fmt=3",
     "photos": [
       {
         "file": "01-visage.jpg",
@@ -516,7 +1142,7 @@
     "warnings": []
   },
   "femmes-20-30-ans-marion": {
-    "signature": "MARION-1.jpg=7221054:1790180595|MARION-2.jpg=8443334:1790180595|MARION-3.jpg=7661224:1790180595|ov={}|num={\"1\": \"visage\", \"2\": \"mi-corps\", \"3\": \"plein-pied\"}|fmt=3",
+    "signature": "MARION-1.jpg=7221054:1790166830|MARION-2.jpg=8443334:1790151645|MARION-3.jpg=7661224:1790089923|ov={}|num={\"1\": \"visage\", \"2\": \"mi-corps\", \"3\": \"plein-pied\"}|fmt=3",
     "photos": [
       {
         "file": "01-visage.jpg",
@@ -540,7 +1166,7 @@
     "warnings": []
   },
   "femmes-20-30-ans-elyse": {
-    "signature": "ELYSE1.jpg=6900906:1790180595|ELYSE2.jpg=8339257:1790180595|ELYSE3.jpg=7441239:1790180595|ov={}|num={\"1\": \"visage\", \"2\": \"mi-corps\", \"3\": \"plein-pied\"}|fmt=3",
+    "signature": "ELYSE1.jpg=6900906:1790167220|ELYSE2.jpg=8339257:1790167625|ELYSE3.jpg=7441239:1790167515|ov={}|num={\"1\": \"visage\", \"2\": \"mi-corps\", \"3\": \"plein-pied\"}|fmt=3",
     "photos": [
       {
         "file": "01-visage.jpg",
@@ -564,7 +1190,7 @@
     "warnings": []
   },
   "femmes-20-30-ans-garance": {
-    "signature": "GARANCE-1.jpg=7658771:1790180595|GARANCE-2.jpg=8427972:1790180595|GARANCE-3.jpg=7989514:1790180595|ov={}|num={\"1\": \"visage\", \"2\": \"mi-corps\", \"3\": \"plein-pied\"}|fmt=3",
+    "signature": "GARANCE-1.jpg=7658771:1790167220|GARANCE-2.jpg=8427972:1790153429|GARANCE-3.jpg=7989514:1790153250|ov={}|num={\"1\": \"visage\", \"2\": \"mi-corps\", \"3\": \"plein-pied\"}|fmt=3",
     "photos": [
       {
         "file": "01-visage.jpg",
@@ -588,7 +1214,7 @@
     "warnings": []
   },
   "femmes-20-30-ans-laura": {
-    "signature": "LAURA-1.jpg=7470738:1790180594|LAURA-2.jpg=8368576:1790180595|LAURA-3.jpg=7523322:1790180595|ov={}|num={\"1\": \"visage\", \"2\": \"mi-corps\", \"3\": \"plein-pied\"}|fmt=3",
+    "signature": "LAURA-1.jpg=7470738:1790178503|LAURA-2.jpg=8368576:1790157262|LAURA-3.jpg=7523322:1790155769|ov={}|num={\"1\": \"visage\", \"2\": \"mi-corps\", \"3\": \"plein-pied\"}|fmt=3",
     "photos": [
       {
         "file": "01-visage.jpg",
@@ -612,7 +1238,7 @@
     "warnings": []
   },
   "femmes-20-30-ans-ludmila": {
-    "signature": "LUDMILA-1.jpg=7384960:1790180595|LUDMILA-2.jpg=7964310:1790180595|LUDMILA-3.jpg=7221356:1790180595|ov={}|num={\"1\": \"visage\", \"2\": \"mi-corps\", \"3\": \"plein-pied\"}|fmt=3",
+    "signature": "LUDMILA-1.jpg=7384960:1790167220|LUDMILA-2.jpg=7964310:1790156811|LUDMILA-3.jpg=7221356:1790161170|ov={}|num={\"1\": \"visage\", \"2\": \"mi-corps\", \"3\": \"plein-pied\"}|fmt=3",
     "photos": [
       {
         "file": "01-visage.jpg",
@@ -636,7 +1262,7 @@
     "warnings": []
   },
   "femmes-20-30-ans-ava": {
-    "signature": "AVA-1.jpg=7869500:1790180595|AVA-2.jpg=8715763:1790180595|AVA-3.jpg=7687306:1790180595|ov={}|num={\"1\": \"visage\", \"2\": \"mi-corps\", \"3\": \"plein-pied\"}|fmt=3",
+    "signature": "AVA-1.jpg=7869500:1790177897|AVA-2.jpg=8715763:1790157199|AVA-3.jpg=7687306:1790156354|ov={}|num={\"1\": \"visage\", \"2\": \"mi-corps\", \"3\": \"plein-pied\"}|fmt=3",
     "photos": [
       {
         "file": "01-visage.jpg",
@@ -660,7 +1286,7 @@
     "warnings": []
   },
   "femmes-20-30-ans-eva": {
-    "signature": "EVA-1.jpg=7312979:1790180595|EVA-2.jpg=8560968:1790180595|EVA-3.jpg=7623839:1790180595|ov={}|num={\"1\": \"visage\", \"2\": \"mi-corps\", \"3\": \"plein-pied\"}|fmt=3",
+    "signature": "EVA-1.jpg=7312979:1790167354|EVA-2.jpg=8560968:1790156770|EVA-3.jpg=7623839:1790156542|ov={}|num={\"1\": \"visage\", \"2\": \"mi-corps\", \"3\": \"plein-pied\"}|fmt=3",
     "photos": [
       {
         "file": "01-visage.jpg",
@@ -684,7 +1310,7 @@
     "warnings": []
   },
   "femmes-20-30-ans-ilona": {
-    "signature": "ILONA-1.jpg=7575346:1790180595|ILONA-2.jpg=8457926:1790180595|ILONA-3.jpg=4030246:1790180595|ov={}|num={\"1\": \"visage\", \"2\": \"mi-corps\", \"3\": \"plein-pied\"}|fmt=3",
+    "signature": "ILONA-1.jpg=7575346:1790167354|ILONA-2.jpg=8457926:1790153441|ILONA-3.jpg=4030246:1790092507|ov={}|num={\"1\": \"visage\", \"2\": \"mi-corps\", \"3\": \"plein-pied\"}|fmt=3",
     "photos": [
       {
         "file": "01-visage.jpg",
@@ -708,7 +1334,7 @@
     "warnings": []
   },
   "femmes-20-30-ans-lina": {
-    "signature": "LINA-1.jpg=8012187:1790180595|LINA-2.jpg=9307973:1790180595|LINA-3.jpg=4133903:1790180595|ov={}|num={\"1\": \"visage\", \"2\": \"mi-corps\", \"3\": \"plein-pied\"}|fmt=3",
+    "signature": "LINA-1.jpg=8012187:1790167358|LINA-2.jpg=9307973:1790151785|LINA-3.jpg=4133903:1790089618|ov={}|num={\"1\": \"visage\", \"2\": \"mi-corps\", \"3\": \"plein-pied\"}|fmt=3",
     "photos": [
       {
         "file": "01-visage.jpg",
@@ -732,7 +1358,7 @@
     "warnings": []
   },
   "femmes-20-30-ans-margaux": {
-    "signature": "MARGAUX-1.jpg=8150422:1790180595|MARGAUX-2.jpg=8229108:1790180595|MARGAUX-3.jpg=7302510:1790180595|ov={}|num={\"1\": \"visage\", \"2\": \"mi-corps\", \"3\": \"plein-pied\"}|fmt=3",
+    "signature": "MARGAUX-1.jpg=8150422:1790176969|MARGAUX-2.jpg=8229108:1790158326|MARGAUX-3.jpg=7302510:1790158238|ov={}|num={\"1\": \"visage\", \"2\": \"mi-corps\", \"3\": \"plein-pied\"}|fmt=3",
     "photos": [
       {
         "file": "01-visage.jpg",
@@ -756,7 +1382,7 @@
     "warnings": []
   },
   "femmes-20-30-ans-lou": {
-    "signature": "LOU-1.jpg=7148507:1790180595|LOU-2.jpg=8600570:1790180595|LOU-3.jpg=6896597:1790180595|ov={}|num={\"1\": \"visage\", \"2\": \"mi-corps\", \"3\": \"plein-pied\"}|fmt=3",
+    "signature": "LOU-1.jpg=7148507:1790167366|LOU-2.jpg=8600570:1790159219|LOU-3.jpg=6896597:1790154843|ov={}|num={\"1\": \"visage\", \"2\": \"mi-corps\", \"3\": \"plein-pied\"}|fmt=3",
     "photos": [
       {
         "file": "01-visage.jpg",
@@ -780,7 +1406,7 @@
     "warnings": []
   },
   "femmes-20-30-ans-leila": {
-    "signature": "LEILA-1.jpg=7172933:1790180595|LEILA-2.jpg=8572563:1790180595|LEILA-3.jpg=7660219:1790180595|ov={}|num={\"1\": \"visage\", \"2\": \"mi-corps\", \"3\": \"plein-pied\"}|fmt=3",
+    "signature": "LEILA-1.jpg=7172933:1790167688|LEILA-2.jpg=8572563:1790151972|LEILA-3.jpg=7660219:1790092250|ov={}|num={\"1\": \"visage\", \"2\": \"mi-corps\", \"3\": \"plein-pied\"}|fmt=3",
     "photos": [
       {
         "file": "01-visage.jpg",
@@ -804,7 +1430,7 @@
     "warnings": []
   },
   "femmes-20-30-ans-dalia": {
-    "signature": "DALIA-1.jpg=7238285:1790180595|DALIA-2.jpg=8348482:1790180595|DALIA-3.jpg=8201503:1790180595|ov={}|num={\"1\": \"visage\", \"2\": \"mi-corps\", \"3\": \"plein-pied\"}|fmt=3",
+    "signature": "DALIA-1.jpg=7238285:1790167690|DALIA-2.jpg=8348482:1790155141|DALIA-3.jpg=8201503:1790152904|ov={}|num={\"1\": \"visage\", \"2\": \"mi-corps\", \"3\": \"plein-pied\"}|fmt=3",
     "photos": [
       {
         "file": "01-visage.jpg",
@@ -828,7 +1454,7 @@
     "warnings": []
   },
   "femmes-20-30-ans-flora": {
-    "signature": "FLORA-1.jpg=6898589:1790180595|FLORA-2.jpg=9214320:1790180595|FLORA-3.jpg=7729050:1790180595|ov={}|num={\"1\": \"visage\", \"2\": \"mi-corps\", \"3\": \"plein-pied\"}|fmt=3",
+    "signature": "FLORA-1.jpg=6898589:1790167686|FLORA-2.jpg=9214320:1790157324|FLORA-3.jpg=7729050:1790156060|ov={}|num={\"1\": \"visage\", \"2\": \"mi-corps\", \"3\": \"plein-pied\"}|fmt=3",
     "photos": [
       {
         "file": "01-visage.jpg",
@@ -852,7 +1478,7 @@
     "warnings": []
   },
   "femmes-20-30-ans-romy": {
-    "signature": "ROMY-1.jpg=7686040:1790180595|ROMY-2.jpg=8360091:1790180595|ROMY-3.jpg=7497616:1790180595|ov={}|num={\"1\": \"visage\", \"2\": \"mi-corps\", \"3\": \"plein-pied\"}|fmt=3",
+    "signature": "ROMY-1.jpg=7686040:1790175324|ROMY-2.jpg=8360091:1790159175|ROMY-3.jpg=7497616:1790154806|ov={}|num={\"1\": \"visage\", \"2\": \"mi-corps\", \"3\": \"plein-pied\"}|fmt=3",
     "photos": [
       {
         "file": "01-visage.jpg",
@@ -876,7 +1502,7 @@
     "warnings": []
   },
   "femmes-20-30-ans-alya": {
-    "signature": "ALYA-1.jpg=7741957:1790180595|ALYA-2.jpg=8743157:1790180595|ALYA-3.jpg=7243284:1790180595|ov={}|num={\"1\": \"visage\", \"2\": \"mi-corps\", \"3\": \"plein-pied\"}|fmt=3",
+    "signature": "ALYA-1.jpg=7741957:1790178032|ALYA-2.jpg=8743157:1790160673|ALYA-3.jpg=7243284:1790159565|ov={}|num={\"1\": \"visage\", \"2\": \"mi-corps\", \"3\": \"plein-pied\"}|fmt=3",
     "photos": [
       {
         "file": "01-visage.jpg",
@@ -900,7 +1526,7 @@
     "warnings": []
   },
   "femmes-20-30-ans-maya": {
-    "signature": "MAYA-1.jpg=7964998:1790180595|MAYA-2.jpg=9114409:1790180595|MAYA-3.jpg=7465468:1790180595|ov={}|num={\"1\": \"visage\", \"2\": \"mi-corps\", \"3\": \"plein-pied\"}|fmt=3",
+    "signature": "MAYA-1.jpg=7964998:1790175011|MAYA-2.jpg=9114409:1790093833|MAYA-3.jpg=7465468:1790088629|ov={}|num={\"1\": \"visage\", \"2\": \"mi-corps\", \"3\": \"plein-pied\"}|fmt=3",
     "photos": [
       {
         "file": "01-visage.jpg",
@@ -924,7 +1550,7 @@
     "warnings": []
   },
   "femmes-20-30-ans-sarah": {
-    "signature": "SARAH-1.jpg=7612925:1790180595|SARAH-2.jpg=8600038:1790180595|SARAH-3.jpg=7734831:1790180595|ov={}|num={\"1\": \"visage\", \"2\": \"mi-corps\", \"3\": \"plein-pied\"}|fmt=3",
+    "signature": "SARAH-1.jpg=7612925:1790175023|SARAH-2.jpg=8600038:1790092956|SARAH-3.jpg=7734831:1790152494|ov={}|num={\"1\": \"visage\", \"2\": \"mi-corps\", \"3\": \"plein-pied\"}|fmt=3",
     "photos": [
       {
         "file": "01-visage.jpg",
@@ -948,7 +1574,7 @@
     "warnings": []
   },
   "femmes-20-30-ans-naomi": {
-    "signature": "NAOMI-1.jpg=7070999:1790180595|NAOMI-2.jpg=8841400:1790180595|NAOMI-3.jpg=4064243:1790180595|ov={}|num={\"1\": \"visage\", \"2\": \"mi-corps\", \"3\": \"plein-pied\"}|fmt=3",
+    "signature": "NAOMI-1.jpg=7070999:1790174987|NAOMI-2.jpg=8841400:1790176879|NAOMI-3.jpg=4064243:1790089684|ov={}|num={\"1\": \"visage\", \"2\": \"mi-corps\", \"3\": \"plein-pied\"}|fmt=3",
     "photos": [
       {
         "file": "01-visage.jpg",
@@ -972,7 +1598,7 @@
     "warnings": []
   },
   "femmes-20-30-ans-nina": {
-    "signature": "NINA-1.jpg=7643526:1790180595|NINA-2.jpg=8731742:1790180595|NINA-3.jpg=7260732:1790180595|ov={}|num={\"1\": \"visage\", \"2\": \"mi-corps\", \"3\": \"plein-pied\"}|fmt=3",
+    "signature": "NINA-1.jpg=7643526:1790175018|NINA-2.jpg=8731742:1790168484|NINA-3.jpg=7260732:1790157657|ov={}|num={\"1\": \"visage\", \"2\": \"mi-corps\", \"3\": \"plein-pied\"}|fmt=3",
     "photos": [
       {
         "file": "01-visage.jpg",
@@ -996,7 +1622,7 @@
     "warnings": []
   },
   "femmes-20-30-ans-yse": {
-    "signature": "YSÉ-1.jpg=8234277:1790180595|YSÉ-2.jpg=8192499:1790180595|YSÉ-3.jpg=8019544:1790180595|ov={}|num={\"1\": \"visage\", \"2\": \"mi-corps\", \"3\": \"plein-pied\"}|fmt=3",
+    "signature": "YSÉ-1.jpg=8234277:1790175029|YSÉ-2.jpg=8192499:1790155101|YSÉ-3.jpg=8019544:1790092530|ov={}|num={\"1\": \"visage\", \"2\": \"mi-corps\", \"3\": \"plein-pied\"}|fmt=3",
     "photos": [
       {
         "file": "01-visage.jpg",
@@ -1020,7 +1646,7 @@
     "warnings": []
   },
   "femmes-20-30-ans-yara": {
-    "signature": "YARA-1.jpg=7735813:1790180595|YARA-2.jpg=8855915:1790180595|YARA-3.jpg=3940481:1790180595|ov={}|num={\"1\": \"visage\", \"2\": \"mi-corps\", \"3\": \"plein-pied\"}|fmt=3",
+    "signature": "YARA-1.jpg=7735813:1790174999|YARA-2.jpg=8855915:1790151698|YARA-3.jpg=3940481:1790088222|ov={}|num={\"1\": \"visage\", \"2\": \"mi-corps\", \"3\": \"plein-pied\"}|fmt=3",
     "photos": [
       {
         "file": "01-visage.jpg",
@@ -1044,7 +1670,7 @@
     "warnings": []
   },
   "femmes-20-30-ans-suzanne": {
-    "signature": "SUZANNE-1.jpg=7496426:1790180595|SUZANNE-2.jpg=8093077:1790180595|SUZANNE-3.jpg=6992185:1790180595|ov={}|num={\"1\": \"visage\", \"2\": \"mi-corps\", \"3\": \"plein-pied\"}|fmt=3",
+    "signature": "SUZANNE-1.jpg=7496426:1790175330|SUZANNE-2.jpg=8093077:1790159210|SUZANNE-3.jpg=6992185:1790154831|ov={}|num={\"1\": \"visage\", \"2\": \"mi-corps\", \"3\": \"plein-pied\"}|fmt=3",
     "photos": [
       {
         "file": "01-visage.jpg",
@@ -1068,7 +1694,7 @@
     "warnings": []
   },
   "femmes-20-30-ans-emy": {
-    "signature": "EMY-1.png=2057502:1790180595|EMY-2.jpg=9061859:1790180595|EMY-3.jpg=3822208:1790180595|ov={}|num={\"1\": \"visage\", \"2\": \"mi-corps\", \"3\": \"plein-pied\"}|fmt=3",
+    "signature": "EMY-1.png=2057502:1790178876|EMY-2.jpg=9061859:1790093824|EMY-3.jpg=3822208:1790088648|ov={}|num={\"1\": \"visage\", \"2\": \"mi-corps\", \"3\": \"plein-pied\"}|fmt=3",
     "photos": [
       {
         "file": "01-visage.jpg",
@@ -1092,7 +1718,7 @@
     "warnings": []
   },
   "femmes-20-30-ans-nora": {
-    "signature": "NORA-1.jpg=7188054:1790180595|NORA-2.jpg=8356859:1790180595|NORA-3.jpg=7788670:1790180595|ov={}|num={\"1\": \"visage\", \"2\": \"mi-corps\", \"3\": \"plein-pied\"}|fmt=3",
+    "signature": "NORA-1.jpg=7188054:1790175336|NORA-2.jpg=8356859:1790156799|NORA-3.jpg=7788670:1790156514|ov={}|num={\"1\": \"visage\", \"2\": \"mi-corps\", \"3\": \"plein-pied\"}|fmt=3",
     "photos": [
       {
         "file": "01-visage.jpg",
@@ -1115,970 +1741,1098 @@
     ],
     "warnings": []
   },
-  "femmes-4-12-ans-jeanne": {
-    "signature": "001.png=5779227:1772044392|002.png=5796169:1772044402|ov={}|num={}|fmt=3",
+  "hommes-20-30-ans-adrien": {
+    "signature": "ADRIEN-1.jpg=7195345:1790697357|ADRIEN-2.jpg=8755819:1790697357|ADRIEN-3.jpg=8356223:1790697357|ov={}|num={}|fmt=3",
     "photos": [
       {
         "file": "01-visage.jpg",
         "thumb": "thumb.jpg",
         "type": "visage",
-        "source": "001.png"
+        "source": "ADRIEN-1.jpg"
       },
       {
         "file": "02-profil.jpg",
         "thumb": "thumb-02.jpg",
         "type": "profil",
-        "source": "002.png"
-      }
-    ],
-    "warnings": []
-  },
-  "femmes-4-12-ans-lucie": {
-    "signature": "01.png=5765812:1789466636|02.png=5942850:1789466639|ov={}|num={}|fmt=3",
-    "photos": [
-      {
-        "file": "01-visage.jpg",
-        "thumb": "thumb.jpg",
-        "type": "visage",
-        "source": "01.png"
+        "source": "ADRIEN-2.jpg"
       },
       {
-        "file": "02-profil.jpg",
-        "thumb": "thumb-02.jpg",
+        "file": "03-profil-2.jpg",
+        "thumb": "thumb-03.jpg",
         "type": "profil",
-        "source": "02.png"
-      }
-    ],
-    "warnings": []
-  },
-  "femmes-4-12-ans-zoe": {
-    "signature": "01.png=5835433:1789466645|02.png=5773278:1789466648|ov={}|num={}|fmt=3",
-    "photos": [
-      {
-        "file": "01-visage.jpg",
-        "thumb": "thumb.jpg",
-        "type": "visage",
-        "source": "01.png"
-      },
-      {
-        "file": "02-profil.jpg",
-        "thumb": "thumb-02.jpg",
-        "type": "profil",
-        "source": "02.png"
-      }
-    ],
-    "warnings": []
-  },
-  "femmes-4-12-ans-pauline": {
-    "signature": "01.png=5776878:1789466654|02.png=5953026:1789466657|ov={}|num={}|fmt=3",
-    "photos": [
-      {
-        "file": "01-visage.jpg",
-        "thumb": "thumb.jpg",
-        "type": "visage",
-        "source": "01.png"
-      },
-      {
-        "file": "02-profil.jpg",
-        "thumb": "thumb-02.jpg",
-        "type": "profil",
-        "source": "02.png"
-      }
-    ],
-    "warnings": []
-  },
-  "femmes-4-12-ans-lila": {
-    "signature": "01.png=4683015:1789466663|02.png=3809169:1789466665|ov={}|num={}|fmt=3",
-    "photos": [
-      {
-        "file": "01-visage.jpg",
-        "thumb": "thumb.jpg",
-        "type": "visage",
-        "source": "01.png"
-      },
-      {
-        "file": "02-profil.jpg",
-        "thumb": "thumb-02.jpg",
-        "type": "profil",
-        "source": "02.png"
-      }
-    ],
-    "warnings": []
-  },
-  "femmes-4-12-ans-sonia": {
-    "signature": "01.png=4664163:1789466675|02.png=4467544:1789466675|ov={}|num={}|fmt=3",
-    "photos": [
-      {
-        "file": "01-visage.jpg",
-        "thumb": "thumb.jpg",
-        "type": "visage",
-        "source": "01.png"
-      },
-      {
-        "file": "02-profil.jpg",
-        "thumb": "thumb-02.jpg",
-        "type": "profil",
-        "source": "02.png"
-      }
-    ],
-    "warnings": []
-  },
-  "femmes-40-50-ans-sandrine": {
-    "signature": "01.png=6083642:1789466682|02.png=6077891:1789466685|ov={}|num={}|fmt=3",
-    "photos": [
-      {
-        "file": "01-visage.jpg",
-        "thumb": "thumb.jpg",
-        "type": "visage",
-        "source": "01.png"
-      },
-      {
-        "file": "02-profil.jpg",
-        "thumb": "thumb-02.jpg",
-        "type": "profil",
-        "source": "02.png"
-      }
-    ],
-    "warnings": []
-  },
-  "femmes-40-50-ans-sophie": {
-    "signature": "01.png=6115378:1789466694|02.png=6153407:1789466696|ov={}|num={}|fmt=3",
-    "photos": [
-      {
-        "file": "01-visage.jpg",
-        "thumb": "thumb.jpg",
-        "type": "visage",
-        "source": "01.png"
-      },
-      {
-        "file": "02-profil.jpg",
-        "thumb": "thumb-02.jpg",
-        "type": "profil",
-        "source": "02.png"
-      }
-    ],
-    "warnings": []
-  },
-  "femmes-40-50-ans-valerie": {
-    "signature": "01.png=6143008:1789466720|02.png=5952906:1789466722|ov={}|num={}|fmt=3",
-    "photos": [
-      {
-        "file": "01-visage.jpg",
-        "thumb": "thumb.jpg",
-        "type": "visage",
-        "source": "01.png"
-      },
-      {
-        "file": "02-profil.jpg",
-        "thumb": "thumb-02.jpg",
-        "type": "profil",
-        "source": "02.png"
-      }
-    ],
-    "warnings": []
-  },
-  "femmes-40-50-ans-nathalie": {
-    "signature": "001.png=4199276:1779457988|002.png=5921657:1772043371|ov={}|num={}|fmt=3",
-    "photos": [
-      {
-        "file": "01-visage.jpg",
-        "thumb": "thumb.jpg",
-        "type": "visage",
-        "source": "001.png"
-      },
-      {
-        "file": "02-profil.jpg",
-        "thumb": "thumb-02.jpg",
-        "type": "profil",
-        "source": "002.png"
-      }
-    ],
-    "warnings": []
-  },
-  "femmes-40-50-ans-isabelle": {
-    "signature": "002 copie.png=5943350:1771846341|ov={}|num={}|fmt=3",
-    "photos": [
-      {
-        "file": "01-visage.jpg",
-        "thumb": "thumb.jpg",
-        "type": "visage",
-        "source": "002 copie.png"
-      }
-    ],
-    "warnings": [
-      "seulement 1 photo(s)"
-    ]
-  },
-  "femmes-40-50-ans-simone": {
-    "signature": "01.png=5767032:1789466737|02.png=5862646:1789466740|ov={}|num={}|fmt=3",
-    "photos": [
-      {
-        "file": "01-visage.jpg",
-        "thumb": "thumb.jpg",
-        "type": "visage",
-        "source": "01.png"
-      },
-      {
-        "file": "02-profil.jpg",
-        "thumb": "thumb-02.jpg",
-        "type": "profil",
-        "source": "02.png"
-      }
-    ],
-    "warnings": []
-  },
-  "hommes-plus-size-ethan": {
-    "signature": "01.png=1448185:1789467859|02.png=1535700:1789467859|ov={}|num={}|fmt=3",
-    "photos": [
-      {
-        "file": "01-visage.jpg",
-        "thumb": "thumb.jpg",
-        "type": "visage",
-        "source": "01.png"
-      },
-      {
-        "file": "02-profil.jpg",
-        "thumb": "thumb-02.jpg",
-        "type": "profil",
-        "source": "02.png"
-      }
-    ],
-    "warnings": []
-  },
-  "hommes-plus-size-ari": {
-    "signature": "01.png=1358696:1789467894|02.png=1471669:1789467894|ov={}|num={}|fmt=3",
-    "photos": [
-      {
-        "file": "01-visage.jpg",
-        "thumb": "thumb.jpg",
-        "type": "visage",
-        "source": "01.png"
-      },
-      {
-        "file": "02-profil.jpg",
-        "thumb": "thumb-02.jpg",
-        "type": "profil",
-        "source": "02.png"
-      }
-    ],
-    "warnings": []
-  },
-  "hommes-plus-size-joshua": {
-    "signature": "01.png=1303857:1789467901|02.png=1464375:1789467901|ov={}|num={}|fmt=3",
-    "photos": [
-      {
-        "file": "01-visage.jpg",
-        "thumb": "thumb.jpg",
-        "type": "visage",
-        "source": "01.png"
-      },
-      {
-        "file": "02-profil.jpg",
-        "thumb": "thumb-02.jpg",
-        "type": "profil",
-        "source": "02.png"
-      }
-    ],
-    "warnings": []
-  },
-  "hommes-plus-size-florian": {
-    "signature": "01.png=1320991:1789467912|02.png=1402274:1789467912|ov={}|num={}|fmt=3",
-    "photos": [
-      {
-        "file": "01-visage.jpg",
-        "thumb": "thumb.jpg",
-        "type": "visage",
-        "source": "01.png"
-      },
-      {
-        "file": "02-profil.jpg",
-        "thumb": "thumb-02.jpg",
-        "type": "profil",
-        "source": "02.png"
-      }
-    ],
-    "warnings": []
-  },
-  "hommes-plus-size-christophe": {
-    "signature": "01.png=1358764:1789467920|02.png=1519166:1789467920|ov={}|num={}|fmt=3",
-    "photos": [
-      {
-        "file": "01-visage.jpg",
-        "thumb": "thumb.jpg",
-        "type": "visage",
-        "source": "01.png"
-      },
-      {
-        "file": "02-profil.jpg",
-        "thumb": "thumb-02.jpg",
-        "type": "profil",
-        "source": "02.png"
-      }
-    ],
-    "warnings": []
-  },
-  "hommes-plus-size-alain": {
-    "signature": "01.png=1479307:1789467927|02.png=1604963:1789467927|ov={}|num={}|fmt=3",
-    "photos": [
-      {
-        "file": "01-visage.jpg",
-        "thumb": "thumb.jpg",
-        "type": "visage",
-        "source": "01.png"
-      },
-      {
-        "file": "02-profil.jpg",
-        "thumb": "thumb-02.jpg",
-        "type": "profil",
-        "source": "02.png"
+        "source": "ADRIEN-3.jpg"
       }
     ],
     "warnings": []
   },
   "hommes-20-30-ans-gabriel": {
-    "signature": "01.png=6817638:1789467334|02.png=6399670:1789467334|ov={}|num={}|fmt=3",
-    "photos": [
-      {
-        "file": "01-visage.jpg",
-        "thumb": "thumb.jpg",
-        "type": "visage",
-        "source": "01.png"
-      },
-      {
-        "file": "02-profil.jpg",
-        "thumb": "thumb-02.jpg",
-        "type": "profil",
-        "source": "02.png"
-      }
-    ],
-    "warnings": []
-  },
-  "hommes-20-30-ans-leo": {
-    "signature": "01.png=6253428:1789467295|02.png=6234076:1789467295|ov={}|num={}|fmt=3",
-    "photos": [
-      {
-        "file": "01-visage.jpg",
-        "thumb": "thumb.jpg",
-        "type": "visage",
-        "source": "01.png"
-      },
-      {
-        "file": "02-profil.jpg",
-        "thumb": "thumb-02.jpg",
-        "type": "profil",
-        "source": "02.png"
-      }
-    ],
-    "warnings": []
-  },
-  "hommes-20-30-ans-adrien": {
-    "signature": "01.png=5894329:1789467264|02.png=6226016:1789467267|ov={}|num={}|fmt=3",
-    "photos": [
-      {
-        "file": "01-visage.jpg",
-        "thumb": "thumb.jpg",
-        "type": "visage",
-        "source": "01.png"
-      },
-      {
-        "file": "02-profil.jpg",
-        "thumb": "thumb-02.jpg",
-        "type": "profil",
-        "source": "02.png"
-      }
-    ],
-    "warnings": []
-  },
-  "hommes-20-30-ans-mael": {
-    "signature": "01.png=6495206:1789467443|02.png=6157187:1789467443|ov={}|num={}|fmt=3",
-    "photos": [
-      {
-        "file": "01-visage.jpg",
-        "thumb": "thumb.jpg",
-        "type": "visage",
-        "source": "01.png"
-      },
-      {
-        "file": "02-profil.jpg",
-        "thumb": "thumb-02.jpg",
-        "type": "profil",
-        "source": "02.png"
-      }
-    ],
-    "warnings": []
-  },
-  "hommes-20-30-ans-leon": {
-    "signature": "01.png=6585869:1789467455|02.png=6070387:1789467455|ov={}|num={}|fmt=3",
+    "signature": "GABRIEL-1.jpg=7842776:1790697377|GABRIEL-2.jpg=9570257:1790697377|GABRIEL-3.jpg=8055424:1790763477|ov={}|num={}|fmt=3",
     "photos": [
       {
         "file": "01-profil.jpg",
         "thumb": "thumb.jpg",
         "type": "profil",
-        "source": "01.png"
+        "source": "GABRIEL-1.jpg"
       },
       {
         "file": "02-visage.jpg",
         "thumb": "thumb-02.jpg",
         "type": "visage",
-        "source": "02.png"
+        "source": "GABRIEL-2.jpg"
+      },
+      {
+        "file": "03-plein-pied.jpg",
+        "thumb": "thumb-03.jpg",
+        "type": "plein-pied",
+        "source": "GABRIEL-3.jpg"
       }
     ],
     "warnings": []
   },
-  "hommes-20-30-ans-lucas": {
-    "signature": "01.png=6544000:1789467556|02.png=6182773:1789467556|ov={}|num={}|fmt=3",
+  "hommes-20-30-ans-robin": {
+    "signature": "ROBIN-1.jpg=7537453:1790697405|ROBIN-2.jpg=10084538:1790697404|ROBIN-3.jpg=8633358:1790697404|ov={}|num={}|fmt=3",
     "photos": [
       {
         "file": "01-visage.jpg",
         "thumb": "thumb.jpg",
         "type": "visage",
-        "source": "01.png"
+        "source": "ROBIN-1.jpg"
       },
       {
         "file": "02-profil.jpg",
         "thumb": "thumb-02.jpg",
         "type": "profil",
-        "source": "02.png"
+        "source": "ROBIN-2.jpg"
+      },
+      {
+        "file": "03-plein-pied.jpg",
+        "thumb": "thumb-03.jpg",
+        "type": "plein-pied",
+        "source": "ROBIN-3.jpg"
       }
     ],
     "warnings": []
   },
-  "hommes-20-30-ans-hugo": {
-    "signature": "01.png=5848858:1789467591|02.png=6086667:1789467591|ov={}|num={}|fmt=3",
+  "hommes-20-30-ans-noam": {
+    "signature": "NOAM-1.jpg=7195426:1790697417|NOAM-2.jpg=7615484:1790697417|NOAM-3.jpg=7845713:1790697417|ov={}|num={}|fmt=3",
     "photos": [
       {
         "file": "01-visage.jpg",
         "thumb": "thumb.jpg",
         "type": "visage",
-        "source": "01.png"
+        "source": "NOAM-1.jpg"
       },
       {
         "file": "02-profil.jpg",
         "thumb": "thumb-02.jpg",
         "type": "profil",
-        "source": "02.png"
+        "source": "NOAM-2.jpg"
+      },
+      {
+        "file": "03-plein-pied.jpg",
+        "thumb": "thumb-03.jpg",
+        "type": "plein-pied",
+        "source": "NOAM-3.jpg"
       }
     ],
     "warnings": []
   },
-  "hommes-20-30-ans-simon": {
-    "signature": "01.png=6539453:1789467597|02.png=6423160:1789467600|ov={}|num={}|fmt=3",
+  "hommes-20-30-ans-mael": {
+    "signature": "MAEL-1.jpg=7244555:1790697441|MAEL-2.jpg=9452025:1790697441|MAEL-3.jpg=8626000:1790697441|ov={}|num={}|fmt=3",
     "photos": [
       {
         "file": "01-visage.jpg",
         "thumb": "thumb.jpg",
         "type": "visage",
-        "source": "01.png"
+        "source": "MAEL-1.jpg"
       },
       {
         "file": "02-profil.jpg",
         "thumb": "thumb-02.jpg",
         "type": "profil",
-        "source": "02.png"
+        "source": "MAEL-2.jpg"
+      },
+      {
+        "file": "03-plein-pied.jpg",
+        "thumb": "thumb-03.jpg",
+        "type": "plein-pied",
+        "source": "MAEL-3.jpg"
       }
     ],
     "warnings": []
   },
-  "hommes-20-30-ans-tom": {
-    "signature": "01.png=6289527:1789467612|02.png=6103460:1789467612|ov={}|num={}|fmt=3",
+  "hommes-20-30-ans-felix": {
+    "signature": "FELIX-1.jpg=6885819:1790697450|FELIX-2.jpg=8438982:1790697450|FELIX-3.jpg=7392311:1790697450|ov={}|num={}|fmt=3",
     "photos": [
       {
         "file": "01-visage.jpg",
         "thumb": "thumb.jpg",
         "type": "visage",
-        "source": "01.png"
+        "source": "FELIX-1.jpg"
       },
       {
-        "file": "02-profil.jpg",
+        "file": "02-visage-2.jpg",
         "thumb": "thumb-02.jpg",
+        "type": "visage",
+        "source": "FELIX-2.jpg"
+      },
+      {
+        "file": "03-profil.jpg",
+        "thumb": "thumb-03.jpg",
         "type": "profil",
-        "source": "02.png"
+        "source": "FELIX-3.jpg"
       }
     ],
     "warnings": []
   },
-  "hommes-20-30-ans-maxence": {
-    "signature": "01.png=6380871:1789467619|02.png=6219260:1789467619|ov={}|num={}|fmt=3",
+  "hommes-20-30-ans-dorian": {
+    "signature": "DORIAN-1.jpg=6826478:1790697467|DORIAN-2.jpg=8902795:1790697467|DORIAN-3.jpg=8758018:1790697467|ov={}|num={}|fmt=3",
+    "photos": [
+      {
+        "file": "01-profil.jpg",
+        "thumb": "thumb.jpg",
+        "type": "profil",
+        "source": "DORIAN-1.jpg"
+      },
+      {
+        "file": "02-visage.jpg",
+        "thumb": "thumb-02.jpg",
+        "type": "visage",
+        "source": "DORIAN-2.jpg"
+      },
+      {
+        "file": "03-plein-pied.jpg",
+        "thumb": "thumb-03.jpg",
+        "type": "plein-pied",
+        "source": "DORIAN-3.jpg"
+      }
+    ],
+    "warnings": []
+  },
+  "hommes-20-30-ans-leon": {
+    "signature": "LEON-1.jpg=7409983:1790697477|LEON-2.jpg=8517872:1790697477|LEON-3.jpg=7679623:1790697477|ov={}|num={}|fmt=3",
+    "photos": [
+      {
+        "file": "01-profil.jpg",
+        "thumb": "thumb.jpg",
+        "type": "profil",
+        "source": "LEON-1.jpg"
+      },
+      {
+        "file": "02-visage.jpg",
+        "thumb": "thumb-02.jpg",
+        "type": "visage",
+        "source": "LEON-2.jpg"
+      },
+      {
+        "file": "03-plein-pied.jpg",
+        "thumb": "thumb-03.jpg",
+        "type": "plein-pied",
+        "source": "LEON-3.jpg"
+      }
+    ],
+    "warnings": []
+  },
+  "hommes-20-30-ans-leo": {
+    "signature": "LEO-1.jpg=7066323:1790697485|LEO-2.jpg=9130688:1790697486|LEO-3.jpg=8093816:1790697486|ov={}|num={}|fmt=3",
     "photos": [
       {
         "file": "01-visage.jpg",
         "thumb": "thumb.jpg",
         "type": "visage",
-        "source": "01.png"
+        "source": "LEO-1.jpg"
       },
       {
         "file": "02-profil.jpg",
         "thumb": "thumb-02.jpg",
         "type": "profil",
-        "source": "02.png"
-      }
-    ],
-    "warnings": []
-  },
-  "hommes-20-30-ans-pablo": {
-    "signature": "01.png=6342394:1789467627|02.png=6315666:1789467633|ov={}|num={}|fmt=3",
-    "photos": [
-      {
-        "file": "01-visage.jpg",
-        "thumb": "thumb.jpg",
-        "type": "visage",
-        "source": "01.png"
+        "source": "LEO-2.jpg"
       },
       {
-        "file": "02-profil.jpg",
-        "thumb": "thumb-02.jpg",
+        "file": "03-profil-2.jpg",
+        "thumb": "thumb-03.jpg",
         "type": "profil",
-        "source": "02.png"
+        "source": "LEO-3.jpg"
       }
     ],
     "warnings": []
   },
   "hommes-20-30-ans-alexandre": {
-    "signature": "01.png=6550660:1789467640|02.png=6604684:1789467640|ov={}|num={}|fmt=3",
+    "signature": "ALEXANDRE-1.jpg=7224002:1790697503|ALEXANDRE-2.jpg=9801792:1790697503|ALEXANDRE-3.jpg=7563876:1790697503|ov={}|num={}|fmt=3",
     "photos": [
       {
         "file": "01-visage.jpg",
         "thumb": "thumb.jpg",
         "type": "visage",
-        "source": "01.png"
+        "source": "ALEXANDRE-1.jpg"
       },
       {
         "file": "02-profil.jpg",
         "thumb": "thumb-02.jpg",
         "type": "profil",
-        "source": "02.png"
+        "source": "ALEXANDRE-2.jpg"
+      },
+      {
+        "file": "03-plein-pied.jpg",
+        "thumb": "thumb-03.jpg",
+        "type": "plein-pied",
+        "source": "ALEXANDRE-3.jpg"
       }
     ],
     "warnings": []
   },
-  "hommes-20-30-ans-elie": {
-    "signature": "01.png=6161616:1789467650|02.png=5854723:1789467650|ov={}|num={}|fmt=3",
+  "hommes-20-30-ans-lucas": {
+    "signature": "LUCAS-1.jpg=8091610:1790697525|LUCAS-2.jpg=6468138:1790697525|LUCAS-3.jpg=7464081:1790697525|ov={}|num={}|fmt=3",
     "photos": [
       {
         "file": "01-visage.jpg",
         "thumb": "thumb.jpg",
         "type": "visage",
-        "source": "01.png"
+        "source": "LUCAS-1.jpg"
       },
       {
-        "file": "02-profil.jpg",
+        "file": "02-visage-2.jpg",
         "thumb": "thumb-02.jpg",
+        "type": "visage",
+        "source": "LUCAS-2.jpg"
+      },
+      {
+        "file": "03-profil.jpg",
+        "thumb": "thumb-03.jpg",
         "type": "profil",
-        "source": "02.png"
+        "source": "LUCAS-3.jpg"
       }
     ],
     "warnings": []
   },
-  "hommes-20-30-ans-sacha": {
-    "signature": "01.png=6345817:1789467657|02.png=6214481:1789467657|ov={}|num={}|fmt=3",
+  "hommes-20-30-ans-ilan": {
+    "signature": "ILAN-1.jpg=7356132:1790697539|ILAN-2.jpg=9698827:1790697539|ILAN-3.jpg=8533252:1790697539|ov={}|num={}|fmt=3",
+    "photos": [
+      {
+        "file": "01-profil.jpg",
+        "thumb": "thumb.jpg",
+        "type": "profil",
+        "source": "ILAN-1.jpg"
+      },
+      {
+        "file": "02-visage.jpg",
+        "thumb": "thumb-02.jpg",
+        "type": "visage",
+        "source": "ILAN-2.jpg"
+      },
+      {
+        "file": "03-plein-pied.jpg",
+        "thumb": "thumb-03.jpg",
+        "type": "plein-pied",
+        "source": "ILAN-3.jpg"
+      }
+    ],
+    "warnings": []
+  },
+  "hommes-20-30-ans-hugo": {
+    "signature": "HUGO-1.jpg=6902583:1790697558|HUGO-2.jpg=9236234:1790697558|HUGO-3.jpg=8739322:1790697558|ov={}|num={}|fmt=3",
     "photos": [
       {
         "file": "01-visage.jpg",
         "thumb": "thumb.jpg",
         "type": "visage",
-        "source": "01.png"
+        "source": "HUGO-1.jpg"
       },
       {
         "file": "02-profil.jpg",
         "thumb": "thumb-02.jpg",
         "type": "profil",
-        "source": "02.png"
+        "source": "HUGO-2.jpg"
+      },
+      {
+        "file": "03-plein-pied.jpg",
+        "thumb": "thumb-03.jpg",
+        "type": "plein-pied",
+        "source": "HUGO-3.jpg"
+      }
+    ],
+    "warnings": []
+  },
+  "hommes-20-30-ans-matheo": {
+    "signature": "MATHEO-1.jpg=7428178:1790697568|MATHEO-2.jpg=8234337:1790697568|MATHEO-3.jpg=7387098:1790697568|ov={}|num={}|fmt=3",
+    "photos": [
+      {
+        "file": "01-profil.jpg",
+        "thumb": "thumb.jpg",
+        "type": "profil",
+        "source": "MATHEO-1.jpg"
+      },
+      {
+        "file": "02-visage.jpg",
+        "thumb": "thumb-02.jpg",
+        "type": "visage",
+        "source": "MATHEO-2.jpg"
+      },
+      {
+        "file": "03-plein-pied.jpg",
+        "thumb": "thumb-03.jpg",
+        "type": "plein-pied",
+        "source": "MATHEO-3.jpg"
+      }
+    ],
+    "warnings": []
+  },
+  "hommes-20-30-ans-ruben": {
+    "signature": "RUBEN-1.jpg=6786554:1790697575|RUBEN-2.jpg=8092263:1790697575|RUBEN-3.jpg=8142865:1790760561|ov={}|num={}|fmt=3",
+    "photos": [
+      {
+        "file": "01-visage.jpg",
+        "thumb": "thumb.jpg",
+        "type": "visage",
+        "source": "RUBEN-1.jpg"
+      },
+      {
+        "file": "02-profil.jpg",
+        "thumb": "thumb-02.jpg",
+        "type": "profil",
+        "source": "RUBEN-2.jpg"
+      },
+      {
+        "file": "03-plein-pied.jpg",
+        "thumb": "thumb-03.jpg",
+        "type": "plein-pied",
+        "source": "RUBEN-3.jpg"
       }
     ],
     "warnings": []
   },
   "hommes-20-30-ans-lenny": {
-    "signature": "01.png=6501897:1789467664|02.png=6473759:1789467665|ov={}|num={}|fmt=3",
+    "signature": "LENNY-1.jpg=7142774:1790697590|LENNY-2.jpg=8716048:1790697590|LENNY-3.jpg=8305560:1790697590|ov={}|num={}|fmt=3",
     "photos": [
       {
         "file": "01-visage.jpg",
         "thumb": "thumb.jpg",
         "type": "visage",
-        "source": "01.png"
+        "source": "LENNY-1.jpg"
       },
       {
         "file": "02-profil.jpg",
         "thumb": "thumb-02.jpg",
         "type": "profil",
-        "source": "02.png"
+        "source": "LENNY-2.jpg"
+      },
+      {
+        "file": "03-profil-2.jpg",
+        "thumb": "thumb-03.jpg",
+        "type": "profil",
+        "source": "LENNY-3.jpg"
+      }
+    ],
+    "warnings": []
+  },
+  "hommes-20-30-ans-simon": {
+    "signature": "SIMON-1.jpg=7067730:1790697598|SIMON-2.jpg=8841234:1790697598|SIMON-3.jpg=8540992:1790759315|ov={}|num={}|fmt=3",
+    "photos": [
+      {
+        "file": "01-visage.jpg",
+        "thumb": "thumb.jpg",
+        "type": "visage",
+        "source": "SIMON-1.jpg"
+      },
+      {
+        "file": "02-profil.jpg",
+        "thumb": "thumb-02.jpg",
+        "type": "profil",
+        "source": "SIMON-2.jpg"
+      },
+      {
+        "file": "03-plein-pied.jpg",
+        "thumb": "thumb-03.jpg",
+        "type": "plein-pied",
+        "source": "SIMON-3.jpg"
+      }
+    ],
+    "warnings": []
+  },
+  "hommes-20-30-ans-pablo": {
+    "signature": "PABLO-1.jpg=6778972:1790697609|PABLO-2.jpg=7851463:1790697609|PABLO-3.jpg=7308307:1790697610|ov={}|num={}|fmt=3",
+    "photos": [
+      {
+        "file": "01-visage.jpg",
+        "thumb": "thumb.jpg",
+        "type": "visage",
+        "source": "PABLO-1.jpg"
+      },
+      {
+        "file": "02-visage-2.jpg",
+        "thumb": "thumb-02.jpg",
+        "type": "visage",
+        "source": "PABLO-2.jpg"
+      },
+      {
+        "file": "03-profil.jpg",
+        "thumb": "thumb-03.jpg",
+        "type": "profil",
+        "source": "PABLO-3.jpg"
+      }
+    ],
+    "warnings": []
+  },
+  "hommes-20-30-ans-sacha": {
+    "signature": "SACHA1.jpg=7274080:1790697617|SACHA2.jpg=9212880:1790697617|SACHA3.jpg=7926380:1790697617|ov={}|num={}|fmt=3",
+    "photos": [
+      {
+        "file": "01-profil.jpg",
+        "thumb": "thumb.jpg",
+        "type": "profil",
+        "source": "SACHA1.jpg"
+      },
+      {
+        "file": "02-visage.jpg",
+        "thumb": "thumb-02.jpg",
+        "type": "visage",
+        "source": "SACHA2.jpg"
+      },
+      {
+        "file": "03-plein-pied.jpg",
+        "thumb": "thumb-03.jpg",
+        "type": "plein-pied",
+        "source": "SACHA3.jpg"
       }
     ],
     "warnings": []
   },
   "hommes-20-30-ans-amir": {
-    "signature": "01.png=6102137:1789467675|02.png=5927586:1789467680|ov={}|num={}|fmt=3",
+    "signature": "AMIR-1.jpg=7255113:1790697633|AMIR-2.jpg=10169845:1790697634|AMIR-3.jpg=8067040:1790697634|ov={}|num={}|fmt=3",
     "photos": [
       {
-        "file": "01-visage.jpg",
+        "file": "01-profil.jpg",
         "thumb": "thumb.jpg",
-        "type": "visage",
-        "source": "01.png"
+        "type": "profil",
+        "source": "AMIR-1.jpg"
       },
       {
-        "file": "02-profil.jpg",
+        "file": "02-visage.jpg",
         "thumb": "thumb-02.jpg",
-        "type": "profil",
-        "source": "02.png"
+        "type": "visage",
+        "source": "AMIR-2.jpg"
+      },
+      {
+        "file": "03-plein-pied.jpg",
+        "thumb": "thumb-03.jpg",
+        "type": "plein-pied",
+        "source": "AMIR-3.jpg"
       }
     ],
     "warnings": []
   },
-  "hommes-20-30-ans-noe": {
-    "signature": "01.png=6436782:1789467688|02.png=6355733:1789467694|ov={}|num={}|fmt=3",
+  "hommes-20-30-ans-elie": {
+    "signature": "ELIE-1.jpg=7308809:1790697639|ELIE-2.jpg=8155758:1790697639|ELIE-3.jpg=8318439:1790697639|ov={}|num={}|fmt=3",
     "photos": [
       {
         "file": "01-visage.jpg",
         "thumb": "thumb.jpg",
         "type": "visage",
-        "source": "01.png"
+        "source": "ELIE-1.jpg"
       },
       {
         "file": "02-profil.jpg",
         "thumb": "thumb-02.jpg",
         "type": "profil",
-        "source": "02.png"
+        "source": "ELIE-2.jpg"
+      },
+      {
+        "file": "03-plein-pied.jpg",
+        "thumb": "thumb-03.jpg",
+        "type": "plein-pied",
+        "source": "ELIE-3.jpg"
+      }
+    ],
+    "warnings": []
+  },
+  "hommes-20-30-ans-tom": {
+    "signature": "TOM-1.jpg=7289997:1790697659|TOM-2.jpg=7434713:1790697659|TOM-3.jpg=7345632:1790697659|ov={}|num={}|fmt=3",
+    "photos": [
+      {
+        "file": "01-visage.jpg",
+        "thumb": "thumb.jpg",
+        "type": "visage",
+        "source": "TOM-1.jpg"
+      },
+      {
+        "file": "02-visage-2.jpg",
+        "thumb": "thumb-02.jpg",
+        "type": "visage",
+        "source": "TOM-2.jpg"
+      },
+      {
+        "file": "03-profil.jpg",
+        "thumb": "thumb-03.jpg",
+        "type": "profil",
+        "source": "TOM-3.jpg"
+      }
+    ],
+    "warnings": []
+  },
+  "hommes-20-30-ans-basile": {
+    "signature": "BASILE-1.jpg=7241624:1790697671|BASILE-2.jpg=8914918:1790697671|BASILE-3.jpg=8675232:1790697671|ov={}|num={}|fmt=3",
+    "photos": [
+      {
+        "file": "01-visage.jpg",
+        "thumb": "thumb.jpg",
+        "type": "visage",
+        "source": "BASILE-1.jpg"
+      },
+      {
+        "file": "02-profil.jpg",
+        "thumb": "thumb-02.jpg",
+        "type": "profil",
+        "source": "BASILE-2.jpg"
+      },
+      {
+        "file": "03-plein-pied.jpg",
+        "thumb": "thumb-03.jpg",
+        "type": "plein-pied",
+        "source": "BASILE-3.jpg"
+      }
+    ],
+    "warnings": []
+  },
+  "hommes-20-30-ans-remi": {
+    "signature": "REMI-1.jpg=7686587:1790697678|REMI-2.jpg=9287966:1790697678|REMI-3.jpg=8090867:1790697678|ov={}|num={}|fmt=3",
+    "photos": [
+      {
+        "file": "01-visage.jpg",
+        "thumb": "thumb.jpg",
+        "type": "visage",
+        "source": "REMI-1.jpg"
+      },
+      {
+        "file": "02-visage-2.jpg",
+        "thumb": "thumb-02.jpg",
+        "type": "visage",
+        "source": "REMI-2.jpg"
+      },
+      {
+        "file": "03-profil.jpg",
+        "thumb": "thumb-03.jpg",
+        "type": "profil",
+        "source": "REMI-3.jpg"
+      }
+    ],
+    "warnings": []
+  },
+  "hommes-20-30-ans-maxence": {
+    "signature": "MAXENCE-1.jpg=6930286:1790697688|MAXENCE-2.jpg=9184667:1790697688|MAXENCE-3.jpg=8024064:1790697688|ov={}|num={}|fmt=3",
+    "photos": [
+      {
+        "file": "01-visage.jpg",
+        "thumb": "thumb.jpg",
+        "type": "visage",
+        "source": "MAXENCE-1.jpg"
+      },
+      {
+        "file": "02-plein-pied.jpg",
+        "thumb": "thumb-02.jpg",
+        "type": "plein-pied",
+        "source": "MAXENCE-3.jpg"
+      }
+    ],
+    "warnings": [
+      "MAXENCE-2.jpg: illisible ([Errno 22] Invalid argument)"
+    ]
+  },
+  "hommes-20-30-ans-bastien": {
+    "signature": "BASTIEN-1.jpg=6623148:1790697698|BASTIEN-2.jpg=8507327:1790697698|BASTIEN-3.jpg=7090547:1790697698|ov={}|num={}|fmt=3",
+    "photos": [
+      {
+        "file": "01-visage.jpg",
+        "thumb": "thumb.jpg",
+        "type": "visage",
+        "source": "BASTIEN-1.jpg"
+      },
+      {
+        "file": "02-profil.jpg",
+        "thumb": "thumb-02.jpg",
+        "type": "profil",
+        "source": "BASTIEN-2.jpg"
+      },
+      {
+        "file": "03-plein-pied.jpg",
+        "thumb": "thumb-03.jpg",
+        "type": "plein-pied",
+        "source": "BASTIEN-3.jpg"
+      }
+    ],
+    "warnings": []
+  },
+  "hommes-20-30-ans-ezra": {
+    "signature": "EZRA-1.jpg=6608886:1790697706|EZRA-2.jpg=8209618:1790697706|EZRA-3.jpg=7671694:1790697706|ov={}|num={}|fmt=3",
+    "photos": [
+      {
+        "file": "01-visage.jpg",
+        "thumb": "thumb.jpg",
+        "type": "visage",
+        "source": "EZRA-1.jpg"
+      },
+      {
+        "file": "02-profil.jpg",
+        "thumb": "thumb-02.jpg",
+        "type": "profil",
+        "source": "EZRA-2.jpg"
+      },
+      {
+        "file": "03-plein-pied.jpg",
+        "thumb": "thumb-03.jpg",
+        "type": "plein-pied",
+        "source": "EZRA-3.jpg"
+      }
+    ],
+    "warnings": []
+  },
+  "hommes-20-30-ans-samy": {
+    "signature": "SAMY-1.jpg=6966057:1790697717|SAMY-2.jpg=9825169:1790697717|SAMY-3.jpg=8504693:1790697717|ov={}|num={}|fmt=3",
+    "photos": [
+      {
+        "file": "01-visage.jpg",
+        "thumb": "thumb.jpg",
+        "type": "visage",
+        "source": "SAMY-1.jpg"
+      },
+      {
+        "file": "02-plein-pied.jpg",
+        "thumb": "thumb-02.jpg",
+        "type": "plein-pied",
+        "source": "SAMY-3.jpg"
+      }
+    ],
+    "warnings": [
+      "SAMY-2.jpg: illisible ([Errno 22] Invalid argument)"
+    ]
+  },
+  "hommes-20-30-ans-theo": {
+    "signature": "THEO-1.jpg=6793520:1790697726|THEO-2.jpg=8752670:1790697726|THEO-3.jpg=8419037:1790697726|ov={}|num={}|fmt=3",
+    "photos": [
+      {
+        "file": "01-profil.jpg",
+        "thumb": "thumb.jpg",
+        "type": "profil",
+        "source": "THEO-1.jpg"
+      },
+      {
+        "file": "02-visage.jpg",
+        "thumb": "thumb-02.jpg",
+        "type": "visage",
+        "source": "THEO-2.jpg"
+      },
+      {
+        "file": "03-plein-pied.jpg",
+        "thumb": "thumb-03.jpg",
+        "type": "plein-pied",
+        "source": "THEO-3.jpg"
       }
     ],
     "warnings": []
   },
   "hommes-20-30-ans-nathan": {
-    "signature": "01.png=6231184:1789467702|02.png=6111418:1789467702|ov={}|num={}|fmt=3",
+    "signature": "NATHAN-1.jpg=7147521:1790697739|NATHAN-2.jpg=8513073:1790697739|NATHAN-3.jpg=7191267:1790761364|ov={}|num={}|fmt=3",
     "photos": [
       {
-        "file": "01-visage.jpg",
+        "file": "01-profil.jpg",
         "thumb": "thumb.jpg",
-        "type": "visage",
-        "source": "01.png"
+        "type": "profil",
+        "source": "NATHAN-1.jpg"
       },
       {
-        "file": "02-profil.jpg",
+        "file": "02-visage.jpg",
         "thumb": "thumb-02.jpg",
-        "type": "profil",
-        "source": "02.png"
+        "type": "visage",
+        "source": "NATHAN-2.jpg"
+      },
+      {
+        "file": "03-plein-pied.jpg",
+        "thumb": "thumb-03.jpg",
+        "type": "plein-pied",
+        "source": "NATHAN-3.jpg"
       }
     ],
     "warnings": []
   },
   "hommes-20-30-ans-charlie": {
-    "signature": "01.png=6056039:1789467720|02.png=6127372:1789467722|ov={}|num={}|fmt=3",
+    "signature": "CHARLIE-1.jpg=7316108:1790697753|CHARLIE-2.jpg=9921338:1790697753|CHARLIE-3.jpg=8961279:1790697753|ov={}|num={}|fmt=3",
     "photos": [
       {
-        "file": "01-visage.jpg",
+        "file": "01-profil.jpg",
         "thumb": "thumb.jpg",
-        "type": "visage",
-        "source": "01.png"
+        "type": "profil",
+        "source": "CHARLIE-1.jpg"
       },
       {
-        "file": "02-profil.jpg",
+        "file": "02-visage.jpg",
         "thumb": "thumb-02.jpg",
-        "type": "profil",
-        "source": "02.png"
+        "type": "visage",
+        "source": "CHARLIE-2.jpg"
+      },
+      {
+        "file": "03-plein-pied.jpg",
+        "thumb": "thumb-03.jpg",
+        "type": "plein-pied",
+        "source": "CHARLIE-3.jpg"
       }
     ],
     "warnings": []
   },
-  "hommes-20-30-ans-theo": {
-    "signature": "01.png=6142457:1789467727|02.png=6287821:1789467730|ov={}|num={}|fmt=3",
+  "hommes-20-30-ans-noe": {
+    "signature": "NOE-1.jpg=7943799:1790697773|NOE-2.jpg=7538099:1790697773|NOE-3.jpg=7304311:1790697773|ov={}|num={}|fmt=3",
     "photos": [
       {
         "file": "01-visage.jpg",
         "thumb": "thumb.jpg",
         "type": "visage",
-        "source": "01.png"
+        "source": "NOE-1.jpg"
       },
       {
         "file": "02-profil.jpg",
         "thumb": "thumb-02.jpg",
         "type": "profil",
-        "source": "02.png"
+        "source": "NOE-2.jpg"
+      },
+      {
+        "file": "03-profil-2.jpg",
+        "thumb": "thumb-03.jpg",
+        "type": "profil",
+        "source": "NOE-3.jpg"
       }
     ],
     "warnings": []
   },
-  "hommes-20-30-ans-cesar": {
-    "signature": "01.png=6144420:1789467742|02.png=5934357:1789467742|ov={}|num={}|fmt=3",
+  "hommes-20-30-ans-elijah": {
+    "signature": "ELIJAH-1.jpg=7230157:1790697786|ELIJAH-2.jpg=8786694:1790697786|ELIJAH-3.jpg=8294597:1790697786|ov={}|num={}|fmt=3",
     "photos": [
       {
         "file": "01-visage.jpg",
         "thumb": "thumb.jpg",
         "type": "visage",
-        "source": "01.png"
+        "source": "ELIJAH-1.jpg"
       },
       {
         "file": "02-profil.jpg",
         "thumb": "thumb-02.jpg",
         "type": "profil",
-        "source": "02.png"
+        "source": "ELIJAH-2.jpg"
+      },
+      {
+        "file": "03-plein-pied.jpg",
+        "thumb": "thumb-03.jpg",
+        "type": "plein-pied",
+        "source": "ELIJAH-3.jpg"
       }
     ],
     "warnings": []
   },
   "hommes-20-30-ans-joseph": {
-    "signature": "01.png=5950145:1789467750|02.png=5969290:1789467750|ov={}|num={}|fmt=3",
+    "signature": "JOSEPH-1.jpg=7544044:1790697799|JOSEPH-2.jpg=9853128:1790697799|JOSEPH-3.jpg=8626859:1790697799|ov={}|num={}|fmt=3",
     "photos": [
       {
         "file": "01-visage.jpg",
         "thumb": "thumb.jpg",
         "type": "visage",
-        "source": "01.png"
+        "source": "JOSEPH-1.jpg"
       },
       {
         "file": "02-profil.jpg",
         "thumb": "thumb-02.jpg",
         "type": "profil",
-        "source": "02.png"
+        "source": "JOSEPH-2.jpg"
+      },
+      {
+        "file": "03-plein-pied.jpg",
+        "thumb": "thumb-03.jpg",
+        "type": "plein-pied",
+        "source": "JOSEPH-3.jpg"
       }
     ],
     "warnings": []
   },
   "hommes-20-30-ans-raphael": {
-    "signature": "01.png=6180829:1789467757|02.png=6008927:1789467757|ov={}|num={}|fmt=3",
+    "signature": "RAPHAEL-1.jpg=6689847:1790697815|RAPHAEL-2.jpg=9374700:1790697815|RAPHAEL-3.jpg=8129550:1790697815|ov={}|num={}|fmt=3",
     "photos": [
       {
         "file": "01-visage.jpg",
         "thumb": "thumb.jpg",
         "type": "visage",
-        "source": "01.png"
+        "source": "RAPHAEL-1.jpg"
+      },
+      {
+        "file": "02-visage-2.jpg",
+        "thumb": "thumb-02.jpg",
+        "type": "visage",
+        "source": "RAPHAEL-2.jpg"
+      },
+      {
+        "file": "03-profil.jpg",
+        "thumb": "thumb-03.jpg",
+        "type": "profil",
+        "source": "RAPHAEL-3.jpg"
+      }
+    ],
+    "warnings": []
+  },
+  "hommes-20-30-ans-marcus": {
+    "signature": "MARCUS-1.jpg=7334978:1790697832|MARCUS-2.jpg=8633212:1790697832|MARCUS-3.jpg=8296009:1790697832|ov={}|num={}|fmt=3",
+    "photos": [
+      {
+        "file": "01-visage.jpg",
+        "thumb": "thumb.jpg",
+        "type": "visage",
+        "source": "MARCUS-1.jpg"
       },
       {
         "file": "02-profil.jpg",
         "thumb": "thumb-02.jpg",
         "type": "profil",
-        "source": "02.png"
+        "source": "MARCUS-2.jpg"
+      },
+      {
+        "file": "03-plein-pied.jpg",
+        "thumb": "thumb-03.jpg",
+        "type": "plein-pied",
+        "source": "MARCUS-3.jpg"
+      }
+    ],
+    "warnings": []
+  },
+  "hommes-20-30-ans-axel": {
+    "signature": "AXEL-1.jpg=6707074:1790697840|AXEL-2.jpg=8575316:1790697840|AXEL-3.jpg=7669280:1790697840|ov={}|num={}|fmt=3",
+    "photos": [
+      {
+        "file": "01-visage.jpg",
+        "thumb": "thumb.jpg",
+        "type": "visage",
+        "source": "AXEL-1.jpg"
+      },
+      {
+        "file": "02-visage-2.jpg",
+        "thumb": "thumb-02.jpg",
+        "type": "visage",
+        "source": "AXEL-2.jpg"
+      },
+      {
+        "file": "03-profil.jpg",
+        "thumb": "thumb-03.jpg",
+        "type": "profil",
+        "source": "AXEL-3.jpg"
+      }
+    ],
+    "warnings": []
+  },
+  "hommes-20-30-ans-oscar": {
+    "signature": "OSCAR-1.jpg=7100112:1790697851|OSCAR-2.jpg=7985193:1790697851|OSCAR-3.jpg=7657885:1790697851|ov={}|num={}|fmt=3",
+    "photos": [
+      {
+        "file": "01-visage.jpg",
+        "thumb": "thumb.jpg",
+        "type": "visage",
+        "source": "OSCAR-1.jpg"
+      },
+      {
+        "file": "02-profil.jpg",
+        "thumb": "thumb-02.jpg",
+        "type": "profil",
+        "source": "OSCAR-2.jpg"
+      },
+      {
+        "file": "03-plein-pied.jpg",
+        "thumb": "thumb-03.jpg",
+        "type": "plein-pied",
+        "source": "OSCAR-3.jpg"
+      }
+    ],
+    "warnings": []
+  },
+  "hommes-20-30-ans-cesar": {
+    "signature": "CESAR-1.jpg=7145001:1790697866|CESAR-2.jpg=10191675:1790697866|CESAR-3.jpg=8622210:1790697866|ov={}|num={}|fmt=3",
+    "photos": [
+      {
+        "file": "01-profil.jpg",
+        "thumb": "thumb.jpg",
+        "type": "profil",
+        "source": "CESAR-1.jpg"
+      },
+      {
+        "file": "02-visage.jpg",
+        "thumb": "thumb-02.jpg",
+        "type": "visage",
+        "source": "CESAR-2.jpg"
+      },
+      {
+        "file": "03-plein-pied.jpg",
+        "thumb": "thumb-03.jpg",
+        "type": "plein-pied",
+        "source": "CESAR-3.jpg"
       }
     ],
     "warnings": []
   },
   "hommes-20-30-ans-paul": {
-    "signature": "01.png=6071206:1789467768|02.png=6243663:1789467768|ov={}|num={}|fmt=3",
+    "signature": "PAUL-1.png=1962020:1790697876|PAUL-2.jpg=9414853:1790697876|PAUL-3.jpg=8595475:1790697876|ov={}|num={}|fmt=3",
     "photos": [
       {
-        "file": "01-visage.jpg",
+        "file": "01-profil.jpg",
         "thumb": "thumb.jpg",
-        "type": "visage",
-        "source": "01.png"
+        "type": "profil",
+        "source": "PAUL-1.png"
       },
       {
-        "file": "02-profil.jpg",
+        "file": "02-visage.jpg",
         "thumb": "thumb-02.jpg",
-        "type": "profil",
-        "source": "02.png"
-      }
-    ],
-    "warnings": []
-  },
-  "hommes-4-12-ans-benjamin": {
-    "signature": "01.png=5836096:1789467117|02.png=5628712:1789467118|ov={}|num={}|fmt=3",
-    "photos": [
-      {
-        "file": "01-visage.jpg",
-        "thumb": "thumb.jpg",
         "type": "visage",
-        "source": "01.png"
+        "source": "PAUL-2.jpg"
       },
       {
-        "file": "02-profil.jpg",
-        "thumb": "thumb-02.jpg",
-        "type": "profil",
-        "source": "02.png"
-      }
-    ],
-    "warnings": []
-  },
-  "hommes-4-12-ans-liam": {
-    "signature": "01.png=5870062:1789467125|02.png=5711121:1789467127|ov={}|num={}|fmt=3",
-    "photos": [
-      {
-        "file": "01-visage.jpg",
-        "thumb": "thumb.jpg",
-        "type": "visage",
-        "source": "01.png"
-      },
-      {
-        "file": "02-profil.jpg",
-        "thumb": "thumb-02.jpg",
-        "type": "profil",
-        "source": "02.png"
-      }
-    ],
-    "warnings": []
-  },
-  "hommes-4-12-ans-solal": {
-    "signature": "01.png=5813025:1789467136|02.png=5741153:1789467136|ov={}|num={}|fmt=3",
-    "photos": [
-      {
-        "file": "01-visage.jpg",
-        "thumb": "thumb.jpg",
-        "type": "visage",
-        "source": "01.png"
-      },
-      {
-        "file": "02-profil.jpg",
-        "thumb": "thumb-02.jpg",
-        "type": "profil",
-        "source": "02.png"
-      }
-    ],
-    "warnings": []
-  },
-  "hommes-4-12-ans-diego": {
-    "signature": "01.png=5963462:1789467143|02.png=5941735:1789467143|ov={}|num={}|fmt=3",
-    "photos": [
-      {
-        "file": "01-visage.jpg",
-        "thumb": "thumb.jpg",
-        "type": "visage",
-        "source": "01.png"
-      },
-      {
-        "file": "02-profil.jpg",
-        "thumb": "thumb-02.jpg",
-        "type": "profil",
-        "source": "02.png"
-      }
-    ],
-    "warnings": []
-  },
-  "hommes-4-12-ans-shai": {
-    "signature": "01.png=6299506:1789467149|02.png=6097973:1789467151|ov={}|num={}|fmt=3",
-    "photos": [
-      {
-        "file": "01-visage.jpg",
-        "thumb": "thumb.jpg",
-        "type": "visage",
-        "source": "01.png"
-      },
-      {
-        "file": "02-profil.jpg",
-        "thumb": "thumb-02.jpg",
-        "type": "profil",
-        "source": "02.png"
-      }
-    ],
-    "warnings": []
-  },
-  "hommes-4-12-ans-jaden": {
-    "signature": "01.png=5740987:1789467160|02.png=5536309:1789467160|ov={}|num={}|fmt=3",
-    "photos": [
-      {
-        "file": "01-visage.jpg",
-        "thumb": "thumb.jpg",
-        "type": "visage",
-        "source": "01.png"
-      },
-      {
-        "file": "02-profil.jpg",
-        "thumb": "thumb-02.jpg",
-        "type": "profil",
-        "source": "02.png"
+        "file": "03-plein-pied.jpg",
+        "thumb": "thumb-03.jpg",
+        "type": "plein-pied",
+        "source": "PAUL-3.jpg"
       }
     ],
     "warnings": []
   },
   "hommes-40-50-ans-laurent": {
-    "signature": "01.png=6353526:1789467783|02.png=6551526:1789467783|ov={}|num={}|fmt=3",
+    "signature": "LAURENT-1.jpg=6917536:1790957134|LAURENT-2.jpg=8539455:1790957135|LAURENT-3.jpg=7924141:1790957135|ov={}|num={}|fmt=3",
     "photos": [
       {
         "file": "01-visage.jpg",
         "thumb": "thumb.jpg",
         "type": "visage",
-        "source": "01.png"
+        "source": "LAURENT-1.jpg"
       },
       {
         "file": "02-profil.jpg",
         "thumb": "thumb-02.jpg",
         "type": "profil",
-        "source": "02.png"
-      }
-    ],
-    "warnings": []
-  },
-  "hommes-40-50-ans-fabrice": {
-    "signature": "01.png=5906289:1789467807|02.png=6002870:1789467807|ov={}|num={}|fmt=3",
-    "photos": [
-      {
-        "file": "01-visage.jpg",
-        "thumb": "thumb.jpg",
-        "type": "visage",
-        "source": "01.png"
+        "source": "LAURENT-2.jpg"
       },
       {
-        "file": "02-profil.jpg",
-        "thumb": "thumb-02.jpg",
+        "file": "03-profil-2.jpg",
+        "thumb": "thumb-03.jpg",
         "type": "profil",
-        "source": "02.png"
+        "source": "LAURENT-3.jpg"
       }
     ],
     "warnings": []
   },
   "hommes-40-50-ans-bruno": {
-    "signature": "01.png=6125277:1789467818|02.png=6083737:1789467818|ov={}|num={}|fmt=3",
+    "signature": "BRUNO-1.jpg=7651971:1790938292|BRUNO-2.jpg=8806135:1790938292|BRUNO-3.jpg=7919772:1790938303|ov={}|num={}|fmt=3",
+    "photos": [
+      {
+        "file": "01-profil.jpg",
+        "thumb": "thumb.jpg",
+        "type": "profil",
+        "source": "BRUNO-1.jpg"
+      },
+      {
+        "file": "02-visage.jpg",
+        "thumb": "thumb-02.jpg",
+        "type": "visage",
+        "source": "BRUNO-2.jpg"
+      },
+      {
+        "file": "03-plein-pied.jpg",
+        "thumb": "thumb-03.jpg",
+        "type": "plein-pied",
+        "source": "BRUNO-3.jpg"
+      }
+    ],
+    "warnings": []
+  },
+  "hommes-40-50-ans-fabrice": {
+    "signature": "FABRICE-1.jpg=7694846:1790939347|FABRICE-2.jpg=9380965:1790939347|FABRICE-3.jpg=8637714:1790958537|ov={}|num={}|fmt=3",
     "photos": [
       {
         "file": "01-visage.jpg",
         "thumb": "thumb.jpg",
         "type": "visage",
-        "source": "01.png"
+        "source": "FABRICE-1.jpg"
       },
       {
         "file": "02-profil.jpg",
         "thumb": "thumb-02.jpg",
         "type": "profil",
-        "source": "02.png"
+        "source": "FABRICE-2.jpg"
+      },
+      {
+        "file": "03-plein-pied.jpg",
+        "thumb": "thumb-03.jpg",
+        "type": "plein-pied",
+        "source": "FABRICE-3.jpg"
       }
     ],
     "warnings": []
   },
   "hommes-40-50-ans-jerome": {
-    "signature": "01.png=6105086:1789467825|02.png=6128123:1789467828|ov={}|num={}|fmt=3",
+    "signature": "JEROME-1.jpg=7740752:1790938326|JEROME-2.jpg=8622136:1790938326|JEROME-3.jpg=8146681:1790938326|ov={}|num={}|fmt=3",
     "photos": [
       {
-        "file": "01-visage.jpg",
+        "file": "01-profil.jpg",
         "thumb": "thumb.jpg",
-        "type": "visage",
-        "source": "01.png"
+        "type": "profil",
+        "source": "JEROME-1.jpg"
       },
       {
-        "file": "02-profil.jpg",
+        "file": "02-visage.jpg",
         "thumb": "thumb-02.jpg",
-        "type": "profil",
-        "source": "02.png"
+        "type": "visage",
+        "source": "JEROME-2.jpg"
+      },
+      {
+        "file": "03-plein-pied.jpg",
+        "thumb": "thumb-03.jpg",
+        "type": "plein-pied",
+        "source": "JEROME-3.jpg"
       }
     ],
     "warnings": []
   },
   "hommes-40-50-ans-armand": {
-    "signature": "01.png=5996915:1789467842|02.png=5820879:1789467842|ov={}|num={}|fmt=3",
+    "signature": "ARMAND-1.jpg=7414574:1790948364|ARMAND-2.jpg=8792611:1790948330|ARMAND-3.jpg=7932324:1790948388|ov={}|num={}|fmt=3",
     "photos": [
       {
         "file": "01-visage.jpg",
         "thumb": "thumb.jpg",
         "type": "visage",
-        "source": "01.png"
+        "source": "ARMAND-1.jpg"
       },
       {
-        "file": "02-profil.jpg",
+        "file": "02-visage-2.jpg",
         "thumb": "thumb-02.jpg",
+        "type": "visage",
+        "source": "ARMAND-2.jpg"
+      },
+      {
+        "file": "03-profil.jpg",
+        "thumb": "thumb-03.jpg",
         "type": "profil",
-        "source": "02.png"
+        "source": "ARMAND-3.jpg"
       }
     ],
     "warnings": []
   },
   "hommes-40-50-ans-jose": {
-    "signature": "01.png=6306078:1789467835|02.png=6409593:1789467835|ov={}|num={}|fmt=3",
+    "signature": "JOSÉ-1.jpg=7098402:1790958172|JOSÉ-2.jpg=8543682:1790956680|JOSÉ-3.jpg=7809982:1790956680|ov={}|num={}|fmt=3",
     "photos": [
       {
-        "file": "01-visage.jpg",
+        "file": "01-profil.jpg",
         "thumb": "thumb.jpg",
-        "type": "visage",
-        "source": "01.png"
+        "type": "profil",
+        "source": "JOSÉ-1.jpg"
       },
       {
-        "file": "02-profil.jpg",
+        "file": "02-visage.jpg",
         "thumb": "thumb-02.jpg",
-        "type": "profil",
-        "source": "02.png"
+        "type": "visage",
+        "source": "JOSÉ-2.jpg"
+      },
+      {
+        "file": "03-plein-pied.jpg",
+        "thumb": "thumb-03.jpg",
+        "type": "plein-pied",
+        "source": "JOSÉ-3.jpg"
       }
     ],
     "warnings": []
