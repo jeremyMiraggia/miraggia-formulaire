@@ -14,7 +14,8 @@ OpenCV 4 est requis : la version 5 a retiré les cascades de Haar utilisées pou
 python scripts/build-catalogue.py
 ```
 
-- Source par défaut : `D:\CHIMP_ME\MANNEQUINS` (option `--src` pour un autre dossier).
+- Source par défaut : `H:\Drive partagés\MIRAGGIA SAS\CATALOGUE\CATALOGUE 2026\POUR JEREM`
+  (option `--src` pour un autre dossier).
 - Sortie : `mannequins/` (images compressées à 1200 px + une miniature 3/4 de 400 px par photo :
   `thumb.jpg`, `thumb-02.jpg`…) et `mannequins.json` à la racine du repo.
 - Relançable : seuls les mannequins dont les fichiers source ont changé sont ré-encodés
@@ -22,10 +23,29 @@ python scripts/build-catalogue.py
 - `--dry-run` affiche la classification et le JSON sans rien écrire.
 - Les dossiers de sortie des mannequins retirés de la source sont supprimés automatiquement.
 
-Arborescence source attendue : `<genre>/<catégorie>/<NN.PRENOM>/<images>`.
-Le genre est déduit du nom du dossier (FEMMES / HOMMES), la catégorie de ses chiffres
-(`20-30 ANS` → « 20-30 ans », borne haute ≤ 15 ans ⇒ genre `Enfant`) ou de son nom
-s'il n'en a pas (`+SIZE` → « Plus size »), le prénom du nom du dossier sans son préfixe numérique.
+### Arborescence source
+
+Un mannequin est repéré au fait que **son dossier contient des images**. Son genre et sa
+catégorie sont lus sur la chaîne de ses dossiers parents, le plus profond l'emportant — la
+profondeur n'est donc pas imposée. Toutes ces formes fonctionnent :
+
+```
+TENUES FEMMES 20_30 ANS/1.AMBRE/      genre + âge sur le même dossier
+TENUES _+SIZE/FEMMES/3.LOLA/          catégorie puis genre
+TENUES ENFANTS/BÉBÉS/1.MILAN/         chapeau puis catégorie enfant
+FEMMES/20-30 ANS/01.MILA/             genre puis âge (ancienne arborescence)
+```
+
+- **Genre** : nom contenant FEMME / WOMEN / FILLE, ou HOMME / MEN / GARCON.
+- **Catégorie** : ses chiffres (`20_30 ANS` → « 20-30 ans », borne haute ≤ 15 ans ⇒ genre
+  `Enfant`), ou son nom s'il n'en a pas — `+SIZE` → « Plus size », `BÉBÉS` → « Bébé »,
+  `TENUES FILLES` → « Fille », `TENUES GARCONS` → « Garçon » (ces trois dernières étant
+  des catégories du genre `Enfant`).
+- **Prénom** : le nom du dossier sans son préfixe numérique.
+- Un préfixe `TENUES ` est ignoré partout.
+
+Les enfants sortent sous `mannequins/enfants/<catégorie>/<prénom>/`, les autres sous
+`mannequins/<femmes|hommes>/<catégorie>/<prénom>/`.
 
 ### Ordre et étiquettes des photos
 

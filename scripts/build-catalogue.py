@@ -10,12 +10,23 @@ Usage :
     python scripts/build-catalogue.py --force          # re-encode tout
     python scripts/build-catalogue.py --dry-run        # affiche la classification sans ecrire
 
-Arborescence source attendue (les noms exacts sont decouverts, pas codes en dur) :
-    <SRC>/<dossier genre>/<dossier tranche d'age>/<NN.PRENOM>/<images>
+Arborescence source (les noms exacts sont decouverts, pas codes en dur) :
+    <SRC>/<...dossiers de categorie...>/<NN.PRENOM>/<images>
 
-    - genre  : dossier dont le nom contient FEMME / WOMEN / HOMME / MEN
+    La profondeur des dossiers de categorie n'est pas imposee : un mannequin est repere
+    au fait que son dossier contient des images, et son genre comme sa categorie sont lus
+    sur la chaine de ses dossiers parents (le plus profond l'emporte). Sont donc acceptes :
+
+        TENUES FEMMES 20_30 ANS/1.AMBRE/        genre et age sur le meme dossier
+        TENUES _+SIZE/FEMMES/3.LOLA/            categorie puis genre
+        TENUES ENFANTS/BEBES/1.MILAN/           chapeau puis categorie enfant
+        FEMMES/20-30 ANS/01.MILA/               genre puis age (ancienne arborescence)
+
+    - genre  : dossier dont le nom contient FEMME / WOMEN / FILLE / HOMME / MEN / GARCON
     - age    : "20-30 ANS", "4-12 ANS"... (la borne haute <= AGE_ENFANT_MAX => genre "Enfant") ;
-               un dossier sans chiffres est une categorie a part ("+SIZE" -> "Plus size")
+               un dossier sans chiffres est une categorie a part ("+SIZE" -> "Plus size",
+               "BEBES" -> "Bebe", "TENUES FILLES" -> "Fille", "TENUES GARCONS" -> "Garcon",
+               ces trois dernieres etant des categories du genre "Enfant")
     - prenom : prefixe numerique optionnel ("01.MILA" -> "Mila")
     - images : si elles sont numerotees (01.png, 02.png...), cet ordre est conserve tel quel
 
@@ -31,7 +42,7 @@ Corrections manuelles : scripts/catalogue-overrides.json
     La regle "_par_numero" impose le type selon le numero de la photo (pas de detection), par categorie.
 
 Sortie :
-    <OUT>/mannequins/<genre>/<age>/<prenom>/01-plein-pied.jpg, 02-visage.jpg, 03-profil.jpg ...
+    <OUT>/mannequins/<genre ou "enfants">/<categorie>/<prenom>/01-plein-pied.jpg, 02-visage.jpg, 03-profil.jpg ...
                                             + thumb.jpg, thumb-02.jpg, thumb-03.jpg ... (une miniature 3/4 par photo)
     <OUT>/mannequins.json
 """
@@ -59,7 +70,7 @@ except ImportError:  # pragma: no cover
 # Reglages
 # ---------------------------------------------------------------------------
 REPO = Path(__file__).resolve().parent.parent
-DEFAULT_SRC = Path(r"D:/CHIMP_ME/MANNEQUINS")
+DEFAULT_SRC = Path(r"H:/Drive partagés/MIRAGGIA SAS/CATALOGUE/CATALOGUE 2026/POUR JEREM")
 OVERRIDES_FILE = REPO / "scripts" / "catalogue-overrides.json"
 CACHE_FILE = REPO / "scripts" / ".catalogue-cache.json"
 
@@ -82,6 +93,23 @@ OUTPUT_FORMAT_VERSION = 3    # a incrementer quand la forme des fichiers de sort
 GENRE_PATTERNS = [
     (re.compile(r"femme|women|woman|female|fille", re.I), "Femme", "femmes"),
     (re.compile(r"homme|men|man|male|garcon|garçon", re.I), "Homme", "hommes"),
+]
+
+# Mots de genre a retirer du nom d'un dossier avant d'y lire une tranche d'age
+# ("TENUES FEMMES 20_30 ANS" -> "20-30 ans").
+GENRE_WORDS = re.compile(r"\b(femmes?|hommes?|women|woman|men|man|females?|males?|filles?|gar[cç]ons?)\b", re.I)
+
+# Prefixe decoratif des dossiers source ("TENUES FEMMES ..." -> "FEMMES ...").
+SOURCE_PREFIX = re.compile(r"^\s*tenues?\b", re.I)
+
+CHILD_ROOT = re.compile(r"\benfants?\b|\bkids?\b", re.I)
+PLUS_SIZE = re.compile(r"\+\s*size|\bplus\s*size\b", re.I)
+
+# Categories enfant sans tranche d'age chiffree, dans l'ordre d'affichage voulu.
+CHILD_CATEGORIES = [
+    (re.compile(r"b[ée]b[ée]s?|baby|babies", re.I), "Bébé"),
+    (re.compile(r"\bfilles?\b|\bgirls?\b", re.I), "Fille"),
+    (re.compile(r"\bgar[cç]ons?\b|\bboys?\b", re.I), "Garçon"),
 ]
 
 
@@ -146,6 +174,13 @@ def parse_age(folder: str) -> tuple[str, int | None, int | None]:
     if not re.search(r"ans", label, re.I) and nums:
         label = f"{label} ans"
     return label, lo, hi
+
+
+def normalize_category(text: str) -> str:
+    """'20_30 ANS' -> '20-30 ans', '40_50ANS' -> '40-50 ans'."""
+    t = re.sub(r"[_/]+", "-", text)
+    t = re.sub(r"(\d)\s*ans\b", r"\1 ans", t, flags=re.I)
+    return re.sub(r"\s+", " ", t).strip(" -.")
 
 
 def detect_genre(folder: str) -> tuple[str, str] | None:
@@ -388,36 +423,120 @@ def process_model(job: dict) -> dict:
 # ---------------------------------------------------------------------------
 # Decouverte de l'arborescence
 # ---------------------------------------------------------------------------
+def classify_folder(name: str) -> dict:
+    """Ce qu'un dossier de l'arborescence source apprend : sexe, categorie, enfant.
+
+    Accepte aussi bien un dossier qui ne porte que le genre ("FEMMES") ou que la categorie
+    ("20-30 ANS", "+SIZE", "BEBES") qu'un dossier qui porte les deux ("TENUES FEMMES 20_30 ANS").
+    """
+    info = {"sexe": None, "sexe_slug": None, "categorie": None,
+            "age_min": None, "age_max": None, "enfant": False}
+    clean = SOURCE_PREFIX.sub("", name).strip(" _-")
+
+    g = detect_genre(clean)
+    if g:
+        info["sexe"], info["sexe_slug"] = g
+
+    for pattern, label in CHILD_CATEGORIES:
+        if pattern.search(clean):
+            info["categorie"], info["enfant"] = label, True
+            return info
+
+    if CHILD_ROOT.search(clean):          # dossier chapeau "ENFANTS", sans categorie propre
+        info["enfant"] = True
+        return info
+
+    if PLUS_SIZE.search(clean):
+        info["categorie"] = "Plus size"
+        return info
+
+    rest = normalize_category(GENRE_WORDS.sub(" ", clean))
+    if re.search(r"\d", rest):
+        label, lo, hi = parse_age(rest)
+        info["categorie"], info["age_min"], info["age_max"] = label, lo, hi
+        if hi is not None and hi <= AGE_ENFANT_MAX:
+            info["enfant"] = True
+    return info
+
+
+def describe(chain: list[str]) -> dict:
+    """Fusionne ce qu'apprennent les dossiers parents ; le plus profond l'emporte."""
+    acc = {"sexe": None, "sexe_slug": None, "categorie": None,
+           "age_min": None, "age_max": None, "enfant": False}
+    for name in chain:
+        info = classify_folder(name)
+        if info["sexe"]:
+            acc["sexe"], acc["sexe_slug"] = info["sexe"], info["sexe_slug"]
+        if info["categorie"]:
+            acc["categorie"] = info["categorie"]
+            acc["age_min"], acc["age_max"] = info["age_min"], info["age_max"]
+        if info["enfant"]:
+            acc["enfant"] = True
+    return acc
+
+
+def model_dirs(src: Path, max_depth: int = 3) -> list[tuple[Path, list[str]]]:
+    """Dossiers contenant des images, avec la chaine de dossiers depuis <src> (categories + mannequin).
+
+    La profondeur des categories n'est pas imposee : un mannequin peut etre range sous
+    "<genre+age>/" comme sous "<chapeau>/<categorie>/".
+    """
+    found: list[tuple[Path, list[str]]] = []
+
+    def walk(d: Path, chain: list[str]) -> None:
+        entries = list(d.iterdir())
+        if chain and any(f.suffix.lower() in IMAGE_EXT for f in entries if f.is_file()):
+            found.append((d, chain))      # dossier mannequin : on ne descend pas plus bas
+            return
+        if len(chain) >= max_depth:
+            return
+        for sub in sorted((p for p in entries if p.is_dir()),
+                          key=lambda p: (folder_order(p.name), p.name.lower())):
+            walk(sub, chain + [sub.name])
+
+    walk(src, [])
+    return found
+
+
 def discover(src: Path) -> list[dict]:
     models: list[dict] = []
-    for genre_dir in sorted(p for p in src.iterdir() if p.is_dir()):
-        g = detect_genre(genre_dir.name)
-        if not g:
-            print(f"  ! dossier ignore (genre inconnu) : {genre_dir.name}")
+    seen: dict[str, str] = {}
+    for model_dir, chain in model_dirs(src):
+        categories, folder = chain[:-1], chain[-1]
+        trail = "/".join(chain)
+        if not categories:
+            print(f"  ! dossier ignore (pas de categorie parente) : {trail}")
             continue
-        sexe, sexe_slug = g
-        for age_dir in sorted(p for p in genre_dir.iterdir() if p.is_dir()):
-            age_label, lo, hi = parse_age(age_dir.name)
-            enfant = hi is not None and hi <= AGE_ENFANT_MAX
-            age_slug = slugify(age_label)
-            for model_dir in sorted((p for p in age_dir.iterdir() if p.is_dir()),
-                                    key=lambda p: (folder_order(p.name), p.name.lower())):
-                if not any(f.suffix.lower() in IMAGE_EXT for f in model_dir.iterdir() if f.is_file()):
-                    continue
-                prenom = pretty_name(model_dir.name)
-                prenom_slug = slugify(prenom)
-                models.append({
-                    "id": f"{sexe_slug}-{age_slug}-{prenom_slug}",
-                    "prenom": prenom,
-                    "genre": "Enfant" if enfant else sexe,
-                    "sexe": sexe,
-                    "age": age_label,
-                    "age_min": lo,
-                    "age_max": hi,
-                    "order": folder_order(model_dir.name),
-                    "rel_dir": f"mannequins/{sexe_slug}/{age_slug}/{prenom_slug}",
-                    "src_dir": str(model_dir),
-                })
+        info = describe(categories)
+        if not info["categorie"]:
+            print(f"  ! dossier ignore (categorie inconnue) : {trail}")
+            continue
+        if not info["enfant"] and not info["sexe"]:
+            print(f"  ! dossier ignore (genre inconnu) : {trail}")
+            continue
+
+        enfant = info["enfant"]
+        root_slug = "enfants" if enfant else info["sexe_slug"]
+        cat_slug = slugify(info["categorie"])
+        prenom = pretty_name(folder)
+        model_id = f"{root_slug}-{cat_slug}-{slugify(prenom)}"
+        if model_id in seen:
+            print(f"  ! doublon ignore : {trail} (meme identifiant que {seen[model_id]})")
+            continue
+        seen[model_id] = trail
+
+        models.append({
+            "id": model_id,
+            "prenom": prenom,
+            "genre": "Enfant" if enfant else info["sexe"],
+            "sexe": info["sexe"],
+            "age": info["categorie"],
+            "age_min": info["age_min"],
+            "age_max": info["age_max"],
+            "order": folder_order(folder),
+            "rel_dir": f"mannequins/{root_slug}/{cat_slug}/{slugify(prenom)}",
+            "src_dir": str(model_dir),
+        })
     return models
 
 

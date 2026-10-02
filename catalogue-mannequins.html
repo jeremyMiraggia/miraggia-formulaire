@@ -454,7 +454,8 @@
   }
   function subLabel(m) {
     if (m.genre !== 'Enfant' || !m.sexe) return '';
-    return m.sexe === 'Femme' ? 'Fille' : (m.sexe === 'Homme' ? 'Garçon' : m.sexe);
+    var sub = m.sexe === 'Femme' ? 'Fille' : (m.sexe === 'Homme' ? 'Garçon' : m.sexe);
+    return sub === m.age ? '' : sub;   // la categorie dit deja "Fille" / "Garcon"
   }
   function tagsHtml(m) {
     var html = '<span class="tag ' + tagClass(m.genre) + '">' + esc(m.genre) + '</span>';
