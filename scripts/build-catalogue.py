@@ -53,6 +53,7 @@ import json
 import re
 import shutil
 import sys
+import time
 import unicodedata
 from concurrent.futures import ProcessPoolExecutor, as_completed
 from datetime import date
@@ -81,6 +82,9 @@ PHOTO_MAX_KB = 200
 THUMB_MAX_KB = 60
 JPEG_QUALITY = 80
 JPEG_QUALITY_FLOOR = 60
+
+READ_RETRIES = 4             # lectures d'une meme image avant d'abandonner
+READ_RETRY_DELAY = 0.6       # secondes entre deux tentatives (x2 a chaque essai)
 
 AGE_ENFANT_MAX = 15          # borne haute <= 15 ans => genre "Enfant"
 DETECT_HEIGHT = 1000         # hauteur de travail pour la detection
@@ -208,8 +212,19 @@ def file_signature(p: Path) -> str:
 
 
 def load_rgb(path: Path) -> Image.Image:
-    im = Image.open(path)
-    im.load()
+    """Ouvre l'image, en reessayant : sur un lecteur reseau (Google Drive, OneDrive) une
+    lecture echoue parfois alors que le fichier est sain (OSError / [Errno 22])."""
+    delay = READ_RETRY_DELAY
+    for attempt in range(1, READ_RETRIES + 1):
+        try:
+            im = Image.open(path)
+            im.load()
+            break
+        except OSError:
+            if attempt == READ_RETRIES:
+                raise
+            time.sleep(delay)
+            delay *= 2
     if im.mode in ("RGBA", "LA") or (im.mode == "P" and "transparency" in im.info):
         im = im.convert("RGBA")
         bg = Image.new("RGB", im.size, (255, 255, 255))
@@ -359,8 +374,12 @@ def process_model(job: dict) -> dict:
         if kind == "skip":
             warnings.append(f"{f.name}: aucune personne detectee, ignoree")
             continue
-        with Image.open(f) as im:
-            pixels = im.width * im.height
+        try:
+            with Image.open(f) as im:
+                pixels = im.width * im.height
+        except OSError as exc:
+            warnings.append(f"{f.name}: illisible ({exc})")
+            continue
         classified.append({"src": f, "kind": kind, "pixels": pixels, "details": details})
 
     def leading_number(c: dict) -> int | None:
@@ -414,9 +433,31 @@ def process_model(job: dict) -> dict:
     if out_dir.exists():
         shutil.rmtree(out_dir)
     out_dir.mkdir(parents=True)
+    encoded: list[dict] = []
     for p in photos:
-        result["sizes"][p["file"]] = encode_photo(Path(p["src_path"]), out_dir / p["file"])
-        result["sizes"][p["thumb"]] = encode_thumb(Path(p["src_path"]), out_dir / p["thumb"])
+        try:
+            result["sizes"][p["file"]] = encode_photo(Path(p["src_path"]), out_dir / p["file"])
+            result["sizes"][p["thumb"]] = encode_thumb(Path(p["src_path"]), out_dir / p["thumb"])
+        except OSError as exc:  # illisible a l'encodage : on garde les autres photos
+            warnings.append(f"{p['source']}: illisible a l'encodage ({exc})")
+            for leftover in (out_dir / p["file"], out_dir / p["thumb"]):
+                leftover.unlink(missing_ok=True)
+            continue
+        encoded.append(p)
+
+    # Renumerotation si une photo est tombee, pour garder 01, 02, 03 sans trou.
+    if len(encoded) != len(photos):
+        renamed: list[dict] = []
+        for i, p in enumerate(encoded, start=1):
+            new_file = re.sub(r"^\d{2}", f"{i:02d}", p["file"])
+            new_thumb = "thumb.jpg" if i == 1 else f"thumb-{i:02d}.jpg"
+            for old_name, new_name in ((p["file"], new_file), (p["thumb"], new_thumb)):
+                if old_name != new_name:
+                    (out_dir / old_name).replace(out_dir / new_name)
+                    result["sizes"][new_name] = result["sizes"].pop(old_name, 0)
+            renamed.append({**p, "file": new_file, "thumb": new_thumb})
+        encoded = renamed
+    result["photos"] = encoded
     return result
 
 
@@ -605,11 +646,12 @@ def main() -> int:
                     print(f"      ! {w}")
 
     # Assemblage du JSON
-    entries, new_cache = [], {}
+    entries, new_cache, unreadable, excluded = [], {}, [], []
     for m in models:
         r = m.get("result") or results.get(m["id"])
         if not r or not r["photos"]:
             print(f"  ! {m['id']} : aucune photo exploitable, exclu du catalogue")
+            excluded.append(m["id"])
             continue
         entry = {
             "id": m["id"],
@@ -626,6 +668,11 @@ def main() -> int:
             "types": [p["type"] for p in r["photos"]],
         }
         entries.append(entry)
+        # Une photo illisible vient presque toujours du lecteur reseau, pas du fichier : on ne met
+        # pas ce mannequin en cache, pour qu'une relance le retente au lieu de figer un resultat partiel.
+        if any("illisible" in w for w in r["warnings"]):
+            unreadable.append(m["id"])
+            continue
         new_cache[m["id"]] = {"signature": m["signature"], "photos": [{k: p[k] for k in ("file", "thumb", "type", "source")} for p in r["photos"]],
                               "warnings": r["warnings"]}
 
@@ -675,12 +722,25 @@ def main() -> int:
         print(f"thumbs : {len(thumbs_kb)} fichiers, max {max(thumbs_kb):.0f} Ko"
               f" ({sum(1 for k in thumbs_kb if k > THUMB_MAX_KB)} au-dessus de {THUMB_MAX_KB} Ko)")
     print(f"total  : {total_mb:.1f} Mo")
-    warned = [(e["id"], new_cache[e["id"]]["warnings"]) for e in entries if new_cache[e["id"]]["warnings"]]
+    all_results = {m["id"]: (m.get("result") or results.get(m["id"])) for m in models}
+    warned = [(e["id"], all_results[e["id"]]["warnings"])
+              for e in entries if all_results.get(e["id"]) and all_results[e["id"]]["warnings"]]
     if warned:
         print("\nA verifier :")
         for mid, ws in warned:
             for w in ws:
                 print(f"  {mid}: {w}")
+    if excluded:
+        print(f"\n{len(excluded)} mannequin(s) EXCLU(S) du catalogue (aucune photo lisible) :")
+        for mid in excluded:
+            print(f"  - {mid}")
+    if unreadable:
+        print(f"\n{len(unreadable)} mannequin(s) avec une photo illisible, non mis en cache :")
+        for mid in unreadable:
+            print(f"  - {mid}")
+    if excluded or unreadable:
+        print("\nCes cas viennent presque toujours du lecteur reseau, pas des fichiers.")
+        print("Relancer la meme commande : seuls ces mannequins seront retentes.")
     return 0
 
 

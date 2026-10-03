@@ -192,85 +192,109 @@
     "warnings": []
   },
   "enfants-bebe-milan": {
-    "signature": "MILAN.jpeg=549806:1790686188|ov={}|num={}|fmt=3",
+    "signature": "MILAN_1.jpg=1848720:1790961514|MILAN_2.jpg=1488890:1790961512|ov={}|num={}|fmt=3",
     "photos": [
       {
-        "file": "01-visage.jpg",
+        "file": "01-profil.jpg",
         "thumb": "thumb.jpg",
+        "type": "profil",
+        "source": "MILAN_1.jpg"
+      },
+      {
+        "file": "02-visage.jpg",
+        "thumb": "thumb-02.jpg",
         "type": "visage",
-        "source": "MILAN.jpeg"
+        "source": "MILAN_2.jpg"
       }
     ],
-    "warnings": [
-      "seulement 1 photo(s)"
-    ]
+    "warnings": []
   },
   "enfants-bebe-luna": {
-    "signature": "LUNA.jpeg=593944:1790686688|ov={}|num={}|fmt=3",
+    "signature": "LUNA_1.jpg=6956821:1790961713|LUNA_2.jpg=1616075:1790961713|ov={}|num={}|fmt=3",
     "photos": [
       {
-        "file": "01-visage.jpg",
+        "file": "01-profil.jpg",
         "thumb": "thumb.jpg",
+        "type": "profil",
+        "source": "LUNA_1.jpg"
+      },
+      {
+        "file": "02-visage.jpg",
+        "thumb": "thumb-02.jpg",
         "type": "visage",
-        "source": "LUNA.jpeg"
+        "source": "LUNA_2.jpg"
       }
     ],
-    "warnings": [
-      "seulement 1 photo(s)"
-    ]
+    "warnings": []
   },
   "enfants-bebe-joy": {
-    "signature": "JOY.jpeg=554843:1790686842|ov={}|num={}|fmt=3",
+    "signature": "JOY_1.jpg=1761365:1790961807|JOY_2.jpg=1486833:1790961803|ov={}|num={}|fmt=3",
     "photos": [
       {
-        "file": "01-visage.jpg",
+        "file": "01-profil.jpg",
         "thumb": "thumb.jpg",
+        "type": "profil",
+        "source": "JOY_1.jpg"
+      },
+      {
+        "file": "02-visage.jpg",
+        "thumb": "thumb-02.jpg",
         "type": "visage",
-        "source": "JOY.jpeg"
+        "source": "JOY_2.jpg"
       }
     ],
-    "warnings": [
-      "seulement 1 photo(s)"
-    ]
+    "warnings": []
   },
   "enfants-bebe-augustin": {
-    "signature": "miraggia-6267e8df.jpg=7260318:1790782209|miraggia-d492ec33.jpg=7153533:1790782238|ov={}|num={}|fmt=3",
+    "signature": "AUGUSTIN_1.jpg=6685256:1790961423|AUGUSTIN_2.jpg=7260318:1790961424|AUGUSTIN_3.jpg=7153533:1790961427|ov={}|num={}|fmt=3",
     "photos": [
       {
         "file": "01-visage.jpg",
         "thumb": "thumb.jpg",
         "type": "visage",
-        "source": "miraggia-d492ec33.jpg"
+        "source": "AUGUSTIN_1.jpg"
       },
       {
         "file": "02-profil.jpg",
         "thumb": "thumb-02.jpg",
         "type": "profil",
-        "source": "miraggia-6267e8df.jpg"
+        "source": "AUGUSTIN_2.jpg"
+      },
+      {
+        "file": "03-visage-2.jpg",
+        "thumb": "thumb-03.jpg",
+        "type": "visage",
+        "source": "AUGUSTIN_3.jpg"
       }
     ],
     "warnings": []
   },
   "enfants-bebe-alia": {
-    "signature": "miraggia-6cbf93df.jpg=7046679:1790782500|miraggia-becdec2e.jpg=7333816:1790782513|ov={}|num={}|fmt=3",
+    "signature": "ALIA_1.jpg=7147108:1790961429|ALIA_2.jpg=7046679:1790961429|ALIA_3.jpg=7333816:1790961429|ov={}|num={}|fmt=3",
     "photos": [
       {
-        "file": "01-plein-pied.jpg",
+        "file": "01-visage.jpg",
         "thumb": "thumb.jpg",
-        "type": "plein-pied",
-        "source": "miraggia-becdec2e.jpg"
+        "type": "visage",
+        "source": "ALIA_1.jpg"
       },
       {
-        "file": "02-plein-pied-2.jpg",
+        "file": "02-plein-pied.jpg",
         "thumb": "thumb-02.jpg",
         "type": "plein-pied",
-        "source": "miraggia-6cbf93df.jpg"
+        "source": "ALIA_2.jpg"
+      },
+      {
+        "file": "03-plein-pied-2.jpg",
+        "thumb": "thumb-03.jpg",
+        "type": "plein-pied",
+        "source": "ALIA_3.jpg"
       }
     ],
     "warnings": []
   },
   "enfants-fille-jeanne": {
-    "signature": "JEANNE-1.jpg=7561450:1790783494|JEANNE-2.jpg=7890976:1790783494|ov={}|num={}|fmt=3",
+    "signature": "JEANNE-1.jpg=6554201:1790960538|JEANNE-2.jpg=7561450:1790960497|JEANNE-3.jpg=7890976:1790960501|ov={}|num={}|fmt=3",
     "photos": [
       {
         "file": "01-visage.jpg",
@@ -279,16 +303,22 @@
         "source": "JEANNE-1.jpg"
       },
       {
-        "file": "02-plein-pied.jpg",
+        "file": "02-profil.jpg",
         "thumb": "thumb-02.jpg",
-        "type": "plein-pied",
+        "type": "profil",
         "source": "JEANNE-2.jpg"
+      },
+      {
+        "file": "03-plein-pied.jpg",
+        "thumb": "thumb-03.jpg",
+        "type": "plein-pied",
+        "source": "JEANNE-3.jpg"
       }
     ],
     "warnings": []
   },
   "enfants-fille-zoe": {
-    "signature": "ZOE-1.jpg=7882359:1790783517|ZOE-2.jpg=8164434:1790783517|ov={}|num={}|fmt=3",
+    "signature": "ZOE-1.jpg=7038054:1790960351|ZOE-2.jpg=7882359:1790960351|ZOE-3.jpg=8164434:1790960364|ov={}|num={}|fmt=3",
     "photos": [
       {
         "file": "01-visage.jpg",
@@ -297,16 +327,22 @@
         "source": "ZOE-1.jpg"
       },
       {
-        "file": "02-plein-pied.jpg",
+        "file": "02-profil.jpg",
         "thumb": "thumb-02.jpg",
-        "type": "plein-pied",
+        "type": "profil",
         "source": "ZOE-2.jpg"
+      },
+      {
+        "file": "03-plein-pied.jpg",
+        "thumb": "thumb-03.jpg",
+        "type": "plein-pied",
+        "source": "ZOE-3.jpg"
       }
     ],
     "warnings": []
   },
   "enfants-fille-alice": {
-    "signature": "ALICE-1.jpg=8390528:1790783740|ALICE-2.jpg=8512288:1790783740|ov={}|num={}|fmt=3",
+    "signature": "ALICE-1.jpg=7169818:1790960259|ALICE-2.jpg=8390528:1790960254|ALICE-3.jpg=8512288:1790960248|ov={}|num={}|fmt=3",
     "photos": [
       {
         "file": "01-visage.jpg",
@@ -315,52 +351,70 @@
         "source": "ALICE-1.jpg"
       },
       {
-        "file": "02-plein-pied.jpg",
+        "file": "02-profil.jpg",
         "thumb": "thumb-02.jpg",
-        "type": "plein-pied",
+        "type": "profil",
         "source": "ALICE-2.jpg"
+      },
+      {
+        "file": "03-plein-pied.jpg",
+        "thumb": "thumb-03.jpg",
+        "type": "plein-pied",
+        "source": "ALICE-3.jpg"
       }
     ],
     "warnings": []
   },
   "enfants-fille-rose": {
-    "signature": "ROSE-1.jpg=7677816:1790783752|ROSE-2.jpg=7767433:1790783752|ov={}|num={}|fmt=3",
+    "signature": "ROSE-3.jpg=7463413:1790960528|ROSE-4.jpg=7677816:1790960517|ROSE-5.jpg=7767433:1790960517|ov={}|num={}|fmt=3",
     "photos": [
       {
         "file": "01-visage.jpg",
         "thumb": "thumb.jpg",
         "type": "visage",
-        "source": "ROSE-1.jpg"
+        "source": "ROSE-3.jpg"
       },
       {
-        "file": "02-plein-pied.jpg",
+        "file": "02-profil.jpg",
         "thumb": "thumb-02.jpg",
+        "type": "profil",
+        "source": "ROSE-4.jpg"
+      },
+      {
+        "file": "03-plein-pied.jpg",
+        "thumb": "thumb-03.jpg",
         "type": "plein-pied",
-        "source": "ROSE-2.jpg"
+        "source": "ROSE-5.jpg"
       }
     ],
     "warnings": []
   },
   "enfants-fille-salome": {
-    "signature": "SALOMÉ-1.jpg=8173273:1790783766|SALOMÉ-2.jpg=7997150:1790783766|ov={}|num={}|fmt=3",
+    "signature": "SALOME_1.jpg=2259299:1790960198|SALOMÉ-2.jpg=8173273:1790960210|SALOMÉ-3.jpg=7997150:1790960206|ov={}|num={}|fmt=3",
     "photos": [
       {
         "file": "01-visage.jpg",
         "thumb": "thumb.jpg",
         "type": "visage",
-        "source": "SALOMÉ-1.jpg"
+        "source": "SALOME_1.jpg"
       },
       {
-        "file": "02-plein-pied.jpg",
+        "file": "02-profil.jpg",
         "thumb": "thumb-02.jpg",
-        "type": "plein-pied",
+        "type": "profil",
         "source": "SALOMÉ-2.jpg"
+      },
+      {
+        "file": "03-plein-pied.jpg",
+        "thumb": "thumb-03.jpg",
+        "type": "plein-pied",
+        "source": "SALOMÉ-3.jpg"
       }
     ],
     "warnings": []
   },
   "enfants-fille-sofia": {
-    "signature": "SOFIA-1.jpg=7882528:1790783797|SOFIA-2.jpg=7541249:1790783797|ov={}|num={}|fmt=3",
+    "signature": "SOFIA-1.jpg=6612827:1790960473|SOFIA-2.jpg=7882528:1790960465|SOFIA-3.jpg=7541249:1790960472|ov={}|num={}|fmt=3",
     "photos": [
       {
         "file": "01-visage.jpg",
@@ -369,107 +423,147 @@
         "source": "SOFIA-1.jpg"
       },
       {
-        "file": "02-plein-pied.jpg",
+        "file": "02-profil.jpg",
         "thumb": "thumb-02.jpg",
-        "type": "plein-pied",
+        "type": "profil",
         "source": "SOFIA-2.jpg"
+      },
+      {
+        "file": "03-plein-pied.jpg",
+        "thumb": "thumb-03.jpg",
+        "type": "plein-pied",
+        "source": "SOFIA-3.jpg"
       }
     ],
     "warnings": []
   },
   "enfants-fille-lila": {
-    "signature": "LILA-1.jpg=7600399:1790784224|LILA-2.jpg=7639692:1790784224|ov={}|num={}|fmt=3",
+    "signature": "LILA-3.jpg=6195608:1790960446|LILA-4.jpg=7600399:1790960443|LILA-5.jpg=7639692:1790960443|ov={}|num={}|fmt=3",
     "photos": [
       {
         "file": "01-visage.jpg",
         "thumb": "thumb.jpg",
         "type": "visage",
-        "source": "LILA-1.jpg"
+        "source": "LILA-3.jpg"
       },
       {
-        "file": "02-profil.jpg",
+        "file": "02-visage-2.jpg",
         "thumb": "thumb-02.jpg",
+        "type": "visage",
+        "source": "LILA-4.jpg"
+      },
+      {
+        "file": "03-profil.jpg",
+        "thumb": "thumb-03.jpg",
         "type": "profil",
-        "source": "LILA-2.jpg"
+        "source": "LILA-5.jpg"
       }
     ],
     "warnings": []
   },
   "enfants-fille-thea": {
-    "signature": "THÉA-1.jpg=7986605:1790784231|THÉA-2.jpg=8013988:1790784231|ov={}|num={}|fmt=3",
+    "signature": "THEA-1.jpg=1908671:1790960394|THEA-2.jpg=7986605:1790960394|THEA-3.jpg=8013988:1790960394|ov={}|num={}|fmt=3",
     "photos": [
       {
         "file": "01-visage.jpg",
         "thumb": "thumb.jpg",
         "type": "visage",
-        "source": "THÉA-1.jpg"
+        "source": "THEA-1.jpg"
       },
       {
-        "file": "02-plein-pied.jpg",
+        "file": "02-profil.jpg",
         "thumb": "thumb-02.jpg",
+        "type": "profil",
+        "source": "THEA-2.jpg"
+      },
+      {
+        "file": "03-plein-pied.jpg",
+        "thumb": "thumb-03.jpg",
         "type": "plein-pied",
-        "source": "THÉA-2.jpg"
+        "source": "THEA-3.jpg"
       }
     ],
     "warnings": []
   },
   "enfants-fille-romane": {
-    "signature": "ROMANE-1.jpg=8792864:1790784243|ov={}|num={}|fmt=3",
+    "signature": "ROMANE-1.jpg=6470403:1790960416|ROMANE-2.jpg=8792864:1790960422|ROMANE-3.jpg=7285727:1790961971|ov={}|num={}|fmt=3",
     "photos": [
       {
         "file": "01-visage.jpg",
         "thumb": "thumb.jpg",
         "type": "visage",
         "source": "ROMANE-1.jpg"
-      }
-    ],
-    "warnings": [
-      "seulement 1 photo(s)"
-    ]
-  },
-  "enfants-fille-celia": {
-    "signature": "CÉLIA-1.jpg=8061365:1790784400|CÉLIA-2.jpg=8327486:1790784400|ov={}|num={}|fmt=3",
-    "photos": [
-      {
-        "file": "01-plein-pied.jpg",
-        "thumb": "thumb.jpg",
-        "type": "plein-pied",
-        "source": "CÉLIA-1.jpg"
       },
       {
-        "file": "02-visage.jpg",
+        "file": "02-profil.jpg",
         "thumb": "thumb-02.jpg",
-        "type": "visage",
-        "source": "CÉLIA-2.jpg"
+        "type": "profil",
+        "source": "ROMANE-2.jpg"
+      },
+      {
+        "file": "03-plein-pied.jpg",
+        "thumb": "thumb-03.jpg",
+        "type": "plein-pied",
+        "source": "ROMANE-3.jpg"
       }
     ],
     "warnings": []
   },
-  "enfants-fille-pauline": {
-    "signature": "PAULINE-1.jpg=8208244:1790784254|PAULINE-2.jpg=7583015:1790784254|ov={}|num={}|fmt=3",
+  "enfants-fille-celia": {
+    "signature": "CELIA-1.jpg=7803726:1790960318|CELIA-2.jpg=8061365:1790960318|CELIA-3.jpg=8327486:1790960318|ov={}|num={}|fmt=3",
     "photos": [
       {
         "file": "01-visage.jpg",
         "thumb": "thumb.jpg",
         "type": "visage",
-        "source": "PAULINE-1.jpg"
+        "source": "CELIA-1.jpg"
       },
       {
         "file": "02-plein-pied.jpg",
         "thumb": "thumb-02.jpg",
         "type": "plein-pied",
+        "source": "CELIA-2.jpg"
+      },
+      {
+        "file": "03-profil.jpg",
+        "thumb": "thumb-03.jpg",
+        "type": "profil",
+        "source": "CELIA-3.jpg"
+      }
+    ],
+    "warnings": []
+  },
+  "enfants-fille-pauline": {
+    "signature": "PAULINE-1.jpg=7075084:1790960548|PAULINE-2.jpg=8208244:1790960548|PAULINE-3.jpg=7583015:1790960558|ov={}|num={}|fmt=3",
+    "photos": [
+      {
+        "file": "01-profil.jpg",
+        "thumb": "thumb.jpg",
+        "type": "profil",
+        "source": "PAULINE-1.jpg"
+      },
+      {
+        "file": "02-visage.jpg",
+        "thumb": "thumb-02.jpg",
+        "type": "visage",
         "source": "PAULINE-2.jpg"
+      },
+      {
+        "file": "03-plein-pied.jpg",
+        "thumb": "thumb-03.jpg",
+        "type": "plein-pied",
+        "source": "PAULINE-3.jpg"
       }
     ],
     "warnings": []
   },
   "enfants-fille-stella": {
-    "signature": "STELLA-1.jpg=8112266:1790784270|STELLA-2.jpg=7690849:1790784270|ov={}|num={}|fmt=3",
+    "signature": "11_enfant_l_allure_visage.jpg=1920103:1790960031|STELLA-1.jpg=8112266:1790784270|STELLA-2.jpg=7690849:1790784270|ov={}|num={}|fmt=3",
     "photos": [
       {
-        "file": "01-visage.jpg",
+        "file": "01-profil.jpg",
         "thumb": "thumb.jpg",
-        "type": "visage",
+        "type": "profil",
         "source": "STELLA-1.jpg"
       },
       {
@@ -477,12 +571,18 @@
         "thumb": "thumb-02.jpg",
         "type": "plein-pied",
         "source": "STELLA-2.jpg"
+      },
+      {
+        "file": "03-visage.jpg",
+        "thumb": "thumb-03.jpg",
+        "type": "visage",
+        "source": "11_enfant_l_allure_visage.jpg"
       }
     ],
     "warnings": []
   },
   "enfants-fille-sonia": {
-    "signature": "SONIA-1.jpg=8364784:1790784281|SONIA-2.jpg=7825432:1790784281|ov={}|num={}|fmt=3",
+    "signature": "SONIA-1.jpg=6913719:1790960287|SONIA-2.jpg=8364784:1790960287|SONIA-3.jpg=7825432:1790960296|ov={}|num={}|fmt=3",
     "photos": [
       {
         "file": "01-visage.jpg",
@@ -491,34 +591,46 @@
         "source": "SONIA-1.jpg"
       },
       {
-        "file": "02-plein-pied.jpg",
+        "file": "02-profil.jpg",
         "thumb": "thumb-02.jpg",
-        "type": "plein-pied",
+        "type": "profil",
         "source": "SONIA-2.jpg"
+      },
+      {
+        "file": "03-plein-pied.jpg",
+        "thumb": "thumb-03.jpg",
+        "type": "plein-pied",
+        "source": "SONIA-3.jpg"
       }
     ],
     "warnings": []
   },
   "enfants-garcon-nils": {
-    "signature": "NILS-1.jpg=9030848:1790843123|NILS-2.jpg=8794086:1790843123|ov={}|num={}|fmt=3",
+    "signature": "NILS-1.jpg=6940002:1790961213|NILS-2.jpg=9030848:1790961214|NILS-3.jpg=8794086:1790961220|ov={}|num={}|fmt=3",
     "photos": [
       {
-        "file": "01-visage.jpg",
+        "file": "01-profil.jpg",
         "thumb": "thumb.jpg",
-        "type": "visage",
+        "type": "profil",
         "source": "NILS-1.jpg"
       },
       {
-        "file": "02-plein-pied.jpg",
+        "file": "02-visage.jpg",
         "thumb": "thumb-02.jpg",
-        "type": "plein-pied",
+        "type": "visage",
         "source": "NILS-2.jpg"
+      },
+      {
+        "file": "03-plein-pied.jpg",
+        "thumb": "thumb-03.jpg",
+        "type": "plein-pied",
+        "source": "NILS-3.jpg"
       }
     ],
     "warnings": []
   },
   "enfants-garcon-enzo": {
-    "signature": "ENZO-1.jpg=8729586:1790843195|ENZO-2.jpg=8511997:1790866518|ov={}|num={}|fmt=3",
+    "signature": "ENZO-1.jpg=7601194:1790961232|ENZO-2.jpg=8729586:1790961232|ENZO-3.jpg=8511997:1790961237|ov={}|num={}|fmt=3",
     "photos": [
       {
         "file": "01-visage.jpg",
@@ -527,208 +639,280 @@
         "source": "ENZO-1.jpg"
       },
       {
-        "file": "02-plein-pied.jpg",
+        "file": "02-profil.jpg",
         "thumb": "thumb-02.jpg",
-        "type": "plein-pied",
+        "type": "profil",
         "source": "ENZO-2.jpg"
+      },
+      {
+        "file": "03-plein-pied.jpg",
+        "thumb": "thumb-03.jpg",
+        "type": "plein-pied",
+        "source": "ENZO-3.jpg"
       }
     ],
     "warnings": []
   },
   "enfants-garcon-liam": {
-    "signature": "LIAM-1.jpg=8985447:1790843153|LIAM-2.jpg=8631260:1790843153|ov={}|num={}|fmt=3",
-    "photos": [
-      {
-        "file": "01-visage.jpg",
-        "thumb": "thumb.jpg",
-        "type": "visage",
-        "source": "LIAM-1.jpg"
-      },
-      {
-        "file": "02-plein-pied.jpg",
-        "thumb": "thumb-02.jpg",
-        "type": "plein-pied",
-        "source": "LIAM-2.jpg"
-      }
-    ],
-    "warnings": []
-  },
-  "enfants-garcon-jules": {
-    "signature": "JULES-1.jpg=9650096:1790843219|JULES-2.jpg=8534641:1790843233|ov={}|num={}|fmt=3",
-    "photos": [
-      {
-        "file": "01-visage.jpg",
-        "thumb": "thumb.jpg",
-        "type": "visage",
-        "source": "JULES-1.jpg"
-      },
-      {
-        "file": "02-plein-pied.jpg",
-        "thumb": "thumb-02.jpg",
-        "type": "plein-pied",
-        "source": "JULES-2.jpg"
-      }
-    ],
-    "warnings": []
-  },
-  "enfants-garcon-benjamin": {
-    "signature": "JULES-1.jpg=8998037:1790843249|JULES-2.jpg=8602862:1790843249|ov={}|num={}|fmt=3",
-    "photos": [
-      {
-        "file": "01-visage.jpg",
-        "thumb": "thumb.jpg",
-        "type": "visage",
-        "source": "JULES-1.jpg"
-      },
-      {
-        "file": "02-plein-pied.jpg",
-        "thumb": "thumb-02.jpg",
-        "type": "plein-pied",
-        "source": "JULES-2.jpg"
-      }
-    ],
-    "warnings": []
-  },
-  "enfants-garcon-solal": {
-    "signature": "SOLAL-1.jpg=8814829:1790843269|SOLAL-2.jpg=9219393:1790843269|ov={}|num={}|fmt=3",
-    "photos": [
-      {
-        "file": "01-visage.jpg",
-        "thumb": "thumb.jpg",
-        "type": "visage",
-        "source": "SOLAL-1.jpg"
-      },
-      {
-        "file": "02-plein-pied.jpg",
-        "thumb": "thumb-02.jpg",
-        "type": "plein-pied",
-        "source": "SOLAL-2.jpg"
-      }
-    ],
-    "warnings": []
-  },
-  "enfants-garcon-victor": {
-    "signature": "VICTOR-1.jpg=9143090:1790845264|VICTOR-2.jpg=8791097:1790845277|ov={}|num={}|fmt=3",
-    "photos": [
-      {
-        "file": "01-visage.jpg",
-        "thumb": "thumb.jpg",
-        "type": "visage",
-        "source": "VICTOR-1.jpg"
-      },
-      {
-        "file": "02-plein-pied.jpg",
-        "thumb": "thumb-02.jpg",
-        "type": "plein-pied",
-        "source": "VICTOR-2.jpg"
-      }
-    ],
-    "warnings": []
-  },
-  "enfants-garcon-aylan": {
-    "signature": "AYLAN-1.jpg=9547437:1790845027|AYLAN-2.jpg=9263577:1790868919|ov={}|num={}|fmt=3",
+    "signature": "LIAM-1.jpg=6772679:1790961250|LIAM-2.jpg=8985447:1790961250|LIAM-3.jpg=8631260:1790961255|ov={}|num={}|fmt=3",
     "photos": [
       {
         "file": "01-profil.jpg",
         "thumb": "thumb.jpg",
         "type": "profil",
-        "source": "AYLAN-1.jpg"
+        "source": "LIAM-1.jpg"
       },
       {
-        "file": "02-plein-pied.jpg",
+        "file": "02-visage.jpg",
         "thumb": "thumb-02.jpg",
+        "type": "visage",
+        "source": "LIAM-2.jpg"
+      },
+      {
+        "file": "03-plein-pied.jpg",
+        "thumb": "thumb-03.jpg",
         "type": "plein-pied",
-        "source": "AYLAN-2.jpg"
+        "source": "LIAM-3.jpg"
+      }
+    ],
+    "warnings": []
+  },
+  "enfants-garcon-jules": {
+    "signature": "JULES_1.jpg=7441900:1790961262|JULES_2.jpg=9650096:1790961262|JULES_3.jpg=8534641:1790961262|ov={}|num={}|fmt=3",
+    "photos": [
+      {
+        "file": "01-visage.jpg",
+        "thumb": "thumb.jpg",
+        "type": "visage",
+        "source": "JULES_1.jpg"
+      },
+      {
+        "file": "02-profil.jpg",
+        "thumb": "thumb-02.jpg",
+        "type": "profil",
+        "source": "JULES_2.jpg"
+      },
+      {
+        "file": "03-plein-pied.jpg",
+        "thumb": "thumb-03.jpg",
+        "type": "plein-pied",
+        "source": "JULES_3.jpg"
+      }
+    ],
+    "warnings": []
+  },
+  "enfants-garcon-benjamin": {
+    "signature": "BENJAMIN_1.jpg=6740599:1790961273|BENJAMIN_2.jpg=8998037:1790961273|BENJAMIN_3.jpg=8602862:1790961273|ov={}|num={}|fmt=3",
+    "photos": [
+      {
+        "file": "01-visage.jpg",
+        "thumb": "thumb.jpg",
+        "type": "visage",
+        "source": "BENJAMIN_1.jpg"
+      },
+      {
+        "file": "02-profil.jpg",
+        "thumb": "thumb-02.jpg",
+        "type": "profil",
+        "source": "BENJAMIN_2.jpg"
+      },
+      {
+        "file": "03-plein-pied.jpg",
+        "thumb": "thumb-03.jpg",
+        "type": "plein-pied",
+        "source": "BENJAMIN_3.jpg"
+      }
+    ],
+    "warnings": []
+  },
+  "enfants-garcon-solal": {
+    "signature": "SOLAL_1.jpg=7174304:1790961281|SOLAL_2.jpg=8814829:1790961281|SOLAL_3.jpg=9219393:1790961281|ov={}|num={}|fmt=3",
+    "photos": [
+      {
+        "file": "01-visage.jpg",
+        "thumb": "thumb.jpg",
+        "type": "visage",
+        "source": "SOLAL_1.jpg"
+      },
+      {
+        "file": "02-profil.jpg",
+        "thumb": "thumb-02.jpg",
+        "type": "profil",
+        "source": "SOLAL_2.jpg"
+      },
+      {
+        "file": "03-plein-pied.jpg",
+        "thumb": "thumb-03.jpg",
+        "type": "plein-pied",
+        "source": "SOLAL_3.jpg"
+      }
+    ],
+    "warnings": []
+  },
+  "enfants-garcon-victor": {
+    "signature": "VICTOR_1.jpg=6833327:1790961288|VICTOR_2.jpg=9143090:1790961288|VICTOR_3.jpg=8791097:1790961288|ov={}|num={}|fmt=3",
+    "photos": [
+      {
+        "file": "01-profil.jpg",
+        "thumb": "thumb.jpg",
+        "type": "profil",
+        "source": "VICTOR_1.jpg"
+      },
+      {
+        "file": "02-visage.jpg",
+        "thumb": "thumb-02.jpg",
+        "type": "visage",
+        "source": "VICTOR_2.jpg"
+      },
+      {
+        "file": "03-plein-pied.jpg",
+        "thumb": "thumb-03.jpg",
+        "type": "plein-pied",
+        "source": "VICTOR_3.jpg"
+      }
+    ],
+    "warnings": []
+  },
+  "enfants-garcon-aylan": {
+    "signature": "AYLAN_1.jpg=6919339:1790961294|AYLAN_2.jpg=9547437:1790961294|AYLAN_3.jpg=9263577:1790961294|ov={}|num={}|fmt=3",
+    "photos": [
+      {
+        "file": "01-visage.jpg",
+        "thumb": "thumb.jpg",
+        "type": "visage",
+        "source": "AYLAN_1.jpg"
+      },
+      {
+        "file": "02-profil.jpg",
+        "thumb": "thumb-02.jpg",
+        "type": "profil",
+        "source": "AYLAN_2.jpg"
+      },
+      {
+        "file": "03-plein-pied.jpg",
+        "thumb": "thumb-03.jpg",
+        "type": "plein-pied",
+        "source": "AYLAN_3.jpg"
       }
     ],
     "warnings": []
   },
   "enfants-garcon-shai": {
-    "signature": "SHAI-1.jpg=9689990:1790845004|SHAI-2.jpg=8730672:1790845004|ov={}|num={}|fmt=3",
+    "signature": "SHAI_1.jpg=7996975:1790961300|SHAI_2.jpg=9689990:1790961300|SHAI_3.jpg=8730672:1790961300|ov={}|num={}|fmt=3",
     "photos": [
       {
         "file": "01-visage.jpg",
         "thumb": "thumb.jpg",
         "type": "visage",
-        "source": "SHAI-1.jpg"
+        "source": "SHAI_1.jpg"
       },
       {
-        "file": "02-plein-pied.jpg",
+        "file": "02-profil.jpg",
         "thumb": "thumb-02.jpg",
+        "type": "profil",
+        "source": "SHAI_2.jpg"
+      },
+      {
+        "file": "03-plein-pied.jpg",
+        "thumb": "thumb-03.jpg",
         "type": "plein-pied",
-        "source": "SHAI-2.jpg"
+        "source": "SHAI_3.jpg"
       }
     ],
     "warnings": []
   },
   "enfants-garcon-diego": {
-    "signature": "DIEGO-1.jpg=9359350:1790845415|DIEGO-2.jpg=8836800:1790868950|ov={}|num={}|fmt=3",
+    "signature": "DIEGO_1.jpg=7689815:1790961316|DIEGO_2.jpg=9359350:1790961316|DIEGO_3.jpg=8836800:1790961316|ov={}|num={}|fmt=3",
     "photos": [
       {
         "file": "01-visage.jpg",
         "thumb": "thumb.jpg",
         "type": "visage",
-        "source": "DIEGO-1.jpg"
+        "source": "DIEGO_1.jpg"
       },
       {
-        "file": "02-plein-pied.jpg",
+        "file": "02-profil.jpg",
         "thumb": "thumb-02.jpg",
+        "type": "profil",
+        "source": "DIEGO_2.jpg"
+      },
+      {
+        "file": "03-plein-pied.jpg",
+        "thumb": "thumb-03.jpg",
         "type": "plein-pied",
-        "source": "DIEGO-2.jpg"
+        "source": "DIEGO_3.jpg"
       }
     ],
     "warnings": []
   },
   "enfants-garcon-idris": {
-    "signature": "IDRIS-1.jpg=9444504:1790845056|IDRIS-2.jpg=8922351:1790845056|ov={}|num={}|fmt=3",
+    "signature": "IDRIS_1.jpg=6835531:1790961322|IDRIS_2.jpg=9444504:1790961322|IDRIS_3.jpg=8922351:1790961322|ov={}|num={}|fmt=3",
     "photos": [
       {
         "file": "01-visage.jpg",
         "thumb": "thumb.jpg",
         "type": "visage",
-        "source": "IDRIS-1.jpg"
+        "source": "IDRIS_1.jpg"
       },
       {
-        "file": "02-plein-pied.jpg",
+        "file": "02-profil.jpg",
         "thumb": "thumb-02.jpg",
+        "type": "profil",
+        "source": "IDRIS_2.jpg"
+      },
+      {
+        "file": "03-plein-pied.jpg",
+        "thumb": "thumb-03.jpg",
         "type": "plein-pied",
-        "source": "IDRIS-2.jpg"
+        "source": "IDRIS_3.jpg"
       }
     ],
     "warnings": []
   },
   "enfants-garcon-eliott": {
-    "signature": "ELIOTT-1.jpg=9394140:1790845087|ELIOTT-2.jpg=9127144:1790845087|ov={}|num={}|fmt=3",
+    "signature": "ELIOTT_1.jpg=6630278:1790961328|ELIOTT_2.jpg=9394140:1790961328|ELIOTT_3.jpg=9127144:1790961328|ov={}|num={}|fmt=3",
     "photos": [
       {
         "file": "01-visage.jpg",
         "thumb": "thumb.jpg",
         "type": "visage",
-        "source": "ELIOTT-1.jpg"
+        "source": "ELIOTT_1.jpg"
       },
       {
-        "file": "02-plein-pied.jpg",
+        "file": "02-profil.jpg",
         "thumb": "thumb-02.jpg",
+        "type": "profil",
+        "source": "ELIOTT_2.jpg"
+      },
+      {
+        "file": "03-plein-pied.jpg",
+        "thumb": "thumb-03.jpg",
         "type": "plein-pied",
-        "source": "ELIOTT-2.jpg"
+        "source": "ELIOTT_3.jpg"
       }
     ],
     "warnings": []
   },
   "enfants-garcon-jaden": {
-    "signature": "JADEN-1.jpg=8613718:1790871218|JADEN-2.jpg=8823067:1790871218|ov={}|num={}|fmt=3",
+    "signature": "JADEN_1.jpg=6770218:1790961335|JADEN_2.jpg=8613718:1790961335|JADEN_3.jpg=8823067:1790961335|ov={}|num={}|fmt=3",
     "photos": [
       {
         "file": "01-visage.jpg",
         "thumb": "thumb.jpg",
         "type": "visage",
-        "source": "JADEN-1.jpg"
+        "source": "JADEN_1.jpg"
       },
       {
-        "file": "02-plein-pied.jpg",
+        "file": "02-profil.jpg",
         "thumb": "thumb-02.jpg",
+        "type": "profil",
+        "source": "JADEN_2.jpg"
+      },
+      {
+        "file": "03-plein-pied.jpg",
+        "thumb": "thumb-03.jpg",
         "type": "plein-pied",
-        "source": "JADEN-2.jpg"
+        "source": "JADEN_3.jpg"
       }
     ],
     "warnings": []
@@ -1741,6 +1925,174 @@
     ],
     "warnings": []
   },
+  "femmes-40-50-ans-sandrine": {
+    "signature": "SANDRINE-1.jpg=7244320:1790947104|SANDRINE-2.jpg=9427148:1790947104|SANDRINE-3.jpg=7200637:1790947104|ov={}|num={}|fmt=3",
+    "photos": [
+      {
+        "file": "01-profil.jpg",
+        "thumb": "thumb.jpg",
+        "type": "profil",
+        "source": "SANDRINE-1.jpg"
+      },
+      {
+        "file": "02-visage.jpg",
+        "thumb": "thumb-02.jpg",
+        "type": "visage",
+        "source": "SANDRINE-2.jpg"
+      },
+      {
+        "file": "03-plein-pied.jpg",
+        "thumb": "thumb-03.jpg",
+        "type": "plein-pied",
+        "source": "SANDRINE-3.jpg"
+      }
+    ],
+    "warnings": []
+  },
+  "femmes-40-50-ans-sophie": {
+    "signature": "SOPHIE-1.jpg=8080853:1790947226|SOPHIE-2.jpg=10086413:1790947238|SOPHIE-3.jpg=8299810:1790959650|ov={}|num={}|fmt=3",
+    "photos": [
+      {
+        "file": "01-visage.jpg",
+        "thumb": "thumb.jpg",
+        "type": "visage",
+        "source": "SOPHIE-1.jpg"
+      },
+      {
+        "file": "02-profil.jpg",
+        "thumb": "thumb-02.jpg",
+        "type": "profil",
+        "source": "SOPHIE-2.jpg"
+      },
+      {
+        "file": "03-plein-pied.jpg",
+        "thumb": "thumb-03.jpg",
+        "type": "plein-pied",
+        "source": "SOPHIE-3.jpg"
+      }
+    ],
+    "warnings": []
+  },
+  "femmes-40-50-ans-valerie": {
+    "signature": "VALERIE-1.jpg=7485172:1790947182|VALERIE-2.jpg=9680726:1790947182|VALERIE-3.jpg=7649431:1790947182|ov={}|num={}|fmt=3",
+    "photos": [
+      {
+        "file": "01-profil.jpg",
+        "thumb": "thumb.jpg",
+        "type": "profil",
+        "source": "VALERIE-1.jpg"
+      },
+      {
+        "file": "02-visage.jpg",
+        "thumb": "thumb-02.jpg",
+        "type": "visage",
+        "source": "VALERIE-2.jpg"
+      },
+      {
+        "file": "03-plein-pied.jpg",
+        "thumb": "thumb-03.jpg",
+        "type": "plein-pied",
+        "source": "VALERIE-3.jpg"
+      }
+    ],
+    "warnings": []
+  },
+  "femmes-40-50-ans-nathalie": {
+    "signature": "NATHALIE-1.jpg=8369665:1790957572|NATHALIE-2.jpg=9205995:1790957572|NATHALIE-3.jpg=8562985:1790957572|ov={}|num={}|fmt=3",
+    "photos": [
+      {
+        "file": "01-visage.jpg",
+        "thumb": "thumb.jpg",
+        "type": "visage",
+        "source": "NATHALIE-1.jpg"
+      },
+      {
+        "file": "02-profil.jpg",
+        "thumb": "thumb-02.jpg",
+        "type": "profil",
+        "source": "NATHALIE-2.jpg"
+      },
+      {
+        "file": "03-plein-pied.jpg",
+        "thumb": "thumb-03.jpg",
+        "type": "plein-pied",
+        "source": "NATHALIE-3.jpg"
+      }
+    ],
+    "warnings": []
+  },
+  "femmes-40-50-ans-isabelle": {
+    "signature": "ISABELLE-1.jpg=8230416:1790955701|ISABELLE-2.jpg=10041981:1790955701|ISABELLE-3.jpg=8792565:1790955701|ov={}|num={}|fmt=3",
+    "photos": [
+      {
+        "file": "01-visage.jpg",
+        "thumb": "thumb.jpg",
+        "type": "visage",
+        "source": "ISABELLE-1.jpg"
+      },
+      {
+        "file": "02-profil.jpg",
+        "thumb": "thumb-02.jpg",
+        "type": "profil",
+        "source": "ISABELLE-2.jpg"
+      },
+      {
+        "file": "03-plein-pied.jpg",
+        "thumb": "thumb-03.jpg",
+        "type": "plein-pied",
+        "source": "ISABELLE-3.jpg"
+      }
+    ],
+    "warnings": []
+  },
+  "femmes-40-50-ans-simone": {
+    "signature": "SIMONE-1.jpg=7049795:1790957857|SIMONE-2.jpg=8450271:1790957857|SIMONE-3.jpg=7080412:1790957857|ov={}|num={}|fmt=3",
+    "photos": [
+      {
+        "file": "01-visage.jpg",
+        "thumb": "thumb.jpg",
+        "type": "visage",
+        "source": "SIMONE-1.jpg"
+      },
+      {
+        "file": "02-profil.jpg",
+        "thumb": "thumb-02.jpg",
+        "type": "profil",
+        "source": "SIMONE-2.jpg"
+      },
+      {
+        "file": "03-plein-pied.jpg",
+        "thumb": "thumb-03.jpg",
+        "type": "plein-pied",
+        "source": "SIMONE-3.jpg"
+      }
+    ],
+    "warnings": []
+  },
+  "femmes-40-50-ans-sylvie": {
+    "signature": "SYLVIE-1.jpg=7150085:1790957281|SYLVIE-2.jpg=9274415:1790957281|SYLVIE-3.jpg=7962544:1790957281|ov={}|num={}|fmt=3",
+    "photos": [
+      {
+        "file": "01-visage.jpg",
+        "thumb": "thumb.jpg",
+        "type": "visage",
+        "source": "SYLVIE-1.jpg"
+      },
+      {
+        "file": "02-profil.jpg",
+        "thumb": "thumb-02.jpg",
+        "type": "profil",
+        "source": "SYLVIE-2.jpg"
+      },
+      {
+        "file": "03-plein-pied.jpg",
+        "thumb": "thumb-03.jpg",
+        "type": "plein-pied",
+        "source": "SYLVIE-3.jpg"
+      }
+    ],
+    "warnings": []
+  },
   "hommes-20-30-ans-adrien": {
     "signature": "ADRIEN-1.jpg=7195345:1790697357|ADRIEN-2.jpg=8755819:1790697357|ADRIEN-3.jpg=8356223:1790697357|ov={}|num={}|fmt=3",
     "photos": [
@@ -2327,15 +2679,19 @@
         "source": "MAXENCE-1.jpg"
       },
       {
-        "file": "02-plein-pied.jpg",
+        "file": "02-profil.jpg",
         "thumb": "thumb-02.jpg",
+        "type": "profil",
+        "source": "MAXENCE-2.jpg"
+      },
+      {
+        "file": "03-plein-pied.jpg",
+        "thumb": "thumb-03.jpg",
         "type": "plein-pied",
         "source": "MAXENCE-3.jpg"
       }
     ],
-    "warnings": [
-      "MAXENCE-2.jpg: illisible ([Errno 22] Invalid argument)"
-    ]
+    "warnings": []
   },
   "hommes-20-30-ans-bastien": {
     "signature": "BASTIEN-1.jpg=6623148:1790697698|BASTIEN-2.jpg=8507327:1790697698|BASTIEN-3.jpg=7090547:1790697698|ov={}|num={}|fmt=3",
@@ -2389,21 +2745,25 @@
     "signature": "SAMY-1.jpg=6966057:1790697717|SAMY-2.jpg=9825169:1790697717|SAMY-3.jpg=8504693:1790697717|ov={}|num={}|fmt=3",
     "photos": [
       {
-        "file": "01-visage.jpg",
+        "file": "01-profil.jpg",
         "thumb": "thumb.jpg",
-        "type": "visage",
+        "type": "profil",
         "source": "SAMY-1.jpg"
       },
       {
-        "file": "02-plein-pied.jpg",
+        "file": "02-visage.jpg",
         "thumb": "thumb-02.jpg",
+        "type": "visage",
+        "source": "SAMY-2.jpg"
+      },
+      {
+        "file": "03-plein-pied.jpg",
+        "thumb": "thumb-03.jpg",
         "type": "plein-pied",
         "source": "SAMY-3.jpg"
       }
     ],
-    "warnings": [
-      "SAMY-2.jpg: illisible ([Errno 22] Invalid argument)"
-    ]
+    "warnings": []
   },
   "hommes-20-30-ans-theo": {
     "signature": "THEO-1.jpg=6793520:1790697726|THEO-2.jpg=8752670:1790697726|THEO-3.jpg=8419037:1790697726|ov={}|num={}|fmt=3",

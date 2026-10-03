@@ -1,6 +1,6 @@
 {
-  "generated": "2026-10-02",
-  "count": 127,
+  "generated": "2026-10-03",
+  "count": 134,
   "filters": {
     "genre": [
       "Femme",
@@ -1110,6 +1110,188 @@
       ]
     },
     {
+      "id": "femmes-40-50-ans-sandrine",
+      "prenom": "Sandrine",
+      "genre": "Femme",
+      "sexe": "Femme",
+      "age": "40-50 ans",
+      "ageMin": 40,
+      "ageMax": 50,
+      "ordre": 1,
+      "thumb": "mannequins/femmes/40-50-ans/sandrine/thumb.jpg",
+      "photos": [
+        "mannequins/femmes/40-50-ans/sandrine/01-profil.jpg",
+        "mannequins/femmes/40-50-ans/sandrine/02-visage.jpg",
+        "mannequins/femmes/40-50-ans/sandrine/03-plein-pied.jpg"
+      ],
+      "thumbs": [
+        "mannequins/femmes/40-50-ans/sandrine/thumb.jpg",
+        "mannequins/femmes/40-50-ans/sandrine/thumb-02.jpg",
+        "mannequins/femmes/40-50-ans/sandrine/thumb-03.jpg"
+      ],
+      "types": [
+        "profil",
+        "visage",
+        "plein-pied"
+      ]
+    },
+    {
+      "id": "femmes-40-50-ans-sophie",
+      "prenom": "Sophie",
+      "genre": "Femme",
+      "sexe": "Femme",
+      "age": "40-50 ans",
+      "ageMin": 40,
+      "ageMax": 50,
+      "ordre": 2,
+      "thumb": "mannequins/femmes/40-50-ans/sophie/thumb.jpg",
+      "photos": [
+        "mannequins/femmes/40-50-ans/sophie/01-visage.jpg",
+        "mannequins/femmes/40-50-ans/sophie/02-profil.jpg",
+        "mannequins/femmes/40-50-ans/sophie/03-plein-pied.jpg"
+      ],
+      "thumbs": [
+        "mannequins/femmes/40-50-ans/sophie/thumb.jpg",
+        "mannequins/femmes/40-50-ans/sophie/thumb-02.jpg",
+        "mannequins/femmes/40-50-ans/sophie/thumb-03.jpg"
+      ],
+      "types": [
+        "visage",
+        "profil",
+        "plein-pied"
+      ]
+    },
+    {
+      "id": "femmes-40-50-ans-valerie",
+      "prenom": "Valerie",
+      "genre": "Femme",
+      "sexe": "Femme",
+      "age": "40-50 ans",
+      "ageMin": 40,
+      "ageMax": 50,
+      "ordre": 3,
+      "thumb": "mannequins/femmes/40-50-ans/valerie/thumb.jpg",
+      "photos": [
+        "mannequins/femmes/40-50-ans/valerie/01-profil.jpg",
+        "mannequins/femmes/40-50-ans/valerie/02-visage.jpg",
+        "mannequins/femmes/40-50-ans/valerie/03-plein-pied.jpg"
+      ],
+      "thumbs": [
+        "mannequins/femmes/40-50-ans/valerie/thumb.jpg",
+        "mannequins/femmes/40-50-ans/valerie/thumb-02.jpg",
+        "mannequins/femmes/40-50-ans/valerie/thumb-03.jpg"
+      ],
+      "types": [
+        "profil",
+        "visage",
+        "plein-pied"
+      ]
+    },
+    {
+      "id": "femmes-40-50-ans-nathalie",
+      "prenom": "Nathalie",
+      "genre": "Femme",
+      "sexe": "Femme",
+      "age": "40-50 ans",
+      "ageMin": 40,
+      "ageMax": 50,
+      "ordre": 4,
+      "thumb": "mannequins/femmes/40-50-ans/nathalie/thumb.jpg",
+      "photos": [
+        "mannequins/femmes/40-50-ans/nathalie/01-visage.jpg",
+        "mannequins/femmes/40-50-ans/nathalie/02-profil.jpg",
+        "mannequins/femmes/40-50-ans/nathalie/03-plein-pied.jpg"
+      ],
+      "thumbs": [
+        "mannequins/femmes/40-50-ans/nathalie/thumb.jpg",
+        "mannequins/femmes/40-50-ans/nathalie/thumb-02.jpg",
+        "mannequins/femmes/40-50-ans/nathalie/thumb-03.jpg"
+      ],
+      "types": [
+        "visage",
+        "profil",
+        "plein-pied"
+      ]
+    },
+    {
+      "id": "femmes-40-50-ans-isabelle",
+      "prenom": "Isabelle",
+      "genre": "Femme",
+      "sexe": "Femme",
+      "age": "40-50 ans",
+      "ageMin": 40,
+      "ageMax": 50,
+      "ordre": 5,
+      "thumb": "mannequins/femmes/40-50-ans/isabelle/thumb.jpg",
+      "photos": [
+        "mannequins/femmes/40-50-ans/isabelle/01-visage.jpg",
+        "mannequins/femmes/40-50-ans/isabelle/02-profil.jpg",
+        "mannequins/femmes/40-50-ans/isabelle/03-plein-pied.jpg"
+      ],
+      "thumbs": [
+        "mannequins/femmes/40-50-ans/isabelle/thumb.jpg",
+        "mannequins/femmes/40-50-ans/isabelle/thumb-02.jpg",
+        "mannequins/femmes/40-50-ans/isabelle/thumb-03.jpg"
+      ],
+      "types": [
+        "visage",
+        "profil",
+        "plein-pied"
+      ]
+    },
+    {
+      "id": "femmes-40-50-ans-simone",
+      "prenom": "Simone",
+      "genre": "Femme",
+      "sexe": "Femme",
+      "age": "40-50 ans",
+      "ageMin": 40,
+      "ageMax": 50,
+      "ordre": 6,
+      "thumb": "mannequins/femmes/40-50-ans/simone/thumb.jpg",
+      "photos": [
+        "mannequins/femmes/40-50-ans/simone/01-visage.jpg",
+        "mannequins/femmes/40-50-ans/simone/02-profil.jpg",
+        "mannequins/femmes/40-50-ans/simone/03-plein-pied.jpg"
+      ],
+      "thumbs": [
+        "mannequins/femmes/40-50-ans/simone/thumb.jpg",
+        "mannequins/femmes/40-50-ans/simone/thumb-02.jpg",
+        "mannequins/femmes/40-50-ans/simone/thumb-03.jpg"
+      ],
+      "types": [
+        "visage",
+        "profil",
+        "plein-pied"
+      ]
+    },
+    {
+      "id": "femmes-40-50-ans-sylvie",
+      "prenom": "Sylvie",
+      "genre": "Femme",
+      "sexe": "Femme",
+      "age": "40-50 ans",
+      "ageMin": 40,
+      "ageMax": 50,
+      "ordre": 7,
+      "thumb": "mannequins/femmes/40-50-ans/sylvie/thumb.jpg",
+      "photos": [
+        "mannequins/femmes/40-50-ans/sylvie/01-visage.jpg",
+        "mannequins/femmes/40-50-ans/sylvie/02-profil.jpg",
+        "mannequins/femmes/40-50-ans/sylvie/03-plein-pied.jpg"
+      ],
+      "thumbs": [
+        "mannequins/femmes/40-50-ans/sylvie/thumb.jpg",
+        "mannequins/femmes/40-50-ans/sylvie/thumb-02.jpg",
+        "mannequins/femmes/40-50-ans/sylvie/thumb-03.jpg"
+      ],
+      "types": [
+        "visage",
+        "profil",
+        "plein-pied"
+      ]
+    },
+    {
       "id": "femmes-plus-size-lola",
       "prenom": "Lola",
       "genre": "Femme",
@@ -1849,14 +2031,17 @@
       "thumb": "mannequins/hommes/20-30-ans/maxence/thumb.jpg",
       "photos": [
         "mannequins/hommes/20-30-ans/maxence/01-visage.jpg",
-        "mannequins/hommes/20-30-ans/maxence/02-plein-pied.jpg"
+        "mannequins/hommes/20-30-ans/maxence/02-profil.jpg",
+        "mannequins/hommes/20-30-ans/maxence/03-plein-pied.jpg"
       ],
       "thumbs": [
         "mannequins/hommes/20-30-ans/maxence/thumb.jpg",
-        "mannequins/hommes/20-30-ans/maxence/thumb-02.jpg"
+        "mannequins/hommes/20-30-ans/maxence/thumb-02.jpg",
+        "mannequins/hommes/20-30-ans/maxence/thumb-03.jpg"
       ],
       "types": [
         "visage",
+        "profil",
         "plein-pied"
       ]
     },
@@ -1923,14 +2108,17 @@
       "ordre": 28,
       "thumb": "mannequins/hommes/20-30-ans/samy/thumb.jpg",
       "photos": [
-        "mannequins/hommes/20-30-ans/samy/01-visage.jpg",
-        "mannequins/hommes/20-30-ans/samy/02-plein-pied.jpg"
+        "mannequins/hommes/20-30-ans/samy/01-profil.jpg",
+        "mannequins/hommes/20-30-ans/samy/02-visage.jpg",
+        "mannequins/hommes/20-30-ans/samy/03-plein-pied.jpg"
       ],
       "thumbs": [
         "mannequins/hommes/20-30-ans/samy/thumb.jpg",
-        "mannequins/hommes/20-30-ans/samy/thumb-02.jpg"
+        "mannequins/hommes/20-30-ans/samy/thumb-02.jpg",
+        "mannequins/hommes/20-30-ans/samy/thumb-03.jpg"
       ],
       "types": [
+        "profil",
         "visage",
         "plein-pied"
       ]
@@ -2518,12 +2706,15 @@
       "ordre": 1,
       "thumb": "mannequins/enfants/bebe/milan/thumb.jpg",
       "photos": [
-        "mannequins/enfants/bebe/milan/01-visage.jpg"
+        "mannequins/enfants/bebe/milan/01-profil.jpg",
+        "mannequins/enfants/bebe/milan/02-visage.jpg"
       ],
       "thumbs": [
-        "mannequins/enfants/bebe/milan/thumb.jpg"
+        "mannequins/enfants/bebe/milan/thumb.jpg",
+        "mannequins/enfants/bebe/milan/thumb-02.jpg"
       ],
       "types": [
+        "profil",
         "visage"
       ]
     },
@@ -2538,12 +2729,15 @@
       "ordre": 2,
       "thumb": "mannequins/enfants/bebe/luna/thumb.jpg",
       "photos": [
-        "mannequins/enfants/bebe/luna/01-visage.jpg"
+        "mannequins/enfants/bebe/luna/01-profil.jpg",
+        "mannequins/enfants/bebe/luna/02-visage.jpg"
       ],
       "thumbs": [
-        "mannequins/enfants/bebe/luna/thumb.jpg"
+        "mannequins/enfants/bebe/luna/thumb.jpg",
+        "mannequins/enfants/bebe/luna/thumb-02.jpg"
       ],
       "types": [
+        "profil",
         "visage"
       ]
     },
@@ -2558,12 +2752,15 @@
       "ordre": 3,
       "thumb": "mannequins/enfants/bebe/joy/thumb.jpg",
       "photos": [
-        "mannequins/enfants/bebe/joy/01-visage.jpg"
+        "mannequins/enfants/bebe/joy/01-profil.jpg",
+        "mannequins/enfants/bebe/joy/02-visage.jpg"
       ],
       "thumbs": [
-        "mannequins/enfants/bebe/joy/thumb.jpg"
+        "mannequins/enfants/bebe/joy/thumb.jpg",
+        "mannequins/enfants/bebe/joy/thumb-02.jpg"
       ],
       "types": [
+        "profil",
         "visage"
       ]
     },
@@ -2579,15 +2776,18 @@
       "thumb": "mannequins/enfants/bebe/augustin/thumb.jpg",
       "photos": [
         "mannequins/enfants/bebe/augustin/01-visage.jpg",
-        "mannequins/enfants/bebe/augustin/02-profil.jpg"
+        "mannequins/enfants/bebe/augustin/02-profil.jpg",
+        "mannequins/enfants/bebe/augustin/03-visage-2.jpg"
       ],
       "thumbs": [
         "mannequins/enfants/bebe/augustin/thumb.jpg",
-        "mannequins/enfants/bebe/augustin/thumb-02.jpg"
+        "mannequins/enfants/bebe/augustin/thumb-02.jpg",
+        "mannequins/enfants/bebe/augustin/thumb-03.jpg"
       ],
       "types": [
         "visage",
-        "profil"
+        "profil",
+        "visage"
       ]
     },
     {
@@ -2601,14 +2801,17 @@
       "ordre": 5,
       "thumb": "mannequins/enfants/bebe/alia/thumb.jpg",
       "photos": [
-        "mannequins/enfants/bebe/alia/01-plein-pied.jpg",
-        "mannequins/enfants/bebe/alia/02-plein-pied-2.jpg"
+        "mannequins/enfants/bebe/alia/01-visage.jpg",
+        "mannequins/enfants/bebe/alia/02-plein-pied.jpg",
+        "mannequins/enfants/bebe/alia/03-plein-pied-2.jpg"
       ],
       "thumbs": [
         "mannequins/enfants/bebe/alia/thumb.jpg",
-        "mannequins/enfants/bebe/alia/thumb-02.jpg"
+        "mannequins/enfants/bebe/alia/thumb-02.jpg",
+        "mannequins/enfants/bebe/alia/thumb-03.jpg"
       ],
       "types": [
+        "visage",
         "plein-pied",
         "plein-pied"
       ]
@@ -2625,14 +2828,17 @@
       "thumb": "mannequins/enfants/fille/jeanne/thumb.jpg",
       "photos": [
         "mannequins/enfants/fille/jeanne/01-visage.jpg",
-        "mannequins/enfants/fille/jeanne/02-plein-pied.jpg"
+        "mannequins/enfants/fille/jeanne/02-profil.jpg",
+        "mannequins/enfants/fille/jeanne/03-plein-pied.jpg"
       ],
       "thumbs": [
         "mannequins/enfants/fille/jeanne/thumb.jpg",
-        "mannequins/enfants/fille/jeanne/thumb-02.jpg"
+        "mannequins/enfants/fille/jeanne/thumb-02.jpg",
+        "mannequins/enfants/fille/jeanne/thumb-03.jpg"
       ],
       "types": [
         "visage",
+        "profil",
         "plein-pied"
       ]
     },
@@ -2648,14 +2854,17 @@
       "thumb": "mannequins/enfants/fille/zoe/thumb.jpg",
       "photos": [
         "mannequins/enfants/fille/zoe/01-visage.jpg",
-        "mannequins/enfants/fille/zoe/02-plein-pied.jpg"
+        "mannequins/enfants/fille/zoe/02-profil.jpg",
+        "mannequins/enfants/fille/zoe/03-plein-pied.jpg"
       ],
       "thumbs": [
         "mannequins/enfants/fille/zoe/thumb.jpg",
-        "mannequins/enfants/fille/zoe/thumb-02.jpg"
+        "mannequins/enfants/fille/zoe/thumb-02.jpg",
+        "mannequins/enfants/fille/zoe/thumb-03.jpg"
       ],
       "types": [
         "visage",
+        "profil",
         "plein-pied"
       ]
     },
@@ -2671,14 +2880,17 @@
       "thumb": "mannequins/enfants/fille/alice/thumb.jpg",
       "photos": [
         "mannequins/enfants/fille/alice/01-visage.jpg",
-        "mannequins/enfants/fille/alice/02-plein-pied.jpg"
+        "mannequins/enfants/fille/alice/02-profil.jpg",
+        "mannequins/enfants/fille/alice/03-plein-pied.jpg"
       ],
       "thumbs": [
         "mannequins/enfants/fille/alice/thumb.jpg",
-        "mannequins/enfants/fille/alice/thumb-02.jpg"
+        "mannequins/enfants/fille/alice/thumb-02.jpg",
+        "mannequins/enfants/fille/alice/thumb-03.jpg"
       ],
       "types": [
         "visage",
+        "profil",
         "plein-pied"
       ]
     },
@@ -2694,14 +2906,17 @@
       "thumb": "mannequins/enfants/fille/rose/thumb.jpg",
       "photos": [
         "mannequins/enfants/fille/rose/01-visage.jpg",
-        "mannequins/enfants/fille/rose/02-plein-pied.jpg"
+        "mannequins/enfants/fille/rose/02-profil.jpg",
+        "mannequins/enfants/fille/rose/03-plein-pied.jpg"
       ],
       "thumbs": [
         "mannequins/enfants/fille/rose/thumb.jpg",
-        "mannequins/enfants/fille/rose/thumb-02.jpg"
+        "mannequins/enfants/fille/rose/thumb-02.jpg",
+        "mannequins/enfants/fille/rose/thumb-03.jpg"
       ],
       "types": [
         "visage",
+        "profil",
         "plein-pied"
       ]
     },
@@ -2717,14 +2932,17 @@
       "thumb": "mannequins/enfants/fille/salome/thumb.jpg",
       "photos": [
         "mannequins/enfants/fille/salome/01-visage.jpg",
-        "mannequins/enfants/fille/salome/02-plein-pied.jpg"
+        "mannequins/enfants/fille/salome/02-profil.jpg",
+        "mannequins/enfants/fille/salome/03-plein-pied.jpg"
       ],
       "thumbs": [
         "mannequins/enfants/fille/salome/thumb.jpg",
-        "mannequins/enfants/fille/salome/thumb-02.jpg"
+        "mannequins/enfants/fille/salome/thumb-02.jpg",
+        "mannequins/enfants/fille/salome/thumb-03.jpg"
       ],
       "types": [
         "visage",
+        "profil",
         "plein-pied"
       ]
     },
@@ -2740,14 +2958,17 @@
       "thumb": "mannequins/enfants/fille/sofia/thumb.jpg",
       "photos": [
         "mannequins/enfants/fille/sofia/01-visage.jpg",
-        "mannequins/enfants/fille/sofia/02-plein-pied.jpg"
+        "mannequins/enfants/fille/sofia/02-profil.jpg",
+        "mannequins/enfants/fille/sofia/03-plein-pied.jpg"
       ],
       "thumbs": [
         "mannequins/enfants/fille/sofia/thumb.jpg",
-        "mannequins/enfants/fille/sofia/thumb-02.jpg"
+        "mannequins/enfants/fille/sofia/thumb-02.jpg",
+        "mannequins/enfants/fille/sofia/thumb-03.jpg"
       ],
       "types": [
         "visage",
+        "profil",
         "plein-pied"
       ]
     },
@@ -2763,13 +2984,16 @@
       "thumb": "mannequins/enfants/fille/lila/thumb.jpg",
       "photos": [
         "mannequins/enfants/fille/lila/01-visage.jpg",
-        "mannequins/enfants/fille/lila/02-profil.jpg"
+        "mannequins/enfants/fille/lila/02-visage-2.jpg",
+        "mannequins/enfants/fille/lila/03-profil.jpg"
       ],
       "thumbs": [
         "mannequins/enfants/fille/lila/thumb.jpg",
-        "mannequins/enfants/fille/lila/thumb-02.jpg"
+        "mannequins/enfants/fille/lila/thumb-02.jpg",
+        "mannequins/enfants/fille/lila/thumb-03.jpg"
       ],
       "types": [
+        "visage",
         "visage",
         "profil"
       ]
@@ -2786,14 +3010,17 @@
       "thumb": "mannequins/enfants/fille/thea/thumb.jpg",
       "photos": [
         "mannequins/enfants/fille/thea/01-visage.jpg",
-        "mannequins/enfants/fille/thea/02-plein-pied.jpg"
+        "mannequins/enfants/fille/thea/02-profil.jpg",
+        "mannequins/enfants/fille/thea/03-plein-pied.jpg"
       ],
       "thumbs": [
         "mannequins/enfants/fille/thea/thumb.jpg",
-        "mannequins/enfants/fille/thea/thumb-02.jpg"
+        "mannequins/enfants/fille/thea/thumb-02.jpg",
+        "mannequins/enfants/fille/thea/thumb-03.jpg"
       ],
       "types": [
         "visage",
+        "profil",
         "plein-pied"
       ]
     },
@@ -2808,13 +3035,19 @@
       "ordre": 9,
       "thumb": "mannequins/enfants/fille/romane/thumb.jpg",
       "photos": [
-        "mannequins/enfants/fille/romane/01-visage.jpg"
+        "mannequins/enfants/fille/romane/01-visage.jpg",
+        "mannequins/enfants/fille/romane/02-profil.jpg",
+        "mannequins/enfants/fille/romane/03-plein-pied.jpg"
       ],
       "thumbs": [
-        "mannequins/enfants/fille/romane/thumb.jpg"
+        "mannequins/enfants/fille/romane/thumb.jpg",
+        "mannequins/enfants/fille/romane/thumb-02.jpg",
+        "mannequins/enfants/fille/romane/thumb-03.jpg"
       ],
       "types": [
-        "visage"
+        "visage",
+        "profil",
+        "plein-pied"
       ]
     },
     {
@@ -2828,16 +3061,19 @@
       "ordre": 10,
       "thumb": "mannequins/enfants/fille/celia/thumb.jpg",
       "photos": [
-        "mannequins/enfants/fille/celia/01-plein-pied.jpg",
-        "mannequins/enfants/fille/celia/02-visage.jpg"
+        "mannequins/enfants/fille/celia/01-visage.jpg",
+        "mannequins/enfants/fille/celia/02-plein-pied.jpg",
+        "mannequins/enfants/fille/celia/03-profil.jpg"
       ],
       "thumbs": [
         "mannequins/enfants/fille/celia/thumb.jpg",
-        "mannequins/enfants/fille/celia/thumb-02.jpg"
+        "mannequins/enfants/fille/celia/thumb-02.jpg",
+        "mannequins/enfants/fille/celia/thumb-03.jpg"
       ],
       "types": [
+        "visage",
         "plein-pied",
-        "visage"
+        "profil"
       ]
     },
     {
@@ -2851,14 +3087,17 @@
       "ordre": 11,
       "thumb": "mannequins/enfants/fille/pauline/thumb.jpg",
       "photos": [
-        "mannequins/enfants/fille/pauline/01-visage.jpg",
-        "mannequins/enfants/fille/pauline/02-plein-pied.jpg"
+        "mannequins/enfants/fille/pauline/01-profil.jpg",
+        "mannequins/enfants/fille/pauline/02-visage.jpg",
+        "mannequins/enfants/fille/pauline/03-plein-pied.jpg"
       ],
       "thumbs": [
         "mannequins/enfants/fille/pauline/thumb.jpg",
-        "mannequins/enfants/fille/pauline/thumb-02.jpg"
+        "mannequins/enfants/fille/pauline/thumb-02.jpg",
+        "mannequins/enfants/fille/pauline/thumb-03.jpg"
       ],
       "types": [
+        "profil",
         "visage",
         "plein-pied"
       ]
@@ -2874,16 +3113,19 @@
       "ordre": 12,
       "thumb": "mannequins/enfants/fille/stella/thumb.jpg",
       "photos": [
-        "mannequins/enfants/fille/stella/01-visage.jpg",
-        "mannequins/enfants/fille/stella/02-plein-pied.jpg"
+        "mannequins/enfants/fille/stella/01-profil.jpg",
+        "mannequins/enfants/fille/stella/02-plein-pied.jpg",
+        "mannequins/enfants/fille/stella/03-visage.jpg"
       ],
       "thumbs": [
         "mannequins/enfants/fille/stella/thumb.jpg",
-        "mannequins/enfants/fille/stella/thumb-02.jpg"
+        "mannequins/enfants/fille/stella/thumb-02.jpg",
+        "mannequins/enfants/fille/stella/thumb-03.jpg"
       ],
       "types": [
-        "visage",
-        "plein-pied"
+        "profil",
+        "plein-pied",
+        "visage"
       ]
     },
     {
@@ -2898,14 +3140,17 @@
       "thumb": "mannequins/enfants/fille/sonia/thumb.jpg",
       "photos": [
         "mannequins/enfants/fille/sonia/01-visage.jpg",
-        "mannequins/enfants/fille/sonia/02-plein-pied.jpg"
+        "mannequins/enfants/fille/sonia/02-profil.jpg",
+        "mannequins/enfants/fille/sonia/03-plein-pied.jpg"
       ],
       "thumbs": [
         "mannequins/enfants/fille/sonia/thumb.jpg",
-        "mannequins/enfants/fille/sonia/thumb-02.jpg"
+        "mannequins/enfants/fille/sonia/thumb-02.jpg",
+        "mannequins/enfants/fille/sonia/thumb-03.jpg"
       ],
       "types": [
         "visage",
+        "profil",
         "plein-pied"
       ]
     },
@@ -2920,14 +3165,17 @@
       "ordre": 1,
       "thumb": "mannequins/enfants/garcon/nils/thumb.jpg",
       "photos": [
-        "mannequins/enfants/garcon/nils/01-visage.jpg",
-        "mannequins/enfants/garcon/nils/02-plein-pied.jpg"
+        "mannequins/enfants/garcon/nils/01-profil.jpg",
+        "mannequins/enfants/garcon/nils/02-visage.jpg",
+        "mannequins/enfants/garcon/nils/03-plein-pied.jpg"
       ],
       "thumbs": [
         "mannequins/enfants/garcon/nils/thumb.jpg",
-        "mannequins/enfants/garcon/nils/thumb-02.jpg"
+        "mannequins/enfants/garcon/nils/thumb-02.jpg",
+        "mannequins/enfants/garcon/nils/thumb-03.jpg"
       ],
       "types": [
+        "profil",
         "visage",
         "plein-pied"
       ]
@@ -2944,14 +3192,17 @@
       "thumb": "mannequins/enfants/garcon/enzo/thumb.jpg",
       "photos": [
         "mannequins/enfants/garcon/enzo/01-visage.jpg",
-        "mannequins/enfants/garcon/enzo/02-plein-pied.jpg"
+        "mannequins/enfants/garcon/enzo/02-profil.jpg",
+        "mannequins/enfants/garcon/enzo/03-plein-pied.jpg"
       ],
       "thumbs": [
         "mannequins/enfants/garcon/enzo/thumb.jpg",
-        "mannequins/enfants/garcon/enzo/thumb-02.jpg"
+        "mannequins/enfants/garcon/enzo/thumb-02.jpg",
+        "mannequins/enfants/garcon/enzo/thumb-03.jpg"
       ],
       "types": [
         "visage",
+        "profil",
         "plein-pied"
       ]
     },
@@ -2966,14 +3217,17 @@
       "ordre": 3,
       "thumb": "mannequins/enfants/garcon/liam/thumb.jpg",
       "photos": [
-        "mannequins/enfants/garcon/liam/01-visage.jpg",
-        "mannequins/enfants/garcon/liam/02-plein-pied.jpg"
+        "mannequins/enfants/garcon/liam/01-profil.jpg",
+        "mannequins/enfants/garcon/liam/02-visage.jpg",
+        "mannequins/enfants/garcon/liam/03-plein-pied.jpg"
       ],
       "thumbs": [
         "mannequins/enfants/garcon/liam/thumb.jpg",
-        "mannequins/enfants/garcon/liam/thumb-02.jpg"
+        "mannequins/enfants/garcon/liam/thumb-02.jpg",
+        "mannequins/enfants/garcon/liam/thumb-03.jpg"
       ],
       "types": [
+        "profil",
         "visage",
         "plein-pied"
       ]
@@ -2990,14 +3244,17 @@
       "thumb": "mannequins/enfants/garcon/jules/thumb.jpg",
       "photos": [
         "mannequins/enfants/garcon/jules/01-visage.jpg",
-        "mannequins/enfants/garcon/jules/02-plein-pied.jpg"
+        "mannequins/enfants/garcon/jules/02-profil.jpg",
+        "mannequins/enfants/garcon/jules/03-plein-pied.jpg"
       ],
       "thumbs": [
         "mannequins/enfants/garcon/jules/thumb.jpg",
-        "mannequins/enfants/garcon/jules/thumb-02.jpg"
+        "mannequins/enfants/garcon/jules/thumb-02.jpg",
+        "mannequins/enfants/garcon/jules/thumb-03.jpg"
       ],
       "types": [
         "visage",
+        "profil",
         "plein-pied"
       ]
     },
@@ -3013,14 +3270,17 @@
       "thumb": "mannequins/enfants/garcon/benjamin/thumb.jpg",
       "photos": [
         "mannequins/enfants/garcon/benjamin/01-visage.jpg",
-        "mannequins/enfants/garcon/benjamin/02-plein-pied.jpg"
+        "mannequins/enfants/garcon/benjamin/02-profil.jpg",
+        "mannequins/enfants/garcon/benjamin/03-plein-pied.jpg"
       ],
       "thumbs": [
         "mannequins/enfants/garcon/benjamin/thumb.jpg",
-        "mannequins/enfants/garcon/benjamin/thumb-02.jpg"
+        "mannequins/enfants/garcon/benjamin/thumb-02.jpg",
+        "mannequins/enfants/garcon/benjamin/thumb-03.jpg"
       ],
       "types": [
         "visage",
+        "profil",
         "plein-pied"
       ]
     },
@@ -3036,14 +3296,17 @@
       "thumb": "mannequins/enfants/garcon/solal/thumb.jpg",
       "photos": [
         "mannequins/enfants/garcon/solal/01-visage.jpg",
-        "mannequins/enfants/garcon/solal/02-plein-pied.jpg"
+        "mannequins/enfants/garcon/solal/02-profil.jpg",
+        "mannequins/enfants/garcon/solal/03-plein-pied.jpg"
       ],
       "thumbs": [
         "mannequins/enfants/garcon/solal/thumb.jpg",
-        "mannequins/enfants/garcon/solal/thumb-02.jpg"
+        "mannequins/enfants/garcon/solal/thumb-02.jpg",
+        "mannequins/enfants/garcon/solal/thumb-03.jpg"
       ],
       "types": [
         "visage",
+        "profil",
         "plein-pied"
       ]
     },
@@ -3058,14 +3321,17 @@
       "ordre": 7,
       "thumb": "mannequins/enfants/garcon/victor/thumb.jpg",
       "photos": [
-        "mannequins/enfants/garcon/victor/01-visage.jpg",
-        "mannequins/enfants/garcon/victor/02-plein-pied.jpg"
+        "mannequins/enfants/garcon/victor/01-profil.jpg",
+        "mannequins/enfants/garcon/victor/02-visage.jpg",
+        "mannequins/enfants/garcon/victor/03-plein-pied.jpg"
       ],
       "thumbs": [
         "mannequins/enfants/garcon/victor/thumb.jpg",
-        "mannequins/enfants/garcon/victor/thumb-02.jpg"
+        "mannequins/enfants/garcon/victor/thumb-02.jpg",
+        "mannequins/enfants/garcon/victor/thumb-03.jpg"
       ],
       "types": [
+        "profil",
         "visage",
         "plein-pied"
       ]
@@ -3081,14 +3347,17 @@
       "ordre": 8,
       "thumb": "mannequins/enfants/garcon/aylan/thumb.jpg",
       "photos": [
-        "mannequins/enfants/garcon/aylan/01-profil.jpg",
-        "mannequins/enfants/garcon/aylan/02-plein-pied.jpg"
+        "mannequins/enfants/garcon/aylan/01-visage.jpg",
+        "mannequins/enfants/garcon/aylan/02-profil.jpg",
+        "mannequins/enfants/garcon/aylan/03-plein-pied.jpg"
       ],
       "thumbs": [
         "mannequins/enfants/garcon/aylan/thumb.jpg",
-        "mannequins/enfants/garcon/aylan/thumb-02.jpg"
+        "mannequins/enfants/garcon/aylan/thumb-02.jpg",
+        "mannequins/enfants/garcon/aylan/thumb-03.jpg"
       ],
       "types": [
+        "visage",
         "profil",
         "plein-pied"
       ]
@@ -3105,14 +3374,17 @@
       "thumb": "mannequins/enfants/garcon/shai/thumb.jpg",
       "photos": [
         "mannequins/enfants/garcon/shai/01-visage.jpg",
-        "mannequins/enfants/garcon/shai/02-plein-pied.jpg"
+        "mannequins/enfants/garcon/shai/02-profil.jpg",
+        "mannequins/enfants/garcon/shai/03-plein-pied.jpg"
       ],
       "thumbs": [
         "mannequins/enfants/garcon/shai/thumb.jpg",
-        "mannequins/enfants/garcon/shai/thumb-02.jpg"
+        "mannequins/enfants/garcon/shai/thumb-02.jpg",
+        "mannequins/enfants/garcon/shai/thumb-03.jpg"
       ],
       "types": [
         "visage",
+        "profil",
         "plein-pied"
       ]
     },
@@ -3128,14 +3400,17 @@
       "thumb": "mannequins/enfants/garcon/diego/thumb.jpg",
       "photos": [
         "mannequins/enfants/garcon/diego/01-visage.jpg",
-        "mannequins/enfants/garcon/diego/02-plein-pied.jpg"
+        "mannequins/enfants/garcon/diego/02-profil.jpg",
+        "mannequins/enfants/garcon/diego/03-plein-pied.jpg"
       ],
       "thumbs": [
         "mannequins/enfants/garcon/diego/thumb.jpg",
-        "mannequins/enfants/garcon/diego/thumb-02.jpg"
+        "mannequins/enfants/garcon/diego/thumb-02.jpg",
+        "mannequins/enfants/garcon/diego/thumb-03.jpg"
       ],
       "types": [
         "visage",
+        "profil",
         "plein-pied"
       ]
     },
@@ -3151,14 +3426,17 @@
       "thumb": "mannequins/enfants/garcon/idris/thumb.jpg",
       "photos": [
         "mannequins/enfants/garcon/idris/01-visage.jpg",
-        "mannequins/enfants/garcon/idris/02-plein-pied.jpg"
+        "mannequins/enfants/garcon/idris/02-profil.jpg",
+        "mannequins/enfants/garcon/idris/03-plein-pied.jpg"
       ],
       "thumbs": [
         "mannequins/enfants/garcon/idris/thumb.jpg",
-        "mannequins/enfants/garcon/idris/thumb-02.jpg"
+        "mannequins/enfants/garcon/idris/thumb-02.jpg",
+        "mannequins/enfants/garcon/idris/thumb-03.jpg"
       ],
       "types": [
         "visage",
+        "profil",
         "plein-pied"
       ]
     },
@@ -3174,14 +3452,17 @@
       "thumb": "mannequins/enfants/garcon/eliott/thumb.jpg",
       "photos": [
         "mannequins/enfants/garcon/eliott/01-visage.jpg",
-        "mannequins/enfants/garcon/eliott/02-plein-pied.jpg"
+        "mannequins/enfants/garcon/eliott/02-profil.jpg",
+        "mannequins/enfants/garcon/eliott/03-plein-pied.jpg"
       ],
       "thumbs": [
         "mannequins/enfants/garcon/eliott/thumb.jpg",
-        "mannequins/enfants/garcon/eliott/thumb-02.jpg"
+        "mannequins/enfants/garcon/eliott/thumb-02.jpg",
+        "mannequins/enfants/garcon/eliott/thumb-03.jpg"
       ],
       "types": [
         "visage",
+        "profil",
         "plein-pied"
       ]
     },
@@ -3197,14 +3478,17 @@
       "thumb": "mannequins/enfants/garcon/jaden/thumb.jpg",
       "photos": [
         "mannequins/enfants/garcon/jaden/01-visage.jpg",
-        "mannequins/enfants/garcon/jaden/02-plein-pied.jpg"
+        "mannequins/enfants/garcon/jaden/02-profil.jpg",
+        "mannequins/enfants/garcon/jaden/03-plein-pied.jpg"
       ],
       "thumbs": [
         "mannequins/enfants/garcon/jaden/thumb.jpg",
-        "mannequins/enfants/garcon/jaden/thumb-02.jpg"
+        "mannequins/enfants/garcon/jaden/thumb-02.jpg",
+        "mannequins/enfants/garcon/jaden/thumb-03.jpg"
       ],
       "types": [
         "visage",
+        "profil",
         "plein-pied"
       ]
     }
